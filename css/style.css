@@ -1,0 +1,130 @@
+/* @import url("https://free.bboxtype.com/embedfonts/?family=FiraGO:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,900,900i"); */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  list-style: none;
+}
+ul li a {
+  text-decoration: none;
+}
+input,
+button {
+  outline: none;
+}
+body {
+  background: #cecece;
+}
+header {
+  background: #fff;
+  width: 100%;
+  display: block;
+  margin-bottom: 15px;
+}
+.header-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 45px 0;
+}
+.header-left {
+  display: flex;
+  align-items: center;
+}
+.logo {
+  width: 200px;
+  display: block;
+  position: relative;
+}
+.logo h1 {
+  font-family: "FiraGO", sans-serif;
+  font: Black 44px/53px SF Pro Display;
+  letter-spacing: 1.76px;
+  color: #141b3d;
+}
+.logo p {
+  width: 50px;
+  height: 26px;
+  background: #0fb7ff;
+  border-radius: 7px;
+  color: #ffffff;
+  font-family: "FiraGO", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: -21px;
+  right: 73px;
+}
+.logo img {
+  width: 100%;
+}
+.menu {
+  display: block;
+}
+.menu ul {
+  display: flex;
+}
+.menu ul li {
+  margin-right: 30px;
+}
+.menu ul li a {
+  color: #141b3d;
+  font-family: "FiraGO", sans-serif;
+  /* font-size: 24px; */
+}
+.header-right {
+  display: flex;
+  align-items: center;
+}
+.user-container {
+}
+.user-container-item {
+  width: 100%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.user-avatar {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 7px;
+  border: 1px solid #cecece;
+}
+.user-avatar img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.revelation {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.lang {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.header-slider {
+  height: 350px;
+  background: #3080d7;
+  border-radius: 16px;
+  margin: 15px 0;
+  width: 100%;
+  display: inline-block;
+}
+.content {
+  background: #ffffff;
+  border: 1px solid #e9ecf2;
+  border-radius: 16px;
+  padding: 15px;
+}
