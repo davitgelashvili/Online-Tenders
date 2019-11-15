@@ -49,6 +49,23 @@ button {
   color: #fff;
   font-size: 7px;
 }
+.input-text {
+  background: #ffffff;
+  border: 1px solid #dadde2;
+  border-radius: 4px;
+}
+.header-footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.back-link {
+  display: inline-block;
+}
+.back-link li a {
+  display: flex;
+  align-items: center;
+}
 
 body {
   background: #f6f7f9;
@@ -516,4 +533,144 @@ header {
 }
 .page-navigation li.active a {
   color: #fff;
+}
+
+/* detail page css */
+.tender-share {
+  display: inline-block;
+}
+.tender-share li a {
+  display: flex;
+  align-items: center;
+}
+.tender-details-header {
+  display: flex;
+  justify-content: space-between;
+}
+.tender-details-logo {
+  border: 1px solid red;
+  width: 200px;
+  height: 45px;
+}
+.tender-details-logo img {
+  max-width: 70%;
+  max-height: 70%;
+}
+.tender-details-right {
+  display: flex;
+}
+
+/* add tender page  */
+.add-tender-page {
+  width: 100%;
+}
+.add-tender-page-title {
+  width: 100%;
+}
+.add-tender-header {
+  display: flex;
+}
+.add-tender-header-item {
+  padding: 10px;
+  background: rgba(157, 169, 180, 0.1);
+  color: #9da9b4;
+  position: relative;
+  margin-right: 25px;
+}
+.add-tender-header-item.active {
+  background: rgba(15, 183, 255, 0.1);
+  color: #0fb7ff;
+}
+.add-tender-header-item:first-child:after {
+  display: none;
+}
+.add-tender-header-item:before {
+  content: "";
+  position: absolute;
+  background: rgba(157, 169, 180, 0.1);
+  width: 20px;
+  height: 100%;
+  top: 0;
+  right: -20px;
+  -webkit-clip-path: polygon(0 2%, 0% 100%, 100% 50%);
+  clip-path: polygon(0 2%, 0% 100%, 100% 50%);
+}
+.add-tender-header-item.active:before {
+  content: "";
+  position: absolute;
+  background: rgba(15, 183, 255, 0.1);
+  width: 20px;
+  height: 100%;
+  top: 0;
+  right: -19.999px;
+  -webkit-clip-path: polygon(0 2%, 0% 100%, 100% 50%);
+  clip-path: polygon(0 2%, 0% 100%, 100% 50%);
+}
+.add-tender-header-item:after {
+  content: "";
+  position: absolute;
+  background: rgba(157, 169, 180, 0.1);
+  width: 20px;
+  height: 100%;
+  top: 0;
+  left: -19.999px;
+  -webkit-clip-path: polygon(0 1%, 100% 0, 100% 99%, 0 100%, 100% 50%);
+  clip-path: polygon(0 1%, 100% 0, 100% 99%, 0 100%, 100% 50%);
+}
+.add-tender-header-item.active:after {
+  content: "";
+  position: absolute;
+  background: rgba(15, 183, 255, 0.1);
+  width: 20px;
+  height: 100%;
+  top: 0;
+  left: -19.999px;
+  -webkit-clip-path: polygon(0 1%, 100% 0, 100% 99%, 0 100%, 100% 50%);
+  clip-path: polygon(0 1%, 100% 0, 100% 99%, 0 100%, 100% 50%);
+}
+.add-tender-name {
+  width: 100%;
+}
+.add-tender-name input {
+  width: 100%;
+  padding: 15px;
+}
+.add-tender-description {
+  width: 100%;
+}
+.add-tender-description textarea {
+  width: 100%;
+  resize: none;
+  max-height: 400px;
+  height: 100vw;
+  padding: 15px;
+  outline: none;
+}
+.add-tender-type {
+  display: flex;
+}
+.add-tender-type label {
+  display: flex;
+}
+
+.add-tender-type,
+.add-tender-mails,
+.add-tender-dedlain,
+.add-tender-start {
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+}
+
+.add-tender-type span,
+.add-tender-mails span,
+.add-tender-dedlain span,
+.add-tender-start span {
+  width: 30%;
+}
+.add-tender-type input,
+.add-tender-mails input,
+.add-tender-dedlain input,
+.add-tender-start input {
+  padding: 10px;
 }
