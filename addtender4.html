@@ -70,7 +70,7 @@
             <div class="add-tender-page">
               <h1 class="add-tender-page-title">ახალი ტენდერის დამატება</h1>
               <div class="add-tender-header">
-                <div class="add-tender-header-item active">
+                <div class="add-tender-header-item">
                   ზოგადი ინფორმაცია
                 </div>
                 <div class="add-tender-header-item">
@@ -79,67 +79,60 @@
                 <div class="add-tender-header-item">
                   დოკუმენტები
                 </div>
-                <div class="add-tender-header-item">
+                <div class="add-tender-header-item active">
                   მოწვევა
                 </div>
                 <div class="add-tender-header-item">
                   განხილვა
                 </div>
               </div>
+
               <form class="add-tender-form">
-                <label class="add-tender-name">
-                  <p>ტენდერის დასახელება</p>
-                  <input type="text" class="input-text" />
-                </label>
-                <label class="add-tender-description">
-                  <p>ტენდერის დასახელება</p>
-                  <textarea class="input-text"></textarea>
-                </label>
-                <div class="add-tender-type">
-                  <span>ტენდერის ტიპი</span>
-                  <label class="input-chackbox">
-                    <input type="radio" />
-                    <div class="checkmark-radio">
-                      <i class="fas fa-check"></i>
+                <div class="row">
+                  <div class="col-12">
+                    <div class="row">
+                      <div class="col-5">
+                        <span class="add-tender-category-title">
+                          კომპანიის დასახელება
+                        </span>
+                        <input
+                          type="text"
+                          class="input-text company-add-input"
+                        />
+                      </div>
+                      <div class="col-5">
+                        <span class="add-tender-category-title">
+                          ელ.ფოსტა
+                        </span>
+                        <input
+                          type="text"
+                          class="input-text company-add-input"
+                        />
+                      </div>
+                      <div class="col-2">
+                        <button style="float: right;">დამატება</button>
+                      </div>
                     </div>
-                    <p>განცხადება</p>
-                  </label>
-                  <label class="input-chackbox">
-                    <input type="radio" />
-                    <div class="checkmark-radio">
-                      <i class="fas fa-check"></i>
+                  </div>
+                  <div class="col-12">
+                    <div class="row">
+                      <div class="col-5">
+                        <p class="company-added-name">შ.პ.ს ვანდიო</p>
+                      </div>
+                      <div class="col-5">
+                        <p class="company-added-name">Sales@wandio.com</p>
+                      </div>
+                      <div class="col-2">
+                        <button class="company-added-remove">
+                          X
+                        </button>
+                      </div>
+                      <!-- end -->
                     </div>
-                    <p>ელ.ტენდერი</p>
-                  </label>
+                  </div>
                 </div>
-                <div class="add-tender-mails">
-                  <span
-                    >შეტყობინების მიღება ტენდერში დასმულ შეკითხვებთან
-                    დაკავშირებით (Emails)
-                  </span>
-                  <input
-                    type="text"
-                    placeholder="ელ.ფოსტები გამოყავით მძიმეები"
-                    class="input-text"
-                  />
-                </div>
-                <div class="add-tender-dedlain">
-                  <span>წინადადების მიღება მთავრდება</span>
-                  <input
-                    type="text"
-                    placeholder="20 აგვისტო 2019, 10:00"
-                    class="input-text"
-                  />
-                </div>
-                <div class="add-tender-start">
-                  <span>წინადადების მიღება იწყება</span>
-                  <input
-                    type="text"
-                    placeholder="20 აგვისტო 2019, 10:00"
-                    class="input-text"
-                  />
-                </div>
-                <button class="add-tender-btn">ტენდერის დამატება</button>
+                <button>უკან დაბრუნება</button>
+                <button>ტენდერის დამატება</button>
               </form>
             </div>
           </div>

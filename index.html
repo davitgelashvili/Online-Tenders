@@ -26,8 +26,7 @@
             <ul>
               <li>
                 <a href="" class="logo">
-                  <h1>Tenders</h1>
-                  <p>BETA</p>
+                  <img src="img/logo.png" alt="TENDERS.GE" />
                 </a>
               </li>
             </ul>
@@ -119,7 +118,7 @@
 
     <div class="container">
       <div class="row">
-        <div class="col-8">
+        <div class="col-9">
           <div class="content">
             <div class="content-header">
               <h1 class="content-title">ტენდერები</h1>
@@ -234,7 +233,7 @@
           </div>
           <!-- content end  -->
         </div>
-        <div class="col-4">
+        <div class="col-3">
           <div class="content">
             <section class="main-right">
               <h3 class="main-right-title">სისტემის უპირატესობანი</h3>
@@ -257,5 +256,18 @@
     <script src="js/owl.carousel.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
+    <script>
+      var heroSlider = $(".header-slider .owl-carousel");
+      heroSlider.owlCarousel({
+        loop: true,
+        items: 1,
+        nav: true,
+        dots: false,
+        navText: [
+          '<i class="fa fa-angle-left fa-2x fa-fw" aria-hidden="true"></i>',
+          '<i class="fa fa-angle-right fa-2x fa-fw" aria-hidden="true"></i>'
+        ]
+      });
+    </script>
   </body>
 </html>
