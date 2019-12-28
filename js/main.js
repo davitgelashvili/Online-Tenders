@@ -6,3 +6,19 @@ $(".tender-details-tab-header-item").click(function() {
     $(".tender-details-tab-header-item").removeClass("active");
   }
 });
+
+$(".mob-menu-icon").click(function() {
+	$('.mob-menu ul').css({
+		width: '265px',
+		display: 'block'
+	});
+  $('.mob-menu-bg').css('display','block')
+});
+
+$('.mob-menu-close, .mob-menu-bg').click(function(){
+	$('.mob-menu ul').css({
+		width: '0%',
+		display: 'none'
+	});
+	$('.mob-menu-bg').css('display','none')
+})

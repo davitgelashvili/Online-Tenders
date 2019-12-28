@@ -474,9 +474,64 @@ header {
 }
 .sponsors {
   width: 100%;
+  display: block;
 }
 .sponsors-title {
   width: 100%;
+  font-weight: 700;
+  letter-spacing: 0;
+  color: #0FB7FF;
+  font-size: 12px;
+  margin-bottom: 12px;
+  margin-top: 15px;
+}
+.sponsor-item-out{
+  width: 96%;
+  display: flex;
+  justify-content: space-between;
+}
+.sponsor-item{
+  width: calc(100% / 4) !important;
+  background: #FFFFFF;
+  border: 1px solid #EBEBEB;
+  border-radius: 8px;
+  margin-right: 8px;
+}
+.sponsor-item:last-child{
+  margin-right: 0;
+}
+.sponsor-item a{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 20px 38px;
+}
+.sponsor-item-title{
+  font-weight: 500;
+  letter-spacing: 0;
+  color: #141B3D;
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+.sponsor-item-count-tender{
+  font-weight: 400;
+  letter-spacing: 0;
+  color: #ACACAF;
+  font-size: 10px;
+}
+.sponsor-item-img{
+  width: 127px;
+  height: 89px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.sponsor-item-img img {
+  max-width: 100%;
+  max-height: 100%;
 }
 .main-right {
   width: 100%;
@@ -500,6 +555,18 @@ header {
   letter-spacing: 0;
   color: #141b3d;
   font-size: 12px;
+  position: relative;
+}
+.main-right-list li:before{
+  content: "";
+  position: absolute;
+  z-index: 1;
+  left: -1px;
+  top: 4px;
+  width: 6px;
+  height: 6px;
+  background-color: #ACACAF;
+  border-radius: 50%;
 }
 .announce {
   margin-top: 16px;
@@ -508,7 +575,7 @@ header {
 .announce li {
   background: #03af5c;
   border-radius: 6px;
-  width: 182px;
+  width: 100%;
   margin: auto;
 }
 .announce li a {
@@ -617,6 +684,8 @@ header {
   letter-spacing: 0;
   color: #9da9b4;
   font-size: 12px;
+  display: flex;
+  align-items: center;
 }
 .tender-details-right-time span {
   font-weight: 400;
@@ -629,6 +698,8 @@ header {
   padding-left: 11px;
   margin-left: 26px;
   border-left: 2px solid #acacaf;
+  display: flex;
+  align-items: center;
 }
 .tender-details-right-status span {
   padding: 5px 10px;
@@ -764,7 +835,7 @@ header {
   background: #f6f7f9 0% 0% no-repeat padding-box;
   border: 3px solid #0fb7ff;
   border-radius: 8px;
-  width: max-content;
+  width: 100%;
   justify-content: center;
   padding: 12px 28px;
   margin: 0 auto 18px auto;
@@ -878,6 +949,9 @@ header {
 }
 
 /* add tender page  */
+.add-tender-form{
+  float: left;width: 100%;
+}
 .add-tender-page {
   width: 100%;
 }
@@ -900,6 +974,8 @@ header {
   margin-right: 25px;
   font-weight: 500;
   font-size: 12px;
+  display: flex;
+  align-items: center;
 }
 .add-tender-header-item.active {
   background: rgba(15, 183, 255, 0.1);
@@ -1112,6 +1188,9 @@ header {
 .add-tender-category-list-check {
   padding: 13px 27px;
 }
+.add-tender-category-list-check span {
+  width: fit-content;
+}
 .add-tender-category-list-check:nth-of-type(2n + 2) {
   background: #f9f9f9;
 }
@@ -1124,6 +1203,10 @@ header {
 .add-tender-category-header {
   padding: 20px 25px;
   background: #f6f7f9;
+}
+.search-name-or-cpv{
+  height: 37px;
+  margin-left: 35px;
 }
 .tender-back-btn {
   background: #9da9b4 0% 0% no-repeat padding-box;
@@ -1152,6 +1235,7 @@ header {
   align-items: flex-start;
   flex-wrap: wrap;
   margin-top: 14px;
+  float: left;width: 100%;
 }
 .add-tender-uploaded-item {
   border-radius: 52px;
@@ -1189,6 +1273,315 @@ header {
 .company-added-name {
   margin-bottom: 22px;
 }
-.company-added-remove {
+.company-add-btn-out{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+.company-add-btn{
   float: right;
+  width: 100%;
+  height: 48px;
+  background: #0FB7FF 0% 0% no-repeat padding-box;
+  border-radius: 12px;
+  border: none;
+  display: block;
+  cursor: pointer;
+  font-weight: 900;
+  letter-spacing: 0.39px;
+  color: #FFFFFF;
+  font-size: 13px;
+}
+.company-added-remove-out{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: flex-start;
+  justify-content: center;
+}
+.company-added-remove {
+  width: 24px;
+  height: 24px;
+  background: #9DA9B4;
+  border-radius: 50%;
+  border: none;
+  display: block;
+  cursor: pointer;
+  font-weight: 100;
+  letter-spacing: 0.39px;
+  color: #FFFFFF;
+  font-size: 13px;
+}
+
+
+.person-info-out-title{
+  font-weight: 700;
+  letter-spacing: 0;
+  color: #141B3D;
+  font-size: 23px;
+  margin-bottom: 34px;
+}
+.person-info{
+  width: 100%;
+  display: block;
+}
+.person-info-menu{
+  margin-top: 24px;
+}
+.person-info-menu li a img {
+  width: 15px;
+  margin-right: 10px;
+}
+.person-info-menu li{
+  margin-bottom: 20px;
+}
+.person-info-menu li a {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  letter-spacing: 0;
+  color: #141B3D;
+  font-size: 11px;
+  position: relative;
+}
+.person-info-menu li a.active {
+  font-weight: 500;
+}
+.person-info-menu li a i {
+  display: none;
+}
+.person-info-menu li a.active i {
+  display: block;
+  position: absolute;
+  right: 0;
+  float: right;
+}
+.person-info-input {
+  width: 100%;
+  display: block;
+  margin-bottom: 24px;
+}
+.person-info-input p {
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0;
+  color: #141B3D;
+  margin-bottom: 12px;
+}
+.person-info-input input {
+  font-weight: 400;
+  letter-spacing: 0;
+  color: #141B3D;
+  font-size: 13px;
+  padding: 16px 25px;
+  max-width: 453px;
+  width: 100%;
+}
+
+.person-info-left{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 35px;
+  border-bottom: 1px solid #ECEEF2;
+}
+.person-info-left > .user-avatar{
+  width: 91px;
+  height: 91px;
+}
+.person-info-left-title{
+  font: Medium 13px/15px FiraGO;
+  letter-spacing: 0;
+  color: #141B3D;
+  font-size: 13px;
+  margin-top: 15px;
+}
+.person-info-left-tenders-count{
+  font: Regular 11px/13px FiraGO;
+  letter-spacing: 0;
+  color: #9DA9B4;
+  font-size: 11px;
+  margin-top: 11px;
+}
+.mob-menu{
+  display: none;
+}
+.mob-menu-icon{
+  background: none;
+  border: none;
+  color: #141B3D;
+  margin-left: 22px;
+  font-size: 18px;
+}
+.mob-menu-close{
+  border: none;
+  background: none;
+  font-size: 18px;
+  padding: 15px 30px;
+}
+.mob-menu ul {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #fff;
+  width: 0%;
+  height: 100%;
+  transition: 0.3s;
+  z-index: 9;
+  display: none;
+}
+.mob-menu ul li{
+  padding: 10px 30px;
+}
+.mob-menu ul li a{
+  color: #141b3d;
+  font-family: "FiraGO", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+}
+.mob-menu-bg{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 8;
+  background-color: #00000073;
+  display: none;
+}
+.list-item-right-mobile{
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 5px;
+}
+.list-item-right-mobile p {
+  font-weight: 500;
+  letter-spacing: 0;
+  color: #9DA9B4;
+  font-size: 10px;
+}
+.list-item-right-mobile p:nth-of-type(1) {
+  margin-right: 68px;
+}
+.list-item-right-mobile p.new {
+  background: #fd7804 0% 0% no-repeat padding-box;
+  border-radius: 4px;
+  padding: 2px 7px;
+  color: #fff;
+}
+.add-tender-header-item p {
+  display: none;
+}
+@media (max-width: 1200px){
+  .logo img{
+    width: 80px;
+  }
+}
+@media (max-width: 991px){
+  .mob-row{
+    flex-direction: column-reverse;
+  }
+  .user-container-item p,
+  .user-container-item span,
+  .revelation,
+  .lang,
+  .menu {
+    display: none;
+  }
+  .user-avatar{
+    width: 40px;
+    height: 40px;
+  }
+  .header-item{
+    padding: 20px 0;
+  }
+  .mob-menu{
+    display: block;
+  }
+  .sponsors{
+    display: none;
+  }
+  .announce-out-mob{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  .announce-price{
+    width: auto;
+    min-width: 100px;
+  }
+  .add-tender-header-item span{
+    display: none;
+  }
+  .add-tender-header-item p{
+    display: block;
+  }
+  .add-tender-header-item.active span{
+    display: block;
+  }
+  .add-tender-header-item.active p{
+    display: none;
+  }
+  .add-tender-header-item{
+    padding: 12px;
+  }
+}
+@media (max-width: 767px){
+  .list-item-right{
+    display: none;
+  }
+  .table-head-title{
+    display: none;
+  }
+  .list-item-title{
+    width: calc(100% - 80px);
+  }
+  .list-item-right-mobile{
+    display: flex;
+  }
+  .tenders-list-item{
+    flex-wrap: wrap;
+  }
+  .search,
+  .search input{
+    width: 100%;
+  }
+  .header-slider{
+    max-height: 190px;
+  }
+  .slider-content {
+    width: 50%;
+    margin-top: 35px;
+    margin-left: 31px;
+  }
+  .slider-content-title{
+    font-size: 16px;
+  }
+  .slider-content-description{
+    display: none;
+  }
+  .tender-details-header{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .tender-details-right-status p {
+    display: none;
+  }
+  .tender-details-right-status{
+    border-left: none;
+  }
+  .tender-details-right{
+    width: 100%;
+    justify-content: space-between;
+  }
+  .tender-details-right-time{
+    flex-wrap: wrap;
+  }
+  .tender-details-document-content{
+    overflow: auto;
+  }
 }
