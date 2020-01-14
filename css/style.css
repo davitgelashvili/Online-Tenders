@@ -35,7 +35,7 @@ button {
   display: none;
 }
 .input-chackbox > input:checked + .checkmark {
-  background: #03af5c 0% 0% no-repeat padding-box;
+  background: #0FB7FF 0% 0% no-repeat padding-box;
   border: none;
   border-radius: 4;
   width: 12px;
@@ -219,7 +219,7 @@ header {
 .revelation li {
   width: 139px;
   height: 48px;
-  background: #03af5c;
+  background: #0FB7FF;
   border-radius: 6px;
 }
 .revelation li a {
@@ -332,7 +332,7 @@ header {
   background: #ffffff;
   border: 1px solid #e9ecf2;
   border-radius: 8px;
-  padding: 15px;
+  padding: 30px;
   margin: 23px 0;
   float: left;
   width: 100%;
@@ -547,7 +547,7 @@ header {
 }
 .main-right-list {
   width: 100%;
-  border-bottom: 1px solid #acacaf;
+  border-bottom: 1px solid rgba(172, 172, 175, 0.2);
   padding-bottom: 21px;
 }
 .main-right-list li {
@@ -573,7 +573,7 @@ header {
   width: 100%;
 }
 .announce li {
-  background: #03af5c;
+  background: #0FB7FF;
   border-radius: 6px;
   width: 100%;
   margin: auto;
@@ -634,7 +634,7 @@ header {
   font-size: 15px;
 }
 .page-navigation li.active {
-  background: #03af5c;
+  background: #0FB7FF;
   border: none;
   border-radius: 10px;
 }
@@ -846,7 +846,7 @@ header {
   flex-direction: column;
 }
 .tender-details-timer > div > h2 {
-  font-weight: 300;
+  font-weight: 700;
   font-size: 20px;
   letter-spacing: 0;
   color: #141b3d;
@@ -945,7 +945,7 @@ header {
   font-weight: 600;
   letter-spacing: 0;
   color: #0fb7ff;
-  font-size: 9px;
+  font-size: 11px;
 }
 
 /* add tender page  */
@@ -1110,7 +1110,7 @@ header {
   width: 100%;
 }
 .add-tender-btn {
-  background: #03af5c 0% 0% no-repeat padding-box;
+  background: #0FB7FF 0% 0% no-repeat padding-box;
   border-radius: 6px;
   padding: 16px 47px;
   color: #ffffff;
@@ -1161,8 +1161,8 @@ header {
   border-radius: 52px;
   border-bottom: 1px solid #cad0d8;
   border-left: 1px solid #cad0d8;
-  border-top: 1px solid #03af5c;
-  border-right: 1px solid #03af5c;
+  border-top: 1px solid #0FB7FF;
+  border-right: 1px solid #0FB7FF;
   background: #fff;
   display: flex;
   align-items: center;
@@ -1476,9 +1476,12 @@ header {
 .add-tender-header-item p {
   display: none;
 }
-@media (max-width: 1200px){
+@media (max-width: 1250px){
   .logo img{
     width: 80px;
+  }
+  .content{
+    padding: 15px;
   }
 }
 @media (max-width: 991px){
