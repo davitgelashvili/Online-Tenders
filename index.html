@@ -129,7 +129,7 @@
 
     <div class="container">
       <div class="row mob-row">
-        <div class="col-lg-9 col-12">
+        <div class="col-lg-12 col-12">
           <div class="content">
             <div class="content-header">
               <h1 class="content-title">ტენდერები</h1>
@@ -144,15 +144,34 @@
             <!-- content-header end -->
             <div class="search-out">
               <form class="search">
-                <input type="text" placeholder="ტენდერის დასახელება" />
-                <button><i class="fas fa-search"></i></button>
+                <div class="search-input">
+                  <input type="text" placeholder="ტენდერის დასახელება" />
+                  <button class="search-btn"><i class="fas fa-search"></i></button>
+                  <button class="lang-switcher"><img src="img/eng.png" alt=""></button>
+                </div>
+                <div class="search-switch">
+                  <label for="name">დასახელება</label>
+                  <input type="checkbox" name="" >
+                  <span class="search-switch-toggle"></span>
+                  <label for="code">კოდი</label>
+                </div>
               </form>
+            </div>
+            <!-- search-out end  -->
+            <div class="tab-headings">
+              <ul>
+                <li><button>მშენებლობა</button></li>
+                <li class="active"><button>გზის დაგება</button></li>
+                <li><button>სასოფლო სამეურნეო</button></li>
+                <li><button>ნავთობი</button></li>
+                <li><button>ნავთობი</button></li>
+              </ul>
               <div class="table-head-title">
                 <p>გამოცხადება</p>
                 <p>ჩაბარება</p>
               </div>
             </div>
-            <!-- search-out end  -->
+            <!-- tab headings end -->
             <ul class="tenders-list">
               <li>
                 <a href="" class="tenders-list-item">
@@ -256,6 +275,16 @@
                       <span class="sponsor-item-count-tender">35 ტენდერი</span>
                     </a>
                   </li>
+                  <li class="sponsor-item">
+                    <a href="">
+                      <div class="sponsor-add-new">
+                        <button>
+                          <i class="fas fa-plus"></i>
+                        </button>
+                      </div>
+                      <h1 class="sponsor-item-title">დაამატე</h1>
+                    </a>
+                  </li>
                 </ul>
               </section>
 
@@ -324,7 +353,7 @@
           </div>
           <!-- content end  -->
         </div>
-        <div class="col-lg-3 col-12">
+        <!-- <div class="col-lg-3 col-12">
           <div class="content">
             <section class="main-right">
               <h3 class="main-right-title">სისტემის უპირატესობანი</h3>
@@ -342,7 +371,7 @@
               </div>
             </section>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
