@@ -454,16 +454,7 @@ header {
 .search-switch input {
   display: none;
 }
-.search-switch label {
-  font-size: 12px;
-  font-weight: 500;
-  color: #9DA9B4;
-  cursor: pointer;
-}
-.search-switch label.checked{
-  color: #32B4D7;
-}
-.search-switch-toggle {
+.toggle-switch-slider {
   position: relative;
   width: 31px;
   height: 19px;
@@ -472,7 +463,7 @@ header {
   border-radius: 12px;
   cursor: pointer;
 }
-.search-switch-toggle::after{
+.toggle-switch-slider::after{
   content: "";
   position: absolute;
   top: 2px;
@@ -481,6 +472,23 @@ header {
   height: 15px;
   background: var(--color-white-1);
   border-radius: 100%;
+  transition: all .2s ease-in;
+}
+.toggle-switch-name,
+.toggle-switch-code {
+  cursor: pointer;
+}
+.toggle-switch-name {
+  color: var(--color-main-2)
+}
+.search-switch input[type="checkbox"]:checked ~ .toggle-switch-name {
+  color: var(--color-gray-2)
+}
+.search-switch input[type="checkbox"]:checked ~ .toggle-switch-code {
+  color: var(--color-main-2)
+}
+.search-switch input[type="checkbox"]:checked ~ .toggle-switch-slider::after {
+  transform: translateX(11px);
 }
 .table-head-title {
   display: flex;
@@ -507,7 +515,7 @@ header {
 .tab-headings ul li:not(:last-child){
   margin-right: 7px;
 }
-.tab-headings a {
+.tab-headings button {
   display: block;
   padding: 9px 15px;
   background: var(--color-white-1);
@@ -518,7 +526,7 @@ header {
   color: #5D6367;
   cursor: pointer;
 }
-.tab-headings ul li.active a{
+.tab-headings ul button.active{
   color: #fff;
   background: #32B4D7;
   border: none;

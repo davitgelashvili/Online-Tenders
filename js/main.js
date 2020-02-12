@@ -22,3 +22,11 @@ $('.mob-menu-close, .mob-menu-bg').click(function(){
 	});
 	$('.mob-menu-bg').css('display','none')
 })
+
+// Toggle switch function when span is clicked
+document.querySelector('.toggle-switch-name').addEventListener('click', () => {
+	document.querySelector('#toggleSwitch').checked = false;
+})
+document.querySelector('.toggle-switch-code').addEventListener('click', () => {
+	document.querySelector('#toggleSwitch').checked = true;
+})
