@@ -1,5 +1,19 @@
 /* @import url("https://free.bboxtype.com/embedfonts/?family=FiraGO:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,900,900i"); */
 
+/* Variables */
+:root {
+  --color-main-1: #0FB7FF;
+  --color-main-2: #32B4D7;
+  --color-red: #E52942;
+  --color-dark: #141B3D;
+  --color-gray-1: #ACACAF;
+  --color-gray-2: #9DA9B4;
+  --color-gray-3: #5D6367;
+  --color-white-1: #FFFFFF;
+  --color-white-2: #F6F7F9;
+}
+
+
 * {
   margin: 0;
   padding: 0;
@@ -22,7 +36,7 @@ button {
   display: none;
 }
 .input-chackbox > input + .checkmark {
-  background: #ffffff;
+  background: var(--color-white-1);
   border: 2px solid #d9d9d9;
   border-radius: 4px;
   position: relative;
@@ -46,7 +60,7 @@ button {
 }
 .input-chackbox > input:checked + .checkmark i {
   display: block;
-  color: #fff;
+  color: var(--color-white-1);
   font-size: 7px;
 }
 
@@ -75,12 +89,12 @@ button {
 }
 .input-chackbox > input:checked + .checkmark-radio i {
   display: block;
-  color: #fff;
+  color: var(--color-white-1);
   font-size: 7px;
 }
 
 .input-text {
-  background: #ffffff;
+  background: var(--color-white-1);
   border: 1px solid #dadde2;
   border-radius: 8px;
 }
@@ -108,7 +122,7 @@ body {
   background: #f6f7f9;
 }
 header {
-  background: #fff;
+  background: var(--color-white-1);
   width: 100%;
   display: block;
   margin-bottom: 23px;
@@ -139,9 +153,9 @@ header {
 .logo p {
   width: 27px;
   height: 14px;
-  background: #0fb7ff;
+  background: var(--color-main-1);
   border-radius: 7px;
-  color: #ffffff;
+  color: var(--color-white-1);
   font-family: "FiraGO", sans-serif;
   display: flex;
   align-items: center;
@@ -219,14 +233,14 @@ header {
 .revelation li {
   width: 139px;
   height: 48px;
-  background: #0FB7FF;
+  background: var(--color-main-1);
   border-radius: 6px;
 }
 .revelation li a {
   line-height: 48px;
   width: 100%;
   display: block;
-  color: #ffffff;
+  color: var(--color-white-1);
   letter-spacing: 0.36px;
   font-size: 12px;
   text-align: center;
@@ -274,7 +288,7 @@ header {
 }
 .slider-content-title {
   letter-spacing: 0;
-  color: #ffffff;
+  color: var(--color-white-1);
   font-size: 27px;
   line-height: 1.4;
   width: 397px;
@@ -283,7 +297,7 @@ header {
 }
 .slider-content-description {
   letter-spacing: 0;
-  color: #ffffff;
+  color: var(--color-white-1);
   font-size: 15px;
   line-height: 1.5;
   width: 443px;
@@ -300,7 +314,7 @@ header {
   text-align: center;
   font-weight: 500;
   letter-spacing: 0;
-  color: #ffffff;
+  color: var(--color-white-1);
   width: 100%;
   display: block;
   line-height: 48px;
@@ -340,7 +354,7 @@ header {
   -webkit-backdrop-filter: blur(30px);
   border: none;
   border-radius: 50%;
-  color: #ffffff;
+  color: var(--color-white-1);
   cursor: pointer;
 }
 .header-slider:hover .owl-carousel .owl-nav button.owl-next,
@@ -351,7 +365,7 @@ header {
   display: none !important;
 }
 .content {
-  background: #ffffff;
+  background: var(--color-white-1);
   border: 1px solid #e9ecf2;
   border-radius: 8px;
   padding: 36px;
@@ -387,7 +401,7 @@ header {
   align-items: center;
   position: relative;
   margin-top: 20px;
-  padding-bottom: 8px;
+  padding-bottom: 12px;
 }
 .search{
   display: flex;
@@ -465,7 +479,7 @@ header {
   left: 2px;
   width: 15px;
   height: 15px;
-  background: #fff;
+  background: var(--color-white-1);
   border-radius: 100%;
 }
 .table-head-title {
@@ -493,9 +507,10 @@ header {
 .tab-headings ul li:not(:last-child){
   margin-right: 7px;
 }
-.tab-headings button {
+.tab-headings a {
+  display: block;
   padding: 9px 15px;
-  background: #fff;
+  background: var(--color-white-1);
   border: 1px solid #DEE3E6;
   border-radius: 16px;
   font-size: 12px;
@@ -503,7 +518,7 @@ header {
   color: #5D6367;
   cursor: pointer;
 }
-.tab-headings ul li.active button{
+.tab-headings ul li.active a{
   color: #fff;
   background: #32B4D7;
   border: none;
@@ -555,6 +570,21 @@ header {
   margin-top: 6px;
   font-size: 13px;
 }
+.list-item-modified {
+  position: relative;
+  padding-left: 16px;
+}
+.list-item-modified::before {
+  content: "E";
+  position: absolute;
+  top: -1px;
+  left: 0;
+  line-height: 1;
+  padding: 2px 3px;
+  border-radius: 2px;
+  color: var(--color-white-1);
+  background: var(--color-red);
+}
 .list-item-right {
   display: flex;
   align-items: center;
@@ -575,13 +605,13 @@ header {
   background: #32B4D7 0% 0% no-repeat padding-box;
   border-radius: 6px;
   padding: 7px 12px;
-  color: #fff;
+  color: var(--color-white-1);
 }
 .list-item-right p.vip {
   background: #F1616F 0% 0% no-repeat padding-box;
   border-radius: 6px;
-  padding: 7px 12px;
-  color: #fff;
+  padding: 7px 24px;
+  color: var(--color-white-1);
 }
 .sponsors {
   width: 100%;
@@ -591,7 +621,7 @@ header {
   width: 100%;
   font-weight: 700;
   letter-spacing: 0;
-  color: #0FB7FF;
+  color: var(--color-main-1);
   font-size: 12px;
   margin-bottom: 12px;
   margin-top: 15px;
@@ -603,7 +633,7 @@ header {
 }
 .sponsor-item{
   width: 100%;
-  background: #FFFFFF;
+  background: var(--color-white-1);
   border: 1px solid #EBEBEB;
   border-radius: 8px;
   margin-right: 8px;
@@ -661,7 +691,7 @@ header {
   cursor: pointer;
 }
 .sponsor-add-new i {
-  color: #0FB7FF;
+  color: var(--color-main-1);
   font-size: 20px;
 }
 .main-right {
@@ -704,7 +734,7 @@ header {
   width: 100%;
 }
 .announce li {
-  background: #0FB7FF;
+  background: var(--color-main-1);
   border-radius: 6px;
   width: 100%;
   margin: auto;
@@ -715,7 +745,7 @@ header {
   line-height: 47px;
   text-align: center;
   letter-spacing: 0.36px;
-  color: #ffffff;
+  color: var(--color-white-1);
   font-size: 12px;
   font-weight: 900;
 }
@@ -765,12 +795,12 @@ header {
   font-size: 15px;
 }
 .page-navigation li.active {
-  background: #0FB7FF;
+  background: #32B4D7;
   border: none;
   border-radius: 10px;
 }
 .page-navigation li.active a {
-  color: #fff;
+  color: var(--color-white-1);
 }
 
 /* detail page css */
@@ -837,7 +867,7 @@ header {
   background: #fd7804 0% 0% no-repeat padding-box;
   border-radius: 8px;
   letter-spacing: 0;
-  color: #ffffff;
+  color: var(--color-white-1);
   font-weight: 500;
   font-size: 12px;
   margin-left: 10px;
@@ -868,11 +898,11 @@ header {
   font-size: 12px;
 }
 .tender-details-tab-header-item.active {
-  background: #ffffff;
+  background: var(--color-white-1);
   border: 1px solid #dadde2;
   border-bottom: 1px solid transparent;
   border-radius: 6px 6px 0px 0px;
-  color: #0fb7ff;
+  color: var(--color-main-1);
 }
 .tender-details-tab-header-item.active:before {
   content: "";
@@ -881,7 +911,7 @@ header {
   left: 0;
   width: 100%;
   height: 1px;
-  background: #fff;
+  background: var(--color-white-1);
 }
 .tender-details-tab-body {
   margin-top: 28px;
@@ -942,7 +972,7 @@ header {
   font-weight: 500;
   background: transparent;
   letter-spacing: 0;
-  color: #0fb7ff;
+  color: var(--color-main-1);
   border: none;
   font-size: 12px;
   display: flex;
@@ -964,7 +994,7 @@ header {
 .tender-details-timer {
   display: flex;
   background: #f6f7f9 0% 0% no-repeat padding-box;
-  border: 3px solid #0fb7ff;
+  border: 3px solid var(--color-main-1);
   border-radius: 8px;
   width: 100%;
   justify-content: center;
@@ -1075,7 +1105,7 @@ header {
   text-align: center;
   font-weight: 600;
   letter-spacing: 0;
-  color: #0fb7ff;
+  color: var(--color-main-1);
   font-size: 11px;
 }
 
@@ -1110,7 +1140,7 @@ header {
 }
 .add-tender-header-item.active {
   background: rgba(15, 183, 255, 0.1);
-  color: #0fb7ff;
+  color: var(--color-main-1);
 }
 .add-tender-header-item:first-child:after {
   display: none;
@@ -1244,7 +1274,7 @@ header {
   background: #0FB7FF 0% 0% no-repeat padding-box;
   border-radius: 6px;
   padding: 16px 47px;
-  color: #ffffff;
+  color: var(--color-white-1);
   font-weight: 900;
   letter-spacing: 0.36px;
   font-size: 12px;
@@ -1275,7 +1305,7 @@ header {
   align-items: center;
   font-weight: 400;
   letter-spacing: 0;
-  color: #ffffff;
+  color: var(--color-white-1);
   font-size: 12px;
   padding: 14px 37px;
 }
@@ -1294,7 +1324,7 @@ header {
   border-left: 1px solid #cad0d8;
   border-top: 1px solid #0FB7FF;
   border-right: 1px solid #0FB7FF;
-  background: #fff;
+  background: var(--color-white-1);
   display: flex;
   align-items: center;
   padding-right: 37px;
@@ -1343,7 +1373,7 @@ header {
   background: #9da9b4 0% 0% no-repeat padding-box;
   border-radius: 6px;
   padding: 16px 47px;
-  color: #ffffff;
+  color: var(--color-white-1);
   font-weight: 900;
   letter-spacing: 0.36px;
   font-size: 12px;
@@ -1371,7 +1401,7 @@ header {
 .add-tender-uploaded-item {
   border-radius: 52px;
   border: 1px solid #cad0d8;
-  background: #fff;
+  background: var(--color-white-1);
   display: flex;
   align-items: center;
   padding-right: 37px;
@@ -1390,7 +1420,7 @@ header {
   border-radius: 50%;
   top: 14px;
   right: 20px;
-  color: #fff;
+  color: var(--color-white-1);
   cursor: pointer;
 }
 .add-tender-uploaded-item:hover .add-tender-uploaded-item-remove {
@@ -1421,7 +1451,7 @@ header {
   cursor: pointer;
   font-weight: 900;
   letter-spacing: 0.39px;
-  color: #FFFFFF;
+  color: var(--color-white-1);
   font-size: 13px;
 }
 .company-added-remove-out{
@@ -1441,7 +1471,7 @@ header {
   cursor: pointer;
   font-weight: 100;
   letter-spacing: 0.39px;
-  color: #FFFFFF;
+  color: var(--color-white-1);
   font-size: 13px;
 }
 
@@ -1556,7 +1586,7 @@ header {
   position: fixed;
   top: 0;
   right: 0;
-  background-color: #fff;
+  background-color: var(--color-white-1);
   width: 0%;
   height: 100%;
   transition: 0.3s;
@@ -1599,10 +1629,16 @@ header {
   margin-right: 68px;
 }
 .list-item-right-mobile p.new {
-  background: #fd7804 0% 0% no-repeat padding-box;
+  background: #32B4D7 0% 0% no-repeat padding-box;
   border-radius: 4px;
   padding: 2px 7px;
-  color: #fff;
+  color: var(--color-white-1);
+}
+.list-item-right-mobile p.vip {
+  background: #F1616F 0% 0% no-repeat padding-box;
+  border-radius: 4px;
+  padding: 2px 14px;
+  color: var(--color-white-1);
 }
 .add-tender-header-item p {
   display: none;
@@ -1663,6 +1699,26 @@ header {
   .add-tender-header-item{
     padding: 12px;
   }
+  .header-slider::before{
+    background-position: 95px 120px;
+    background-size: 95%;
+  }
+  .tab-headings {
+    display: none;
+  }
+  .search-switch {
+    display: none;
+  }
+  .search {
+    width: 100%;
+  }
+  .search-input {
+    width: 100%;
+  }
+  .search-input input {
+    width: 100%;
+    border-radius: 8px;
+  }
 }
 @media (max-width: 767px){
   .list-item-right{
@@ -1686,6 +1742,10 @@ header {
   } */
   .header-slider{
     max-height: 190px;
+  }
+  .header-slider::before{
+    background-position: 95px 60px;
+    background-size: 95%;
   }
   .slider-content {
     width: 50%;
