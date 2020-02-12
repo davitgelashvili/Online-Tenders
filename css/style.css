@@ -238,6 +238,7 @@ header {
   align-items: center;
 }
 .header-slider {
+  position: relative;
   max-height: 346px;
   height: 100vw;
   background: #3080d7;
@@ -247,22 +248,35 @@ header {
   display: inline-block;
   overflow: hidden;
 }
+.header-slider::before{
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background: url("../img/slider-bg.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  z-index: 1;
+}
 .slide-item {
   position: relative;
   display: flex;
-  background: #3080d7;
+  /* background: #3080d7; */
   border-radius: 16px;
   overflow: hidden;
 }
 .slider-content {
   width: 50%;
   margin-top: 65px;
-  margin-left: 120px;
+  margin-left: 70px;
 }
 .slider-content-title {
   letter-spacing: 0;
   color: #ffffff;
   font-size: 27px;
+  line-height: 1.4;
   width: 397px;
   margin-bottom: 21px;
   font-weight: 700;
@@ -271,6 +285,7 @@ header {
   letter-spacing: 0;
   color: #ffffff;
   font-size: 15px;
+  line-height: 1.5;
   width: 443px;
   font-weight: 300;
 }
@@ -301,6 +316,10 @@ header {
 .owl-theme .owl-nav {
   margin-top: 0;
 }
+.owl-nav .owl-prev i,
+.owl-nav .owl-next i {
+  font-size: 16px;
+}
 .header-slider .owl-carousel .owl-nav button.owl-next {
   right: 30px;
 }
@@ -315,7 +334,7 @@ header {
   top: 50%;
   width: 57px;
   height: 56px;
-  background: rgba(255, 255, 255, 0.3) 0% 0% no-repeat padding-box;
+  background: rgba(255, 255, 255, 0.2) 0% 0% no-repeat padding-box;
   opacity: 1;
   backdrop-filter: blur(30px);
   -webkit-backdrop-filter: blur(30px);
@@ -328,11 +347,14 @@ header {
 .header-slider:hover .owl-carousel .owl-nav button.owl-prev {
   display: block;
 }
+.header-slider .owl-carousel .owl-nav button.owl-prev {
+  display: none !important;
+}
 .content {
   background: #ffffff;
   border: 1px solid #e9ecf2;
   border-radius: 8px;
-  padding: 30px;
+  padding: 36px;
   margin: 23px 0;
   float: left;
   width: 100%;
@@ -346,7 +368,7 @@ header {
   font-weight: 900;
   letter-spacing: 0;
   color: #141b3d;
-  font-size: 16px;
+  font-size: 24px;
 }
 .ongoing-tenders {
   display: inline-block;
@@ -364,13 +386,11 @@ header {
   display: flex;
   align-items: center;
   position: relative;
-  margin-top: 30px;
+  margin-top: 20px;
   padding-bottom: 8px;
-  border-bottom: 1px solid #f6f7f9;
 }
-.search {
-  display: block;
-  position: relative;
+.search{
+  display: flex;
 }
 .search input {
   width: 306px;
@@ -378,7 +398,9 @@ header {
   background: #f6f7f9;
   border: 1px solid #e4e6ea;
   border-radius: 8px;
-  padding-left: 43px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  padding: 0 43px;
   color: #acacaf;
   font-size: 11px;
   font-weight: 400;
@@ -386,13 +408,67 @@ header {
 .search button {
   position: absolute;
   top: 10px;
-  left: 15px;
   background: transparent;
   border: none;
+  cursor: pointer;
+}
+.search-btn {
+  left: 15px;
+}
+.search-input {
+  position: relative;
+}
+.lang-switcher {
+  right: 15px;
+}
+.search-switch {
+  height: 35px;
+  width: 190px;
+  background: #f6f7f9;
+  border: 1px solid #e4e6ea;
+  border-left: 0;
+  border-radius: 8px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  color: #acacaf;
+  font-size: 11px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+}
+.search-switch input {
+  display: none;
+}
+.search-switch label {
+  font-size: 12px;
+  font-weight: 500;
+  color: #9DA9B4;
+  cursor: pointer;
+}
+.search-switch label.checked{
+  color: #32B4D7;
+}
+.search-switch-toggle {
+  position: relative;
+  width: 31px;
+  height: 19px;
+  background: #32B4D7;
+  margin: 0 12px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+.search-switch-toggle::after{
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 15px;
+  height: 15px;
+  background: #fff;
+  border-radius: 100%;
 }
 .table-head-title {
-  position: absolute;
-  right: 0;
   display: flex;
 }
 .table-head-title p {
@@ -403,6 +479,34 @@ header {
 }
 .table-head-title p:nth-of-type(1) {
   margin-right: 68px;
+}
+.tab-headings {
+  padding: 0 0 12px 0;
+  border-bottom: 1px solid #f6f7f9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.tab-headings ul {
+  display: flex;
+}
+.tab-headings ul li:not(:last-child){
+  margin-right: 7px;
+}
+.tab-headings button {
+  padding: 9px 15px;
+  background: #fff;
+  border: 1px solid #DEE3E6;
+  border-radius: 16px;
+  font-size: 12px;
+  font-family: "FiraGO", sans-serif;
+  color: #5D6367;
+  cursor: pointer;
+}
+.tab-headings ul li.active button{
+  color: #fff;
+  background: #32B4D7;
+  border: none;
 }
 .tenders-list {
   width: 100%;
@@ -440,6 +544,7 @@ header {
 .list-item-title h1 {
   font-size: 13px;
   font-weight: 500;
+  line-height: 1.4;
   letter-spacing: 0;
   color: #141b3d;
 }
@@ -467,7 +572,13 @@ header {
   margin-right: 68px;
 }
 .list-item-right p.new {
-  background: #fd7804 0% 0% no-repeat padding-box;
+  background: #32B4D7 0% 0% no-repeat padding-box;
+  border-radius: 6px;
+  padding: 7px 12px;
+  color: #fff;
+}
+.list-item-right p.vip {
+  background: #F1616F 0% 0% no-repeat padding-box;
   border-radius: 6px;
   padding: 7px 12px;
   color: #fff;
@@ -486,12 +597,12 @@ header {
   margin-top: 15px;
 }
 .sponsor-item-out{
-  width: 96%;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  column-gap: 8px;
 }
 .sponsor-item{
-  width: calc(100% / 4) !important;
+  width: 100%;
   background: #FFFFFF;
   border: 1px solid #EBEBEB;
   border-radius: 8px;
@@ -506,7 +617,7 @@ header {
   align-items: center;
   width: 100%;
   height: 100%;
-  padding: 20px 38px;
+  padding: 20px 13px;
 }
 .sponsor-item-title{
   font-weight: 500;
@@ -532,6 +643,26 @@ header {
 .sponsor-item-img img {
   max-width: 100%;
   max-height: 100%;
+}
+.sponsor-add-new {
+  margin-bottom: 10px;
+  width: 127px;
+  height: 89px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sponsor-add-new button {
+  width: 56px;
+  height: 56px;
+  border-radius: 100%;
+  border: 1px dashed #F0F0F0;
+  background-color: transparent;
+  cursor: pointer;
+}
+.sponsor-add-new i {
+  color: #0FB7FF;
+  font-size: 20px;
 }
 .main-right {
   width: 100%;
@@ -1549,10 +1680,10 @@ header {
   .tenders-list-item{
     flex-wrap: wrap;
   }
-  .search,
+  /* .search,
   .search input{
     width: 100%;
-  }
+  } */
   .header-slider{
     max-height: 190px;
   }
