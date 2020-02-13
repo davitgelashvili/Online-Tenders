@@ -33,3 +33,4 @@ $(".toggle-switch-name").click(function() {
 $(".toggle-switch-code").click(() => {
   $("#toggleSwitch").prop("checked", true);
 });
+
