@@ -26,8 +26,7 @@
             <ul>
               <li>
                 <a href="" class="logo">
-                  <h1>Tenders</h1>
-                  <p>BETA</p>
+                  <img src="img/logo.png" alt="TENDERS.GE" />
                 </a>
               </li>
             </ul>
@@ -37,10 +36,16 @@
                 <li><a href="">გამოწერა</a></li>
                 <li><a href="">კონტაქტი</a></li>
                 <li><a href="">კითხვები</a></li>
+                <li><a href="" class="text-accented">დეშბორდი</a></li>
               </ul>
             </div>
           </div>
           <div class="header-right">
+            <div class="header-favorites">
+              <a href="#">
+                <img src="img/star-2.svg" alt="favorites" />
+              </a>
+            </div>
             <div class="user-container">
               <div class="user-container-item">
                 <div class="user-avatar">
@@ -56,8 +61,23 @@
               <li><a href="">გამოცხადება</a></li>
             </ul>
             <ul class="lang">
-              <li><a href="">ENG</a></li>
+              <li>
+                <a href=""><img src="img/eng.png"/></a>
+              </li>
             </ul>
+            <div class="mob-menu">
+              <button class="mob-menu-icon"><i class="fas fa-bars"></i></button>
+              <div class="mob-menu-bg"></div>
+              <ul>
+                <button class="mob-menu-close">
+                  <i class="fas fa-times"></i>
+                </button>
+                <li><a href="">შესყიდვის პროცესი</a></li>
+                <li><a href="">გამოწერა</a></li>
+                <li><a href="">კონტაქტი</a></li>
+                <li><a href="">კითხვები</a></li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -86,10 +106,12 @@
               </div>
               <div class="tender-details-right">
                 <div class="tender-details-right-time">
-                  <span>ჩაბარების ვადა:</span> <p>16 ოქტომბერი 2019, 19:00</p>
+                  <span>ჩაბარების ვადა:</span>
+                  <p>16 ოქტომბერი 2019, 19:00</p>
                 </div>
                 <div class="tender-details-right-status">
-                  <p>სტატუსი:</p> <span>მიმდინარე</span>
+                  <p>სტატუსი:</p>
+                  <span>მიმდინარე</span>
                 </div>
               </div>
             </div>
@@ -100,18 +122,79 @@
             </h1>
             <div class="tender-details-tab">
               <div class="tender-details-tab-header">
-                <div class="tender-details-tab-header-item active">
+                <div
+                  class="tender-details-tab-header-item active"
+                  data-tab="tab-desc"
+                >
                   აღწერა
                 </div>
-                <div class="tender-details-tab-header-item">
-                  აღწერა
+                <div
+                  class="tender-details-tab-header-item text-accented"
+                  data-tab="tab-questions"
+                >
+                  შეკითხვები
                 </div>
-                <div class="tender-details-tab-header-item">
-                  აღწერა
+                <div
+                  class="tender-details-tab-header-item text-accented"
+                  data-tab="tab-offer"
+                >
+                  შეთავაზება
+                </div>
+                <div
+                  class="tender-details-tab-header-item"
+                  data-tab="tab-result"
+                >
+                  რეზულტატი
+                </div>
+                <div
+                  class="tender-details-tab-header-item"
+                  data-tab="tab-specify"
+                >
+                  დაზუსტება
                 </div>
               </div>
               <div class="tender-details-tab-body">
-                ds
+                <div class="tab-content tab-desc tab-active">
+                  <h3>ტენდერის აღწერილობა:</h3>
+                  <p>
+                    შპს „კავკასუს ონლაინი“ აცხადებს ტენდერს სათაო ოფისის (მის.:
+                    თბილისი, მ. წინამძღვრიშვილის ქ. #160) ტერიტორიაზე
+                    ჩასატარებელ სამუშაოებზე.
+                  </p>
+                  <h3>სამუშაოს აღწერილობა:</h3>
+                  <p>
+                    შენობაში შესასვლელი ბაზალტის საფეხურიანი კიბის აღდგენა;
+                    შენობის ფასადიდან „რკინიგზის ტელეკომის“ ლოგოს და წარწერის
+                    დემონტაჟი. სატენდერო შემოთავაზებით წარსადგენი საბუთების სია:
+                  </p>
+                  <p>
+                    შესაბამისი ხარჯთაღრიცხვა (ეროვნულ ვალუტაში, დ.ღ.გ.-ს
+                    ჩათვლით), ანგარიშსწორების პირობის და სამუშაოების შესრულების
+                    ვადების მითითებით; მსგავს პროექტებში მონაწილეობის
+                    დამადასტურებელი დოკუმენტაცია; სიმაღლეზე შესასრულებელ
+                    სამუშაოებზე დაშვების შესაბამისი დოკუმენტი; ზუსტი საკონტაქო
+                    ინფორმაცია. ვადები:
+                  </p>
+                  <p>
+                    სატენდერო საბუთების მოწოდება: ა.წ. 16 ოქტომბერს, არაუგვიანეს
+                    15:00 სთ-სა (ობიექტის ადგილზე გაცნობის მიზნით, აპლიკანტები
+                    სასურველია მობრძანდნენ მითითებულ მისამართზე, ა.წ. 11
+                    ოქტომბერს 15:00 სთ-ზე);ტენდერში გამარჯვებულისთვის
+                    შეტყობინება: არაუგვიანეს ა.წ. 18 ოქტომბრის 18:00 სთ-
+                  </p>
+                </div>
+                <div class="tab-content tab-questions">
+                  <h3>შეკითხვები</h3>
+                </div>
+                <div class="tab-content tab-offer">
+                  <h3>შეთავაზება</h3>
+                </div>
+                <div class="tab-content tab-result">
+                  <h3>რეზულტატი</h3>
+                </div>
+                <div class="tab-content tab-specify">
+                  <h3>დაზუსტება</h3>
+                </div>
               </div>
               <div class="tender-details-documentation">
                 <h1 class="tender-details-documentation-title">დოცუმენტაცია</h1>
@@ -138,7 +221,7 @@
           <!-- content end  -->
         </div>
         <div class="col-lg-3 d-lg-block d-none">
-          <div class="content">
+          <div class="content less-padded">
             <section class="main-right">
               <h3 class="tender-details-timer-title">
                 დარჩენილია
@@ -168,6 +251,14 @@
                 <li>
                   <a href="">
                     <div class="tender-details-section-info-cion">
+                      <img src="img/globe.svg" />
+                    </div>
+                    https://Microsoft.com
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <div class="tender-details-section-info-cion">
                       <img src="img/ring.svg" />
                     </div>
                     შეტყობინების გაგზავნა
@@ -185,7 +276,7 @@
             </section>
           </div>
 
-          <div class="content">
+          <div class="content less-padded">
             <section class="main-right">
               <h3 class="tender-details-section-title">
                 მსგავსი ტენდერები
