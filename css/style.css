@@ -715,13 +715,12 @@ header {
 }
 .main-right {
   width: 100%;
-  float: left;
 }
 .main-right-title {
   width: 100%;
   font-weight: 500;
   letter-spacing: 0;
-  color: #141b3d;
+  color: var(--color-dark);
   font-size: 12px;
   margin-bottom: 18px;
 }
@@ -1691,6 +1690,9 @@ header {
     width: 80px;
   }
   .content {
+    padding: 15px;
+  }
+  .content.less-padded {
     padding: 15px;
   }
   .menu ul li {
