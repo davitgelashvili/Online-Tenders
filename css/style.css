@@ -1911,4 +1911,11 @@ header {
   .add-tender-header-item {
     padding: 6px;
   }
+  .add-tender-field span {
+    max-width: 140px;
+    margin-right: 20px;
+  }
+  .hide-on-md {
+    display: none;
+  }
 }
