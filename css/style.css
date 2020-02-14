@@ -30,13 +30,13 @@ input,
 button {
   outline: none;
 }
-.input-chackbox {
+.input-checkbox {
   display: flex;
 }
-.input-chackbox > input {
+.input-checkbox > input {
   display: none;
 }
-.input-chackbox > input + .checkmark {
+.input-checkbox > input + .checkmark {
   background: var(--color-white-1);
   border: 2px solid #d9d9d9;
   border-radius: 4px;
@@ -46,11 +46,11 @@ button {
   display: block;
   float: left;
 }
-.input-chackbox > input + .checkmark i {
+.input-checkbox > input + .checkmark i {
   display: none;
 }
-.input-chackbox > input:checked + .checkmark {
-  background: #0fb7ff 0% 0% no-repeat padding-box;
+.input-checkbox > input:checked + .checkmark {
+  background: var(--color-main-1) 0% 0% no-repeat padding-box;
   border: none;
   border-radius: 4;
   width: 12px;
@@ -59,36 +59,36 @@ button {
   align-items: center;
   justify-content: center;
 }
-.input-chackbox > input:checked + .checkmark i {
+.input-checkbox > input:checked + .checkmark i {
   display: block;
   color: var(--color-white-1);
   font-size: 7px;
 }
 
-.input-chackbox > input + .checkmark-radio {
+.input-checkbox > input + .checkmark-radio {
   width: 10px;
   height: 10px;
-  background: #ffffff 0% 0% no-repeat padding-box;
-  border: 2px solid #acacaf;
+  background: var(--color-white-1) 0% 0% no-repeat padding-box;
+  border: 2px solid var(--color-gray-1);
   border-radius: 50%;
   position: relative;
   display: block;
   float: left;
 }
-.input-chackbox > input + .checkmark-radio i {
+.input-checkbox > input + .checkmark-radio i {
   display: none;
 }
-.input-chackbox > input:checked + .checkmark-radio {
+.input-checkbox > input:checked + .checkmark-radio {
   width: 10px;
   height: 10px;
-  background: #0fb7ff 0% 0% no-repeat padding-box;
-  border: 2px solid #0fb7ff;
+  background: var(--color-main-1) 0% 0% no-repeat padding-box;
+  border: 2px solid var(--color-main-1);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.input-chackbox > input:checked + .checkmark-radio i {
+.input-checkbox > input:checked + .checkmark-radio i {
   display: block;
   color: var(--color-white-1);
   font-size: 7px;
@@ -1173,18 +1173,17 @@ header {
 
 /* add tender page  */
 .add-tender-form {
-  float: left;
   width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 .add-tender-page {
   width: 100%;
 }
 .add-tender-page-title {
-  width: 100%;
-  font-weight: 700;
-  letter-spacing: 0;
-  color: #141b3d;
+  color: var(--color-dark);
   font-size: 23px;
+  font-weight: 700;
 }
 .add-tender-header {
   display: flex;
@@ -1252,26 +1251,21 @@ header {
   -webkit-clip-path: polygon(0 1%, 100% 0, 100% 99%, 0 100%, 100% 50%);
   clip-path: polygon(0 1%, 100% 0, 100% 99%, 0 100%, 100% 50%);
 }
-.add-tender-name {
+.add-tender-name,
+.add-tender-description {
   width: 100%;
   margin-bottom: 25px;
-  float: left;
 }
 .add-tender-name p,
 .add-tender-description p {
   margin-bottom: 12px;
-  font-weight: 500;
-  letter-spacing: 0;
-  color: #141b3d;
+  color: var(--color-dark);
   font-size: 12px;
+  font-weight: 500;
 }
 .add-tender-name input {
   width: 100%;
   padding: 15px;
-}
-.add-tender-description {
-  width: 100%;
-  float: left;
 }
 .add-tender-description textarea {
   width: 100%;
@@ -1281,75 +1275,61 @@ header {
   padding: 15px;
   outline: none;
 }
-.add-tender-type {
+.add-tender-field {
+  margin-bottom: 20px;
   display: flex;
+  align-items: center;
+  width: 100%;
 }
-.add-tender-type label {
+.add-tender-field label {
   display: flex;
   align-items: center;
 }
-.add-tender-type label div {
+.add-tender-field label div {
   margin-right: 5px;
 }
-.add-tender-type label p {
-  font-weight: 400;
-  letter-spacing: 0;
-  color: #141b3d;
-  font-size: 12px;
+.add-tender-field label p {
   margin-right: 18px;
-}
-
-.add-tender-type,
-.add-tender-mails,
-.add-tender-dedlain,
-.add-tender-start {
-  display: flex;
-  align-items: center;
-  margin: 20px 0;
-  width: 100%;
-  float: left;
-}
-
-.add-tender-type span,
-.add-tender-mails span,
-.add-tender-dedlain span,
-.add-tender-start span {
-  width: 100%;
-  max-width: 250px;
-  font-weight: 500;
-  letter-spacing: 0;
-  color: #141b3d;
+  color: var(--color-dark);
   font-size: 12px;
-  margin-right: 54px;
+  font-weight: 400;
 }
-
-.add-tender-type input,
-.add-tender-mails input,
-.add-tender-dedlain input,
-.add-tender-start input {
+.add-tender-field span,
+.field-label {
+  margin-right: 54px;
+  max-width: 250px;
+  width: 100%;
+  color: var(--color-dark);
+  font-size: 12px;
+  font-weight: 500;
+}
+.add-tender-field input {
   padding: 12px 23px;
 }
-
-.add-tender-mails input {
+.input-fullw {
   width: 100%;
 }
+.add-tender-cta {
+  margin: 30px 0;
+  display: flex;
+  justify-content: flex-end;
+}
+.add-tender-ctas {
+  margin: 30px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .add-tender-btn {
-  background: #32b4d7 0% 0% no-repeat padding-box;
-  border-radius: 6px;
-  padding: 16px 47px;
+  padding: 16px 25px;
   color: var(--color-white-1);
   font-size: 12px;
   font-weight: 900;
-  letter-spacing: 0.36px;
+  letter-spacing: 0.3px;
   border: none;
-  float: right;
-  margin: 30px 0;
+  border-radius: 6px;
+  background: var(--color-main-2) 0% 0% no-repeat padding-box;
   cursor: pointer;
-}
-.add-tender-dedlain input,
-.add-tender-start input {
-  max-width: 277px;
-  width: 100%;
 }
 .add-tender-upload-content {
   display: flex;
@@ -1359,7 +1339,7 @@ header {
   margin-bottom: 53px;
 }
 .add-tender-upload {
-  background: #0fb7ff 0% 0% no-repeat padding-box;
+  background: var(--color-main-1) 0% 0% no-repeat padding-box;
   border-radius: 52px;
   cursor: pointer;
 }
@@ -1413,7 +1393,11 @@ header {
   padding: 13px 27px;
 }
 .add-tender-category-list-check span {
+  margin-top: 3px;
   width: fit-content;
+  color: var(--color-dark);
+  font-size: 13px;
+  font-weight: 400;
 }
 .add-tender-category-list-check:nth-of-type(2n + 2) {
   background: #f9f9f9;
@@ -1426,32 +1410,36 @@ header {
 }
 .add-tender-category-header {
   padding: 20px 25px;
-  background: #f6f7f9;
+  background: var(--color-white-2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.add-tender-category-header label {
+  color: var(--color-dark);
+  font-size: 12px;
+  font-weight: 500;
 }
 .search-name-or-cpv {
-  height: 37px;
   margin-left: 35px;
+  padding: 15px;
 }
 .tender-back-btn {
-  background: #9da9b4 0% 0% no-repeat padding-box;
-  border-radius: 6px;
-  padding: 16px 47px;
+  padding: 16px 25px;
   color: var(--color-white-1);
-  font-weight: 900;
-  letter-spacing: 0.36px;
   font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.3px;
+  background: #9da9b4 0% 0% no-repeat padding-box;
   border: none;
-  float: left;
-  margin: 30px 0;
+  border-radius: 6px;
   cursor: pointer;
 }
 .add-tender-category-title {
-  font-weight: 500;
-  letter-spacing: 0;
-  color: #141b3d;
+  margin-bottom: 10px;
+  color: var(--color-dark);
   font-size: 12px;
-  width: 100%;
-  float: left;
+  font-weight: 500;
 }
 
 .add-tender-uploaded-section {
@@ -1491,7 +1479,7 @@ header {
   display: flex;
 }
 .company-add-input {
-  height: 48px;
+  padding: 15px;
   width: 100%;
   margin: 12px 0 25px 0;
 }
@@ -1828,12 +1816,6 @@ header {
   .person-info-input {
     margin-bottom: 20px;
   }
-  .add-tender-btn {
-    margin: 20px 0 30px 0;
-  }
-  /* .person-info-menu li {
-    margin-bottom: 0 !important;
-  } */
 }
 @media (max-width: 767px) {
   .list-item-right {
@@ -1914,5 +1896,19 @@ header {
   }
   .tender-details-tab-header-item {
     border-bottom-color: var(--color-gray-4);
+  }
+  .add-tender-category-header {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .add-tender-category-header label {
+    margin-bottom: 10px;
+  }
+  .search-name-or-cpv {
+    margin: 0;
+  }
+  .add-tender-header-item {
+    padding: 6px;
   }
 }

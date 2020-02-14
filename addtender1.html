@@ -26,8 +26,7 @@
             <ul>
               <li>
                 <a href="" class="logo">
-                  <h1>Tenders</h1>
-                  <p>BETA</p>
+                  <img src="img/logo.png" alt="TENDERS.GE" />
                 </a>
               </li>
             </ul>
@@ -37,10 +36,16 @@
                 <li><a href="">გამოწერა</a></li>
                 <li><a href="">კონტაქტი</a></li>
                 <li><a href="">კითხვები</a></li>
+                <li><a href="" class="text-accented">დეშბორდი</a></li>
               </ul>
             </div>
           </div>
           <div class="header-right">
+            <div class="header-favorites">
+              <a href="#">
+                <img src="img/star-2.svg" alt="favorites" />
+              </a>
+            </div>
             <div class="user-container">
               <div class="user-container-item">
                 <div class="user-avatar">
@@ -56,8 +61,23 @@
               <li><a href="">გამოცხადება</a></li>
             </ul>
             <ul class="lang">
-              <li><a href="">ENG</a></li>
+              <li>
+                <a href=""><img src="img/eng.png"/></a>
+              </li>
             </ul>
+            <div class="mob-menu">
+              <button class="mob-menu-icon"><i class="fas fa-bars"></i></button>
+              <div class="mob-menu-bg"></div>
+              <ul>
+                <button class="mob-menu-close">
+                  <i class="fas fa-times"></i>
+                </button>
+                <li><a href="">შესყიდვის პროცესი</a></li>
+                <li><a href="">გამოწერა</a></li>
+                <li><a href="">კონტაქტი</a></li>
+                <li><a href="">კითხვები</a></li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -100,51 +120,77 @@
                   <p>ტენდერის დასახელება</p>
                   <textarea class="input-text"></textarea>
                 </label>
-                <div class="add-tender-type">
+                <div class="add-tender-field">
                   <span>ტენდერის ტიპი</span>
-                  <label class="input-chackbox">
-                    <input type="radio" />
+                  <label class="input-checkbox">
+                    <input type="checkbox" name="tender-type" />
                     <div class="checkmark-radio">
                       <i class="fas fa-check"></i>
                     </div>
                     <p>განცხადება</p>
                   </label>
-                  <label class="input-chackbox">
-                    <input type="radio" />
+                  <label class="input-checkbox">
+                    <input type="checkbox" name="e-tender" />
                     <div class="checkmark-radio">
                       <i class="fas fa-check"></i>
                     </div>
                     <p>ელ.ტენდერი</p>
                   </label>
                 </div>
-                <div class="add-tender-mails">
-                  <span
+                <div class="add-tender-field">
+                  <span>შეკითხვების მოდული</span>
+                  <label class="input-checkbox">
+                    <input type="checkbox" name="questions-module" />
+                    <div class="checkmark-radio">
+                      <i class="fas fa-check"></i>
+                    </div>
+                    <p>კი</p>
+                  </label>
+                  <label class="input-checkbox">
+                    <input type="checkbox" name="questions-module" />
+                    <div class="checkmark-radio">
+                      <i class="fas fa-check"></i>
+                    </div>
+                    <p>არა</p>
+                  </label>
+                </div>
+                <div class="add-tender-field">
+                  <label class="field-label" for="subscription-emails"
                     >შეტყობინების მიღება ტენდერში დასმულ შეკითხვებთან
                     დაკავშირებით (Emails)
-                  </span>
+                  </label>
                   <input
                     type="text"
                     placeholder="ელ.ფოსტები გამოყავით მძიმეები"
-                    class="input-text"
+                    class="input-text input-fullw"
+                    id="subscription-emails"
                   />
                 </div>
-                <div class="add-tender-dedlain">
-                  <span>წინადადების მიღება მთავრდება</span>
+                <div class="add-tender-field">
+                  <label class="field-label" for="dealine-date"
+                    >წინადადების მიღება მთავრდება</label
+                  >
                   <input
                     type="text"
                     placeholder="20 აგვისტო 2019, 10:00"
                     class="input-text"
+                    id="dealine-date"
                   />
                 </div>
-                <div class="add-tender-start">
-                  <span>წინადადების მიღება იწყება</span>
+                <div class="add-tender-field">
+                  <label class="field-label" for="begin-date"
+                    >წინადადების მიღება იწყება</label
+                  >
                   <input
                     type="text"
                     placeholder="20 აგვისტო 2019, 10:00"
                     class="input-text"
+                    id="begin-date"
                   />
                 </div>
-                <button class="add-tender-btn">ტენდერის დამატება</button>
+                <div class="add-tender-cta">
+                  <button class="add-tender-btn">ტენდერის დამატება</button>
+                </div>
               </form>
             </div>
           </div>
