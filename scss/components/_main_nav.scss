@@ -1,0 +1,36 @@
+.main_nav {
+  margin-left: 38px;
+
+  @media (max-width: 991px) {
+    display: none;
+  }
+
+  ul {
+    display: flex;
+  }
+
+  li {
+    &:not(:last-child) {
+      margin-right: 20px;
+
+      @media (max-width: 1250px) {
+        margin-right: 15px;
+      }
+    }
+  }
+
+  a {
+    &:link,
+    &:visited {
+      color: var(--color-dark);
+      font-family: "FiraGO", sans-serif;
+      font-size: 12px;
+      font-weight: 400;
+
+      &.accented {
+        color: var(--color-main-1);
+        font-weight: 500;
+      }
+    }
+  }
+}

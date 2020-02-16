@@ -1,0 +1,32 @@
+.site-logo {
+  img {
+    width: 200px;
+    object-fit: cover;
+
+    @media (max-width: 1250px) {
+      width: 80px;
+    }
+  }
+}
+.logo h1 {
+  font-family: "FiraGO", sans-serif;
+  font-size: 23px;
+  letter-spacing: 1.76px;
+  color: #141b3d;
+}
+
+.logo p {
+  width: 27px;
+  height: 14px;
+  background: var(--color-main-1);
+  border-radius: 7px;
+  color: var(--color-white-1);
+  font-family: "FiraGO", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: -12px;
+  right: 0;
+  font-size: 7px;
+}

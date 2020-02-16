@@ -10,20 +10,20 @@ $(".tender-details-tab-header-item").click(function() {
   }
 });
 
-$(".mob-menu-icon").click(function() {
-  $(".mob-menu ul").css({
+$(".mobile-nav__icon").click(function() {
+  $(".mobile-nav ul").css({
     width: "265px",
     display: "block"
   });
-  $(".mob-menu-bg").css("display", "block");
+  $(".mobile-nav__bg").css("display", "block");
 });
 
-$(".mob-menu-close, .mob-menu-bg").click(function() {
-  $(".mob-menu ul").css({
+$(".mobile-nav__close, .mobile-nav__bg").click(function() {
+  $(".mobile-nav ul").css({
     width: "0%",
     display: "none"
   });
-  $(".mob-menu-bg").css("display", "none");
+  $(".mobile-nav__bg").css("display", "none");
 });
 
 // Toggle switch function when span is clicked
@@ -34,3 +34,14 @@ $(".toggle-switch-code").click(() => {
   $("#toggleSwitch").prop("checked", true);
 });
 
+// Modal
+$(".modal__close").click(function() {
+  $(".modal").css("display", "none");
+});
+
+// მოდალის გარეთ დაკლიკებაზე დახურვა
+$(document).click(function(e) {
+  if (!$(e.target).closest(".modal__content").length > 0) {
+    $(".modal").css("display", "none");
+  }
+});
