@@ -143,6 +143,10 @@ body {
 }
 .table-head-title p:nth-of-type(1) {
   margin-right: 68px;
+
+  @media (max-width: 991px) {
+    margin-right: 20px;
+  }
 }
 
 .main-right {
