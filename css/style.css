@@ -4501,11 +4501,13 @@ img {
 }
 
 .header {
+  position: relative;
   background: var(--color-white-1);
   width: 100%;
   display: block;
   margin-bottom: 23px;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.16);
+  z-index: 20;
 }
 .header__content {
   display: flex;
@@ -4535,8 +4537,8 @@ img {
 }
 .header__user__dropdown {
   position: absolute;
-  top: 72px;
-  left: 0;
+  top: -24px;
+  right: 180px;
   width: 234px;
   padding: 24px 20px;
   background: var(--color-white-1);
@@ -4546,6 +4548,19 @@ img {
   box-shadow: 0 22px 32px rgba(0, 0, 0, 0.2);
   z-index: 10;
   display: none;
+}
+.header__user__dropdown.active {
+  display: block;
+}
+@media (max-width: 1225px) {
+  .header__user__dropdown {
+    right: 120px;
+  }
+}
+@media (max-width: 991px) {
+  .header__user__dropdown {
+    right: 15px;
+  }
 }
 .header__user__dropdown li:not(:last-child) {
   margin-bottom: 20px;
