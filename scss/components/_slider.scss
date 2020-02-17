@@ -1,0 +1,115 @@
+.header-slider {
+  position: relative;
+  max-height: 346px;
+  height: 100vw;
+  background: #3080d7;
+  border-radius: 16px;
+  margin: 23px 0;
+  width: 100%;
+  display: inline-block;
+  overflow: hidden;
+}
+.header-slider::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background: url("../img/slider-bg.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  z-index: 1;
+}
+
+.slide-item {
+  position: relative;
+  display: flex;
+  /* background: #3080d7; */
+  border-radius: 16px;
+  overflow: hidden;
+}
+.slider-content {
+  width: 50%;
+  margin-top: 65px;
+  margin-left: 70px;
+}
+.slider-content-title {
+  letter-spacing: 0;
+  color: var(--color-white-1);
+  font-size: 27px;
+  line-height: 1.4;
+  width: 397px;
+  margin-bottom: 21px;
+  font-weight: 700;
+}
+.slider-content-description {
+  letter-spacing: 0;
+  color: var(--color-white-1);
+  font-size: 15px;
+  line-height: 1.5;
+  width: 443px;
+  font-weight: 300;
+}
+.slider-content-link {
+  width: 139px;
+  height: 48px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+  margin-top: 39px;
+}
+.slider-content-link a {
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: 0;
+  color: var(--color-white-1);
+  width: 100%;
+  display: block;
+  line-height: 48px;
+  font-size: 12px;
+}
+
+.slider-img {
+}
+.owl-carousel,
+.owl-stage-outer,
+.header-slider .owl-stage {
+  height: 100%;
+}
+.owl-theme .owl-nav {
+  margin-top: 0;
+}
+.owl-nav .owl-prev i,
+.owl-nav .owl-next i {
+  font-size: 16px;
+}
+.header-slider .owl-carousel .owl-nav button.owl-next {
+  right: 30px;
+}
+.header-slider .owl-carousel .owl-nav button.owl-prev {
+  left: 30px;
+}
+.header-slider .owl-carousel .owl-nav button.owl-next,
+.header-slider .owl-carousel .owl-nav button.owl-prev {
+  display: none;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  width: 57px;
+  height: 56px;
+  background: rgba(255, 255, 255, 0.2) 0% 0% no-repeat padding-box;
+  opacity: 1;
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  border: none;
+  border-radius: 50%;
+  color: var(--color-white-1);
+  cursor: pointer;
+}
+.header-slider:hover .owl-carousel .owl-nav button.owl-next,
+.header-slider:hover .owl-carousel .owl-nav button.owl-prev {
+  display: block;
+}
+.header-slider .owl-carousel .owl-nav button.owl-prev {
+  display: none !important;
+}

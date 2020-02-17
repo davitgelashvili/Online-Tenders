@@ -18,80 +18,69 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header class="header">
+    <header>
       <div class="container">
-        <div class="header__content">
-          <div class="header__left">
-            <div class="site-logo">
-              <a href="/">
-                <img src="img/logo.png" alt="TENDERS.GE" />
-              </a>
-              <h1 class="sr-only">tenders.ge</h1>
-            </div>
-            <!-- end .site-logo -->
-            <nav class="main_nav">
-              <h2 class="sr-only">ნავიგაცია</h2>
+        <div class="header-item">
+          <div class="header-left">
+            <ul>
+              <li>
+                <a href="" class="logo">
+                  <img src="img/logo.png" alt="TENDERS.GE" />
+                </a>
+              </li>
+            </ul>
+            <div class="menu">
               <ul>
                 <li><a href="">შესყიდვის პროცესი</a></li>
                 <li><a href="">გამოწერა</a></li>
                 <li><a href="">კონტაქტი</a></li>
                 <li><a href="">კითხვები</a></li>
-                <li><a href="" class="accented">დეშბორდი</a></li>
+                <li><a href="" class="text-accented">დეშბორდი</a></li>
               </ul>
-            </nav>
+            </div>
           </div>
-          <!-- end .header__left -->
-          <div class="header__right">
-            <div class="header__favorites">
+          <div class="header-right">
+            <div class="header-favorites">
               <a href="#">
-                <i class="far fa-star"></i>
+                <img src="img/star-2.svg" alt="favorites" />
               </a>
             </div>
-            <!-- User -->
-            <div class="header__user">
-              <figure class="header__user__avatar">
-                <img
-                  src="https://static.thenounproject.com/png/363640-200.png"
-                  alt="User Avatar"
-                />
-              </figure>
-              <p>ანგარიში</p>
-              <span><i class="fas fa-angle-down"></i></span>
+            <div class="user-container">
+              <div class="user-container-item">
+                <div class="user-avatar">
+                  <img
+                    src="https://static.thenounproject.com/png/363640-200.png"
+                  />
+                </div>
+                <p>ანგარიში</p>
+                <span><i class="fas fa-angle-down"></i></span>
+              </div>
             </div>
-            <!-- end .header__user -->
-            <a href="#" class="header__announce">გამოცხადება</a>
-            <!-- Language -->
-            <ul class="header__lang">
+            <ul class="revelation">
+              <li><a href="">გამოცხადება</a></li>
+            </ul>
+            <ul class="lang">
               <li>
-                <a href="#"><img src="img/eng.png"/></a>
+                <a href=""><img src="img/eng.png"/></a>
               </li>
             </ul>
-            <!-- Mobile Navigation -->
-            <div class="mobile-nav">
-              <button class="mobile-nav__icon">
-                <i class="fas fa-bars"></i>
-              </button>
-              <div class="mobile-nav__bg"></div>
-              <nav>
-                <ul>
-                  <button class="mobile-nav__close">
-                    <i class="fas fa-times"></i>
-                  </button>
-                  <li><a href="">შესყიდვის პროცესი</a></li>
-                  <li><a href="">გამოწერა</a></li>
-                  <li><a href="">კონტაქტი</a></li>
-                  <li><a href="">კითხვები</a></li>
-                </ul>
-              </nav>
+            <div class="mob-menu">
+              <button class="mob-menu-icon"><i class="fas fa-bars"></i></button>
+              <div class="mob-menu-bg"></div>
+              <ul>
+                <button class="mob-menu-close">
+                  <i class="fas fa-times"></i>
+                </button>
+                <li><a href="">შესყიდვის პროცესი</a></li>
+                <li><a href="">გამოწერა</a></li>
+                <li><a href="">კონტაქტი</a></li>
+                <li><a href="">კითხვები</a></li>
+              </ul>
             </div>
           </div>
-          <!-- end .header__right -->
         </div>
-        <!-- end .header__content -->
       </div>
-      <!-- end .container -->
     </header>
-
     <div class="container">
       <div class="header-footer">
         <ul class="back-link">
@@ -132,14 +121,11 @@
             </h1>
             <div class="tender-details-tab">
               <div class="tender-details-tab-header">
-                <div
-                  class="tender-details-tab-header-item active"
-                  data-tab="tab-desc"
-                >
+                <div class="tender-details-tab-header-item" data-tab="tab-desc">
                   აღწერა
                 </div>
                 <div
-                  class="tender-details-tab-header-item text-accented"
+                  class="tender-details-tab-header-item text-accented active"
                   data-tab="tab-questions"
                 >
                   შეკითხვები
@@ -164,7 +150,7 @@
                 </div>
               </div>
               <div class="tender-details-tab-body">
-                <div class="tab-content tab-desc tab-active">
+                <div class="tab-content tab-desc">
                   <h3>ტენდერის აღწერილობა:</h3>
                   <p>
                     შპს „კავკასუს ონლაინი“ აცხადებს ტენდერს სათაო ოფისის (მის.:
@@ -192,32 +178,60 @@
                     ოქტომბერს 15:00 სთ-ზე);ტენდერში გამარჯვებულისთვის
                     შეტყობინება: არაუგვიანეს ა.წ. 18 ოქტომბრის 18:00 სთ-
                   </p>
-
-                  <div class="tender-details-documentation">
-                    <h1 class="tender-details-documentation-title">
-                      დოცუმენტაცია
-                    </h1>
-                    <div class="tender-details-document-content">
-                      <div class="tender-details-document">
-                        <div class="tender-details-document-icon">
-                          <img src="img/pdf.svg" />
+                </div>
+                <div class="tab-content tab-questions tab-active">
+                  <div class="questions-container">
+                    <header class="questions-header">
+                      <h3 class="questions-title">შეკითხვები</h3>
+                    </header>
+                    <div class="questions-content">
+                      <div class="questions-operator">
+                        <div class="operator-info">
+                          <span class="operator">T</span>
+                          <span class="timestamp">13:40</span>
                         </div>
-                        <span>documentation.pdf</span>
+                        <div class="message-body">
+                          <p>
+                            გამარჯობა ალექსანდრე, გთხოვთ დაგვიდასტუროთ ჩარიცხვა
+                          </p>
+                        </div>
                       </div>
-                      <div class="tender-details-document">
-                        <div class="tender-details-document-icon">
-                          <img src="img/pdf.svg" />
+                      <div class="questions-user">
+                        <div class="user-info">
+                          <span class="user">A</span>
+                          <span class="timestamp">13:40</span>
+                          <button class="delete-question">წაშლა</button>
                         </div>
-                        <span>documentation.pdf</span>
+                        <div class="message-body">
+                          <p>
+                            გამარჯობა, გიგზავნით ჩარიცხვის ჩეკებს და ასევე
+                            ინვოისის ნომერს რათა მოხდეს ბანკში ადვილად
+                            გადამოწმება
+                          </p>
+                        </div>
+                      </div>
+                      <div class="questions-operator">
+                        <div class="operator-info">
+                          <span class="operator">T</span>
+                          <span class="timestamp">13:40</span>
+                        </div>
+                        <div class="message-body">
+                          <p>
+                            ძალიან კარგია, მადლობა !
+                          </p>
+                        </div>
                       </div>
                     </div>
-                    <button class="tender-details-document-download">
-                      <img src="img/download.svg" /> ყველას ჩამოტვირთვა
-                    </button>
+                    <form action="#" class="questions-form">
+                      <div class="questions-field">
+                        <textarea
+                          name="message"
+                          placeholder="შეიყვანეთ შეტყობინება"
+                        ></textarea>
+                        <button type="submit">გაგზავნა</button>
+                      </div>
+                    </form>
                   </div>
-                </div>
-                <div class="tab-content tab-questions">
-                  <h3>შეკითხვები</h3>
                 </div>
                 <div class="tab-content tab-offer">
                   <h3>შეთავაზება</h3>
@@ -228,6 +242,26 @@
                 <div class="tab-content tab-specify">
                   <h3>დაზუსტება</h3>
                 </div>
+              </div>
+              <div class="tender-details-documentation">
+                <h1 class="tender-details-documentation-title">დოცუმენტაცია</h1>
+                <div class="tender-details-document-content">
+                  <div class="tender-details-document">
+                    <div class="tender-details-document-icon">
+                      <img src="img/pdf.svg" />
+                    </div>
+                    <span>documentation.pdf</span>
+                  </div>
+                  <div class="tender-details-document">
+                    <div class="tender-details-document-icon">
+                      <img src="img/pdf.svg" />
+                    </div>
+                    <span>documentation.pdf</span>
+                  </div>
+                </div>
+                <button class="tender-details-document-download">
+                  <img src="img/download.svg" /> ყველას ჩამოტვირთვა
+                </button>
               </div>
             </div>
           </div>

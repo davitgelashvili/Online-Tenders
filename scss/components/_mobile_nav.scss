@@ -1,0 +1,58 @@
+.mobile-nav {
+  display: none;
+
+  @media (max-width: 991px) {
+    display: block;
+  }
+
+  &__icon {
+    background: none;
+    border: none;
+    color: var(--color-dark);
+    margin-left: 22px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+
+  &__close {
+    border: none;
+    background: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    cursor: pointer;
+  }
+
+  ul {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: var(--color-white-1);
+    width: 0%;
+    height: 100%;
+    transition: 0.3s;
+    z-index: 9;
+    display: none;
+
+    li {
+      padding: 10px 30px;
+
+      a {
+        color: var(--color-dark);
+        font-family: "FiraGO", sans-serif;
+        font-size: 12px;
+        font-weight: 400;
+      }
+    }
+  }
+
+  &__bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 8;
+    background-color: #00000073;
+    display: none;
+  }
+}
