@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* @import url("https://free.bboxtype.com/embedfonts/?family=FiraGO:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,900,900i"); */
 /* Variables */
 :root {
@@ -4988,6 +4989,84 @@ img {
   font-family: inherit;
   cursor: pointer;
 }
+.modal__title {
+  margin-bottom: 40px;
+  color: #2d3e4d;
+  font-size: 28px;
+  font-weight: 900;
+  text-align: center;
+}
+.modal__tagline {
+  color: #2d3e4d;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  margin-top: -32px;
+  margin-bottom: 32px !important;
+}
+.modal label {
+  position: relative;
+}
+.modal input[type=email],
+.modal input[type=password] {
+  width: 100%;
+  height: 48px;
+  padding: 0 10px;
+  font-family: "FiraGO", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  border: 1px solid #dadde2;
+  border-radius: 8px;
+}
+.modal input[type=email]::placeholder,
+.modal input[type=password]::placeholder {
+  font-family: "FiraGO", sans-serif;
+}
+.modal .verify {
+  position: absolute;
+  bottom: 12px;
+  right: 20px;
+}
+.modal .verify.verified::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  color: #03af5c;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+.modal .verify.error::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  color: #f1616f;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+.modal__ctas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.modal__ctas p {
+  font-size: 12px;
+  font-weight: 400;
+}
+.modal__ctas a {
+  color: #03af5c;
+  font-weight: 600;
+  text-decoration: underline;
+}
+.modal__ctas button {
+  align-self: center;
+  margin-bottom: 22px;
+}
 
 .file-upload-input label {
   padding: 15px;
@@ -5674,6 +5753,97 @@ img {
   border: none;
   border-radius: 6px;
   background: var(--color-main-2);
+  cursor: pointer;
+}
+
+.change-password {
+  width: 100%;
+  padding: 80px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #e9ecf2;
+  border-radius: 8px;
+  background: var(--color-white-1);
+}
+@media only screen and (max-width: 568px) {
+  .change-password {
+    padding: 40px 0;
+  }
+}
+.change-password .form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 368px;
+}
+@media only screen and (max-width: 568px) {
+  .change-password .form {
+    max-width: 90%;
+  }
+}
+.change-password .form__header {
+  margin-bottom: 46px;
+}
+@media only screen and (max-width: 568px) {
+  .change-password .form__header {
+    margin-bottom: 30px;
+  }
+}
+.change-password .form__title {
+  color: #2d3e4d;
+  font-size: 28px;
+  font-weight: 900;
+  text-align: center;
+}
+@media only screen and (max-width: 568px) {
+  .change-password .form__title {
+    font-size: 22px;
+  }
+}
+.change-password .form__tagline {
+  margin-top: 16px;
+  color: #2d3e4d;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+}
+@media only screen and (max-width: 568px) {
+  .change-password .form__tagline {
+    font-size: 14px;
+  }
+}
+.change-password .form label {
+  margin-bottom: 25px;
+}
+.change-password .form label p {
+  margin-bottom: 12px;
+}
+.change-password .form input[type=password] {
+  width: 100%;
+  max-width: 368px;
+  height: 48px;
+  padding: 0 10px;
+  font-family: "FiraGO", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  border: 1px solid #dadde2;
+  border-radius: 8px;
+}
+.change-password .form input[type=password]::placeholder {
+  font-family: "FiraGO", sans-serif;
+}
+.change-password .form button {
+  width: 100%;
+  height: 50px;
+  max-width: 368px;
+  color: var(--color-white-1);
+  font-family: "FiraGO", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  border: none;
+  border-radius: 8px;
+  background: #32b4d7;
   cursor: pointer;
 }
 
