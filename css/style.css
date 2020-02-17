@@ -5756,7 +5756,166 @@ img {
   cursor: pointer;
 }
 
+.register {
+  margin-bottom: 40px;
+  width: 100%;
+  padding: 80px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #e9ecf2;
+  border-radius: 8px;
+  background: var(--color-white-1);
+}
+@media only screen and (max-width: 568px) {
+  .register .form {
+    margin-bottom: 30px;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+}
+.register .form__header {
+  margin-bottom: 46px;
+}
+.register .form__title {
+  color: #2d3e4d;
+  font-size: 28px;
+  font-weight: 900;
+  text-align: center;
+}
+@media only screen and (max-width: 568px) {
+  .register .form__title {
+    font-size: 23px;
+    font-weight: 500;
+  }
+}
+.register .form__section {
+  margin-bottom: 40px;
+}
+@media only screen and (max-width: 568px) {
+  .register .form__section {
+    margin-bottom: 30px;
+  }
+}
+.register .form__section__title {
+  text-align: center;
+  position: relative;
+  margin-bottom: 40px;
+}
+.register .form__section__title span {
+  position: relative;
+  padding: 0 14px;
+  color: #707070;
+  font-size: 14px;
+  font-weight: 500;
+  background: var(--color-white-1);
+  z-index: 2;
+}
+.register .form__section__title::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50px;
+  transform: translateY(-50%);
+  width: 448px;
+  height: 1px;
+  background: #e5e7ea;
+}
+@media only screen and (max-width: 768px) {
+  .register .form__section__title::before {
+    width: 90%;
+    left: 20px;
+  }
+}
+.register .form__field {
+  position: relative;
+  margin-bottom: 14px;
+  display: grid;
+  grid-template-columns: 170px 368px;
+  column-gap: 30px;
+  align-items: center;
+}
+@media only screen and (max-width: 768px) {
+  .register .form__field {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+.register .form__field .verify {
+  position: absolute;
+  bottom: 12px;
+  right: 20px;
+}
+.register .form__field .verify.verified::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  color: #03af5c;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+.register .form__field .verify.error::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  color: #f1616f;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+.register .form label {
+  color: #141b3d;
+  font-size: 12px;
+  font-weight: 500;
+  text-align: right;
+}
+@media only screen and (max-width: 768px) {
+  .register .form label {
+    margin-bottom: 12px;
+  }
+}
+.register .form input,
+.register .form select,
+.register .form option {
+  width: 100%;
+  max-width: 368px;
+  height: 48px;
+  padding: 0 10px;
+  font-family: "FiraGO", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  border: 1px solid #dadde2;
+  border-radius: 8px;
+}
+.register .form input::placeholder,
+.register .form select::placeholder,
+.register .form option::placeholder {
+  font-family: "FiraGO", sans-serif;
+}
+.register .form button {
+  margin-left: auto;
+  display: block;
+  width: 100%;
+  height: 50px;
+  max-width: 368px;
+  color: var(--color-white-1);
+  font-family: "FiraGO", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  border: none;
+  border-radius: 8px;
+  background: #32b4d7;
+  cursor: pointer;
+}
+
 .change-password {
+  margin-bottom: 40px;
   width: 100%;
   padding: 80px 0;
   display: flex;
@@ -5798,7 +5957,8 @@ img {
 }
 @media only screen and (max-width: 568px) {
   .change-password .form__title {
-    font-size: 22px;
+    font-size: 23px;
+    font-weight: 500;
   }
 }
 .change-password .form__tagline {
