@@ -45,3 +45,7 @@ $(document).click(function(e) {
     $(".modal").css("display", "none");
   }
 });
+
+$(".header__user").click(function() {
+  $(".header__user__dropdown").toggleClass("active");
+});

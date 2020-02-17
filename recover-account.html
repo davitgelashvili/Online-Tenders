@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ka">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,7 +11,9 @@
     />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+      integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+      crossorigin="anonymous"
     />
     <link rel="stylesheet" href="css/owl.theme.default.css" />
     <link rel="stylesheet" href="css/owl.carousel.css" />
@@ -36,17 +38,11 @@
                 <li><a href="">გამოწერა</a></li>
                 <li><a href="">კონტაქტი</a></li>
                 <li><a href="">კითხვები</a></li>
-                <li><a href="" class="accented">დეშბორდი</a></li>
               </ul>
             </nav>
           </div>
           <!-- end .header__left -->
           <div class="header__right">
-            <div class="header__favorites">
-              <a href="#">
-                <i class="far fa-star"></i>
-              </a>
-            </div>
             <!-- User -->
             <div class="header__user">
               <figure class="header__user__avatar">
@@ -55,7 +51,7 @@
                   alt="User Avatar"
                 />
               </figure>
-              <p>ანგარიში</p>
+              <p>შესვლა</p>
               <span><i class="fas fa-angle-down"></i></span>
             </div>
             <!-- end .header__user -->
@@ -139,89 +135,33 @@
       </div>
     </div>
 
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <div class="content">
-            <div class="add-tender-page">
-              <h1 class="add-tender-page-title">ახალი ტენდერის დამატება</h1>
-              <div class="add-tender-header">
-                <div class="add-tender-header-item">
-                  <span>ზოგადი ინფორმაცია</span>
-                  <p>1</p>
-                </div>
-                <div class="add-tender-header-item">
-                  <span>კატეგორიები</span>
-                  <p>2</p>
-                </div>
-                <div class="add-tender-header-item active">
-                  <span>დოკუმენტები</span>
-                  <p>3</p>
-                </div>
-                <div class="add-tender-header-item">
-                  <span>დოკუმენტები</span>
-                  <p>4</p>
-                </div>
-                <div class="add-tender-header-item">
-                  <span>დოკუმენტები</span>
-                  <p>5</p>
-                </div>
-              </div>
-              <span class="add-tender-category-title">
-                ასატვირთი ფაილები
-              </span>
-              <form class="add-tender-form">
-                <div class="add-tender-upload-content">
-                  <div class="add-tender-uploaded">
-                    <div class="add-tender-uploaded-icon">
-                      <img src="img/pdf.svg" />
-                    </div>
-                    <span>Documentation.pdf</span>
-                  </div>
-                  <label class="add-tender-upload">
-                    <input class="file-input" type="file" name="resume" />
-                    <div><img src="img/download1.svg" /> ატვირთვა</div>
-                  </label>
-                </div>
-                <span class="add-tender-category-title">
-                  ატვირთული ფაილები
-                </span>
-                <div class="add-tender-uploaded-section">
-                  <div class="add-tender-uploaded-item">
-                    <div class="add-tender-uploaded-icon">
-                      <img src="img/pdf.svg" />
-                    </div>
-                    <span>Documentation.pdf</span>
-                    <div class="add-tender-uploaded-item-remove">
-                      <i class="fas fa-times"></i>
-                    </div>
-                  </div>
-                </div>
-                <div class="add-tender-ctas">
-                  <button class="tender-back-btn">უკან</button>
-                  <button class="add-tender-btn">გაგრძელება</button>
-                </div>
-              </form>
-            </div>
+    <div class="modal" style="display: flex;">
+      <div class="modal__content">
+        <button class="modal__close"><i class="fas fa-times"></i></button>
+
+        <form action="#" class="modal__file-upload">
+          <h3 class="modal__title">პაროლის აღდგენა</h3>
+          <p class="modal__tagline">შეიყვანეთ ელ.ფოსტა</p>
+          <label class="email">
+            <p>ელ. ფოსტა</p>
+            <input type="email" name="email" id="email" />
+            <span class="verify"></span>
+          </label>
+
+          <div class="modal__ctas">
+            <button type="submit">აღდგენა</button>
+            <p>
+              გაქვთ ანგარიში?
+              <a href="#" class="modal__sign-in-link">ავტორიზაცია</a>
+            </p>
           </div>
-          <!-- content end  -->
-        </div>
+        </form>
       </div>
     </div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/owl.carousel.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
-    <script>
-      const fileInput = document.querySelector(
-        ".add-tender-upload input[type=file]"
-      );
-      fileInput.onchange = () => {
-        if (fileInput.files.length > 0) {
-          const fileName = document.querySelector(".add-tender-uploaded span");
-          fileName.textContent = fileInput.files[0].name;
-        }
-      };
-    </script>
   </body>
 </html>

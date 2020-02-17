@@ -1,9 +1,11 @@
 .header {
+  position: relative;
   background: var(--color-white-1);
   width: 100%;
   display: block;
   margin-bottom: 23px;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.16);
+  z-index: 20;
 
   &__content {
     display: flex;
@@ -35,8 +37,8 @@
 
     &__dropdown {
       position: absolute;
-      top: 72px;
-      left: 0;
+      top: -24px;
+      right: 180px;
       width: 234px;
       padding: 24px 20px;
       background: var(--color-white-1);
@@ -47,6 +49,16 @@
       z-index: 10;
 
       display: none;
+
+      &.active {
+        display: block;
+      }
+      @media (max-width: 1225px) {
+        right: 120px;
+      }
+      @media (max-width: 991px) {
+        right: 15px;
+      }
 
       li {
         &:not(:last-child) {
