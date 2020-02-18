@@ -1,0 +1,77 @@
+.sign-in {
+
+    &__content {
+        margin-bottom: 40px;
+        min-width: 297px;
+        border-radius: 4px;
+        border: 1px solid #EFF1F4;
+        box-shadow: 0 3px 16px rgba(229,231,234,0.7);
+        overflow: hidden;
+
+        @media (max-width: 576px) {
+            min-width: 100%;
+        }
+    }
+
+    &__field {
+        position: relative;
+        height: 70px;
+
+        &:not(:last-child) {
+            border-bottom: 2px solid #EFF1F4;
+        }
+    }
+
+    &__email,
+    &__password {
+        position: absolute !important;
+        top: 10px;
+        left: 20px;
+        color: #9DA9B4;
+        font-family: "FiraGO", sans-serif;
+        font-size: 12px;
+        font-weight: 300;
+    }
+
+    input[type="email"],
+    input[type="password"] {
+        padding: 24px 20px 15px 20px;
+        height: 100%;
+        border: none;
+        border-radius: 0;
+        font-family: "FiraGO", sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    input[type="password"] {
+        padding-right: 80px;
+    }
+
+    button {
+        height: 50px;
+        width: 100%;
+        background: #32B4D7;
+        border: none;
+        border-radius: 8px;
+        color: var(--color-white-1);
+        font-family: "FiraGO", sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
+    }
+
+    &__recovery {
+        position: absolute;
+        right: 20px;
+        bottom: 30px;
+        color: #2D3E4D;
+        font-size: 12px;
+        font-weight: 300;
+        text-decoration: underline;
+    }
+
+    span.verify {
+        bottom: 20px;
+    }
+}

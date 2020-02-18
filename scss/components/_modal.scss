@@ -14,11 +14,14 @@
 
   &__content {
     position: relative;
-    padding: 44px 35px;
+    padding: 44px 50px;
     background: var(--color-white-1);
     border-radius: 16px;
-    max-width: 500px;
-    width: 100%;
+
+    @media (max-width: 576px) {
+      max-width: 90%;
+      padding: 20px 30px;
+    }
   }
 
   &__close {
