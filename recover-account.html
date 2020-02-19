@@ -139,14 +139,17 @@
       <div class="modal__content">
         <button class="modal__close"><i class="fas fa-times"></i></button>
 
-        <form action="#" class="modal__file-upload">
+        <form action="#" class="sign-in">
           <h3 class="modal__title">პაროლის აღდგენა</h3>
           <p class="modal__tagline">შეიყვანეთ ელ.ფოსტა</p>
-          <label class="email">
-            <p>ელ. ფოსტა</p>
-            <input type="email" name="email" id="email" />
-            <span class="verify"></span>
-          </label>
+          
+          <div class="sign-in__content">
+            <div class="sign-in__field">
+              <label for="email" class="sign-in__email">ელ. ფოსტა</label>
+              <input type="email" name="email" id="email" />
+              <span class="verify verified"></span>
+            </div>
+          </div>
 
           <div class="modal__ctas">
             <button type="submit">აღდგენა</button>
