@@ -5533,10 +5533,20 @@ form.questions-form {
   height: 48px;
   width: 258px;
   padding: 16px 70px 16px 22px;
+  color: #5d6367;
+  font-family: "FiraGO", sans-serif;
+  font-size: 14px;
+  font-weight: 300px;
   border: 1px solid #dadde2;
   border-right: none;
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
+}
+.offered-amount__form__field input::placeholder {
+  color: #5d6367;
+  font-family: "FiraGO", sans-serif;
+  font-size: 14px;
+  font-weight: 300px;
 }
 .offered-amount__form__field select {
   position: absolute;
