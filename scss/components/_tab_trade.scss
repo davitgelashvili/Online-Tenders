@@ -75,6 +75,7 @@
         }
       }
       td {
+        color: #2d3e4d;
         font-size: 14px;
         font-weight: 400;
         &:nth-child(1) {
@@ -144,6 +145,9 @@
         }
       }
       th {
+        color: #55646f;
+        font-size: 13px;
+        font-weight: 500;
         text-align: left;
         &:nth-child(1) {
           padding: 18px 20px 18px 18px;
@@ -163,6 +167,9 @@
         }
       }
       td {
+        color: #2d3e4d;
+        font-size: 14px;
+        font-weight: 400;
         text-align: left;
         &:nth-child(1) {
           padding: 18px 20px 18px 18px;

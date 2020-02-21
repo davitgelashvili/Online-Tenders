@@ -5665,6 +5665,7 @@ form.questions-form {
   padding: 18px 36px 18px 0;
 }
 .trade__content table td {
+  color: #2d3e4d;
   font-size: 14px;
   font-weight: 400;
 }
@@ -5723,6 +5724,9 @@ form.questions-form {
   border-top: 1px solid #edeef0;
 }
 .trade__offers-table table th {
+  color: #55646f;
+  font-size: 13px;
+  font-weight: 500;
   text-align: left;
 }
 .trade__offers-table table th:nth-child(1) {
@@ -5738,6 +5742,9 @@ form.questions-form {
   padding: 18px 36px 18px 0;
 }
 .trade__offers-table table td {
+  color: #2d3e4d;
+  font-size: 14px;
+  font-weight: 400;
   text-align: left;
 }
 .trade__offers-table table td:nth-child(1) {
@@ -5751,6 +5758,166 @@ form.questions-form {
 }
 .trade__offers-table table td:nth-child(4) {
   padding: 18px 36px 18px 0;
+}
+
+.trade__time-left {
+  margin: 35px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.trade__time-left p {
+  margin-right: 25px;
+  color: #2d3e4d;
+  font-size: 14px;
+  font-weight: 400;
+}
+.trade__time-left time {
+  display: flex;
+}
+.trade__time-left time > span {
+  margin: 0 10px;
+  color: #acacaf;
+  font-size: 20px;
+}
+.trade__time-left time .mins,
+.trade__time-left time .secs {
+  text-align: center;
+}
+.trade__time-left time .mins div,
+.trade__time-left time .secs div {
+  color: #2d3e4d;
+  font-size: 20px;
+  font-weight: 700;
+}
+.trade__time-left time .mins span,
+.trade__time-left time .secs span {
+  color: #acacaf;
+  font-size: 10px;
+  font-weight: 500;
+}
+.trade__wrap {
+  padding: 0 35px 35px 35px;
+  display: flex;
+  align-items: center;
+}
+@media only screen and (max-width: 1254px) {
+  .trade__wrap {
+    flex-direction: column;
+  }
+}
+.trade__offers {
+  margin-right: 40px;
+  padding: 16px 12px;
+  border: 1px solid #f0f1f2;
+  border-radius: 8px;
+  box-shadow: 0 3px 36px rgba(0, 0, 0, 0.08);
+}
+@media only screen and (max-width: 1254px) {
+  .trade__offers {
+    margin-right: 0;
+  }
+}
+.trade__offers__best {
+  margin-bottom: 12px;
+  color: #47a241;
+  background: rgba(71, 162, 65, 0.1);
+}
+.trade__offers__your {
+  color: #f1616f;
+  background: rgba(241, 97, 111, 0.1);
+}
+.trade__offers__best, .trade__offers__your {
+  padding: 28px 55px;
+  text-align: center;
+}
+.trade__offers__best p, .trade__offers__your p {
+  color: #5d6367;
+  font-size: 11px;
+  font-weight: 400;
+  white-space: nowrap;
+}
+.trade__offers__amount {
+  margin-bottom: 5px;
+  font-size: 20px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.trade__current-offers {
+  margin-bottom: 28px;
+  border: 1px solid var(--color-main-2);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.trade__current-offers__header {
+  padding: 18px 36px;
+  background: var(--color-main-2);
+}
+.trade__current-offers__header h3 {
+  margin: 0;
+  color: var(--color-white-1);
+  font-size: 16px;
+  font-weight: 500;
+}
+.trade__current-offers__listing table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.trade__current-offers__listing table tbody tr {
+  border-top: 1px solid #edeef0;
+  background: rgba(242, 242, 242, 0.4);
+}
+.trade__current-offers__listing table tbody tr.active {
+  border: none;
+  background: rgba(50, 180, 215, 0.1);
+}
+.trade__current-offers__listing table th {
+  color: #5d6367;
+  font-size: 13px;
+  font-weight: 500;
+  text-align: left;
+}
+.trade__current-offers__listing table th:nth-child(1) {
+  padding: 18px 20px 18px 18px;
+}
+.trade__current-offers__listing table th:nth-child(1), .trade__current-offers__listing table th:nth-child(3), .trade__current-offers__listing table th:nth-child(4), .trade__current-offers__listing table th:nth-child(5) {
+  text-align: center;
+}
+.trade__current-offers__listing table th:nth-child(2), .trade__current-offers__listing table th:nth-child(3), .trade__current-offers__listing table th:nth-child(4) {
+  padding: 18px 0;
+}
+.trade__current-offers__listing table th:nth-child(5) {
+  padding: 18px 36px 18px 0;
+}
+.trade__current-offers__listing table td {
+  font-size: 14px;
+  font-weight: 400;
+}
+.trade__current-offers__listing table td:nth-child(1) {
+  padding: 18px 20px 18px 18px;
+}
+.trade__current-offers__listing table td:nth-child(2) {
+  display: flex;
+  align-items: center;
+}
+.trade__current-offers__listing table td:nth-child(1), .trade__current-offers__listing table td:nth-child(3), .trade__current-offers__listing table td:nth-child(4), .trade__current-offers__listing table td:nth-child(5) {
+  text-align: center;
+}
+.trade__current-offers__listing table td:nth-child(2), .trade__current-offers__listing table td:nth-child(3), .trade__current-offers__listing table td:nth-child(4) {
+  padding: 18px 0;
+}
+.trade__current-offers__listing table td:nth-child(5) {
+  padding: 18px 36px 18px 0;
+}
+
+.offered-amount__note--black {
+  margin-bottom: 10px;
+}
+.offered-amount__note--black span {
+  color: #5d6367;
 }
 
 .search-out {
