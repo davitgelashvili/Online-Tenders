@@ -5597,6 +5597,161 @@ form.questions-form {
   font-weight: 400;
 }
 
+.trade__round {
+  margin-bottom: 26px;
+  text-align: center;
+  color: #00001e;
+}
+.trade__round h2 {
+  margin-bottom: 10px;
+  font-size: 28px;
+  font-weight: 400;
+}
+.trade__round div {
+  font-size: 24px;
+  font-weight: 400;
+}
+.trade__container {
+  margin-bottom: 28px;
+  border: 1px solid var(--color-main-2);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.trade__container__header {
+  height: 53px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--color-main-2);
+}
+.trade__container__header h3 {
+  margin: 0;
+  color: var(--color-white-1);
+  font-size: 16px;
+  font-weight: 500;
+}
+.trade__content table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.trade__content table tbody tr {
+  border-top: 1px solid #edeef0;
+  background: rgba(242, 242, 242, 0.4);
+}
+.trade__content table tbody tr.active {
+  border: none;
+  background: rgba(50, 180, 215, 0.1);
+}
+.trade__content table th {
+  color: #5d6367;
+  font-size: 13px;
+  font-weight: 500;
+  text-align: left;
+}
+.trade__content table th:nth-child(1) {
+  padding: 18px 20px 18px 18px;
+}
+.trade__content table th:nth-child(1), .trade__content table th:nth-child(3), .trade__content table th:nth-child(4) {
+  text-align: center;
+}
+.trade__content table th:nth-child(2), .trade__content table th:nth-child(3), .trade__content table th:nth-child(4) {
+  padding: 18px 0;
+}
+.trade__content table th:nth-child(4) {
+  padding: 18px 36px 18px 0;
+}
+.trade__content table td {
+  font-size: 14px;
+  font-weight: 400;
+}
+.trade__content table td:nth-child(1) {
+  padding: 18px 20px 18px 18px;
+}
+.trade__content table td:nth-child(2) {
+  display: flex;
+  align-items: center;
+}
+.trade__content table td:nth-child(1), .trade__content table td:nth-child(3), .trade__content table td:nth-child(4) {
+  text-align: center;
+}
+.trade__content table td:nth-child(2), .trade__content table td:nth-child(3), .trade__content table td:nth-child(4) {
+  padding: 18px 0;
+}
+.trade__content table td:nth-child(4) {
+  padding: 18px 36px 18px 0;
+}
+.trade__badge {
+  margin-left: 10px;
+  padding: 4px 12px;
+  color: var(--color-white-1);
+  font-size: 10px;
+  font-weight: 400;
+  text-transform: capitalize;
+  border-radius: 13px;
+  background: var(--color-main-2);
+}
+.trade__offer h3 {
+  color: #2d3e4d;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+}
+.trade__offers-table {
+  border: 1px solid #edeef0;
+  border-radius: 8px;
+}
+.trade__offers-table__header {
+  padding: 18px 36px;
+  background: #edeef0;
+}
+.trade__offers-table__header h3 {
+  margin: 0;
+  color: #2d3e4d;
+  font-size: 16px;
+  font-weight: 500;
+}
+.trade__offers-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.trade__offers-table table tbody tr {
+  background: rgba(242, 242, 242, 0.4);
+  border-top: 1px solid #edeef0;
+}
+.trade__offers-table table th {
+  text-align: left;
+}
+.trade__offers-table table th:nth-child(1) {
+  padding: 18px 20px 18px 18px;
+}
+.trade__offers-table table th:nth-child(1), .trade__offers-table table th:nth-child(3), .trade__offers-table table th:nth-child(4) {
+  text-align: center;
+}
+.trade__offers-table table th:nth-child(2), .trade__offers-table table th:nth-child(3), .trade__offers-table table th:nth-child(4) {
+  padding: 18px 0;
+}
+.trade__offers-table table th:nth-child(4) {
+  padding: 18px 36px 18px 0;
+}
+.trade__offers-table table td {
+  text-align: left;
+}
+.trade__offers-table table td:nth-child(1) {
+  padding: 18px 20px 18px 18px;
+}
+.trade__offers-table table td:nth-child(1), .trade__offers-table table td:nth-child(3), .trade__offers-table table td:nth-child(4) {
+  text-align: center;
+}
+.trade__offers-table table td:nth-child(2), .trade__offers-table table td:nth-child(3), .trade__offers-table table td:nth-child(4) {
+  padding: 18px 0;
+}
+.trade__offers-table table td:nth-child(4) {
+  padding: 18px 36px 18px 0;
+}
+
 .search-out {
   width: 100%;
   display: flex;
