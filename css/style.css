@@ -6032,6 +6032,67 @@ form.questions-form {
   background: #a7acaf;
 }
 
+.result__rounds .trade-history table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.result__rounds .trade-history table tbody tr {
+  background: rgba(242, 242, 242, 0.4);
+  border-top: 1px solid #edeef0;
+}
+.result__rounds .trade-history table th {
+  color: #55646f;
+  font-size: 13px;
+  font-weight: 500;
+  text-align: left;
+}
+.result__rounds .trade-history table th:nth-child(1) {
+  padding: 18px 20px 18px 18px;
+}
+.result__rounds .trade-history table th:nth-child(2), .result__rounds .trade-history table th:nth-child(3), .result__rounds .trade-history table th:nth-child(4) {
+  text-align: center;
+}
+.result__rounds .trade-history table th:nth-child(2), .result__rounds .trade-history table th:nth-child(3), .result__rounds .trade-history table th:nth-child(4) {
+  padding: 18px 0;
+}
+.result__rounds .trade-history table th:nth-child(4) {
+  padding: 18px 36px 18px 0;
+}
+.result__rounds .trade-history table td {
+  color: #2d3e4d;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: left;
+}
+.result__rounds .trade-history table td:nth-child(1) {
+  padding: 18px 20px 18px 18px;
+}
+.result__rounds .trade-history table td:nth-child(2), .result__rounds .trade-history table td:nth-child(3), .result__rounds .trade-history table td:nth-child(4) {
+  text-align: center;
+}
+.result__rounds .trade-history table td:nth-child(2), .result__rounds .trade-history table td:nth-child(3), .result__rounds .trade-history table td:nth-child(4) {
+  padding: 18px 0;
+}
+.result__rounds .trade-history table td:nth-child(4) {
+  padding: 18px 36px 18px 0;
+}
+
+.trade__current-offers table td button {
+  margin: 0 auto;
+  width: 24px;
+  height: 24px;
+  border-radius: 24px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background: #32b4d7;
+}
+.trade__current-offers table td button i {
+  color: var(--color-white-1);
+}
+
 .search-out {
   width: 100%;
   display: flex;
