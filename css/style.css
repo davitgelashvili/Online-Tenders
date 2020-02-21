@@ -5705,6 +5705,9 @@ form.questions-form {
   border: 1px solid #edeef0;
   border-radius: 8px;
 }
+.trade__offers-table:not(:last-child) {
+  margin-bottom: 28px;
+}
 .trade__offers-table__header {
   padding: 18px 36px;
   background: #edeef0;
@@ -5918,6 +5921,115 @@ form.questions-form {
 }
 .offered-amount__note--black span {
   color: #5d6367;
+}
+
+.upload {
+  background: #32b4d7;
+  color: var(--color-white-1);
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 6px;
+  padding: 16px 28px;
+}
+.upload img {
+  margin-right: 10px;
+}
+.upload span {
+  font-family: "FiraGO", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.results__table {
+  margin-top: 25px;
+}
+.results__table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.results__table table tbody tr {
+  border-top: 1px solid #edeef0;
+}
+.results__table table tbody tr:last-child {
+  border-bottom: 1px solid #edeef0;
+}
+.results__table table th {
+  color: #55646f;
+  font-size: 13px;
+  font-weight: 500;
+  text-align: left;
+}
+.results__table table th:nth-child(1) {
+  padding: 18px 20px 18px 18px;
+}
+.results__table table th:nth-child(2) {
+  text-align: center;
+}
+.results__table table th:nth-child(2), .results__table table th:nth-child(3) {
+  padding: 18px 0;
+}
+.results__table table th:nth-child(4) {
+  padding: 18px 0 18px 0;
+}
+.results__table table td {
+  color: #2d3e4d;
+  font-size: 14px;
+  font-weight: 400;
+}
+.results__table table td:nth-child(1) {
+  display: flex;
+  align-items: center;
+  padding: 18px 20px 18px 18px;
+}
+.results__table table td:nth-child(2), .results__table table td:nth-child(3), .results__table table td:nth-child(4) {
+  text-align: center;
+}
+.results__table table td:nth-child(2), .results__table table td:nth-child(3) {
+  padding: 18px 0;
+}
+.results__table table td:nth-child(4) {
+  padding: 18px 0 18px 0;
+}
+.results__table table td img {
+  margin-right: 14px;
+}
+.results__table table td button {
+  margin: 0;
+  margin-left: auto;
+}
+.results__table .download-all {
+  margin: 8px 0 24px 0;
+  text-align: right;
+}
+.results__table .download-all a {
+  color: #32b4d7;
+  font-size: 12px;
+  font-weight: 500;
+}
+.results__ctas {
+  width: 576px;
+  margin: 0 auto;
+  margin-bottom: 48px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 12px;
+}
+.results__ctas button {
+  padding: 16px 0;
+  color: var(--color-white-1);
+  font-family: "FiraGO", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.results__ctas button.download {
+  background: #32b4d7;
+}
+.results__ctas button.report {
+  background: #a7acaf;
 }
 
 .search-out {

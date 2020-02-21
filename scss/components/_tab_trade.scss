@@ -125,6 +125,9 @@
   &__offers-table {
     border: 1px solid #edeef0;
     border-radius: 8px;
+    &:not(:last-child) {
+      margin-bottom: 28px;
+    }
     &__header {
       padding: 18px 36px;
       background: #edeef0;
