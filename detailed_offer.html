@@ -179,10 +179,7 @@
             </h1>
             <div class="tender-details-tab">
               <div class="tender-details-tab-header">
-                <div
-                  class="tender-details-tab-header-item active"
-                  data-tab="tab-desc"
-                >
+                <div class="tender-details-tab-header-item" data-tab="tab-desc">
                   <a href="#">
                     აღწერა
                   </a>
@@ -196,7 +193,7 @@
                   </a>
                 </div>
                 <div
-                  class="tender-details-tab-header-item"
+                  class="tender-details-tab-header-item active"
                   data-tab="tab-offer"
                 >
                   <a href="#">
@@ -221,9 +218,8 @@
                 </div>
               </div>
               <!-- .end tender-details-tab-header -->
-
               <div class="tender-details-tab-body">
-                <div class="tab-content tab-desc tab-active">
+                <div class="tab-content tab-desc">
                   <h3>ტენდერის აღწერილობა:</h3>
                   <p>
                     შპს „კავკასუს ონლაინი“ აცხადებს ტენდერს სათაო ოფისის (მის.:
@@ -251,35 +247,90 @@
                     ოქტომბერს 15:00 სთ-ზე);ტენდერში გამარჯვებულისთვის
                     შეტყობინება: არაუგვიანეს ა.წ. 18 ოქტომბრის 18:00 სთ-
                   </p>
-
-                  <div class="tender-details-documentation">
-                    <h1 class="tender-details-documentation-title">
-                      დოცუმენტაცია
-                    </h1>
-                    <div class="tender-details-document-content">
-                      <div class="tender-details-document">
-                        <div class="tender-details-document-icon">
-                          <img src="img/pdf.svg" />
-                        </div>
-                        <span>documentation.pdf</span>
-                      </div>
-                      <div class="tender-details-document">
-                        <div class="tender-details-document-icon">
-                          <img src="img/pdf.svg" />
-                        </div>
-                        <span>documentation.pdf</span>
-                      </div>
-                    </div>
-                    <button class="tender-details-document-download">
-                      <img src="img/download.svg" /> ყველას ჩამოტვირთვა
-                    </button>
-                  </div>
                 </div>
                 <div class="tab-content tab-questions">
-                  <h3>შეკითხვები</h3>
-                </div>
-                <div class="tab-content tab-offer">
                   <h3>შეთავაზება</h3>
+                </div>
+                <div class="tab-content tab-offer tab-active">
+                  <div class="questions-container">
+                    <header class="questions-header">
+                      <h3 class="questions-title">სატენდერო დოკუმენტაცია</h3>
+                    </header>
+                    <div class="documents__container">
+                      <div class="documents__heading">
+                        <div class="documents__heading__title">დასახელება</div>
+                        <div class="documents__heading__type">ტიპი</div>
+                        <div class="documents__heading__size">ზომა</div>
+                      </div>
+                      <div class="documents__listing">
+                        <div class="documents__listing__item">
+                          <div class="documents__listing__item__name">
+                            <img src="img/pdf.svg" alt="" />
+                            <span>ტენდერის შედგენის ოქმი</span>
+                          </div>
+                          <div class="documents__listing__item__type">PDF</div>
+                          <div class="documents__listing__item__size">
+                            45 mb
+                          </div>
+                          <div class="documents__listing__item__ctas">
+                            <button
+                              class="documents__listing__item__ctas__download"
+                            >
+                              <i class="fas fa-cloud-download-alt"></i>
+                              <span>გადმოწერა</span>
+                            </button>
+                            <button
+                              class="documents__listing__item__ctas__delete"
+                            >
+                              <i class="fas fa-times-circle"></i>
+                            </button>
+                          </div>
+                        </div>
+                        <!-- end .documents__listing__item -->
+                      </div>
+                      <!-- .end documents__listing -->
+                    </div>
+                    <div class="documents__footer">
+                      <button class="documents__footer__uploadfile">
+                        <img src="img/download3.svg" alt="" />
+                        <span>ატვირთეთ ფაილი</span>
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="questions-container">
+                    <header class="questions-header">
+                      <h3 class="questions-title">საწყისი ფასი</h3>
+                    </header>
+                    <div class="offered-amount">
+                      <form action="#" class="offered-amount__form">
+                        <div class="offered-amount__form__field">
+                          <div>
+                            <input type="text" placeholder="თანხა" />
+                            <select name="currency" id="">
+                              <option value="">‎₾</option>
+                              <option value="">‎₾</option>
+                              <option value="">‎₾</option>
+                            </select>
+                          </div>
+                          <button type="submit">დამახსოვრება</button>
+                        </div>
+                      </form>
+                      <div class="offered-amount__suggestions">
+                        <div>+500 ‎₾</div>
+                        <div>+1000 ‎₾</div>
+                        <div>+1500 ‎₾</div>
+                      </div>
+                      <div class="offered-amount__note">
+                        <span>*</span>
+                        <span
+                          >გთხოვთ სისტემაში მიუთითოთ თქვენს მიერ შემოთავაზებული
+                          თანხა. წინააღმდეგ შემთვევაში თქვენი შეთავაზება არ
+                          გამოუჩნდება შემსყიდველს.</span
+                        >
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 <div class="tab-content tab-result">
                   <h3>რეზულტატი</h3>
@@ -288,7 +339,6 @@
                   <h3>დაზუსტება</h3>
                 </div>
               </div>
-              <!-- end .tender-details-tab-body -->
             </div>
           </div>
           <!-- content end  -->
