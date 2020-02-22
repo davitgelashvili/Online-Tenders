@@ -5533,11 +5533,11 @@ form.questions-form {
 .offered-amount__form__field input {
   height: 48px;
   width: 258px;
-  padding: 16px 70px 16px 22px;
+  padding: 16px 60px 16px 22px;
   color: #5d6367;
   font-family: "FiraGO", sans-serif;
   font-size: 14px;
-  font-weight: 300px;
+  font-weight: 300;
   border: 1px solid #dadde2;
   border-right: none;
   border-top-left-radius: 8px;
@@ -5549,13 +5549,16 @@ form.questions-form {
   font-size: 14px;
   font-weight: 300px;
 }
-.offered-amount__form__field select {
+.offered-amount__form__field .currency {
   position: absolute;
   top: 50%;
   right: 12px;
   transform: translateY(-50%);
-  width: 50px;
+  width: 40px;
   height: 26px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: #eceff2;
   border: 1px solid #9da9b4;
   border-radius: 4px;
@@ -6441,7 +6444,7 @@ form.questions-form {
   color: #141b3d;
   font-size: 14px;
   font-weight: 500;
-  text-align: justify;
+  text-align: left;
   line-height: 1.5;
 }
 

@@ -132,11 +132,11 @@
       input {
         height: 48px;
         width: 258px;
-        padding: 16px 70px 16px 22px;
+        padding: 16px 60px 16px 22px;
         color: #5d6367;
         font-family: "FiraGO", sans-serif;
         font-size: 14px;
-        font-weight: 300px;
+        font-weight: 300;
         border: 1px solid #dadde2;
         border-right: none;
         border-top-left-radius: 8px;
@@ -150,13 +150,16 @@
         }
       }
 
-      select {
+      .currency {
         position: absolute;
         top: 50%;
         right: 12px;
         transform: translateY(-50%);
-        width: 50px;
+        width: 40px;
         height: 26px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         background: #eceff2;
         border: 1px solid #9da9b4;
         border-radius: 4px;
