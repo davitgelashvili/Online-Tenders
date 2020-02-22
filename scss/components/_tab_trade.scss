@@ -1,0 +1,196 @@
+.trade {
+  &__round {
+    margin-bottom: 26px;
+    text-align: center;
+    color: #00001e;
+    h2 {
+      margin-bottom: 10px;
+      font-size: 28px;
+      font-weight: 400;
+    }
+
+    div {
+      font-size: 24px;
+      font-weight: 400;
+    }
+  }
+
+  &__container {
+    margin-bottom: 28px;
+    border: 1px solid var(--color-main-2);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    &__header {
+      height: 53px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: var(--color-main-2);
+      h3 {
+        margin: 0;
+        color: var(--color-white-1);
+        font-size: 16px;
+        font-weight: 500;
+      }
+    }
+  }
+
+  &__content {
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      tbody {
+        tr {
+          border-top: 1px solid #edeef0;
+          background: rgba(242, 242, 242, 0.4);
+          &.active {
+            border: none;
+            background: rgba(50, 180, 215, 0.1);
+          }
+        }
+      }
+      th {
+        color: #5d6367;
+        font-size: 13px;
+        font-weight: 500;
+        text-align: left;
+        &:nth-child(1) {
+          padding: 18px 20px 18px 18px;
+        }
+        &:nth-child(1),
+        &:nth-child(3),
+        &:nth-child(4) {
+          text-align: center;
+        }
+        &:nth-child(2),
+        &:nth-child(3),
+        &:nth-child(4) {
+          padding: 18px 0;
+        }
+        &:nth-child(4) {
+          padding: 18px 36px 18px 0;
+        }
+      }
+      td {
+        color: #2d3e4d;
+        font-size: 14px;
+        font-weight: 400;
+        &:nth-child(1) {
+          padding: 18px 20px 18px 18px;
+        }
+        &:nth-child(2) {
+          display: flex;
+          align-items: center;
+        }
+        &:nth-child(1),
+        &:nth-child(3),
+        &:nth-child(4) {
+          text-align: center;
+        }
+        &:nth-child(2),
+        &:nth-child(3),
+        &:nth-child(4) {
+          padding: 18px 0;
+        }
+        &:nth-child(4) {
+          padding: 18px 36px 18px 0;
+        }
+      }
+    }
+  }
+
+  &__badge {
+    margin-left: 10px;
+    padding: 4px 12px;
+    color: var(--color-white-1);
+    font-size: 10px;
+    font-weight: 400;
+    text-transform: capitalize;
+    border-radius: 13px;
+    background: var(--color-main-2);
+  }
+
+  &__offer {
+    h3 {
+      color: #2d3e4d;
+      font-size: 16px;
+      font-weight: 400;
+      text-align: center;
+    }
+  }
+
+  &__offers-table {
+    border: 1px solid #edeef0;
+    border-radius: 8px;
+    &:not(:last-child) {
+      margin-bottom: 28px;
+    }
+    &__header {
+      padding: 18px 36px;
+      background: #edeef0;
+      h3 {
+        margin: 0;
+        color: #2d3e4d;
+        font-size: 16px;
+        font-weight: 500;
+      }
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      tbody {
+        tr {
+          background: rgba(242, 242, 242, 0.4);
+          border-top: 1px solid #edeef0;
+        }
+      }
+      th {
+        color: #55646f;
+        font-size: 13px;
+        font-weight: 500;
+        text-align: left;
+        &:nth-child(1) {
+          padding: 18px 20px 18px 18px;
+        }
+        &:nth-child(1),
+        &:nth-child(3),
+        &:nth-child(4) {
+          text-align: center;
+        }
+        &:nth-child(2),
+        &:nth-child(3),
+        &:nth-child(4) {
+          padding: 18px 0;
+        }
+        &:nth-child(4) {
+          padding: 18px 36px 18px 0;
+        }
+      }
+      td {
+        color: #2d3e4d;
+        font-size: 14px;
+        font-weight: 400;
+        text-align: left;
+        &:nth-child(1) {
+          padding: 18px 20px 18px 18px;
+        }
+        &:nth-child(1),
+        &:nth-child(3),
+        &:nth-child(4) {
+          text-align: center;
+        }
+        &:nth-child(2),
+        &:nth-child(3),
+        &:nth-child(4) {
+          padding: 18px 0;
+        }
+        &:nth-child(4) {
+          padding: 18px 36px 18px 0;
+        }
+      }
+    }
+  }
+}

@@ -193,7 +193,7 @@
                   </a>
                 </div>
                 <div
-                  class="tender-details-tab-header-item active"
+                  class="tender-details-tab-header-item"
                   data-tab="tab-offer"
                 >
                   <a href="#">
@@ -209,6 +209,14 @@
                   </a>
                 </div>
                 <div
+                  class="tender-details-tab-header-item active"
+                  data-tab="tab-trade"
+                >
+                  <a href="#">
+                    ვაჭრობა
+                  </a>
+                </div>
+                <div
                   class="tender-details-tab-header-item disabled"
                   data-tab="tab-specify"
                 >
@@ -218,6 +226,7 @@
                 </div>
               </div>
               <!-- .end tender-details-tab-header -->
+
               <div class="tender-details-tab-body">
                 <div class="tab-content tab-desc">
                   <h3>ტენდერის აღწერილობა:</h3>
@@ -247,98 +256,203 @@
                     ოქტომბერს 15:00 სთ-ზე);ტენდერში გამარჯვებულისთვის
                     შეტყობინება: არაუგვიანეს ა.წ. 18 ოქტომბრის 18:00 სთ-
                   </p>
+
+                  <div class="tender-details-documentation">
+                    <h1 class="tender-details-documentation-title">
+                      დოცუმენტაცია
+                    </h1>
+                    <div class="tender-details-document-content">
+                      <div class="tender-details-document">
+                        <div class="tender-details-document-icon">
+                          <img src="img/pdf.svg" />
+                        </div>
+                        <span>documentation.pdf</span>
+                      </div>
+                      <div class="tender-details-document">
+                        <div class="tender-details-document-icon">
+                          <img src="img/pdf.svg" />
+                        </div>
+                        <span>documentation.pdf</span>
+                      </div>
+                    </div>
+                    <button class="tender-details-document-download">
+                      <img src="img/download.svg" /> ყველას ჩამოტვირთვა
+                    </button>
+                  </div>
                 </div>
                 <div class="tab-content tab-questions">
-                  <h3>შეთავაზება</h3>
+                  <h3>შეკითხვები</h3>
                 </div>
-                <div class="tab-content tab-offer tab-active">
-                  <div class="questions-container">
-                    <header class="questions-header">
-                      <h3 class="questions-title">სატენდერო დოკუმენტაცია</h3>
-                    </header>
-                    <div class="documents__container">
-                      <div class="documents__heading">
-                        <div class="documents__heading__title">დასახელება</div>
-                        <div class="documents__heading__type">ტიპი</div>
-                        <div class="documents__heading__size">ზომა</div>
-                      </div>
-                      <div class="documents__listing">
-                        <div class="documents__listing__item">
-                          <div class="documents__listing__item__name">
-                            <img src="img/pdf.svg" alt="" />
-                            <span>ტენდერის შედგენის ოქმი</span>
-                          </div>
-                          <div class="documents__listing__item__type">PDF</div>
-                          <div class="documents__listing__item__size">
-                            45 mb
-                          </div>
-                          <div class="documents__listing__item__ctas">
-                            <button
-                              class="documents__listing__item__ctas__download"
-                            >
-                              <i class="fas fa-cloud-download-alt"></i>
-                              <span>გადმოწერა</span>
-                            </button>
-                            <button
-                              class="documents__listing__item__ctas__delete"
-                            >
-                              <i class="fas fa-times-circle"></i>
-                            </button>
-                          </div>
-                        </div>
-                        <!-- end .documents__listing__item -->
-                      </div>
-                      <!-- .end documents__listing -->
-                    </div>
-                    <div class="documents__footer">
-                      <button class="documents__footer__uploadfile">
-                        <img src="img/download3.svg" alt="" />
-                        <span>ატვირთეთ ფაილი</span>
-                      </button>
-                    </div>
-                  </div>
-
-                  <div class="questions-container">
-                    <header class="questions-header">
-                      <h3 class="questions-title">საწყისი ფასი</h3>
-                    </header>
-                    <div class="offered-amount">
-                      <form action="#" class="offered-amount__form">
-                        <div class="offered-amount__form__field">
-                          <div>
-                            <input type="text" placeholder="თანხა" />
-                            <span class="currency">‎₾</span>
-                          </div>
-                          <button type="submit">დამახსოვრება</button>
-                        </div>
-                      </form>
-                      <div class="offered-amount__suggestions">
-                        <div>+500 ‎₾</div>
-                        <div>+1000 ‎₾</div>
-                        <div>+1500 ‎₾</div>
-                      </div>
-                      <div class="offered-amount__note">
-                        <span>*</span>
-                        <span
-                          >გთხოვთ სისტემაში მიუთითოთ თქვენს მიერ შემოთავაზებული
-                          თანხა. წინააღმდეგ შემთვევაში თქვენი შეთავაზება არ
-                          გამოუჩნდება შემსყიდველს.</span
-                        >
-                      </div>
-                    </div>
-                  </div>
+                <div class="tab-content tab-offer">
+                  <h3>შეთავაზება</h3>
                 </div>
                 <div class="tab-content tab-result">
                   <h3>რეზულტატი</h3>
+                </div>
+                <div class="tab-content tab-trade tab-active">
+                  <div class="trade">
+                    <div class="trade__container">
+                      <header class="trade__container__header">
+                        <h3>რევერსული აუქციონის მიმდინარე სტატუსი</h3>
+                      </header>
+                      <div class="trade__content">
+                        <div class="trade__time-left">
+                          <p>აუქციონის დამთავრებამდე დარჩენილია:</p>
+                          <time>
+                            <div class="mins">
+                              <div>43</div>
+                              <span>წთ</span>
+                            </div>
+                            <span>:</span>
+                            <div class="secs">
+                              <div>43</div>
+                              <span>წმ</span>
+                            </div>
+                          </time>
+                        </div>
+                        <div class="trade__wrap">
+                          <div class="trade__offers">
+                            <div class="trade__offers__best">
+                              <div class="trade__offers__amount">44 500 ₾</div>
+                              <p>საუკეთესო შეთავაზება</p>
+                            </div>
+                            <div class="trade__offers__your">
+                              <div class="trade__offers__amount">49 500 ₾</div>
+                              <p>თქვენი შეთავაზება</p>
+                            </div>
+                          </div>
+                          <div class="trade__offer">
+                            <h3>შეიყვანეთ თქვენი ფასი</h3>
+
+                            <div class="offered-amount">
+                              <form action="#" class="offered-amount__form">
+                                <div class="offered-amount__form__field">
+                                  <div>
+                                    <input type="text" placeholder="თანხა" />
+                                    <span class="currency">‎₾</span>
+                                  </div>
+                                  <button type="submit">დამახსოვრება</button>
+                                </div>
+                              </form>
+                              <div class="offered-amount__suggestions">
+                                <div>+500 ‎₾</div>
+                                <div>+1000 ‎₾</div>
+                                <div>+1500 ‎₾</div>
+                              </div>
+                              <div
+                                class="offered-amount__note offered-amount__note--black"
+                              >
+                                <span>*</span>
+                                <span
+                                  >თქვენს მიერ შეყვანილი თანხა უნდა იყოს
+                                  არაუმეტეს 4 500₾</span
+                                >
+                              </div>
+                              <div class="offered-amount__note">
+                                <span>*</span>
+                                <span
+                                  >ბოლო წამებისას მითითებული ფასი შეიძლება არ
+                                  აისახოს სისტემაში</span
+                                >
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- end .trade__container -->
+
+                    <div class="trade__current-offers">
+                      <header class="trade__current-offers__header">
+                        <h3>მიმდინარე შეთავაზებები</h3>
+                      </header>
+                      <div class="trade__current-offers__listing">
+                        <table>
+                          <thead>
+                            <tr>
+                              <th>#</th>
+                              <th>პრეტენდენტი</th>
+                              <th>საბოლოო ფასი</th>
+                              <th>წინა ფასი</th>
+                              <th>დრო</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>1</td>
+                              <td>Wandio Development</td>
+                              <td>34 000</td>
+                              <td>44 000</td>
+                              <td>14:00:14</td>
+                            </tr>
+                            <tr>
+                              <td>2</td>
+                              <td>Omega Capital</td>
+                              <td>34 000</td>
+                              <td>44 000</td>
+                              <td>14:00:14</td>
+                            </tr>
+                            <tr>
+                              <td>3</td>
+                              <td>Netguru Comercial</td>
+                              <td>34 000</td>
+                              <td>44 000</td>
+                              <td>14:00:14</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+
+                    <div class="trade__offers-table">
+                      <header class="trade__offers-table__header">
+                        <h3>შემოთავაზებები ვაჭრობის დაწყებამდე</h3>
+                      </header>
+                      <div class="trade__offers-table__listing">
+                        <table>
+                          <thead>
+                            <tr>
+                              <th>#</th>
+                              <th>პრეტენდენტი</th>
+                              <th>შეთავაზება</th>
+                              <th>თარიღი</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>1</td>
+                              <td>Wandio Development</td>
+                              <td>44 000</td>
+                              <td>31 დეკ, 2019</td>
+                            </tr>
+                            <tr>
+                              <td>2</td>
+                              <td>Omega Capital</td>
+                              <td>45 000</td>
+                              <td>28 დეკ, 2019</td>
+                            </tr>
+                            <tr>
+                              <td>3</td>
+                              <td>Netguru Comercial</td>
+                              <td>48 000</td>
+                              <td>19 დეკ, 2019</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 <div class="tab-content tab-specify">
                   <h3>დაზუსტება</h3>
                 </div>
               </div>
+              <!-- end .tender-details-tab-body -->
             </div>
           </div>
           <!-- content end  -->
         </div>
+
         <div class="col-lg-3 d-lg-block d-none">
           <div class="content less-padded">
             <section class="main-right">

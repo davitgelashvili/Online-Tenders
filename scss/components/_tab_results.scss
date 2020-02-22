@@ -1,0 +1,122 @@
+.upload {
+  background: #32b4d7;
+  color: var(--color-white-1);
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 6px;
+  padding: 16px 28px;
+
+  img {
+    margin-right: 10px;
+  }
+
+  span {
+    font-family: "FiraGO", sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+  }
+}
+
+.results {
+  &__table {
+    margin-top: 25px;
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      tbody {
+        tr {
+          border-top: 1px solid #edeef0;
+          &:last-child {
+            border-bottom: 1px solid #edeef0;
+          }
+        }
+      }
+      th {
+        color: #55646f;
+        font-size: 13px;
+        font-weight: 500;
+        text-align: left;
+        &:nth-child(1) {
+          padding: 18px 20px 18px 18px;
+        }
+        &:nth-child(2) {
+          text-align: center;
+        }
+        &:nth-child(2),
+        &:nth-child(3) {
+          padding: 18px 0;
+        }
+        &:nth-child(4) {
+          padding: 18px 0 18px 0;
+        }
+      }
+      td {
+        color: #2d3e4d;
+        font-size: 14px;
+        font-weight: 400;
+        &:nth-child(1) {
+          display: flex;
+          align-items: center;
+          padding: 18px 20px 18px 18px;
+        }
+        &:nth-child(2),
+        &:nth-child(3),
+        &:nth-child(4) {
+          text-align: center;
+        }
+        &:nth-child(2),
+        &:nth-child(3) {
+          padding: 18px 0;
+        }
+        &:nth-child(4) {
+          padding: 18px 0 18px 0;
+        }
+        img {
+          margin-right: 14px;
+        }
+        button {
+          margin: 0;
+          margin-left: auto;
+        }
+      }
+    }
+    .download-all {
+      margin: 8px 0 24px 0;
+      text-align: right;
+
+      a {
+        color: #32b4d7;
+        font-size: 12px;
+        font-weight: 500;
+      }
+    }
+  }
+
+  &__ctas {
+    width: 576px;
+    margin: 0 auto;
+    margin-bottom: 48px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 12px;
+
+    button {
+      padding: 16px 0;
+      color: var(--color-white-1);
+      font-family: "FiraGO", sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+
+      &.download {
+        background: #32b4d7;
+      }
+      &.report {
+        background: #a7acaf;
+      }
+    }
+  }
+}
