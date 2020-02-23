@@ -7023,6 +7023,58 @@ form.questions-form {
   cursor: pointer;
 }
 
+.faq-accordion {
+  display: flex;
+  flex-direction: column;
+}
+.faq-accordion .question {
+  border: 1px solid #dadde2;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.faq-accordion .question:not(:last-child) {
+  margin-bottom: 32px;
+}
+.faq-accordion__title {
+  margin-bottom: 70px;
+  color: #141b3d;
+  font-size: 44px;
+  font-weight: 700;
+}
+.faq-accordion__btn {
+  width: 100%;
+  padding: 30px 52px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border: none;
+  background: var(--color-white-1);
+  cursor: pointer;
+}
+.faq-accordion__btn i {
+  padding-right: 72px;
+  color: #9da9b4;
+  font-size: 36px;
+}
+.faq-accordion__btn span {
+  color: #141b3d;
+  font-family: "FiraGO", sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+}
+.faq-accordion__answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+.faq-accordion__answer p {
+  padding: 0 52px 52px 156px;
+  color: #707b84;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
 .input-checkbox {
   display: flex;
 }
