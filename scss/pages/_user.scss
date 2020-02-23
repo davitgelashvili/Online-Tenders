@@ -67,6 +67,12 @@
         margin-bottom: 20px;
       }
 
+      &.active {
+        i {
+          display: block;
+        }
+      }
+
       a {
         position: relative;
         display: flex;
@@ -85,10 +91,6 @@
         &.active {
           color: #2d3e4d;
           font-weight: 500;
-
-          i {
-            display: block;
-          }
         }
       }
     }
@@ -120,6 +122,11 @@
 
 .user-edit {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.16);
+  min-height: 500px;
+
+  @media only screen and (max-width: 991px) {
+    min-height: auto;
+  }
 
   &__title {
     margin-bottom: 34px;
@@ -143,17 +150,25 @@
     }
   }
 
-  input {
+  input,
+  select {
     padding: 16px 25px;
     max-width: 453px;
     width: 100%;
     color: var(--color-dark);
+    font-family: inherit;
     font-size: 13px;
     font-weight: 400;
 
     &::placeholder {
       font-family: "FiraGO", sans-serif;
     }
+  }
+
+  select {
+    background: #f4f4f4;
+    border: 1px solid #dadde2;
+    border-radius: 8px;
   }
 
   p {

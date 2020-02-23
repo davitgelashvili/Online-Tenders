@@ -6658,6 +6658,9 @@ form.questions-form {
 .user__menu li:not(:last-child) {
   margin-bottom: 20px;
 }
+.user__menu li.active i {
+  display: block;
+}
 .user__menu li a {
   position: relative;
   display: flex;
@@ -6675,9 +6678,6 @@ form.questions-form {
 .user__menu li a.active {
   color: #2d3e4d;
   font-weight: 500;
-}
-.user__menu li a.active i {
-  display: block;
 }
 .user__menu img {
   width: 20px;
@@ -6705,6 +6705,12 @@ form.questions-form {
 
 .user-edit {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.16);
+  min-height: 500px;
+}
+@media only screen and (max-width: 991px) {
+  .user-edit {
+    min-height: auto;
+  }
 }
 .user-edit__title {
   margin-bottom: 34px;
@@ -6728,16 +6734,24 @@ form.questions-form {
     margin-bottom: 20px;
   }
 }
-.user-edit input {
+.user-edit input,
+.user-edit select {
   padding: 16px 25px;
   max-width: 453px;
   width: 100%;
   color: var(--color-dark);
+  font-family: inherit;
   font-size: 13px;
   font-weight: 400;
 }
-.user-edit input::placeholder {
+.user-edit input::placeholder,
+.user-edit select::placeholder {
   font-family: "FiraGO", sans-serif;
+}
+.user-edit select {
+  background: #f4f4f4;
+  border: 1px solid #dadde2;
+  border-radius: 8px;
 }
 .user-edit p {
   margin-bottom: 12px;
