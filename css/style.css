@@ -7260,6 +7260,92 @@ form.questions-form {
   font-weight: 400;
 }
 
+.contact {
+  display: flex;
+  justify-content: space-between;
+}
+.contact__title {
+  margin-bottom: 35px;
+  color: #141b3d;
+  font-size: 23px;
+  font-weight: 700;
+}
+.contact > div {
+  flex: 0 0 48%;
+}
+.contact__address .map {
+  margin-bottom: 26px;
+  width: 100%;
+  height: 340px;
+  border-radius: 16px;
+}
+.contact__address address ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contact__address address ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact__address address ul li i {
+  margin-bottom: 10px;
+  color: #9da9b4;
+  font-size: 24px;
+}
+.contact__address address ul li span {
+  color: #141b3d;
+  font-size: 11px;
+  font-weight: 500;
+  font-style: normal;
+}
+.contact__form form div {
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+}
+.contact__form form label {
+  margin-bottom: 12px;
+  color: #141b3d;
+  font-size: 12px;
+  font-weight: 500;
+}
+.contact__form form input,
+.contact__form form textarea {
+  width: 100%;
+  max-width: 100%;
+  height: 48px;
+  padding: 0 10px;
+  font-family: "FiraGO", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  border: 1px solid #dadde2;
+  border-radius: 8px;
+}
+.contact__form form input::placeholder,
+.contact__form form textarea::placeholder {
+  font-family: "FiraGO", sans-serif;
+}
+.contact__form form textarea {
+  height: 124px;
+}
+.contact__form form button {
+  margin-left: auto;
+  display: block;
+  width: 132px;
+  height: 50px;
+  max-width: 368px;
+  color: var(--color-white-1);
+  font-family: "FiraGO", sans-serif;
+  font-size: 12px;
+  font-weight: 900;
+  border: none;
+  border-radius: 8px;
+  background: #32b4d7;
+  cursor: pointer;
+}
+
 .input-checkbox {
   display: flex;
 }
