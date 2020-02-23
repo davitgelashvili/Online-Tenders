@@ -1,0 +1,213 @@
+.subscribe {
+  &__header {
+    margin-bottom: 36px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__left {
+      h2 {
+        margin-bottom: 13px;
+        color: #141b3d;
+        font-size: 23px;
+        font-weight: 700;
+      }
+      p {
+        color: #9da9b4;
+        font-size: 13px;
+        font-weight: 400;
+      }
+    }
+    &__right {
+      button {
+        display: flex;
+        align-items: center;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        i {
+          margin-right: 8px;
+          color: #eb6b7c;
+        }
+        span {
+          color: #141b3d;
+          font-family: "FiraGO", sans-serif;
+          font-size: 12px;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+
+  &__wrap {
+    h4 {
+      margin-bottom: 10px;
+      color: #141b3d;
+      font-size: 12px;
+      font-weight: 500;
+    }
+  }
+
+  &__content {
+    margin-bottom: 100px;
+    border-radius: 8px;
+    border: 1px solid #d9d9d9;
+
+    &__search {
+      padding: 20px 0 16px 25px;
+      background: #f6f7f9;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+
+      form {
+        div {
+          display: flex;
+          align-items: center;
+        }
+
+        label {
+          margin-right: 28px;
+          color: #141b3d;
+          font-size: 12px;
+          font-weight: 400;
+        }
+
+        input {
+          padding: 0 10px;
+          height: 37px;
+          color: #141b3d;
+          font-family: inherit;
+          font-size: 14px;
+          font-weight: 400;
+          border: 1px solid #dadde2;
+          border-radius: 8px;
+        }
+      }
+    }
+  }
+
+  &__listing {
+    position: relative;
+    &__item {
+      padding: 14px 26px;
+      background: #fff;
+      &:nth-child(even) {
+        background: #f9f9f9;
+      }
+      &:last-of-type {
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+
+        label {
+          color: #0fb7ff;
+        }
+      }
+
+      input {
+        display: none;
+
+        &:checked ~ label::before {
+          content: "\f14a";
+          font-weight: 900;
+          color: #03af5c;
+        }
+      }
+
+      label {
+        position: relative;
+        padding-left: 30px;
+        color: #141b3d;
+        font-size: 13px;
+        font-weight: 400;
+
+        &::before {
+          content: "\f0c8";
+          color: #d9d9d9;
+          font-family: "Font Awesome 5 Free";
+          font-weight: 500;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 20px;
+          height: 20px;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  &__btn {
+    width: 158px;
+    height: 48px;
+    position: absolute;
+    bottom: -80px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    font-family: "FiraGO", sans-serif;
+    font-size: 13px;
+    font-weight: 900;
+    background: #32b4d7;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+}
+
+.subscribed-to {
+  margin-bottom: 50px;
+  h4 {
+    margin-bottom: 10px;
+    color: #141b3d;
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  &__wrap {
+    height: 140px;
+    overflow-y: auto;
+    border: 1px solid #dadde2;
+    border-radius: 8px;
+    padding: 0 28px;
+
+    &::-webkit-scrollbar {
+      border-radius: 8px;
+      width: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: rgba(172, 172, 175, 0.4);
+      border-right: 8px solid transparent;
+      border-top: 4px solid transparent;
+      border-bottom: 4px solid transparent;
+      background-clip: padding-box;
+      border-radius: 8px;
+    }
+
+    li {
+      padding: 10px 0;
+      color: #141b3d;
+      font-size: 12px;
+      font-weight: 400;
+    }
+  }
+
+  &__all {
+    padding: 26px 28px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #dadde2;
+    border-radius: 8px;
+    span {
+      margin-right: 13px;
+      i {
+        color: #55b14f;
+      }
+    }
+
+    p {
+      color: #2d3e4d;
+      font-size: 14px;
+      font-weight: 400;
+    }
+  }
+}

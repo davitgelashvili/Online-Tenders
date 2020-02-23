@@ -61,4 +61,12 @@ $(window).on("load", function() {
       $(this).html('<i class="far fa-star"></i>');
     }
   });
+
+  // ტენდერის გამოწერაში ყველას მონიშვნა
+  $("#check-all").click(function() {
+    $('.subscribe__listing input[type="checkbox"]').prop(
+      "checked",
+      this.checked
+    );
+  });
 });
