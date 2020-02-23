@@ -6035,6 +6035,37 @@ form.questions-form {
   background: #a7acaf;
 }
 
+.tr-trigger {
+  cursor: pointer;
+}
+
+.attachment {
+  background: #fff !important;
+  display: none;
+}
+.attachment.active {
+  display: table-row;
+}
+.attachment ul li {
+  display: flex;
+  align-items: center;
+  padding: 15px 0;
+}
+.attachment ul li:not(:last-child) {
+  border-bottom: 1px solid #e4e4e4;
+}
+.attachment ul li figure {
+  margin-right: 10px;
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  overflow: hidden;
+  background: #f6f7f9;
+}
+
 .result__rounds .trade-history table {
   width: 100%;
   border-collapse: collapse;

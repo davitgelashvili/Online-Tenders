@@ -120,3 +120,40 @@
     }
   }
 }
+
+.tr-trigger {
+  cursor: pointer;
+}
+
+.attachment {
+  background: #fff !important;
+  display: none;
+
+  &.active {
+    display: table-row;
+  }
+
+  ul {
+    li {
+      display: flex;
+      align-items: center;
+      padding: 15px 0;
+
+      &:not(:last-child) {
+        border-bottom: 1px solid #e4e4e4;
+      }
+
+      figure {
+        margin-right: 10px;
+        width: 34px;
+        height: 34px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 100%;
+        overflow: hidden;
+        background: #f6f7f9;
+      }
+    }
+  }
+}

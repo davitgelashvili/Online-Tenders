@@ -357,16 +357,14 @@
                           <tr>
                             <th>#</th>
                             <th>მონაწილე</th>
-                            <th>საბოლოო შეთავაზება</th>
-                            <th>საწყისი შეთავაზება</th>
+                            <th>შეთავაზება</th>
                             <th>დოკუმენტები</th>
                           </tr>
                         </thead>
                         <tbody>
-                          <tr>
+                          <tr class="tr-trigger">
                             <td>1</td>
                             <td>Wandio Development</td>
-                            <td>34 000</td>
                             <td>44 000</td>
                             <td>
                               <button>
@@ -374,21 +372,71 @@
                               </button>
                             </td>
                           </tr>
-                          <tr>
+                          <tr class="attachment">
+                            <td colspan="4">
+                              <div>
+                                <ul>
+                                  <li>
+                                    <figure>
+                                      <img src="img/pdf.svg" alt="" />
+                                    </figure>
+                                    <span
+                                      >სატენდერო დოკუიმენტაციის აღწერის
+                                      მასალა</span
+                                    >
+                                  </li>
+                                  <li>
+                                    <figure>
+                                      <img src="img/pdf.svg" alt="" />
+                                    </figure>
+                                    <span
+                                      >სატენდერო დოკუიმენტაციის აღწერის
+                                      მასალა</span
+                                    >
+                                  </li>
+                                </ul>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr class="tr-trigger">
                             <td>2</td>
                             <td>Omega Capital</td>
-                            <td>34 000</td>
                             <td>44 000</td>
                             <td>
                               <button>
                                 <i class="fas fa-cloud-download-alt"></i>
                               </button>
+                            </td>
+                          </tr>
+                          <tr class="attachment">
+                            <td colspan="4">
+                              <div>
+                                <ul>
+                                  <li>
+                                    <figure>
+                                      <img src="img/pdf.svg" alt="" />
+                                    </figure>
+                                    <span
+                                      >სატენდერო დოკუიმენტაციის აღწერის
+                                      მასალა</span
+                                    >
+                                  </li>
+                                  <li>
+                                    <figure>
+                                      <img src="img/pdf.svg" alt="" />
+                                    </figure>
+                                    <span
+                                      >სატენდერო დოკუიმენტაციის აღწერის
+                                      მასალა</span
+                                    >
+                                  </li>
+                                </ul>
+                              </div>
                             </td>
                           </tr>
                           <tr>
                             <td>3</td>
                             <td>Netguru Comercial</td>
-                            <td>34 000</td>
                             <td>44 000</td>
                             <td>
                               <button>
@@ -522,6 +570,20 @@
         </div>
       </div>
     </div>
+
+    <script>
+      const trigger = document.getElementsByClassName("tr-trigger");
+
+      for (let i = 0; i < trigger.length; i++) {
+        trigger[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          let panel = this.nextElementSibling;
+
+          panel.classList.toggle("active");
+        });
+      }
+    </script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/owl.carousel.js"></script>
     <script src="js/owl.carousel.min.js"></script>
