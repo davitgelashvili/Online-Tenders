@@ -4932,6 +4932,9 @@ img {
   justify-content: center;
   align-items: center;
 }
+.modal.active {
+  display: flex;
+}
 .modal__content {
   position: relative;
   padding: 44px 50px;
@@ -6655,6 +6658,17 @@ form.questions-form {
   width: 100%;
   height: 100%;
 }
+.user__header {
+  margin-bottom: 17px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.user__header h1 {
+  color: var(--color-dark);
+  font-size: 23px;
+  font-weight: 700;
+}
 .user__title {
   margin-top: 15px;
   color: var(--color-dark);
@@ -6804,9 +6818,9 @@ form.questions-form {
 }
 
 .users table {
+  width: 100%;
   border-collapse: collapse;
   border-radius: 8px;
-  overflow: hidden;
 }
 .users table thead {
   background: #edeef0;
@@ -6817,6 +6831,14 @@ form.questions-form {
   font-size: 12px;
   font-weight: 500;
   white-space: nowrap;
+}
+.users table thead tr th:first-child {
+  border-top-left-radius: 8px;
+  overflow: hidden;
+}
+.users table thead tr th:nth-child(7) {
+  border-top-right-radius: 8px;
+  overflow: hidden;
 }
 .users table thead tr th:nth-child(2) {
   text-align: left;
@@ -6838,8 +6860,22 @@ form.questions-form {
   font-weight: 400;
   white-space: nowrap;
 }
+.users table tbody tr td:first-child {
+  border-bottom-left-radius: 8px;
+  overflow: hidden;
+}
 .users table tbody tr td:nth-child(2) {
   text-align: left;
+}
+.users table tbody tr td:nth-child(6) {
+  padding: 16px 0;
+}
+.users table tbody tr td:nth-child(7) {
+  padding: 16px 20px 16px 10px;
+  border-bottom-right-radius: 8px;
+}
+.users table tbody tr td:last-child {
+  position: relative;
 }
 .users table tbody tr td button {
   border: none;
@@ -6848,6 +6884,7 @@ form.questions-form {
 }
 .users table tbody tr td:last-child i {
   color: #9da9b4;
+  font-size: 20px;
   opacity: 0;
   transition: opacity 0.2s linear;
 }
@@ -6858,22 +6895,115 @@ form.questions-form {
   border-radius: 4px;
 }
 
+.edit.active i {
+  opacity: 1 !important;
+}
+
 .edit-menu {
   position: absolute;
-  right: 75px;
+  right: 2px;
+  bottom: -58px;
+  width: 130px;
   padding: 20px 24px 14px 14px;
   background: #fff;
   border-radius: 4px;
   box-shadow: 0 3px 16px rgba(0, 0, 0, 0.16);
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s linear;
 }
-.edit-menu li {
-  display: flex;
+.edit-menu.active {
+  visibility: initial;
+  opacity: 1;
+  pointer-events: initial;
+}
+.edit-menu::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  right: 25px;
+  width: 10px;
+  height: 10px;
+  transform: rotate(45deg);
+  background: #fff;
 }
 .edit-menu li:not(:last-child) {
   margin-bottom: 12px;
 }
+.edit-menu li a {
+  display: flex;
+  color: #2d3e4d;
+  font-size: 10px;
+  font-weight: 500;
+}
+.edit-menu li a.delete-user {
+  color: #f1616f;
+}
 .edit-menu li img {
   margin-right: 6px;
+}
+
+.add-user-btn {
+  display: flex;
+  align-items: center;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+.add-user-btn i {
+  margin-right: 6px;
+  color: #2d3e4d;
+  font-size: 14px;
+}
+.add-user-btn span {
+  color: #141b3d;
+  font-family: "FiraGO", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.add-user h3 {
+  margin-bottom: 32px;
+  color: #2d3e4d;
+  font-size: 28px;
+  font-weight: 900;
+}
+.add-user__field {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.add-user__field label {
+  margin-bottom: 12px;
+  color: #141b3d;
+  font-size: 12px;
+  font-weight: 500;
+}
+.add-user__field input[type=text],
+.add-user__field input[type=tel],
+.add-user__field input[type=email] {
+  width: 100%;
+  height: 48px;
+  padding: 0 20px;
+  color: #141b3d;
+  font-family: "FiraGO", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  border: 1px solid #dadde2;
+  border-radius: 8px;
+}
+.add-user button {
+  width: 100%;
+  height: 52px;
+  color: #fff;
+  font-family: "FiraGO", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  background: #32b4d7;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
 }
 
 .register {

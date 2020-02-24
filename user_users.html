@@ -184,7 +184,13 @@
         </div>
         <div class="col-lg-9 col-12">
           <div class="content">
-            <h1 class="user-edit__title">პერსონალური ინფორმაცია</h1>
+            <header class="user__header">
+              <h1>პერსონალური ინფორმაცია</h1>
+              <button class="add-user-btn">
+                <i class="fas fa-plus-circle"></i>
+                <span>დამატება</span>
+              </button>
+            </header>
 
             <div class="users">
               <table>
@@ -215,12 +221,16 @@
                       <div class="edit-menu">
                         <ul>
                           <li>
-                            <img src="img/edit.svg" alt="" />
-                            <span>რედაქტირება</span>
+                            <a href="#">
+                              <img src="img/edit.svg" alt="" />
+                              <span>რედაქტირება</span>
+                            </a>
                           </li>
                           <li>
-                            <img src="img/lock.svg" alt="" />
-                            <span>დაბლოკვა</span>
+                            <a href="#" class="delete-user">
+                              <img src="img/lock.svg" alt="" />
+                              <span>დაბლოკვა</span>
+                            </a>
                           </li>
                         </ul>
                       </div>
@@ -237,6 +247,23 @@
                       <button class="edit">
                         <i class="fas fa-ellipsis-h"></i>
                       </button>
+
+                      <div class="edit-menu">
+                        <ul>
+                          <li>
+                            <a href="#">
+                              <img src="img/edit.svg" alt="" />
+                              <span>რედაქტირება</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#" class="delete-user">
+                              <img src="img/lock.svg" alt="" />
+                              <span>დაბლოკვა</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
                     </td>
                   </tr>
                   <tr>
@@ -250,6 +277,23 @@
                       <button class="edit">
                         <i class="fas fa-ellipsis-h"></i>
                       </button>
+
+                      <div class="edit-menu">
+                        <ul>
+                          <li>
+                            <a href="#">
+                              <img src="img/edit.svg" alt="" />
+                              <span>რედაქტირება</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#" class="delete-user">
+                              <img src="img/lock.svg" alt="" />
+                              <span>დაბლოკვა</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
                     </td>
                   </tr>
                 </tbody>
@@ -259,6 +303,36 @@
         </div>
       </div>
     </div>
+
+    <!-- Add User Modal -->
+    <div class="modal" id="add-user-modal">
+      <div class="modal__content">
+        <button class="modal__close"><i class="fas fa-times"></i></button>
+
+        <form action="#" class="add-user">
+          <h3>მომხმარებლის დამატება</h3>
+
+          <div class="add-user__field">
+            <label for="name">სახელი</label><input type="text" />
+          </div>
+          <div class="add-user__field">
+            <label for="last-name">გვარი</label><input type="text" />
+          </div>
+          <div class="add-user__field">
+            <label for="position">თანამდებობა</label><input type="text" />
+          </div>
+          <div class="add-user__field">
+            <label for="phone">ტელეფონი</label><input type="tel" />
+          </div>
+          <div class="add-user__field">
+            <label for="mail">ელ.ფოსტა</label><input type="email" />
+          </div>
+
+          <button type="submit">დამატება</button>
+        </form>
+      </div>
+    </div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/owl.carousel.js"></script>
     <script src="js/owl.carousel.min.js"></script>
