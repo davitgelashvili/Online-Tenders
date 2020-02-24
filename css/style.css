@@ -6176,6 +6176,20 @@ form.questions-form {
   margin-top: 20px;
   padding-bottom: 12px;
 }
+.search-out.open input {
+  border-bottom-left-radius: 0;
+}
+@media only screen and (max-width: 991px) {
+  .search-out.open input {
+    border-bottom-right-radius: 0;
+  }
+}
+.search-out.open .search-switch {
+  border-bottom-right-radius: 0;
+}
+.search-out.open .search-results {
+  display: block;
+}
 
 .search {
   display: flex;
@@ -6281,6 +6295,58 @@ form.questions-form {
 
 .search-switch input[type=checkbox]:checked ~ .toggle-switch-slider::after {
   transform: translateX(11px);
+}
+
+.search-results {
+  position: absolute;
+  top: 34px;
+  left: 0;
+  width: 682px;
+  background: #fafafa;
+  border: 1px solid #e4e6ea;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  box-shadow: 0 23px 36px rgba(0, 0, 0, 0.16);
+  z-index: 100000;
+  display: none;
+}
+@media only screen and (max-width: 991px) {
+  .search-results {
+    width: 100%;
+  }
+}
+.search-results ul {
+  padding: 25px 15px;
+}
+.search-results ul li {
+  display: flex;
+  justify-content: space-between;
+}
+.search-results ul li:not(:last-child) {
+  margin-bottom: 24px;
+}
+.search-results ul li p {
+  max-width: 546px;
+  color: #141b3d;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+@media only screen and (max-width: 991px) {
+  .search-results ul li p {
+    max-width: 80%;
+  }
+}
+@media only screen and (max-width: 578px) {
+  .search-results ul li p {
+    max-width: 70%;
+  }
+}
+.search-results ul li a {
+  color: #5d6367;
+  font-size: 12px;
+  font-weight: 400;
+  text-decoration: underline;
 }
 
 .tender-tags {
@@ -7661,6 +7727,21 @@ form.questions-form {
   font-size: 13px;
   font-weight: 500;
 }
+.dashboard__listing__title {
+  position: relative;
+}
+.dashboard__listing__title h3 {
+  padding-left: 20px;
+}
+.dashboard__listing__title ~ span {
+  color: #9da9b4;
+  font-size: 11px;
+  font-weight: 400;
+}
+.dashboard__table {
+  border-radius: 8px;
+  border: 2px solid #f0f0f0;
+}
 .dashboard__table table {
   width: 100%;
   border-collapse: collapse;
@@ -7683,7 +7764,7 @@ form.questions-form {
   padding-right: 20px;
 }
 .dashboard__table table tbody tr:nth-child(odd) {
-  background: #f0f0f1;
+  background: rgba(240, 240, 240, 0.5);
 }
 .dashboard__table table tbody td {
   padding-top: 20px;
@@ -7704,6 +7785,50 @@ form.questions-form {
 }
 .dashboard__table table tbody td span {
   display: block;
+  white-space: nowrap;
+}
+
+.status {
+  min-width: 90px;
+  padding: 5px;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 10px;
+}
+.status--complete {
+  background: #fd7804;
+}
+.status--accepting {
+  background: #fbaa38;
+}
+.status--selecting {
+  background: #7d6eb2;
+}
+.status--contract {
+  background: #55b14f;
+}
+.status--rejected {
+  background: #f1616f;
+}
+
+.chat {
+  width: 24px;
+  height: 24px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+}
+.chat i {
+  color: #fff;
+}
+.chat--blue {
+  background: #32b4d7;
+}
+.chat--red {
+  background: #f1616f;
 }
 
 .input-checkbox {

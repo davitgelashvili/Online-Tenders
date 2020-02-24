@@ -47,7 +47,23 @@
   &__form {
   }
 
+  &__listing {
+    &__title {
+      position: relative;
+      h3 {
+        padding-left: 20px;
+      }
+      & ~ span {
+        color: #9da9b4;
+        font-size: 11px;
+        font-weight: 400;
+      }
+    }
+  }
+
   &__table {
+    border-radius: 8px;
+    border: 2px solid #f0f0f0;
     table {
       width: 100%;
       border-collapse: collapse;
@@ -75,7 +91,7 @@
       tbody {
         tr {
           &:nth-child(odd) {
-            background: rgba(240, 240, 240.5);
+            background: rgba(240, 240, 240, 0.5);
           }
         }
         td {
@@ -96,9 +112,61 @@
           }
           span {
             display: block;
+            white-space: nowrap;
           }
         }
       }
     }
+  }
+}
+
+.status {
+  min-width: 90px;
+  padding: 5px;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 10px;
+
+  &--complete {
+    background: #fd7804;
+  }
+
+  &--accepting {
+    background: #fbaa38;
+  }
+
+  &--selecting {
+    background: #7d6eb2;
+  }
+
+  &--contract {
+    background: #55b14f;
+  }
+
+  &--rejected {
+    background: #f1616f;
+  }
+}
+
+.chat {
+  width: 24px;
+  height: 24px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+
+  i {
+    color: #fff;
+  }
+
+  &--blue {
+    background: #32b4d7;
+  }
+
+  &--red {
+    background: #f1616f;
   }
 }
