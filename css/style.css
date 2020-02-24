@@ -7661,6 +7661,21 @@ form.questions-form {
   font-size: 13px;
   font-weight: 500;
 }
+.dashboard__listing__title {
+  position: relative;
+}
+.dashboard__listing__title h3 {
+  padding-left: 20px;
+}
+.dashboard__listing__title ~ span {
+  color: #9da9b4;
+  font-size: 11px;
+  font-weight: 400;
+}
+.dashboard__table {
+  border-radius: 8px;
+  border: 2px solid #f0f0f0;
+}
 .dashboard__table table {
   width: 100%;
   border-collapse: collapse;
@@ -7683,7 +7698,7 @@ form.questions-form {
   padding-right: 20px;
 }
 .dashboard__table table tbody tr:nth-child(odd) {
-  background: #f0f0f1;
+  background: rgba(240, 240, 240, 0.5);
 }
 .dashboard__table table tbody td {
   padding-top: 20px;
@@ -7704,6 +7719,50 @@ form.questions-form {
 }
 .dashboard__table table tbody td span {
   display: block;
+  white-space: nowrap;
+}
+
+.status {
+  min-width: 90px;
+  padding: 5px;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 10px;
+}
+.status--complete {
+  background: #fd7804;
+}
+.status--accepting {
+  background: #fbaa38;
+}
+.status--selecting {
+  background: #7d6eb2;
+}
+.status--contract {
+  background: #55b14f;
+}
+.status--rejected {
+  background: #f1616f;
+}
+
+.chat {
+  width: 24px;
+  height: 24px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+}
+.chat i {
+  color: #fff;
+}
+.chat--blue {
+  background: #32b4d7;
+}
+.chat--red {
+  background: #f1616f;
 }
 
 .input-checkbox {
