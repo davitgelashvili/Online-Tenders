@@ -72,4 +72,12 @@ $(window).on("load", function() {
     const editMenu = this.nextElementSibling;
     editMenu.classList.toggle("active");
   });
+
+  $(".search-input input").keyup(function() {
+    if ($("#toggleSwitch").is(":checked")) {
+      $(".search-out")[0].classList.add("open");
+    } else {
+      $(".search-out")[0].classList.remove("open");
+    }
+  });
 });
