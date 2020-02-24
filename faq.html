@@ -142,7 +142,7 @@
         <div class="faq-accordion">
           <div class="question">
             <button class="faq-accordion__btn">
-              <i class="fas fa-plus"></i>
+              <img src="img/plus.svg" alt="" />
               <span>რა არის Tenders.ge და რაში გამომადგება მე?</span>
             </button>
             <div class="faq-accordion__answer">
@@ -161,7 +161,7 @@
           <!-- end .question -->
           <div class="question">
             <button class="faq-accordion__btn">
-              <i class="fas fa-plus"></i>
+              <img src="img/plus.svg" alt="" />
               <span>რა არის Tenders.ge და რაში გამომადგება მე?</span>
             </button>
             <div class="faq-accordion__answer">
@@ -180,7 +180,7 @@
           <!-- end .question -->
           <div class="question">
             <button class="faq-accordion__btn">
-              <i class="fas fa-plus"></i>
+              <img src="img/plus.svg" alt="" />
               <span>რა არის Tenders.ge და რაში გამომადგება მე?</span>
             </button>
             <div class="faq-accordion__answer">
@@ -207,6 +207,13 @@
       for (let i = 0; i < acc.length; i++) {
         acc[i].addEventListener("click", function() {
           this.classList.toggle("active");
+
+          if (this.querySelector("img").src.includes("img/plus.svg")) {
+            this.querySelector("img").src = "img/minus.svg";
+          } else {
+            this.querySelector("img").src = "img/plus.svg";
+          }
+
           let panel = this.nextElementSibling;
           if (panel.style.maxHeight) {
             panel.style.maxHeight = null;
