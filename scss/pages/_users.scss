@@ -1,0 +1,227 @@
+.users {
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 8px;
+    thead {
+      background: #edeef0;
+      tr {
+        th {
+          padding: 20px;
+          color: #55646f;
+          font-size: 12px;
+          font-weight: 500;
+          white-space: nowrap;
+
+          &:first-child {
+            border-top-left-radius: 8px;
+            overflow: hidden;
+          }
+          &:nth-child(7) {
+            border-top-right-radius: 8px;
+            overflow: hidden;
+          }
+
+          &:nth-child(2) {
+            text-align: left;
+          }
+        }
+      }
+    }
+    tbody {
+      tr {
+        background: rgba(242, 242, 242, 0.4);
+        &:not(:last-child) {
+          border-bottom: 1px solid #edeef0;
+        }
+        &:hover {
+          td {
+            &:last-child {
+              i {
+                opacity: 1;
+              }
+            }
+          }
+        }
+        td {
+          text-align: center;
+          padding: 16px;
+          color: #2d3e4d;
+          font-size: 12px;
+          font-weight: 400;
+          white-space: nowrap;
+
+          &:first-child {
+            border-bottom-left-radius: 8px;
+            overflow: hidden;
+          }
+
+          &:nth-child(2) {
+            text-align: left;
+          }
+          &:nth-child(6) {
+            padding: 16px 0;
+          }
+          &:nth-child(7) {
+            padding: 16px 20px 16px 10px;
+            border-bottom-right-radius: 8px;
+          }
+
+          &:last-child {
+            position: relative;
+          }
+
+          button {
+            border: none;
+            background: transparent;
+            cursor: pointer;
+          }
+          &:last-child {
+            i {
+              color: #9da9b4;
+              font-size: 20px;
+              opacity: 0;
+              transition: opacity 0.2s linear;
+            }
+          }
+        }
+      }
+    }
+  }
+  .status {
+    &--active {
+      padding: 6px 10px;
+      color: #fff;
+      background: #08b557;
+      border-radius: 4px;
+    }
+  }
+}
+
+.edit {
+  &.active {
+    i {
+      opacity: 1 !important;
+    }
+  }
+}
+
+.edit-menu {
+  position: absolute;
+  right: 2px;
+  bottom: -58px;
+  width: 130px;
+  padding: 20px 24px 14px 14px;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 3px 16px rgba(0, 0, 0, 0.16);
+
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s linear;
+
+  &.active {
+    visibility: initial;
+    opacity: 1;
+    pointer-events: initial;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    right: 25px;
+    width: 10px;
+    height: 10px;
+    transform: rotate(45deg);
+    background: #fff;
+  }
+  li {
+    &:not(:last-child) {
+      margin-bottom: 12px;
+    }
+
+    a {
+      display: flex;
+      color: #2d3e4d;
+      font-size: 10px;
+      font-weight: 500;
+
+      &.delete-user {
+        color: #f1616f;
+      }
+    }
+
+    img {
+      margin-right: 6px;
+    }
+  }
+}
+
+.add-user-btn {
+  display: flex;
+  align-items: center;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+
+  i {
+    margin-right: 6px;
+    color: #2d3e4d;
+    font-size: 14px;
+  }
+
+  span {
+    color: #141b3d;
+    font-family: "FiraGO", sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+  }
+}
+
+.add-user {
+  h3 {
+    margin-bottom: 32px;
+    color: #2d3e4d;
+    font-size: 28px;
+    font-weight: 900;
+  }
+  &__field {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+
+    label {
+      margin-bottom: 12px;
+      color: #141b3d;
+      font-size: 12px;
+      font-weight: 500;
+    }
+
+    input[type="text"],
+    input[type="tel"],
+    input[type="email"] {
+      width: 100%;
+      height: 48px;
+      padding: 0 20px;
+      color: #141b3d;
+      font-family: "FiraGO", sans-serif;
+      font-size: 13px;
+      font-weight: 400;
+      border: 1px solid #dadde2;
+      border-radius: 8px;
+    }
+  }
+  button {
+    width: 100%;
+    height: 52px;
+    color: #fff;
+    font-family: "FiraGO", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    background: #32b4d7;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+}

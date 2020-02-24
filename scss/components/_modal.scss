@@ -12,6 +12,10 @@
   justify-content: center;
   align-items: center;
 
+  &.active {
+    display: flex;
+  }
+
   &__content {
     position: relative;
     padding: 44px 50px;

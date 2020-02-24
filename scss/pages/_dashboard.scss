@@ -1,0 +1,104 @@
+.dashboard {
+  &__header {
+    margin-bottom: 32px;
+    h2 {
+      color: #141b3d;
+      font-size: 23px;
+      font-weight: 700;
+    }
+  }
+
+  &__stats {
+    margin-bottom: 37px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 142px;
+    column-gap: 22px;
+    &__item {
+      border-radius: 12px;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-left: 40px;
+      &:first-child {
+        background: #32b4d7;
+      }
+      &:nth-child(2) {
+        background: #55b14f;
+      }
+      &:nth-child(3) {
+        background: #f1616f;
+      }
+      &:nth-child(4) {
+        background: #7d6eb2;
+      }
+      div {
+        font-size: 43px;
+        font-weight: 500;
+      }
+      p {
+        font-size: 13px;
+        font-weight: 500;
+      }
+    }
+  }
+
+  &__form {
+  }
+
+  &__table {
+    table {
+      width: 100%;
+      border-collapse: collapse;
+
+      thead {
+        th {
+          padding-top: 15px;
+          padding-bottom: 15px;
+
+          padding-left: 10px;
+          padding-right: 10px;
+          color: #141b3d;
+          font-size: 11px;
+          font-weight: 500;
+          text-align: center;
+          &:first-child {
+            text-align: left;
+            padding-left: 20px;
+          }
+          &:last-child {
+            padding-right: 20px;
+          }
+        }
+      }
+      tbody {
+        tr {
+          &:nth-child(odd) {
+            background: rgba(240, 240, 240.5);
+          }
+        }
+        td {
+          padding-top: 20px;
+          padding-bottom: 20px;
+          padding-left: 10px;
+          padding-right: 10px;
+          color: #141b3d;
+          font-size: 12px;
+          font-weight: 500;
+          text-align: center;
+          &:first-child {
+            text-align: left;
+            padding-left: 20px;
+          }
+          &:last-child {
+            padding-right: 20px;
+          }
+          span {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}

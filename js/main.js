@@ -37,14 +37,11 @@ $(window).on("load", function() {
 
   // Modal
   $(".modal__close").click(function() {
-    $(".modal").css("display", "none");
+    $(".modal")[0].classList.remove("active");
   });
 
-  // მოდალის გარეთ დაკლიკებაზე დახურვა
-  $(document).click(function(e) {
-    if (!$(e.target).closest(".modal__content").length > 0) {
-      $(".modal").css("display", "none");
-    }
+  $(".add-user-btn").click(function() {
+    $("#add-user-modal")[0].classList.add("active");
   });
 
   $(".header__user").click(function() {
@@ -60,5 +57,19 @@ $(window).on("load", function() {
     } else {
       $(this).html('<i class="far fa-star"></i>');
     }
+  });
+
+  // ტენდერის გამოწერაში ყველას მონიშვნა
+  $("#check-all").click(function() {
+    $('.subscribe__listing input[type="checkbox"]').prop(
+      "checked",
+      this.checked
+    );
+  });
+
+  $(".edit").click(function() {
+    this.classList.toggle("active");
+    const editMenu = this.nextElementSibling;
+    editMenu.classList.toggle("active");
   });
 });
