@@ -1,0 +1,40 @@
+.note {
+  padding: 28px 30px;
+  max-width: 664px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid;
+  border-radius: 8px;
+
+  h2 {
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  p {
+    font-size: 13px;
+    font-weight: 400;
+  }
+
+  &--blue {
+    color: #32b4d7;
+    background: #e9f7fa;
+    border-color: #d3e8ed;
+  }
+  &--red {
+    color: #f1616f;
+    background: #feeff0;
+    border-color: #f4dedf;
+  }
+  &--orange {
+    color: #fbaa38;
+    background: #fef6ea;
+    border-color: #f5e9d6;
+  }
+  &--green {
+    color: #4ab73f;
+    background: #ecf6eb;
+    border-color: #daedd8;
+  }
+}
