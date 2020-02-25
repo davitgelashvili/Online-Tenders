@@ -7793,6 +7793,102 @@ form.questions-form {
   font-size: 13px;
   font-weight: 500;
 }
+.dashboard__form {
+  margin-bottom: 30px;
+}
+.dashboard__form__heading ul {
+  display: flex;
+}
+.dashboard__form__heading li {
+  position: relative;
+  margin-bottom: 0;
+  padding: 20px 30px;
+  color: #141b3d;
+  font-size: 12px;
+  font-weight: 600;
+  border: 1px solid #dadde2;
+  border-bottom: none;
+  border-radius: 8px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  background: #fff;
+  z-index: 1;
+}
+.dashboard__form__heading li.disabled {
+  color: #9da9b4;
+  border: none;
+  background: transparent;
+}
+.dashboard__form__content form {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background: #f0f0f0;
+  overflow: hidden;
+  border-radius: 8px;
+  border-top-left-radius: 0;
+}
+.dashboard__form__wrapper {
+  padding: 25px 30px;
+  display: flex;
+  border: 1px solid #dadde2;
+  border-radius: 8px;
+  background: #fff;
+  border-top-left-radius: 0;
+}
+.dashboard__form__group:not(:last-child) {
+  margin-right: 30px;
+}
+.dashboard__form__field {
+  display: flex;
+  flex-direction: column;
+}
+.dashboard__form__field:not(:last-child) {
+  margin-bottom: 17px;
+}
+.dashboard__form__field label {
+  margin-bottom: 9px;
+  color: #141b3d;
+  font-family: "FiraGO", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+}
+.dashboard__form__field input {
+  padding: 0 20px;
+  min-width: 272px;
+  height: 48px;
+  color: #141b3d;
+  font-family: "FiraGO", sans-serif;
+  font-size: 14px;
+  border: 1px solid #dadde2;
+  border-radius: 8px;
+}
+.dashboard__form__cta {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+}
+.dashboard__form__cta button {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+}
+.dashboard__form__cta button img {
+  margin-bottom: 8px;
+}
+.dashboard__form__cta button span {
+  color: #141b3d;
+  font-family: "FiraGO", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+}
 .dashboard__listing__title {
   position: relative;
 }
@@ -7855,9 +7951,13 @@ form.questions-form {
 }
 
 .status {
-  min-width: 90px;
+  min-width: 80px;
+  min-height: 28px;
   padding: 5px;
   border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: #fff;
   font-size: 10px;
 }
@@ -7873,7 +7973,7 @@ form.questions-form {
 .status--contract {
   background: #55b14f;
 }
-.status--rejected {
+.status--negative {
   background: #f1616f;
 }
 
