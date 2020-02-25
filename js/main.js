@@ -72,4 +72,18 @@ $(window).on("load", function() {
     const editMenu = this.nextElementSibling;
     editMenu.classList.toggle("active");
   });
+
+  // Search box
+  $(".search-input input").keypress(function() {
+    if ($("#toggleSwitch").is(":checked")) {
+      $(".search-out")[0].classList.add("open");
+    } else {
+      $(".search-out")[0].classList.remove("open");
+    }
+  });
+  $(".search-input input").blur(function() {
+    if ($(this).val().length === 0) {
+      $(".search-out")[0].classList.remove("open");
+    }
+  });
 });

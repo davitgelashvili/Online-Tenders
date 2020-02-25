@@ -5,10 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>TENDERS.GE</title>
-    <link
-      href="https://free.bboxtype.com/embedfonts/?family=FiraGO:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,900,900i"
-      rel="stylesheet"
-    />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
@@ -167,7 +164,58 @@
         </div>
 
         <div class="dashboard__form">
-          <form action=""></form>
+          <div class="dashboard__form__heading">
+            <ul>
+              <li>მონაწილეობები</li>
+              <li class="disabled">პრეკვალიფიკაცია <span>1</span></li>
+            </ul>
+          </div>
+
+          <div class="dashboard__form__content">
+            <form action="#">
+              <div class="dashboard__form__wrapper">
+                <div class="dashboard__form__group">
+                  <div class="dashboard__form__field">
+                    <label for="company1">კომპანია</label>
+                    <input type="text" name="company1" id="company1" />
+                  </div>
+                  <div class="dashboard__form__field">
+                    <label for="status1">სტატუსი</label>
+                    <input type="text" name="status1" id="status1" />
+                  </div>
+                </div>
+                <!-- end .dashboard__form__group -->
+                <div class="dashboard__form__group">
+                  <div class="dashboard__form__field">
+                    <label for="company2">კომპანია</label>
+                    <input type="text" name="company2" id="company2" />
+                  </div>
+                  <div class="dashboard__form__field">
+                    <label for="status2">სტატუსი</label>
+                    <input type="text" name="status2" id="status2" />
+                  </div>
+                </div>
+                <!-- end .dashboard__form__group -->
+                <div class="dashboard__form__group">
+                  <div class="dashboard__form__field">
+                    <label for="company3">კომპანია</label>
+                    <input type="text" name="company3" id="company3" />
+                  </div>
+                  <div class="dashboard__form__field">
+                    <label for="status3">სტატუსი</label>
+                    <input type="text" name="status3" id="status3" />
+                  </div>
+                </div>
+                <!-- end .dashboard__form__group -->
+              </div>
+              <div class="dashboard__form__cta">
+                <button type="submit">
+                  <img src="img/magnifier.svg" alt="" />
+                  <span>ძიება</span>
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
 
         <div class="dashboard__table">
@@ -218,6 +266,7 @@
                   </button>
                 </td>
               </tr>
+              <!-- end tr -->
               <tr>
                 <td>
                   <div class="dashboard__listing__title">
@@ -244,13 +293,18 @@
                 </td>
                 <td>3 ბიჯიანი</td>
                 <td>3</td>
-                <td><div class="status status--complete">დასრულებული</div></td>
+                <td>
+                  <div class="status status--accepting">
+                    წინადადებების მიღება
+                  </div>
+                </td>
                 <td>
                   <button class="chat chat--blue">
                     <i class="fas fa-comment"></i>
                   </button>
                 </td>
               </tr>
+              <!-- end tr -->
               <tr>
                 <td>
                   <div class="dashboard__listing__title">
@@ -277,13 +331,14 @@
                 </td>
                 <td>3 ბიჯიანი</td>
                 <td>3</td>
-                <td><div class="status status--complete">დასრულებული</div></td>
+                <td><div class="status status--selecting">შერჩევა</div></td>
                 <td>
                   <button class="chat chat--blue">
                     <i class="fas fa-comment"></i>
                   </button>
                 </td>
               </tr>
+              <!-- end tr -->
               <tr>
                 <td>
                   <div class="dashboard__listing__title">
@@ -310,13 +365,54 @@
                 </td>
                 <td>3 ბიჯიანი</td>
                 <td>3</td>
-                <td><div class="status status--complete">დასრულებული</div></td>
+                <td>
+                  <div class="status status--contract">
+                    ხელშეკრულება დადებულია
+                  </div>
+                </td>
                 <td>
                   <button class="chat chat--red">
                     <i class="fas fa-comment"></i>
                   </button>
                 </td>
               </tr>
+              <!-- end tr -->
+              <tr>
+                <td>
+                  <div class="dashboard__listing__title">
+                    <div class="badge">
+                      <span class="badge__shown">E</span>
+                      <div class="badge__tooltip">ელ. ტენდერი</div>
+                    </div>
+                    <h3>
+                      T5963 - ფასთა გამოკითხვა ფოლადის ბურთულების შესყიდვაზე
+                    </h3>
+                  </div>
+                  <span>Tesla</span>
+                </td>
+                <td>
+                  კონსტანტინე მეტრეველი
+                </td>
+                <td>
+                  <span>22-ოქტ</span>
+                  <span>2019</span>
+                </td>
+                <td>
+                  <span>22-ოქტ</span>
+                  <span>2019 18:00</span>
+                </td>
+                <td>3 ბიჯიანი</td>
+                <td>3</td>
+                <td>
+                  <div class="status status--negative">უარყოფითი შედეგი</div>
+                </td>
+                <td>
+                  <button class="chat chat--red">
+                    <i class="fas fa-comment"></i>
+                  </button>
+                </td>
+              </tr>
+              <!-- end tr -->
             </tbody>
           </table>
         </div>
