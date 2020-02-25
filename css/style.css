@@ -7997,6 +7997,38 @@ form.questions-form {
   background: #f1616f;
 }
 
+.not-found {
+  background: #fff;
+}
+.not-found .header {
+  box-shadow: none;
+}
+.not-found .header .site-logo img {
+  width: 156px;
+}
+.not-found__texts {
+  margin-top: 50px;
+}
+.not-found__texts h2 {
+  margin-bottom: 12px;
+  color: #f1616f;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+}
+.not-found__texts p {
+  margin: 0 auto;
+  max-width: 328px;
+  color: #2d3e4d;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+}
+.not-found__texts p a {
+  color: #32b4d7;
+  text-decoration: underline;
+}
+
 .input-checkbox {
   display: flex;
 }
