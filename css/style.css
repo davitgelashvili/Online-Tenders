@@ -7765,6 +7765,13 @@ form.questions-form {
   grid-template-rows: 142px;
   column-gap: 22px;
 }
+@media only screen and (max-width: 991px) {
+  .dashboard__stats {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 142px 142px;
+    row-gap: 22px;
+  }
+}
 .dashboard__stats__item {
   border-radius: 12px;
   color: #fff;
@@ -7801,7 +7808,7 @@ form.questions-form {
 }
 .dashboard__form__heading li {
   position: relative;
-  margin-bottom: 0;
+  margin-bottom: -1px;
   padding: 20px 30px;
   color: #141b3d;
   font-size: 12px;
@@ -7828,6 +7835,11 @@ form.questions-form {
   border-radius: 8px;
   border-top-left-radius: 0;
 }
+@media only screen and (max-width: 991px) {
+  .dashboard__form__content form {
+    flex-direction: column;
+  }
+}
 .dashboard__form__wrapper {
   padding: 25px 30px;
   display: flex;
@@ -7836,8 +7848,18 @@ form.questions-form {
   background: #fff;
   border-top-left-radius: 0;
 }
+@media only screen and (max-width: 768px) {
+  .dashboard__form__wrapper {
+    flex-direction: column;
+  }
+}
 .dashboard__form__group:not(:last-child) {
   margin-right: 30px;
+}
+@media only screen and (max-width: 768px) {
+  .dashboard__form__group:not(:last-child) {
+    margin-right: 0;
+  }
 }
 .dashboard__form__field {
   display: flex;
@@ -7862,6 +7884,21 @@ form.questions-form {
   font-size: 14px;
   border: 1px solid #dadde2;
   border-radius: 8px;
+}
+@media only screen and (max-width: 1250px) {
+  .dashboard__form__field input {
+    min-width: auto;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .dashboard__form__field input {
+    width: 185px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .dashboard__form__field input {
+    width: 100%;
+  }
 }
 .dashboard__form__cta {
   width: 100%;
@@ -7889,6 +7926,11 @@ form.questions-form {
   font-size: 12px;
   font-weight: 600;
 }
+@media only screen and (max-width: 991px) {
+  .dashboard__form__cta button {
+    padding: 14px 0;
+  }
+}
 .dashboard__listing__title {
   position: relative;
 }
@@ -7903,6 +7945,8 @@ form.questions-form {
 .dashboard__table {
   border-radius: 8px;
   border: 2px solid #f0f0f0;
+  width: 100%;
+  overflow: scroll;
 }
 .dashboard__table table {
   width: 100%;
@@ -7941,6 +7985,11 @@ form.questions-form {
 .dashboard__table table tbody td:first-child {
   text-align: left;
   padding-left: 20px;
+}
+@media only screen and (max-width: 991px) {
+  .dashboard__table table tbody td:first-child {
+    min-width: 240px;
+  }
 }
 .dashboard__table table tbody td:last-child {
   padding-right: 20px;
