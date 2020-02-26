@@ -136,11 +136,22 @@
         color: #2d3e4d;
         font-size: 16px;
         font-weight: 500;
+
+        @media only screen and (max-width: 768px) {
+          font-size: 14px;
+          text-align: center;
+        }
       }
+    }
+
+    &__listing {
+      width: 100%;
+      overflow-x: auto;
     }
     table {
       width: 100%;
       border-collapse: collapse;
+
       tbody {
         tr {
           background: rgba(242, 242, 242, 0.4);
@@ -174,6 +185,7 @@
         font-size: 14px;
         font-weight: 400;
         text-align: left;
+        white-space: nowrap;
         &:nth-child(1) {
           padding: 18px 20px 18px 18px;
         }

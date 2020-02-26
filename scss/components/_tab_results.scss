@@ -101,6 +101,13 @@
     grid-template-columns: 1fr 1fr;
     column-gap: 12px;
 
+    @media only screen and (max-width: 768px) {
+      width: auto;
+      grid-template-columns: 1fr;
+      column-gap: 0;
+      row-gap: 20px;
+    }
+
     button {
       padding: 16px 0;
       color: var(--color-white-1);
