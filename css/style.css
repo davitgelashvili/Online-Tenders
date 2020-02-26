@@ -6204,6 +6204,109 @@ form.questions-form {
   border-color: #daedd8;
 }
 
+.review:not(:last-child) {
+  margin-bottom: 30px;
+}
+.review__heading {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.review__heading h3 {
+  color: #141b3d;
+  font-size: 12px;
+  font-weight: 500;
+}
+.review__heading button {
+  display: flex;
+  align-items: center;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+.review__heading button img {
+  margin-right: 6px;
+}
+.review__heading button span {
+  color: #acacaf;
+  font-family: "FiraGO", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+}
+.review__content {
+  padding: 38px 30px;
+  border: 1px solid #dadde2;
+  border-radius: 8px;
+}
+@media (max-width: 768px) {
+  .review__content {
+    padding: 20px;
+  }
+}
+.review__content__title {
+  padding-bottom: 36px;
+  margin-bottom: 20px;
+  color: #141b3d;
+  font-size: 12px;
+  font-weight: 400;
+  border-bottom: 1px solid #dadde2;
+}
+@media (max-width: 768px) {
+  .review__content__title {
+    padding-bottom: 20px;
+  }
+}
+.review__attachments {
+  display: flex;
+}
+.review__listing li {
+  padding-left: 15px;
+  position: relative;
+  color: #141b3d;
+  font-size: 11px;
+  line-height: 1.5;
+}
+.review__listing li::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 0;
+  color: #acacaf;
+  font-family: "Font Awesome 5 Free";
+  font-size: 8px;
+  font-weight: 700;
+}
+.review__listing li:not(:last-child) {
+  margin-bottom: 14px;
+}
+.review__companies li {
+  display: flex;
+}
+.review__companies li:not(:last-child) {
+  margin-bottom: 28px;
+  padding-bottom: 28px;
+  border-bottom: 1px solid #dadde2;
+}
+@media (max-width: 768px) {
+  .review__companies li:not(:last-child) {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+  }
+}
+.review__companies li p {
+  flex: 0 0 50%;
+  color: #141b3d;
+  font-size: 12px;
+  font-weight: 400;
+}
+.review__companies li a {
+  flex: 0 0 50%;
+  color: #141b3d;
+  font-size: 12px;
+  font-weight: 400;
+}
+
 .search-out {
   width: 100%;
   display: flex;
@@ -8993,14 +9096,14 @@ body {
 }
 
 .add-tender-uploaded-item {
-  border-radius: 52px;
-  border: 1px solid #cad0d8;
-  background: var(--color-white-1);
+  margin-right: 21px;
+  padding-right: 60px;
+  position: relative;
   display: flex;
   align-items: center;
-  padding-right: 37px;
-  margin-right: 21px;
-  position: relative;
+  background: var(--color-white-1);
+  border: 1px solid #cad0d8;
+  border-radius: 52px;
 }
 
 .add-tender-uploaded-item-remove {
