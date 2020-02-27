@@ -797,8 +797,13 @@ body {
   align-items: flex-start;
   flex-wrap: wrap;
   margin-top: 14px;
-  float: left;
   width: 100%;
+
+  & > * {
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
 }
 .add-tender-uploaded-item {
   margin-right: 21px;
