@@ -673,6 +673,7 @@ body {
 .add-tender-btn {
   padding: 16px 25px;
   color: var(--color-white-1);
+  font-family: "FiraGO", sans-serif;
   font-size: 12px;
   font-weight: 900;
   letter-spacing: 0.3px;
@@ -762,7 +763,7 @@ body {
   padding: 20px 25px;
   background: var(--color-white-2);
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
 }
 .add-tender-category-header label {
@@ -777,6 +778,7 @@ body {
 .tender-back-btn {
   padding: 16px 25px;
   color: var(--color-white-1);
+  font-family: "FiraGO", sans-serif;
   font-size: 12px;
   font-weight: 900;
   letter-spacing: 0.3px;

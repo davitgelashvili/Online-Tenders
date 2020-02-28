@@ -7714,7 +7714,7 @@ form.questions-form {
 .subscribe__listing__item input:checked ~ label::before {
   content: "";
   font-weight: 900;
-  color: #03af5c;
+  color: #32b4d7;
 }
 .subscribe__listing__item label {
   position: relative;
@@ -8457,6 +8457,11 @@ form.questions-form {
 }
 .not-found .header .site-logo img {
   width: 156px;
+}
+.not-found__wrap > img {
+  margin: 0 auto;
+  max-height: 60vh;
+  object-fit: cover;
 }
 .not-found__texts {
   margin-top: 50px;
@@ -9251,6 +9256,7 @@ body {
 .add-tender-btn {
   padding: 16px 25px;
   color: var(--color-white-1);
+  font-family: "FiraGO", sans-serif;
   font-size: 12px;
   font-weight: 900;
   letter-spacing: 0.3px;
@@ -9352,7 +9358,7 @@ body {
   padding: 20px 25px;
   background: var(--color-white-2);
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
 }
 
@@ -9370,6 +9376,7 @@ body {
 .tender-back-btn {
   padding: 16px 25px;
   color: var(--color-white-1);
+  font-family: "FiraGO", sans-serif;
   font-size: 12px;
   font-weight: 900;
   letter-spacing: 0.3px;
