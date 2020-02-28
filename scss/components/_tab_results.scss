@@ -1,6 +1,6 @@
 .upload {
-  background: #32b4d7;
-  color: var(--color-white-1);
+  background: $color-brand-2;
+  color: $color-white;
   display: flex;
   align-items: center;
   border: none;
@@ -12,7 +12,7 @@
   }
 
   span {
-    font-family: "FiraGO", sans-serif;
+    font-family: $font-main;
     font-size: 13px;
     font-weight: 500;
   }
@@ -52,7 +52,7 @@
         }
       }
       td {
-        color: #2d3e4d;
+        color: $color-text-third;
         font-size: 14px;
         font-weight: 400;
         &:nth-child(1) {
@@ -86,7 +86,7 @@
       text-align: right;
 
       a {
-        color: #32b4d7;
+        color: $color-brand-2;
         font-size: 12px;
         font-weight: 500;
       }
@@ -110,8 +110,8 @@
 
     button {
       padding: 16px 0;
-      color: var(--color-white-1);
-      font-family: "FiraGO", sans-serif;
+      color: $color-white;
+      font-family: $font-main;
       font-size: 14px;
       font-weight: 500;
       border: none;
@@ -119,7 +119,7 @@
       cursor: pointer;
 
       &.download {
-        background: #32b4d7;
+        background: $color-brand-2;
       }
       &.report {
         background: #a7acaf;
@@ -133,7 +133,7 @@
 }
 
 .attachment {
-  background: #fff !important;
+  background: $color-white !important;
   display: none;
 
   &.active {
@@ -159,7 +159,7 @@
         justify-content: center;
         border-radius: 100%;
         overflow: hidden;
-        background: #f6f7f9;
+        background: $color-bg-main;
       }
     }
   }

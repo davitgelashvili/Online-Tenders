@@ -17,7 +17,7 @@
 
   &__container {
     margin-bottom: 28px;
-    border: 1px solid var(--color-main-2);
+    border: 1px solid $color-brand-2;
     border-radius: 8px;
     display: flex;
     flex-direction: column;
@@ -28,10 +28,10 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      background: var(--color-main-2);
+      background: $color-brand-2;
       h3 {
         margin: 0;
-        color: var(--color-white-1);
+        color: $color-white;
         font-size: 16px;
         font-weight: 500;
       }
@@ -53,7 +53,7 @@
         }
       }
       th {
-        color: #5d6367;
+        color: $color-text-sec;
         font-size: 13px;
         font-weight: 500;
         text-align: left;
@@ -75,7 +75,7 @@
         }
       }
       td {
-        color: #2d3e4d;
+        color: $color-text-third;
         font-size: 14px;
         font-weight: 400;
         &:nth-child(1) {
@@ -105,17 +105,17 @@
   &__badge {
     margin-left: 10px;
     padding: 4px 12px;
-    color: var(--color-white-1);
+    color: $color-white;
     font-size: 10px;
     font-weight: 400;
     text-transform: capitalize;
     border-radius: 13px;
-    background: var(--color-main-2);
+    background: $color-brand-2;
   }
 
   &__offer {
     h3 {
-      color: #2d3e4d;
+      color: $color-text-third;
       font-size: 16px;
       font-weight: 400;
       text-align: center;
@@ -133,7 +133,7 @@
       background: #edeef0;
       h3 {
         margin: 0;
-        color: #2d3e4d;
+        color: $color-text-third;
         font-size: 16px;
         font-weight: 500;
 
@@ -181,7 +181,7 @@
         }
       }
       td {
-        color: #2d3e4d;
+        color: $color-text-third;
         font-size: 14px;
         font-weight: 400;
         text-align: left;

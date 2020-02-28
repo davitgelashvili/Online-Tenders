@@ -1,10 +1,10 @@
 .header {
   position: relative;
-  background: var(--color-white-1);
+  background: $color-white;
   width: 100%;
   display: block;
-  margin-bottom: 23px;
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.16);
+  margin-bottom: 24px;
+  box-shadow: 0 0 2px rgba($color-black, 0.16);
   z-index: 20;
 
   &__content {
@@ -37,15 +37,15 @@
 
     &__dropdown {
       position: absolute;
-      top: -24px;
+      top: -25px;
       right: 180px;
       width: 234px;
       padding: 24px 20px;
-      background: var(--color-white-1);
+      background: $color-white;
       border: 1px solid #e9ecf2;
       border-bottom-left-radius: 8px;
       border-bottom-right-radius: 8px;
-      box-shadow: 0 22px 32px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 22px 32px rgba($color-black, 0.2);
       z-index: 10;
 
       display: none;
@@ -69,10 +69,10 @@
       a {
         display: flex;
         align-items: center;
-        color: #2d3e4d;
+        color: $color-text-third;
 
         &.danger {
-          color: #f1616f;
+          color: $color-danger;
         }
 
         img {
@@ -98,7 +98,7 @@
       align-items: center;
       justify-content: center;
       padding: 4px;
-      border: 1px solid #cecece;
+      border: $border-1;
 
       @media (max-width: 991px) {
         width: 40px;
@@ -115,7 +115,7 @@
 
     p {
       letter-spacing: 0.36px;
-      color: #001a34;
+      color: $color-text-main;
       font-size: 12px;
       margin-left: 6px;
       margin-right: 18px;
@@ -127,7 +127,7 @@
     }
 
     span {
-      color: var(--color-gray-1);
+      color: $color-gray;
       font-size: 12px;
 
       @media (max-width: 991px) {
@@ -140,7 +140,7 @@
     margin-right: 30px;
 
     i {
-      color: var(--color-dark);
+      color: $color-text-main;
     }
   }
 
@@ -151,11 +151,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--color-white-1);
+    color: $color-white;
     font-size: 12px;
     text-align: center;
     font-weight: 900;
-    background: var(--color-main-1);
+    background: $color-brand-1;
     border-radius: 6px;
 
     @media (max-width: 1250px) {

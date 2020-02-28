@@ -32,7 +32,7 @@
         }
       }
       td {
-        color: #2d3e4d;
+        color: $color-text-third;
         font-size: 14px;
         font-weight: 400;
         text-align: left;
@@ -71,9 +71,9 @@
         align-items: center;
         justify-content: center;
         cursor: pointer;
-        background: #32b4d7;
+        background: $color-brand-2;
         i {
-          color: var(--color-white-1);
+          color: $color-white;
         }
       }
     }

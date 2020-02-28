@@ -32,7 +32,7 @@
       background: #fafafa;
       &__name {
         flex: 0 0 50%;
-        color: #2d3e4d;
+        color: $color-text-third;
         font-size: 14px;
         font-weight: 400;
         display: flex;
@@ -43,13 +43,13 @@
       }
       &__type {
         flex: 0 0 15%;
-        color: #2d3e4d;
+        color: $color-text-third;
         font-size: 14px;
         font-weight: 400;
       }
       &__size {
         flex: 0 0 15%;
-        color: #2d3e4d;
+        color: $color-text-third;
         font-size: 14px;
         font-weight: 400;
       }
@@ -62,16 +62,16 @@
           align-items: center;
           border: none;
           border-radius: 12px;
-          background: #32b4d7;
+          background: $color-brand-2;
           cursor: pointer;
           i {
             margin-right: 6px;
-            color: var(--color-white-1);
+            color: $color-white;
             font-size: 12px;
           }
           span {
-            color: var(--color-white-1);
-            font-family: "FiraGO", sans-serif;
+            color: $color-white;
+            font-family: $font-main;
             font-size: 10px;
             font-weight: 500;
           }
@@ -81,7 +81,7 @@
           background: transparent;
           cursor: pointer;
           i {
-            color: #f1616f;
+            color: $color-danger;
             font-size: 24px;
           }
         }
@@ -100,14 +100,14 @@
       padding: 16px 28px;
       border: none;
       border-radius: 6px;
-      background: #32b4d7;
+      background: $color-brand-2;
       cursor: pointer;
       img {
         margin-right: 10px;
       }
       span {
-        color: var(--color-white-1);
-        font-family: "FiraGO", sans-serif;
+        color: $color-white;
+        font-family: $font-main;
         font-size: 13px;
         font-weight: 500;
       }
@@ -133,18 +133,18 @@
         height: 48px;
         width: 258px;
         padding: 16px 60px 16px 22px;
-        color: #5d6367;
-        font-family: "FiraGO", sans-serif;
+        color: $color-text-sec;
+        font-family: $font-main;
         font-size: 14px;
         font-weight: 300;
-        border: 1px solid #dadde2;
+        border: $border-1;
         border-right: none;
         border-top-left-radius: 8px;
         border-bottom-left-radius: 8px;
 
         &::placeholder {
-          color: #5d6367;
-          font-family: "FiraGO", sans-serif;
+          color: $color-text-sec;
+          font-family: $font-main;
           font-size: 14px;
           font-weight: 300px;
         }
@@ -161,21 +161,21 @@
         justify-content: center;
         align-items: center;
         background: #eceff2;
-        border: 1px solid #9da9b4;
+        border: 1px solid $color-gray;
         border-radius: 4px;
       }
 
       button {
         padding: 16px 22px;
         height: 48px;
-        color: var(--color-white-1);
-        font-family: "FiraGO", sans-serif;
+        color: $color-white;
+        font-family: $font-main;
         font-size: 14px;
         font-weight: 500;
         border: none;
         border-top-right-radius: 8px;
         border-bottom-right-radius: 8px;
-        background: #32b4d7;
+        background: $color-brand-2;
         cursor: pointer;
       }
     }
@@ -187,7 +187,7 @@
 
     & > div {
       padding: 9px 15px;
-      color: #5d6367;
+      color: $color-text-sec;
       font-size: 12px;
       font-weight: 400;
       border-radius: 16px;
@@ -204,7 +204,7 @@
     align-items: flex-start;
 
     span {
-      color: #f1616f;
+      color: $color-danger;
       font-size: 11px;
       font-weight: 400;
     }

@@ -8,7 +8,7 @@
     justify-content: space-between;
     align-items: center;
     h3 {
-      color: #141b3d;
+      color: $color-text-main;
       font-size: 12px;
       font-weight: 500;
     }
@@ -23,8 +23,8 @@
         margin-right: 6px;
       }
       span {
-        color: #acacaf;
-        font-family: "FiraGO", sans-serif;
+        color: $color-gray;
+        font-family: $font-main;
         font-size: 12px;
         font-weight: 500;
       }
@@ -33,7 +33,7 @@
 
   &__content {
     padding: 38px 30px;
-    border: 1px solid #dadde2;
+    border: $border-1;
     border-radius: 8px;
 
     @media (max-width: 768px) {
@@ -43,10 +43,10 @@
     &__title {
       padding-bottom: 36px;
       margin-bottom: 20px;
-      color: #141b3d;
+      color: $color-text-main;
       font-size: 12px;
       font-weight: 400;
-      border-bottom: 1px solid #dadde2;
+      border-bottom: $border-1;
 
       @media (max-width: 768px) {
         padding-bottom: 20px;
@@ -62,7 +62,7 @@
     li {
       padding-left: 15px;
       position: relative;
-      color: #141b3d;
+      color: $color-text-main;
       font-size: 11px;
       line-height: 1.5;
 
@@ -71,7 +71,7 @@
         position: absolute;
         top: 2px;
         left: 0;
-        color: #acacaf;
+        color: $color-gray;
         font-family: "Font Awesome 5 Free";
         font-size: 8px;
         font-weight: 700;
@@ -90,7 +90,7 @@
       &:not(:last-child) {
         margin-bottom: 28px;
         padding-bottom: 28px;
-        border-bottom: 1px solid #dadde2;
+        border-bottom: $border-1;
 
         @media (max-width: 768px) {
           margin-bottom: 20px;
@@ -100,14 +100,14 @@
 
       p {
         flex: 0 0 50%;
-        color: #141b3d;
+        color: $color-text-main;
         font-size: 12px;
         font-weight: 400;
       }
 
       a {
         flex: 0 0 50%;
-        color: #141b3d;
+        color: $color-text-main;
         font-size: 12px;
         font-weight: 400;
       }

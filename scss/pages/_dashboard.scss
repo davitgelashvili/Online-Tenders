@@ -2,7 +2,7 @@
   &__header {
     margin-bottom: 32px;
     h2 {
-      color: #141b3d;
+      color: $color-text-main;
       font-size: 23px;
       font-weight: 700;
     }
@@ -23,19 +23,19 @@
 
     &__item {
       border-radius: 12px;
-      color: #fff;
+      color: $color-white;
       display: flex;
       flex-direction: column;
       justify-content: center;
       padding-left: 40px;
       &:first-child {
-        background: #32b4d7;
+        background: $color-brand-2;
       }
       &:nth-child(2) {
         background: #55b14f;
       }
       &:nth-child(3) {
-        background: #f1616f;
+        background: $color-danger;
       }
       &:nth-child(4) {
         background: #7d6eb2;
@@ -62,19 +62,19 @@
         position: relative;
         margin-bottom: -1px;
         padding: 20px 30px;
-        color: #141b3d;
+        color: $color-text-main;
         font-size: 12px;
         font-weight: 600;
-        border: 1px solid #dadde2;
+        border: $border-1;
         border-bottom: none;
         border-radius: 8px;
         border-bottom-left-radius: 0;
         border-bottom-right-radius: 0;
-        background: #fff;
+        background: $color-white;
         z-index: 1;
 
         &.disabled {
-          color: #9da9b4;
+          color: $color-gray;
           border: none;
           background: transparent;
         }
@@ -100,9 +100,9 @@
     &__wrapper {
       padding: 25px 30px;
       display: flex;
-      border: 1px solid #dadde2;
+      border: $border-1;
       border-radius: 8px;
-      background: #fff;
+      background: $color-white;
       border-top-left-radius: 0;
       @media only screen and (max-width: 768px) {
         flex-direction: column;
@@ -127,8 +127,8 @@
       }
       label {
         margin-bottom: 9px;
-        color: #141b3d;
-        font-family: "FiraGO", sans-serif;
+        color: $color-text-main;
+        font-family: $font-main;
         font-size: 12px;
         font-weight: 500;
       }
@@ -136,10 +136,10 @@
         padding: 0 20px;
         min-width: 272px;
         height: 48px;
-        color: #141b3d;
-        font-family: "FiraGO", sans-serif;
+        color: $color-text-main;
+        font-family: $font-main;
         font-size: 14px;
-        border: 1px solid #dadde2;
+        border: $border-1;
         border-radius: 8px;
 
         @media only screen and (max-width: 1250px) {
@@ -175,8 +175,8 @@
           margin-bottom: 8px;
         }
         span {
-          color: #141b3d;
-          font-family: "FiraGO", sans-serif;
+          color: $color-text-main;
+          font-family: $font-main;
           font-size: 12px;
           font-weight: 600;
         }
@@ -195,7 +195,7 @@
         padding-left: 20px;
       }
       & ~ span {
-        color: #9da9b4;
+        color: $color-gray;
         font-size: 11px;
         font-weight: 400;
       }
@@ -217,7 +217,7 @@
           padding-bottom: 15px;
           padding-left: 10px;
           padding-right: 10px;
-          color: #141b3d;
+          color: $color-text-main;
           font-size: 11px;
           font-weight: 500;
           text-align: center;
@@ -241,7 +241,7 @@
           padding-bottom: 20px;
           padding-left: 10px;
           padding-right: 10px;
-          color: #141b3d;
+          color: $color-text-main;
           font-size: 12px;
           font-weight: 500;
           text-align: center;
@@ -274,7 +274,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #fff;
+  color: $color-white;
   font-size: 10px;
 
   &--complete {
@@ -294,7 +294,7 @@
   }
 
   &--negative {
-    background: #f1616f;
+    background: $color-danger;
   }
 }
 
@@ -309,14 +309,14 @@
   cursor: pointer;
 
   i {
-    color: #fff;
+    color: $color-white;
   }
 
   &--blue {
-    background: #32b4d7;
+    background: $color-brand-2;
   }
 
   &--red {
-    background: #f1616f;
+    background: $color-danger;
   }
 }

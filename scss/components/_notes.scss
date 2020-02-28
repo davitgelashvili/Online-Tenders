@@ -18,12 +18,12 @@
   }
 
   &--blue {
-    color: #32b4d7;
+    color: $color-brand-2;
     background: #e9f7fa;
     border-color: #d3e8ed;
   }
   &--red {
-    color: #f1616f;
+    color: $color-danger;
     background: #feeff0;
     border-color: #f4dedf;
   }

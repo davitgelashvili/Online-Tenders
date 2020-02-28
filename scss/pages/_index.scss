@@ -28,19 +28,19 @@
   input {
     width: 492px;
     height: 35px;
-    background: #f6f7f9;
+    background: $color-bg-main;
     border: 1px solid #e4e6ea;
     border-radius: 8px;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
     padding: 0 43px;
-    color: #acacaf;
-    font-family: "FiraGO", sans-serif;
+    color: $color-gray;
+    font-family: $font-main;
     font-size: 11px;
     font-weight: 400;
 
     &::placeholder {
-      font-family: "FiraGO", sans-serif;
+      font-family: $font-main;
       font-size: 11px;
       font-weight: 400;
     }
@@ -66,13 +66,13 @@
 .search-switch {
   height: 35px;
   width: 190px;
-  background: #f6f7f9;
+  background: $color-bg-main;
   border: 1px solid #e4e6ea;
   border-left: 0;
   border-radius: 8px;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
-  color: #acacaf;
+  color: $color-gray;
   font-size: 11px;
   font-weight: 400;
   display: flex;
@@ -86,7 +86,7 @@
   position: relative;
   width: 31px;
   height: 19px;
-  background: #32b4d7;
+  background: $color-brand-2;
   margin: 0 12px;
   border-radius: 12px;
   cursor: pointer;
@@ -98,7 +98,7 @@
   left: 2px;
   width: 15px;
   height: 15px;
-  background: var(--color-white-1);
+  background: $color-white;
   border-radius: 100%;
   transition: all 0.2s ease-in;
 }
@@ -107,13 +107,13 @@
   cursor: pointer;
 }
 .toggle-switch-name {
-  color: var(--color-main-2);
+  color: $color-brand-2;
 }
 .search-switch input[type="checkbox"]:checked ~ .toggle-switch-name {
-  color: var(--color-gray-2);
+  color: $color-gray;
 }
 .search-switch input[type="checkbox"]:checked ~ .toggle-switch-code {
-  color: var(--color-main-2);
+  color: $color-brand-2;
 }
 .search-switch input[type="checkbox"]:checked ~ .toggle-switch-slider::after {
   transform: translateX(11px);
@@ -150,7 +150,7 @@
 
       p {
         max-width: 546px;
-        color: #141b3d;
+        color: $color-text-main;
         font-size: 13px;
         font-weight: 400;
         line-height: 1.5;
@@ -164,7 +164,7 @@
       }
 
       a {
-        color: #5d6367;
+        color: $color-text-sec;
         font-size: 12px;
         font-weight: 400;
         text-decoration: underline;
@@ -175,7 +175,7 @@
 
 .tender-tags {
   padding: 0 0 12px 0;
-  border-bottom: 1px solid var(--color-white-2);
+  border-bottom: 1px solid $color-bg-main;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -197,12 +197,12 @@
   a {
     display: block;
     padding: 9px 8px;
-    background: var(--color-white-1);
+    background: $color-white;
     border: 1px solid #dee3e6;
     border-radius: 16px;
     font-size: 12px;
-    font-family: "FiraGO", sans-serif;
-    color: var(--color-gray-3);
+    font-family: $font-main;
+    color: $color-text-sec;
     cursor: pointer;
 
     @media (max-width: 991px) {
@@ -211,8 +211,8 @@
     }
 
     &.active {
-      color: var(--color-white-1);
-      background: var(--color-main-2);
+      color: $color-white;
+      background: $color-brand-2;
       border: none;
     }
   }
@@ -245,12 +245,12 @@
     width: 100%;
     border: none;
     border-radius: 4px;
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba($color-black, 0.3);
     cursor: pointer;
     z-index: 1;
 
     i {
-      color: var(--color-white-1);
+      color: $color-white;
       font-size: 20px;
     }
   }
@@ -267,7 +267,7 @@
   display: flex;
   align-items: center;
   padding: 17px 0;
-  border-bottom: 1px solid #f6f7f9;
+  border-bottom: 1px solid $color-bg-main;
   position: relative;
 }
 
@@ -285,7 +285,7 @@
   width: 100%;
   font-weight: 700;
   letter-spacing: 0;
-  color: var(--color-main-1);
+  color: $color-brand-1;
   font-size: 12px;
   margin-bottom: 12px;
   margin-top: 15px;
@@ -297,7 +297,7 @@
 }
 .sponsor-item {
   width: 100%;
-  background: var(--color-white-1);
+  background: $color-white;
   border: 1px solid #ebebeb;
   border-radius: 8px;
   margin-right: 8px;
@@ -316,14 +316,14 @@
 .sponsor-item-title {
   font-weight: 500;
   letter-spacing: 0;
-  color: #141b3d;
+  color: $color-text-main;
   font-size: 13px;
   margin-bottom: 5px;
 }
 .sponsor-item-count-tender {
   font-weight: 400;
   letter-spacing: 0;
-  color: #acacaf;
+  color: $color-gray;
   font-size: 10px;
 }
 .sponsor-item-img {
@@ -355,7 +355,7 @@
   cursor: pointer;
 }
 .sponsor-add-new i {
-  color: var(--color-main-1);
+  color: $color-brand-1;
   font-size: 20px;
 }
 
@@ -395,7 +395,7 @@
   }
 }
 .list-item-title h1 {
-  color: #141b3d;
+  color: $color-text-main;
   font-size: 14px;
   font-weight: 500;
   text-align: left;
@@ -403,7 +403,7 @@
 }
 .list-item-title span {
   letter-spacing: 0;
-  color: #acacaf;
+  color: $color-gray;
   font-weight: 400;
   margin-top: 6px;
   font-size: 13px;
@@ -432,20 +432,20 @@
 .list-item-right p {
   font-weight: 500;
   letter-spacing: 0;
-  color: #141b3d;
+  color: $color-text-main;
   font-size: 13px;
 }
 .list-item-right p.new {
-  background: #32b4d7 0% 0% no-repeat padding-box;
+  background: $color-brand-2 0% 0% no-repeat padding-box;
   border-radius: 6px;
   padding: 7px 12px;
-  color: var(--color-white-1);
+  color: $color-white;
 }
 .list-item-right p.vip {
-  background: #f1616f 0% 0% no-repeat padding-box;
+  background: $color-danger 0% 0% no-repeat padding-box;
   border-radius: 6px;
   padding: 7px 24px;
-  color: var(--color-white-1);
+  color: $color-white;
 }
 
 .list-item-right-mobile {
@@ -458,23 +458,23 @@
 .list-item-right-mobile p {
   font-weight: 500;
   letter-spacing: 0;
-  color: #9da9b4;
+  color: $color-gray;
   font-size: 10px;
 }
 .list-item-right-mobile p:nth-of-type(1) {
   margin-right: 68px;
 }
 .list-item-right-mobile p.new {
-  background: #32b4d7 0% 0% no-repeat padding-box;
+  background: $color-brand-2 0% 0% no-repeat padding-box;
   border-radius: 4px;
   padding: 2px 7px;
-  color: var(--color-white-1);
+  color: $color-white;
 }
 .list-item-right-mobile p.vip {
-  background: #f1616f 0% 0% no-repeat padding-box;
+  background: $color-danger 0% 0% no-repeat padding-box;
   border-radius: 4px;
   padding: 2px 14px;
-  color: var(--color-white-1);
+  color: $color-white;
 }
 
 .list-item-heading {
@@ -507,10 +507,10 @@
     top: 3px;
     left: 0;
     opacity: 1;
-    color: var(--color-white-1) !important;
+    color: $color-white !important;
     font-size: 11px;
     font-weight: 500;
-    background: #e52942;
+    background: $color-red;
     border-radius: 4px;
   }
 
@@ -518,7 +518,7 @@
     position: absolute;
     top: 28px;
     left: -47px;
-    color: var(--color-white-1) !important;
+    color: $color-white !important;
     font-size: 12px;
     font-weight: 700;
     white-space: nowrap;
