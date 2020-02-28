@@ -75,3 +75,18 @@
 .tab-content.tab-active {
   display: block;
 }
+
+.tender-details-section-list {
+  li {
+    color: $color-text-third;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 1.5;
+
+    &:not(:last-child) {
+      margin-bottom: 16px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid #f5f6f8;
+    }
+  }
+}

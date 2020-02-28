@@ -1,11 +1,12 @@
 .upload {
-  background: $color-brand-2;
-  color: $color-white;
+  padding: 16px 28px;
   display: flex;
   align-items: center;
+  color: $color-white;
+  background: $color-brand-2;
   border: none;
   border-radius: 6px;
-  padding: 16px 28px;
+  cursor: pointer;
 
   img {
     margin-right: 10px;

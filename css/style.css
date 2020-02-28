@@ -5273,6 +5273,18 @@ img {
   display: block;
 }
 
+.tender-details-section-list li {
+  color: #2d3e4d;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 1.5;
+}
+.tender-details-section-list li:not(:last-child) {
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #f5f6f8;
+}
+
 /* Questions Tab */
 .questions-container {
   border: 1px solid #32b4d7;
@@ -5495,16 +5507,35 @@ form.questions-form {
   background: #32b4d7;
   cursor: pointer;
 }
+@media only screen and (max-width: 768px) {
+  .documents__listing__item__ctas__download {
+    padding: 0;
+    width: 24px;
+    height: 24px;
+    justify-content: center;
+    margin-right: 10px !important;
+  }
+}
 .documents__listing__item__ctas__download i {
   margin-right: 6px;
   color: #fff;
   font-size: 12px;
+}
+@media only screen and (max-width: 768px) {
+  .documents__listing__item__ctas__download i {
+    margin-right: 0;
+  }
 }
 .documents__listing__item__ctas__download span {
   color: #fff;
   font-family: "FiraGO", sans-serif;
   font-size: 10px;
   font-weight: 500;
+}
+@media only screen and (max-width: 768px) {
+  .documents__listing__item__ctas__download span {
+    display: none;
+  }
 }
 .documents__listing__item__ctas__delete {
   border: none;
@@ -5967,13 +5998,14 @@ form.questions-form {
 }
 
 .upload {
-  background: #32b4d7;
-  color: #fff;
+  padding: 16px 28px;
   display: flex;
   align-items: center;
+  color: #fff;
+  background: #32b4d7;
   border: none;
   border-radius: 6px;
-  padding: 16px 28px;
+  cursor: pointer;
 }
 .upload img {
   margin-right: 10px;
@@ -7320,7 +7352,7 @@ form.questions-form {
 .register .form__section__title span {
   position: relative;
   padding: 0 14px;
-  color: #707070;
+  color: #5d6367;
   font-size: 14px;
   font-weight: 500;
   background: #fff;
@@ -7386,6 +7418,7 @@ form.questions-form {
 }
 .register .form label {
   color: #141b3d;
+  font-family: "FiraGO", sans-serif;
   font-size: 12px;
   font-weight: 500;
   text-align: right;
@@ -7412,6 +7445,9 @@ form.questions-form {
 .register .form select::placeholder,
 .register .form option::placeholder {
   font-family: "FiraGO", sans-serif;
+}
+.register .form select {
+  background: #f6f7f9;
 }
 .register .form button {
   margin-left: auto;
@@ -8883,19 +8919,26 @@ body {
 }
 
 .tender-details-document {
-  background: #fff 0% 0% no-repeat padding-box;
-  border: 1px solid #dadde2;
-  border-radius: 52px;
+  margin-right: 18px;
   display: flex;
   align-items: center;
+  border: 1px solid #dadde2;
+  border-radius: 52px;
+  background: #fff;
   cursor: pointer;
-  margin-right: 18px;
+}
+.tender-details-document span {
+  margin-left: 10px;
+  margin-right: 38px;
+  color: #141b3d;
+  font-size: 12px;
+  font-weight: 400;
 }
 
 .tender-details-document-icon {
   width: 45px;
   height: 45px;
-  background: #f6f7f9 0% 0% no-repeat padding-box;
+  background: #f6f7f9;
   border-radius: 52px;
   margin: 5px;
   display: flex;
@@ -8903,28 +8946,18 @@ body {
   align-items: center;
 }
 
-.tender-details-document span {
-  margin-left: 10px;
-  margin-right: 38px;
-  font-weight: 400;
-  letter-spacing: 0;
-  color: #141b3d;
-  font-size: 12px;
-}
-
 .tender-details-document-download {
-  font-weight: 500;
-  background: transparent;
-  letter-spacing: 0;
-  color: #0fb7ff;
-  border: none;
-  font-size: 12px;
+  margin-top: 22px;
   display: flex;
   align-items: center;
-  margin-top: 22px;
+  color: #0fb7ff;
+  font-family: "FiraGO", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  border: none;
+  background: transparent;
   cursor: pointer;
 }
-
 .tender-details-document-download img {
   margin-right: 8px;
 }
@@ -8948,27 +8981,23 @@ body {
   padding: 12px;
   margin: 0 auto 18px auto;
 }
-
 .tender-details-timer > div {
   display: flex;
   align-items: center;
   flex-direction: column;
 }
-
-.tender-details-timer > div > h2 {
+.tender-details-timer > div h2 {
   font-weight: 700;
   font-size: 20px;
   letter-spacing: 0;
   color: #141b3d;
 }
-
-.tender-details-timer > div > p {
+.tender-details-timer > div p {
   font-weight: 500;
   letter-spacing: 0;
   color: #acacaf;
   font-size: 10px;
 }
-
 .tender-details-timer span {
   margin: 0 12px;
   color: #acacaf;
@@ -8977,11 +9006,9 @@ body {
 .tender-details-section-info {
   width: 100%;
 }
-
 .tender-details-section-info li {
   margin: 10px 0 0 0;
 }
-
 .tender-details-section-info li a {
   display: flex;
   align-items: center;
@@ -9012,7 +9039,6 @@ body {
   width: 100%;
   margin-bottom: 17px;
 }
-
 .sunny-tenders-list-item a {
   display: flex;
   align-items: center;
@@ -9028,7 +9054,6 @@ body {
   align-items: center;
   justify-content: center;
 }
-
 .sunny-tenders-list-img img {
   max-width: 70%;
   max-height: 70%;
@@ -9038,7 +9063,6 @@ body {
 .sunny-tenders-list-title {
   padding-left: 8px;
 }
-
 .sunny-tenders-list-title h1 {
   color: #141b3d;
   font-size: 10px;
@@ -9052,7 +9076,6 @@ body {
   background: #f6f7f9 0% 0% no-repeat padding-box;
   border-radius: 8px;
 }
-
 .all-sunny-tenders a {
   line-height: 37px;
   width: 100%;

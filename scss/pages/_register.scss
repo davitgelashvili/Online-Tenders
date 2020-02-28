@@ -47,7 +47,7 @@
         span {
           position: relative;
           padding: 0 14px;
-          color: #707070;
+          color: $color-text-sec;
           font-size: 14px;
           font-weight: 500;
           background: $color-white;
@@ -118,6 +118,7 @@
 
     label {
       color: $color-text-main;
+      font-family: $font-main;
       font-size: 12px;
       font-weight: 500;
       text-align: right;
@@ -143,6 +144,10 @@
       &::placeholder {
         font-family: $font-main;
       }
+    }
+
+    select {
+      background: $color-bg-main;
     }
 
     button {
