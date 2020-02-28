@@ -4722,7 +4722,7 @@ img {
   font-size: 12px;
   font-weight: 400;
 }
-.main_nav a:link.accented, .main_nav a:visited.accented {
+.main_nav a:link.active, .main_nav a:visited.active {
   color: #0fb7ff;
   font-weight: 500;
 }
