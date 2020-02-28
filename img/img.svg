@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="19.091" height="21.818" viewBox="0 0 19.091 21.818">
+  <g id="Group_816" data-name="Group 816" transform="translate(-11.423 -10.265)">
+    <g id="pdf" transform="translate(11.423 10.265)">
+      <path id="Path_15" data-name="Path 15" d="M97.364,0A1.368,1.368,0,0,0,96,1.364V20.454a1.368,1.368,0,0,0,1.364,1.364H111a1.368,1.368,0,0,0,1.364-1.364v-15L106.909,0Z" transform="translate(-93.273)" fill="#e2e5e7"/>
+      <path id="Path_16" data-name="Path 16" d="M353.364,5.455h4.091L352,0V4.091A1.368,1.368,0,0,0,353.364,5.455Z" transform="translate(-338.364)" fill="#b0b7bd"/>
+      <path id="Path_17" data-name="Path 17" d="M388.091,132.091,384,128h4.091Z" transform="translate(-369 -122.545)" fill="#cad1d8"/>
+      <path id="Path_18" data-name="Path 18" d="M48.364,247.5a.684.684,0,0,1-.682.682h-15A.684.684,0,0,1,32,247.5v-6.818a.684.684,0,0,1,.682-.682h15a.684.684,0,0,1,.682.682Z" transform="translate(-32 -229.773)" fill="#521f72"/>
+      <path id="Path_22" data-name="Path 22" d="M108.954,416.682H96v.682h12.954a.684.684,0,0,0,.682-.682V416A.684.684,0,0,1,108.954,416.682Z" transform="translate(-93.273 -398.273)" fill="#cad1d8"/>
+      <text id="IMG" transform="translate(3 16.5)" fill="#fff" font-size="6" font-family="Nunito-Bold, Nunito" font-weight="700"><tspan x="0" y="0">IMG</tspan></text>
+    </g>
+  </g>
+</svg>

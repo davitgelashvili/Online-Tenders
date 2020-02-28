@@ -14,6 +14,13 @@
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 142px;
     column-gap: 22px;
+
+    @media only screen and (max-width: 991px) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 142px 142px;
+      row-gap: 22px;
+    }
+
     &__item {
       border-radius: 12px;
       color: #fff;
@@ -53,7 +60,7 @@
       }
       li {
         position: relative;
-        margin-bottom: 0;
+        margin-bottom: -1px;
         padding: 20px 30px;
         color: #141b3d;
         font-size: 12px;
@@ -83,6 +90,10 @@
         overflow: hidden;
         border-radius: 8px;
         border-top-left-radius: 0;
+
+        @media only screen and (max-width: 991px) {
+          flex-direction: column;
+        }
       }
     }
 
@@ -93,11 +104,18 @@
       border-radius: 8px;
       background: #fff;
       border-top-left-radius: 0;
+      @media only screen and (max-width: 768px) {
+        flex-direction: column;
+      }
     }
 
     &__group {
       &:not(:last-child) {
         margin-right: 30px;
+
+        @media only screen and (max-width: 768px) {
+          margin-right: 0;
+        }
       }
     }
 
@@ -123,6 +141,18 @@
         font-size: 14px;
         border: 1px solid #dadde2;
         border-radius: 8px;
+
+        @media only screen and (max-width: 1250px) {
+          min-width: auto;
+        }
+
+        @media only screen and (max-width: 991px) {
+          width: 185px;
+        }
+
+        @media only screen and (max-width: 768px) {
+          width: 100%;
+        }
       }
     }
 
@@ -150,6 +180,10 @@
           font-size: 12px;
           font-weight: 600;
         }
+
+        @media only screen and (max-width: 991px) {
+          padding: 14px 0;
+        }
       }
     }
   }
@@ -171,6 +205,8 @@
   &__table {
     border-radius: 8px;
     border: 2px solid #f0f0f0;
+    width: 100%;
+    overflow-x: auto;
     table {
       width: 100%;
       border-collapse: collapse;
@@ -212,6 +248,10 @@
           &:first-child {
             text-align: left;
             padding-left: 20px;
+
+            @media only screen and (max-width: 991px) {
+              min-width: 240px;
+            }
           }
           &:last-child {
             padding-right: 20px;
