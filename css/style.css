@@ -5521,35 +5521,15 @@ form.questions-form {
   background: #32b4d7;
   cursor: pointer;
 }
-@media only screen and (max-width: 768px) {
-  .documents__listing__item__ctas__download {
-    padding: 0;
-    width: 24px;
-    height: 24px;
-    justify-content: center;
-    margin-right: 10px !important;
-  }
-}
 .documents__listing__item__ctas__download i {
   margin-right: 6px;
   color: #fff;
   font-size: 12px;
 }
-@media only screen and (max-width: 768px) {
-  .documents__listing__item__ctas__download i {
-    margin-right: 0;
-  }
-}
 .documents__listing__item__ctas__download span {
   color: #fff;
-  font-family: "FiraGO", sans-serif;
   font-size: 10px;
   font-weight: 500;
-}
-@media only screen and (max-width: 768px) {
-  .documents__listing__item__ctas__download span {
-    display: none;
-  }
 }
 .documents__listing__item__ctas__delete {
   border: none;
@@ -5583,90 +5563,6 @@ form.questions-form {
   font-family: "FiraGO", sans-serif;
   font-size: 13px;
   font-weight: 500;
-}
-
-.offered-amount {
-  margin: 50px auto;
-  max-width: 388px;
-}
-.offered-amount__form__field {
-  margin-bottom: 14px;
-  display: flex;
-  border-radius: 8px;
-  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.08);
-}
-.offered-amount__form__field > div {
-  position: relative;
-}
-.offered-amount__form__field input {
-  height: 48px;
-  width: 258px;
-  padding: 16px 60px 16px 22px;
-  color: #5d6367;
-  font-family: "FiraGO", sans-serif;
-  font-size: 14px;
-  font-weight: 300;
-  border: 1px solid #dadde2;
-  border-right: none;
-  border-top-left-radius: 8px;
-  border-bottom-left-radius: 8px;
-}
-.offered-amount__form__field input::placeholder {
-  color: #5d6367;
-  font-family: "FiraGO", sans-serif;
-  font-size: 14px;
-  font-weight: 300px;
-}
-.offered-amount__form__field .currency {
-  position: absolute;
-  top: 50%;
-  right: 12px;
-  transform: translateY(-50%);
-  width: 40px;
-  height: 26px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #eceff2;
-  border: 1px solid #acacaf;
-  border-radius: 4px;
-}
-.offered-amount__form__field button {
-  padding: 16px 22px;
-  height: 48px;
-  color: #fff;
-  font-family: "FiraGO", sans-serif;
-  font-size: 14px;
-  font-weight: 500;
-  border: none;
-  border-top-right-radius: 8px;
-  border-bottom-right-radius: 8px;
-  background: #32b4d7;
-  cursor: pointer;
-}
-.offered-amount__suggestions {
-  margin-bottom: 24px;
-  display: flex;
-}
-.offered-amount__suggestions > div {
-  padding: 9px 15px;
-  color: #5d6367;
-  font-size: 12px;
-  font-weight: 400;
-  border-radius: 16px;
-  border: 1px solid #dee3e6;
-}
-.offered-amount__suggestions > div:not(:last-child) {
-  margin-right: 8px;
-}
-.offered-amount__note {
-  display: flex;
-  align-items: flex-start;
-}
-.offered-amount__note span {
-  color: #f1616f;
-  font-size: 11px;
-  font-weight: 400;
 }
 
 .trade__round {
@@ -6412,6 +6308,276 @@ form.questions-form {
   height: 5px;
   background: rgba(45, 62, 77, 0.8);
   clip-path: polygon(50% 0, 0 100%, 100% 100%);
+}
+
+.tender-list {
+  border: 1px solid #dadde2;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.tender-list:not(:last-child) {
+  margin-bottom: 20px;
+}
+.tender-list--colored {
+  border-color: #32b4d7;
+}
+.tender-list__header {
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #2d3e4d;
+  background: #edeef0;
+}
+.tender-list__header--colored {
+  color: #fff;
+  background: #32b4d7;
+}
+.tender-list__header h2 {
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+}
+.tender-list__body li:not(:last-child) {
+  border-bottom: 1px solid #dadde2;
+}
+.tender-list__body li.border-none {
+  border: none;
+}
+.tender-list__body li.active {
+  position: relative;
+  background-color: rgba(50, 180, 215, 0.1);
+  border-bottom: none;
+}
+.tender-list__body li.active::before {
+  content: "";
+  position: absolute;
+  bottom: -9px;
+  left: 50%;
+  transform: translateX(-50%);
+  clip-path: polygon(100% 0, 0 0, 50% 100%);
+  width: 16px;
+  height: 10px;
+  background-color: rgba(50, 180, 215, 0.1);
+}
+.tender-list__body li h3 {
+  margin-bottom: 20px;
+  color: #2d3e4d;
+  font-size: 14px;
+  font-weight: 500;
+}
+.tender-list__body li .title {
+  margin-bottom: 4px;
+  color: #55646f;
+  font-size: 12px;
+  text-align: center;
+}
+.tender-list__body li strong {
+  color: #2d3e4d;
+  font-size: 13px;
+  font-weight: 500;
+  text-align: center;
+}
+.tender-list__cta {
+  padding-top: 24px;
+  border-top: 1px solid #dadde2;
+}
+.tender-list .bg-light {
+  background: #f6f7f9;
+}
+.tender-list .flex {
+  display: flex;
+}
+.tender-list .space-between {
+  justify-content: space-between;
+}
+.tender-list .align-center {
+  align-items: center;
+}
+.tender-list .justify-center {
+  justify-content: center;
+}
+.tender-list .flex-col {
+  display: flex;
+  flex-direction: column;
+}
+.tender-list .pad-x-1 {
+  padding: 0 15px;
+}
+.tender-list .pad-y-1 {
+  padding: 15px 0;
+}
+.tender-list .pad-xy-1 {
+  padding: 15px;
+}
+.tender-list .pad-x-2 {
+  padding: 0 20px;
+}
+.tender-list .pad-y-2 {
+  padding: 20px 0;
+}
+.tender-list .pad-xy-2 {
+  padding: 20px;
+}
+.tender-list .doc-item {
+  padding-bottom: 16px;
+}
+.tender-list .doc-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+.tender-list .doc-icon {
+  margin-right: 15px;
+}
+.tender-list .doc-type {
+  margin-right: 15px;
+  color: #2d3e4d;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+.tender-list .doc-size {
+  color: #2d3e4d;
+  font-size: 10px;
+}
+.tender-list .doc-download {
+  padding-top: 18px;
+}
+.tender-list .doc-download button {
+  padding: 4px 10px 4px 4px;
+  border: none;
+  border-radius: 12px;
+  background: #32b4d7;
+  cursor: pointer;
+}
+.tender-list .doc-download button img {
+  margin-right: 6px;
+}
+.tender-list .doc-download button span {
+  color: #fff;
+  font-size: 10px;
+  font-weight: 500;
+}
+
+.trade-item {
+  cursor: pointer;
+}
+
+.trade-offer {
+  max-height: 0;
+  background: #fff;
+  border-bottom: 1px solid #dadde2;
+  overflow: hidden;
+}
+.trade-offer:last-of-type {
+  border-bottom: none;
+}
+.trade-offer > div {
+  max-width: 390px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.trade-offer h3 {
+  margin: 24px 0;
+  color: #2d3e4d;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+}
+.trade-offer__wrap {
+  margin-bottom: 14px;
+}
+.trade-offer__wrap button {
+  padding: 16px 12px;
+  height: 48px;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 500;
+  border: none;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  background: #32b4d7;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+}
+@media only screen and (min-width: 768px) {
+  .trade-offer__wrap button {
+    padding: 16px 22px;
+    font-size: 14px;
+  }
+}
+.trade-offer__input {
+  position: relative;
+  width: 100%;
+}
+.trade-offer__input input {
+  height: 48px;
+  width: 100%;
+  padding: 16px 45px 16px 10px;
+  color: #5d6367;
+  font-family: "FiraGO", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  border: 1px solid #dadde2;
+  border-right: none;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.08);
+}
+@media only screen and (min-width: 768px) {
+  .trade-offer__input input {
+    padding: 16px 55px 16px 10px;
+  }
+}
+.trade-offer__input input::placeholder {
+  color: #5d6367;
+  font-size: 14px;
+  font-weight: 300px;
+}
+.trade-offer__input .currency {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  width: 28px;
+  height: 26px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f6f7f9;
+  border: 1px solid #acacaf;
+  border-radius: 4px;
+}
+@media only screen and (min-width: 768px) {
+  .trade-offer__input .currency {
+    width: 35px;
+  }
+}
+.trade-offer__suggestions {
+  margin-bottom: 24px;
+  display: flex;
+}
+.trade-offer__suggestions > div {
+  padding: 9px 12px;
+  color: #5d6367;
+  font-size: 12px;
+  font-weight: 400;
+  border-radius: 16px;
+  border: 1px solid #dee3e6;
+}
+.trade-offer__suggestions > div:not(:last-child) {
+  margin-right: 8px;
+}
+.trade-offer__note {
+  margin-bottom: 24px;
+  display: flex;
+  align-items: flex-start;
+}
+.trade-offer__note .danger span {
+  color: #f1616f;
+}
+.trade-offer__note span {
+  color: #5d6367;
+  font-size: 10px;
+  font-weight: 400;
 }
 
 .search-out {

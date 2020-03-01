@@ -1,0 +1,132 @@
+.trade-offer {
+  max-height: 0;
+  background: $color-white;
+  border-bottom: $border-1;
+  overflow: hidden;
+
+  &:last-of-type {
+    border-bottom: none;
+  }
+
+  & > div {
+    max-width: 390px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  h3 {
+    margin: 24px 0;
+    color: $color-text-third;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  &__wrap {
+    margin-bottom: 14px;
+
+    button {
+      padding: 16px 12px;
+      height: 48px;
+      color: $color-white;
+      font-size: 10px;
+      font-weight: 500;
+      border: none;
+      border-top-right-radius: 8px;
+      border-bottom-right-radius: 8px;
+      background: $color-brand-2;
+      box-shadow: 0 2px 3px rgba($color-black, 0.08);
+      cursor: pointer;
+
+      @media only screen and (min-width: 768px) {
+        padding: 16px 22px;
+        font-size: 14px;
+      }
+    }
+  }
+
+  &__input {
+    position: relative;
+    width: 100%;
+
+    input {
+      height: 48px;
+      width: 100%;
+      padding: 16px 45px 16px 10px;
+      color: $color-text-sec;
+      font-family: $font-main;
+      font-size: 14px;
+      font-weight: 300;
+      border: $border-1;
+      border-right: none;
+      border-top-left-radius: 8px;
+      border-bottom-left-radius: 8px;
+      box-shadow: 0 2px 3px rgba($color-black, 0.08);
+
+      @media only screen and (min-width: 768px) {
+        padding: 16px 55px 16px 10px;
+      }
+
+      &::placeholder {
+        color: $color-text-sec;
+        font-size: 14px;
+        font-weight: 300px;
+      }
+    }
+
+    .currency {
+      position: absolute;
+      top: 50%;
+      right: 10px;
+      transform: translateY(-50%);
+      width: 28px;
+      height: 26px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: $color-bg-main;
+      border: 1px solid $color-gray;
+      border-radius: 4px;
+
+      @media only screen and (min-width: 768px) {
+        width: 35px;
+      }
+    }
+  }
+
+  &__suggestions {
+    margin-bottom: 24px;
+    display: flex;
+
+    & > div {
+      padding: 9px 12px;
+      color: $color-text-sec;
+      font-size: 12px;
+      font-weight: 400;
+      border-radius: 16px;
+      border: 1px solid #dee3e6;
+
+      &:not(:last-child) {
+        margin-right: 8px;
+      }
+    }
+  }
+
+  &__note {
+    margin-bottom: 24px;
+    display: flex;
+    align-items: flex-start;
+
+    .danger {
+      span {
+        color: $color-danger;
+      }
+    }
+
+    span {
+      color: $color-text-sec;
+      font-size: 10px;
+      font-weight: 400;
+    }
+  }
+}

@@ -86,4 +86,19 @@ $(window).on("load", function() {
       $(".search-out")[0].classList.remove("open");
     }
   });
+
+  $(".trade-item").each(function() {
+    $(this).click(function() {
+      $(this).toggleClass("active");
+
+      let panel = this.nextElementSibling;
+
+      console.log(panel);
+      if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+      }
+    });
+  });
 });

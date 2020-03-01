@@ -1,0 +1,185 @@
+.tender-list {
+  border: $border-1;
+  border-radius: 8px;
+  overflow: hidden;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  &--colored {
+    border-color: $color-brand-2;
+  }
+
+  &__header {
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $color-text-third;
+    background: #edeef0;
+
+    &--colored {
+      color: $color-white;
+      background: $color-brand-2;
+    }
+
+    h2 {
+      font-size: 14px;
+      font-weight: 500;
+      text-align: center;
+    }
+  }
+
+  &__body {
+    li {
+      &:not(:last-child) {
+        border-bottom: $border-1;
+      }
+
+      &.border-none {
+        border: none;
+      }
+
+      &.active {
+        position: relative;
+        background-color: rgba($color-brand-2, 0.1);
+        border-bottom: none;
+
+        &::before {
+          content: "";
+          position: absolute;
+          bottom: -9px;
+          left: 50%;
+          transform: translateX(-50%);
+          clip-path: polygon(100% 0, 0 0, 50% 100%);
+          width: 16px;
+          height: 10px;
+          background-color: rgba($color-brand-2, 0.1);
+        }
+      }
+
+      h3 {
+        margin-bottom: 20px;
+        color: $color-text-third;
+        font-size: 14px;
+        font-weight: 500;
+      }
+
+      .title {
+        margin-bottom: 4px;
+        color: #55646f;
+        font-size: 12px;
+        text-align: center;
+      }
+
+      strong {
+        color: $color-text-third;
+        font-size: 13px;
+        font-weight: 500;
+        text-align: center;
+      }
+    }
+  }
+
+  &__cta {
+    padding-top: 24px;
+    border-top: $border-1;
+  }
+
+  .bg-light {
+    background: $color-bg-main;
+  }
+
+  .flex {
+    display: flex;
+  }
+
+  .space-between {
+    justify-content: space-between;
+  }
+
+  .align-center {
+    align-items: center;
+  }
+
+  .justify-center {
+    justify-content: center;
+  }
+
+  .flex-col {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .pad-x-1 {
+    padding: 0 15px;
+  }
+
+  .pad-y-1 {
+    padding: 15px 0;
+  }
+
+  .pad-xy-1 {
+    padding: 15px;
+  }
+
+  .pad-x-2 {
+    padding: 0 20px;
+  }
+
+  .pad-y-2 {
+    padding: 20px 0;
+  }
+
+  .pad-xy-2 {
+    padding: 20px;
+  }
+
+  .doc {
+    &-item {
+      padding-bottom: 16px;
+
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
+    &-icon {
+      margin-right: 15px;
+    }
+    &-type {
+      margin-right: 15px;
+      color: $color-text-third;
+      font-size: 10px;
+      text-transform: uppercase;
+    }
+    &-size {
+      color: $color-text-third;
+      font-size: 10px;
+    }
+    &-download {
+      padding-top: 18px;
+      button {
+        padding: 4px 10px 4px 4px;
+        border: none;
+        border-radius: 12px;
+        background: $color-brand-2;
+        cursor: pointer;
+
+        img {
+          margin-right: 6px;
+        }
+
+        span {
+          color: $color-white;
+          font-size: 10px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
+
+.trade-item {
+  cursor: pointer;
+}
