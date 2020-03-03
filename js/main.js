@@ -93,12 +93,56 @@ $(window).on("load", function() {
 
       let panel = this.nextElementSibling;
 
-      console.log(panel);
+      // ისრის მიმართულება კლიკზე
+      if (
+        $(this)
+          .children("div")
+          .children(".fas").length > 0
+      ) {
+        if (
+          $(this)
+            .children("div")
+            .children(".fas")
+            .hasClass("fa-chevron-right")
+        ) {
+          $(this)
+            .children("div")
+            .children(".fas")
+            .removeClass("fa-chevron-right");
+          $(this)
+            .children("div")
+            .children(".fas")
+            .addClass("fa-chevron-down");
+        } else {
+          $(this)
+            .children("div")
+            .children(".fas")
+            .addClass("fa-chevron-right");
+          $(this)
+            .children("div")
+            .children(".fas")
+            .removeClass("fa-chevron-down");
+        }
+      }
+
       if (panel.style.maxHeight) {
         panel.style.maxHeight = null;
       } else {
         panel.style.maxHeight = panel.scrollHeight + "px";
       }
     });
+  });
+
+  const closeChatBtns = Array.from($(".close-chat-btn"));
+  closeChatBtns.forEach(btn => {
+    btn.addEventListener("click", e => {
+      e.preventDefault();
+      $(".close-chat-modal")[0].classList.add("active");
+    });
+  });
+
+  $("button.cancel").click(function(e) {
+    e.preventDefault();
+    $(".close-chat-modal")[0].classList.remove("active");
   });
 });

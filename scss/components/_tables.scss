@@ -1,0 +1,35 @@
+.tender-list {
+  &--desktop {
+    @media only screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  &__specify {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.2s ease-in;
+  }
+
+  &__headings {
+    padding: 18px 35px;
+
+    div {
+      color: $color-text-sec;
+      font-size: 13px;
+      font-weight: 500;
+    }
+  }
+
+  &__items {
+    li {
+      padding: 18px 35px;
+      background: $color-bg-main;
+
+      div {
+        color: $color-text-third;
+        font-size: 14px;
+      }
+    }
+  }
+}

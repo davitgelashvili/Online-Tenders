@@ -4536,6 +4536,69 @@ button::placeholder {
   clip: rect(1px, 1px, 1px, 1px);
 }
 
+.bg-light {
+  background: #f6f7f9;
+}
+
+.flex {
+  display: flex;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.pad-x-1 {
+  padding: 0 15px;
+}
+
+.pad-y-1 {
+  padding: 15px 0;
+}
+
+.pad-xy-1 {
+  padding: 15px;
+}
+
+.pad-x-2 {
+  padding: 0 20px;
+}
+
+.pad-y-2 {
+  padding: 20px 0;
+}
+
+.pad-xy-2 {
+  padding: 20px;
+}
+
+.grid-4 {
+  display: grid;
+  grid-template-columns: 30px 5fr 2fr 2fr;
+}
+
+.grid-5 {
+  display: grid;
+  grid-template-columns: 30px 4fr 2fr 2fr 2fr;
+}
+
+.text-center {
+  text-align: center;
+}
+
 .header {
   position: relative;
   background: #fff;
@@ -5328,12 +5391,16 @@ h3.questions-title {
 }
 
 form.questions-form {
+  position: relative;
   height: 125px;
   padding: 0 25px;
   background: #f7f7f7;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+form.questions-form.chat-form {
+  height: 180px;
 }
 
 .questions-field {
@@ -5406,9 +5473,49 @@ form.questions-form {
   border-top-left-radius: 0;
   border-bottom-right-radius: 24px;
 }
+.message-body p {
+  color: #2d3e4d;
+  font-size: 13px;
+}
 
 .message-body p {
   margin: 0;
+}
+
+.questions-btn {
+  margin-right: 44px;
+}
+.questions-btn button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+.questions-btn button span {
+  margin-top: 10px;
+  white-space: nowrap;
+}
+
+.close-questions {
+  position: absolute;
+  bottom: 25px;
+  right: 25px;
+}
+.close-questions button {
+  display: flex;
+  align-items: center;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+.close-questions button img {
+  margin-right: 6px;
+}
+.close-questions button span {
+  color: #2d3e4d;
+  font-size: 12px;
 }
 
 .questions__content {
@@ -5453,6 +5560,39 @@ form.questions-form {
   border-top-left-radius: 8px;
   border-top-right-radius: 0;
   border-bottom-right-radius: 24px;
+}
+.questions__user .message-body p {
+  color: #2d3e4d;
+  font-size: 13px;
+}
+
+.close-chat-wrap h3 {
+  max-width: 288px;
+  color: #2d3e4d;
+  font-size: 23px;
+  font-weight: 800;
+  text-align: center;
+}
+.close-chat-wrap div {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+.close-chat-wrap button {
+  flex: 0 0 134px;
+  height: 44px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.close-chat-wrap button.close {
+  background: #f1616f;
+}
+.close-chat-wrap button.cancel {
+  background: #9da9b4;
 }
 
 .documents__heading {
@@ -6315,6 +6455,11 @@ form.questions-form {
   border-radius: 8px;
   overflow: hidden;
 }
+@media only screen and (min-width: 768px) {
+  .tender-list--mobile {
+    display: none;
+  }
+}
 .tender-list:not(:last-child) {
   margin-bottom: 20px;
 }
@@ -6382,43 +6527,6 @@ form.questions-form {
   padding-top: 24px;
   border-top: 1px solid #dadde2;
 }
-.tender-list .bg-light {
-  background: #f6f7f9;
-}
-.tender-list .flex {
-  display: flex;
-}
-.tender-list .space-between {
-  justify-content: space-between;
-}
-.tender-list .align-center {
-  align-items: center;
-}
-.tender-list .justify-center {
-  justify-content: center;
-}
-.tender-list .flex-col {
-  display: flex;
-  flex-direction: column;
-}
-.tender-list .pad-x-1 {
-  padding: 0 15px;
-}
-.tender-list .pad-y-1 {
-  padding: 15px 0;
-}
-.tender-list .pad-xy-1 {
-  padding: 15px;
-}
-.tender-list .pad-x-2 {
-  padding: 0 20px;
-}
-.tender-list .pad-y-2 {
-  padding: 20px 0;
-}
-.tender-list .pad-xy-2 {
-  padding: 20px;
-}
 .tender-list .doc-item {
   padding-bottom: 16px;
 }
@@ -6459,6 +6567,33 @@ form.questions-form {
 
 .trade-item {
   cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  .tender-list--desktop {
+    display: none;
+  }
+}
+.tender-list__specify {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.2s ease-in;
+}
+.tender-list__headings {
+  padding: 18px 35px;
+}
+.tender-list__headings div {
+  color: #5d6367;
+  font-size: 13px;
+  font-weight: 500;
+}
+.tender-list__items li {
+  padding: 18px 35px;
+  background: #f6f7f9;
+}
+.tender-list__items li div {
+  color: #2d3e4d;
+  font-size: 14px;
 }
 
 .trade-offer {

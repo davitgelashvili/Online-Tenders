@@ -25,12 +25,17 @@ h3.questions-title {
   font-weight: 500;
 }
 form.questions-form {
+  position: relative;
   height: 125px;
   padding: 0 25px;
   background: #f7f7f7;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  &.chat-form {
+    height: 180px;
+  }
 }
 .questions-field {
   position: relative;
@@ -94,9 +99,53 @@ form.questions-form {
   border-radius: 8px;
   border-top-left-radius: 0;
   border-bottom-right-radius: 24px;
+
+  p {
+    color: $color-text-third;
+    font-size: 13px;
+  }
 }
 .message-body p {
   margin: 0;
+}
+
+.questions-btn {
+  margin-right: 44px;
+  button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+
+    span {
+      margin-top: 10px;
+      white-space: nowrap;
+    }
+  }
+}
+
+.close-questions {
+  position: absolute;
+  bottom: 25px;
+  right: 25px;
+  button {
+    display: flex;
+    align-items: center;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+
+    img {
+      margin-right: 6px;
+    }
+
+    span {
+      color: $color-text-third;
+      font-size: 12px;
+    }
+  }
 }
 
 .questions {
@@ -146,6 +195,45 @@ form.questions-form {
       border-top-left-radius: 8px;
       border-top-right-radius: 0;
       border-bottom-right-radius: 24px;
+
+      p {
+        color: $color-text-third;
+        font-size: 13px;
+      }
+    }
+  }
+}
+
+.close-chat-wrap {
+  h3 {
+    max-width: 288px;
+    color: $color-text-third;
+    font-size: 23px;
+    font-weight: 800;
+    text-align: center;
+  }
+
+  div {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  button {
+    flex: 0 0 134px;
+    height: 44px;
+    color: $color-white;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+
+    &.close {
+      background: $color-danger;
+    }
+    &.cancel {
+      background: #9da9b4;
     }
   }
 }

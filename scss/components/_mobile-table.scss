@@ -3,6 +3,12 @@
   border-radius: 8px;
   overflow: hidden;
 
+  &--mobile {
+    @media only screen and (min-width: 768px) {
+      display: none;
+    }
+  }
+
   &:not(:last-child) {
     margin-bottom: 20px;
   }
@@ -85,55 +91,6 @@
   &__cta {
     padding-top: 24px;
     border-top: $border-1;
-  }
-
-  .bg-light {
-    background: $color-bg-main;
-  }
-
-  .flex {
-    display: flex;
-  }
-
-  .space-between {
-    justify-content: space-between;
-  }
-
-  .align-center {
-    align-items: center;
-  }
-
-  .justify-center {
-    justify-content: center;
-  }
-
-  .flex-col {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .pad-x-1 {
-    padding: 0 15px;
-  }
-
-  .pad-y-1 {
-    padding: 15px 0;
-  }
-
-  .pad-xy-1 {
-    padding: 15px;
-  }
-
-  .pad-x-2 {
-    padding: 0 20px;
-  }
-
-  .pad-y-2 {
-    padding: 20px 0;
-  }
-
-  .pad-xy-2 {
-    padding: 20px;
   }
 
   .doc {

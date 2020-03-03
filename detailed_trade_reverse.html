@@ -321,42 +321,49 @@
                               <p>თქვენი შეთავაზება</p>
                             </div>
                           </div>
-                          <div class="trade__offer">
+
+                          <!-- Trade Offer Block -->
+                          <div class="trade-offer" style="max-height: 360px;">
                             <h3>შეიყვანეთ თქვენი ფასი</h3>
 
-                            <div class="offered-amount">
-                              <form action="#" class="offered-amount__form">
-                                <div class="offered-amount__form__field">
-                                  <div>
+                            <div>
+                              <form action="#">
+                                <div class="trade-offer__wrap flex">
+                                  <div class="trade-offer__input">
                                     <input type="text" placeholder="თანხა" />
                                     <span class="currency">‎₾</span>
                                   </div>
                                   <button type="submit">დამახსოვრება</button>
                                 </div>
                               </form>
-                              <div class="offered-amount__suggestions">
+
+                              <div class="trade-offer__suggestions">
                                 <div>+500 ‎₾</div>
                                 <div>+1000 ‎₾</div>
                                 <div>+1500 ‎₾</div>
                               </div>
-                              <div
-                                class="offered-amount__note offered-amount__note--black"
-                              >
-                                <span>*</span>
-                                <span
-                                  >თქვენს მიერ შეყვანილი თანხა უნდა იყოს
-                                  არაუმეტეს 4 500₾</span
-                                >
-                              </div>
-                              <div class="offered-amount__note">
-                                <span>*</span>
-                                <span
-                                  >ბოლო წამებისას მითითებული ფასი შეიძლება არ
-                                  აისახოს სისტემაში</span
-                                >
+
+                              <div class="trade-offer__note flex-col">
+                                <div class="flex">
+                                  <span>*</span>
+                                  <span
+                                    >თქვენს მიერ შეყვანილი თანხა უნდა იყოს 4
+                                    500₾</span
+                                  >
+                                </div>
+                                <div class="danger flex">
+                                  <span>*</span>
+                                  <span
+                                    >გთხოვთ სისტემაში მიუთითოთ თქვენს მიერ
+                                    შემოთავაზებული თანხა. წინააღმდეგ შემთვევაში
+                                    თქვენი შეთავაზება არ გამოუჩნდება
+                                    შემსყიდველს.</span
+                                  >
+                                </div>
                               </div>
                             </div>
                           </div>
+                          <!-- end Trade Offer Block -->
                         </div>
                       </div>
                     </div>
