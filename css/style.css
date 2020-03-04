@@ -5372,6 +5372,11 @@ button::placeholder {
   justify-content: space-between;
   overflow: hidden;
 }
+@media only screen and (max-width: 768px) {
+  .questions-container--desktop {
+    display: none;
+  }
+}
 .questions-container:not(:last-child) {
   margin-bottom: 28px;
 }
@@ -6552,6 +6557,7 @@ form.questions-form.chat-form {
   background-color: rgba(50, 180, 215, 0.1);
 }
 .tender-list__body li h3 {
+  margin: 0;
   margin-bottom: 20px;
   color: #2d3e4d;
   font-size: 14px;
