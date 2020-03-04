@@ -96,6 +96,11 @@
     flex-direction: column;
     justify-content: space-between;
     overflow: hidden;
+
+    @media only screen and (max-width: 768px) {
+      display: none;
+    }
+
     &__header {
       padding: 18px 36px;
       background: $color-brand-2;

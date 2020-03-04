@@ -5842,6 +5842,11 @@ form.questions-form.chat-form {
   border: 1px solid #edeef0;
   border-radius: 8px;
 }
+@media only screen and (max-width: 768px) {
+  .trade__offers-table {
+    display: none;
+  }
+}
 .trade__offers-table:not(:last-child) {
   margin-bottom: 28px;
 }
@@ -6003,6 +6008,11 @@ form.questions-form.chat-form {
   justify-content: space-between;
   overflow: hidden;
 }
+@media only screen and (max-width: 768px) {
+  .trade__current-offers {
+    display: none;
+  }
+}
 .trade__current-offers__header {
   padding: 18px 36px;
   background: #32b4d7;
@@ -6098,6 +6108,11 @@ form.questions-form.chat-form {
 
 .results__table {
   margin-top: 25px;
+}
+@media only screen and (max-width: 768px) {
+  .results__table {
+    display: none;
+  }
 }
 .results__table table {
   width: 100%;
@@ -7890,7 +7905,7 @@ form.questions-form.chat-form {
   margin-bottom: 20px;
 }
 .faq-accordion__title {
-  margin-bottom: 36px;
+  margin-bottom: 20px;
   color: #141b3d;
   font-family: "FiraGO", sans-serif;
   font-size: 23px;
@@ -7930,7 +7945,7 @@ form.questions-form.chat-form {
 .faq-accordion__btn span {
   color: #141b3d;
   font-family: "FiraGO", sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
   text-align: left;
 }
@@ -7946,9 +7961,9 @@ form.questions-form.chat-form {
 }
 .faq-accordion__answer p {
   padding: 0 20px 20px 66px;
-  color: #707b84;
+  color: #5d6367;
   font-family: "FiraGO", sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 300;
   line-height: 1.5;
 }
