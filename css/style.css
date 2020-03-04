@@ -5033,6 +5033,7 @@ button::placeholder {
   display: flex;
 }
 .modal__content {
+  min-width: 374px;
   position: relative;
   padding: 44px 50px;
   background: #fff;
@@ -8296,25 +8297,53 @@ form.questions-form.chat-form {
     row-gap: 22px;
   }
 }
+@media only screen and (max-width: 576px) {
+  .dashboard__stats {
+    grid-template-columns: 1fr;
+    grid-template-rows: 142px 142px 142px 142px;
+    column-gap: 0;
+  }
+}
 .dashboard__stats__item {
   border-radius: 12px;
   color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 20px;
   padding-left: 40px;
 }
 .dashboard__stats__item:first-child {
   background: #32b4d7;
+  background-image: url("../img/shield.svg");
+  background-repeat: no-repeat;
+  background-size: 40px;
+  background-position: top right;
+  background-origin: content-box;
 }
 .dashboard__stats__item:nth-child(2) {
   background: #55b14f;
+  background-image: url("../img/hourglass.svg");
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: top right;
+  background-origin: content-box;
 }
 .dashboard__stats__item:nth-child(3) {
   background: #f1616f;
+  background-image: url("../img/file-text.svg");
+  background-repeat: no-repeat;
+  background-size: 40px;
+  background-position: top right;
+  background-origin: content-box;
 }
 .dashboard__stats__item:nth-child(4) {
   background: #7d6eb2;
+  background-image: url("../img/user.svg");
+  background-repeat: no-repeat;
+  background-size: 40px;
+  background-position: top right;
+  background-origin: content-box;
 }
 .dashboard__stats__item div {
   font-size: 43px;
@@ -9638,10 +9667,16 @@ body {
 
 .add-tender-upload-content {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   flex-wrap: wrap;
   margin-top: 15px;
   margin-bottom: 53px;
+}
+@media only screen and (max-width: 576px) {
+  .add-tender-upload-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 .add-tender-upload {
@@ -9682,6 +9717,11 @@ body {
   align-items: center;
   padding-right: 37px;
   margin-right: 21px;
+}
+@media only screen and (max-width: 576px) {
+  .add-tender-uploaded {
+    margin-bottom: 15px;
+  }
 }
 
 .add-tender-uploaded span {
@@ -9776,7 +9816,7 @@ body {
 
 .add-tender-uploaded-item {
   margin-right: 21px;
-  padding-right: 60px;
+  padding-right: 30px;
   position: relative;
   display: flex;
   align-items: center;
@@ -9823,7 +9863,6 @@ body {
 }
 
 .company-add-btn {
-  float: right;
   width: 100%;
   height: 48px;
   background: #0fb7ff;

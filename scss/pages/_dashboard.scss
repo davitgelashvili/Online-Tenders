@@ -21,24 +21,51 @@
       row-gap: 22px;
     }
 
+    @media only screen and (max-width: 576px) {
+      grid-template-columns: 1fr;
+      grid-template-rows: 142px 142px 142px 142px;
+      column-gap: 0;
+    }
+
     &__item {
       border-radius: 12px;
       color: $color-white;
       display: flex;
       flex-direction: column;
       justify-content: center;
+      padding: 20px;
       padding-left: 40px;
       &:first-child {
         background: $color-brand-2;
+        background-image: url("../img/shield.svg");
+        background-repeat: no-repeat;
+        background-size: 40px;
+        background-position: top right;
+        background-origin: content-box;
       }
       &:nth-child(2) {
         background: #55b14f;
+        background-image: url("../img/hourglass.svg");
+        background-repeat: no-repeat;
+        background-size: 30px;
+        background-position: top right;
+        background-origin: content-box;
       }
       &:nth-child(3) {
         background: $color-danger;
+        background-image: url("../img/file-text.svg");
+        background-repeat: no-repeat;
+        background-size: 40px;
+        background-position: top right;
+        background-origin: content-box;
       }
       &:nth-child(4) {
         background: #7d6eb2;
+        background-image: url("../img/user.svg");
+        background-repeat: no-repeat;
+        background-size: 40px;
+        background-position: top right;
+        background-origin: content-box;
       }
       div {
         font-size: 43px;

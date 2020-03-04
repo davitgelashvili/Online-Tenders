@@ -698,10 +698,15 @@ body {
 }
 .add-tender-upload-content {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   flex-wrap: wrap;
   margin-top: 15px;
   margin-bottom: 53px;
+
+  @media only screen and (max-width: 576px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 .add-tender-upload {
   background: $color-brand-1;
@@ -737,6 +742,10 @@ body {
   align-items: center;
   padding-right: 37px;
   margin-right: 21px;
+
+  @media only screen and (max-width: 576px) {
+    margin-bottom: 15px;
+  }
 }
 .add-tender-uploaded span {
   font-weight: 400;
@@ -823,7 +832,7 @@ body {
 }
 .add-tender-uploaded-item {
   margin-right: 21px;
-  padding-right: 60px;
+  padding-right: 30px;
   position: relative;
   display: flex;
   align-items: center;
@@ -864,7 +873,6 @@ body {
   align-items: center;
 }
 .company-add-btn {
-  float: right;
   width: 100%;
   height: 48px;
   background: $color-brand-1;
