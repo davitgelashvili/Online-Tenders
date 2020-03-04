@@ -5399,6 +5399,12 @@ form.questions-form {
   justify-content: center;
   align-items: center;
 }
+@media only screen and (max-width: 768px) {
+  form.questions-form {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+}
 form.questions-form.chat-form {
   height: 180px;
 }
@@ -5431,6 +5437,14 @@ form.questions-form.chat-form {
   font-weight: 500;
   background: #32b4d7;
   cursor: pointer;
+}
+@media only screen and (max-width: 768px) {
+  .questions-field button {
+    top: 12px;
+    width: 60px;
+    height: 36px;
+    font-size: 10px;
+  }
 }
 
 .questions-operator {
@@ -5485,6 +5499,12 @@ form.questions-form.chat-form {
 .questions-btn {
   margin-right: 44px;
 }
+@media only screen and (max-width: 768px) {
+  .questions-btn {
+    margin-right: 0;
+    margin-top: 15px;
+  }
+}
 .questions-btn button {
   display: flex;
   flex-direction: column;
@@ -5502,6 +5522,11 @@ form.questions-form.chat-form {
   position: absolute;
   bottom: 25px;
   right: 25px;
+}
+@media only screen and (max-width: 768px) {
+  .close-questions {
+    bottom: 30px;
+  }
 }
 .close-questions button {
   display: flex;
@@ -5524,6 +5549,11 @@ form.questions-form.chat-form {
   display: flex;
   flex-direction: column-reverse;
   overflow-y: scroll;
+}
+@media only screen and (max-width: 768px) {
+  .questions__content {
+    padding: 30px 15px;
+  }
 }
 .questions__user {
   margin-bottom: 30px;
