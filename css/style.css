@@ -8171,6 +8171,11 @@ form.questions-form.chat-form {
   display: flex;
   justify-content: space-between;
 }
+@media only screen and (max-width: 991px) {
+  .contact {
+    flex-direction: column;
+  }
+}
 .contact__title {
   margin-bottom: 35px;
   color: #141b3d;
@@ -8179,6 +8184,11 @@ form.questions-form.chat-form {
 }
 .contact > div {
   flex: 0 0 48%;
+}
+@media only screen and (max-width: 991px) {
+  .contact__address {
+    margin-bottom: 40px;
+  }
 }
 .contact__address .map {
   margin-bottom: 26px;
@@ -8191,10 +8201,20 @@ form.questions-form.chat-form {
   justify-content: space-between;
   align-items: center;
 }
+@media only screen and (max-width: 460px) {
+  .contact__address address ul {
+    flex-direction: column;
+  }
+}
 .contact__address address ul li {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+@media only screen and (max-width: 460px) {
+  .contact__address address ul li:not(:last-child) {
+    margin-bottom: 20px;
+  }
 }
 .contact__address address ul li i {
   margin-bottom: 10px;
@@ -8236,6 +8256,7 @@ form.questions-form.chat-form {
 }
 .contact__form form textarea {
   height: 124px;
+  padding-top: 10px;
 }
 .contact__form form button {
   margin-left: auto;
