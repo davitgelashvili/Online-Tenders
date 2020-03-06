@@ -5,11 +5,19 @@
     align-items: center;
     justify-content: center;
 
+    @media only screen and (max-width: 768px) {
+      flex-direction: column;
+    }
+
     p {
       margin-right: 25px;
       color: $color-text-third;
       font-size: 14px;
       font-weight: 400;
+
+      @media only screen and (max-width: 768px) {
+        margin-right: 0;
+      }
     }
 
     time {
@@ -42,7 +50,7 @@
     display: flex;
     align-items: center;
 
-    @media only screen and (max-width: 1254px) {
+    @media only screen and (max-width: 1024px) {
       flex-direction: column;
     }
   }
@@ -53,7 +61,7 @@
     border-radius: 8px;
     box-shadow: 0 3px 36px rgba($color-black, 0.08);
 
-    @media only screen and (max-width: 1254px) {
+    @media only screen and (max-width: 1230px) {
       margin-right: 0;
     }
 
@@ -72,6 +80,10 @@
     &__your {
       padding: 28px 55px;
       text-align: center;
+
+      @media only screen and (max-width: 1230px) {
+        padding: 20px 30px;
+      }
 
       p {
         color: $color-text-sec;

@@ -5773,6 +5773,9 @@ form.questions-form.chat-form {
   .trade__container {
     display: none;
   }
+  .trade__container--mobile {
+    display: flex;
+  }
 }
 .trade__container__header {
   height: 53px;
@@ -5938,11 +5941,21 @@ form.questions-form.chat-form {
   align-items: center;
   justify-content: center;
 }
+@media only screen and (max-width: 768px) {
+  .trade__time-left {
+    flex-direction: column;
+  }
+}
 .trade__time-left p {
   margin-right: 25px;
   color: #2d3e4d;
   font-size: 14px;
   font-weight: 400;
+}
+@media only screen and (max-width: 768px) {
+  .trade__time-left p {
+    margin-right: 0;
+  }
 }
 .trade__time-left time {
   display: flex;
@@ -5973,7 +5986,7 @@ form.questions-form.chat-form {
   display: flex;
   align-items: center;
 }
-@media only screen and (max-width: 1254px) {
+@media only screen and (max-width: 1024px) {
   .trade__wrap {
     flex-direction: column;
   }
@@ -5985,7 +5998,7 @@ form.questions-form.chat-form {
   border-radius: 8px;
   box-shadow: 0 3px 36px rgba(0, 0, 0, 0.08);
 }
-@media only screen and (max-width: 1254px) {
+@media only screen and (max-width: 1230px) {
   .trade__offers {
     margin-right: 0;
   }
@@ -6002,6 +6015,11 @@ form.questions-form.chat-form {
 .trade__offers__best, .trade__offers__your {
   padding: 28px 55px;
   text-align: center;
+}
+@media only screen and (max-width: 1230px) {
+  .trade__offers__best, .trade__offers__your {
+    padding: 20px 30px;
+  }
 }
 .trade__offers__best p, .trade__offers__your p {
   color: #5d6367;
