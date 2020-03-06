@@ -41,6 +41,13 @@ $(window).on("load", function() {
     $(".modal").removeClass("active");
   });
 
+  // მოდალის დახურვა გარეთ დაკლიკებისას
+  $(".modal").click(function(e) {
+    if (e.target.classList.contains("modal")) {
+      $(".modal").removeClass("active");
+    }
+  });
+
   $(".add-user-btn").click(function() {
     $("#add-user-modal")[0].classList.add("active");
   });

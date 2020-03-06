@@ -23,14 +23,17 @@
 
 .edit-menu {
   position: absolute;
-  right: -20px;
-  top: 24px;
   width: 130px;
   padding: 20px 14px;
   background: $color-white;
   border-radius: 4px;
   box-shadow: 0 3px 16px rgba($color-black, 0.16);
   z-index: 10;
+
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s linear;
 
   &--mobile {
     right: -20px;
@@ -39,13 +42,8 @@
 
   &--desktop {
     right: -10px;
-    top: 45px;
+    bottom: -60px;
   }
-
-  visibility: hidden;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.2s linear;
 
   &.active {
     visibility: initial;
@@ -111,17 +109,30 @@
     color: $color-text-third;
     font-size: 28px;
     font-weight: 900;
+
+    @media only screen and (max-width: 1367px) {
+      margin-bottom: 20px;
+      font-size: 24px;
+    }
   }
   &__field {
     margin-bottom: 20px;
     display: flex;
     flex-direction: column;
 
+    @media only screen and (max-width: 1367px) {
+      margin-bottom: 14px;
+    }
+
     label {
       margin-bottom: 12px;
       color: $color-text-main;
       font-size: 12px;
       font-weight: 500;
+
+      @media only screen and (max-width: 1367px) {
+        margin-bottom: 6px;
+      }
     }
 
     input[type="text"],
@@ -136,6 +147,10 @@
       font-weight: 400;
       border: $border-1;
       border-radius: 8px;
+
+      @media only screen and (max-width: 1367px) {
+        height: 36px;
+      }
     }
   }
   button {
@@ -149,6 +164,11 @@
     border: none;
     border-radius: 8px;
     cursor: pointer;
+
+    @media only screen and (max-width: 1367px) {
+      height: 40px;
+      font-size: 12px;
+    }
   }
 }
 
