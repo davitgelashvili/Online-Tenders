@@ -291,7 +291,7 @@
                 </div>
                 <div class="tab-content tab-trade tab-active">
                   <div class="trade">
-                    <div class="trade__container">
+                    <div class="trade__container trade__container--mobile">
                       <header class="trade__container__header">
                         <h3>რევერსული აუქციონის მიმდინარე სტატუსი</h3>
                       </header>
@@ -321,42 +321,49 @@
                               <p>თქვენი შეთავაზება</p>
                             </div>
                           </div>
-                          <div class="trade__offer">
+
+                          <!-- Trade Offer Block -->
+                          <div class="trade-offer" style="max-height: 360px;">
                             <h3>შეიყვანეთ თქვენი ფასი</h3>
 
-                            <div class="offered-amount">
-                              <form action="#" class="offered-amount__form">
-                                <div class="offered-amount__form__field">
-                                  <div>
+                            <div>
+                              <form action="#">
+                                <div class="trade-offer__wrap flex">
+                                  <div class="trade-offer__input">
                                     <input type="text" placeholder="თანხა" />
                                     <span class="currency">‎₾</span>
                                   </div>
                                   <button type="submit">დამახსოვრება</button>
                                 </div>
                               </form>
-                              <div class="offered-amount__suggestions">
+
+                              <div class="trade-offer__suggestions">
                                 <div>+500 ‎₾</div>
                                 <div>+1000 ‎₾</div>
                                 <div>+1500 ‎₾</div>
                               </div>
-                              <div
-                                class="offered-amount__note offered-amount__note--black"
-                              >
-                                <span>*</span>
-                                <span
-                                  >თქვენს მიერ შეყვანილი თანხა უნდა იყოს
-                                  არაუმეტეს 4 500₾</span
-                                >
-                              </div>
-                              <div class="offered-amount__note">
-                                <span>*</span>
-                                <span
-                                  >ბოლო წამებისას მითითებული ფასი შეიძლება არ
-                                  აისახოს სისტემაში</span
-                                >
+
+                              <div class="trade-offer__note flex-col">
+                                <div class="flex">
+                                  <span>*</span>
+                                  <span
+                                    >თქვენს მიერ შეყვანილი თანხა უნდა იყოს 4
+                                    500₾</span
+                                  >
+                                </div>
+                                <div class="danger flex">
+                                  <span>*</span>
+                                  <span
+                                    >გთხოვთ სისტემაში მიუთითოთ თქვენს მიერ
+                                    შემოთავაზებული თანხა. წინააღმდეგ შემთვევაში
+                                    თქვენი შეთავაზება არ გამოუჩნდება
+                                    შემსყიდველს.</span
+                                  >
+                                </div>
                               </div>
                             </div>
                           </div>
+                          <!-- end Trade Offer Block -->
                         </div>
                       </div>
                     </div>
@@ -404,6 +411,73 @@
                       </div>
                     </div>
 
+                    <!-- Tender List Colored -->
+                    <div
+                      class="tender-list tender-list--colored tender-list--mobile"
+                    >
+                      <header
+                        class="tender-list__header tender-list__header--colored"
+                      >
+                        <h2>მიმდინარე შეთავაზებები</h2>
+                      </header>
+                      <div class="tender-list__body">
+                        <ul>
+                          <li class="bg-light pad-xy-2">
+                            <h3><span>1</span> Wandio Development</h3>
+                            <div class="flex space-between">
+                              <div class="flex-col">
+                                <span class="title">საწყისი</span>
+                                <strong>35 000 ₾</strong>
+                              </div>
+                              <div class="flex-col">
+                                <span class="title">საბოლოო</span>
+                                <strong>44 000 ₾</strong>
+                              </div>
+                              <div class="flex-col">
+                                <span class="title">საწყისი</span>
+                                <strong>31 დეკ, 2019</strong>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="bg-light pad-xy-2">
+                            <h3><span>2</span> Omega Capital</h3>
+                            <div class="flex space-between">
+                              <div class="flex-col">
+                                <span class="title">საწყისი</span>
+                                <strong>35 000 ₾</strong>
+                              </div>
+                              <div class="flex-col">
+                                <span class="title">საბოლოო</span>
+                                <strong>44 000 ₾</strong>
+                              </div>
+                              <div class="flex-col">
+                                <span class="title">საწყისი</span>
+                                <strong>31 დეკ, 2019</strong>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="bg-light pad-xy-2">
+                            <h3><span>3</span> Netguru Comercial</h3>
+                            <div class="flex space-between">
+                              <div class="flex-col">
+                                <span class="title">საწყისი</span>
+                                <strong>35 000 ₾</strong>
+                              </div>
+                              <div class="flex-col">
+                                <span class="title">საბოლოო</span>
+                                <strong>44 000 ₾</strong>
+                              </div>
+                              <div class="flex-col">
+                                <span class="title">საწყისი</span>
+                                <strong>31 დეკ, 2019</strong>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <!-- end Tender List Colored -->
+
                     <div class="trade__offers-table">
                       <header class="trade__offers-table__header">
                         <h3>შემოთავაზებები ვაჭრობის დაწყებამდე</h3>
@@ -441,6 +515,69 @@
                         </table>
                       </div>
                     </div>
+
+                    <!-- Tender List Colorless -->
+                    <div class="tender-list tender-list--mobile">
+                      <header class="tender-list__header">
+                        <h2>შემოთავაზებები ვაჭრობის დაწყებამდე</h2>
+                      </header>
+                      <div class="tender-list__body">
+                        <ul>
+                          <li class="bg-light pad-xy-2">
+                            <h3><span>1</span> Wandio Development</h3>
+                            <div class="flex space-between">
+                              <div class="flex-col">
+                                <span class="title">საწყისი</span>
+                                <strong>35 000 ₾</strong>
+                              </div>
+                              <div class="flex-col">
+                                <span class="title">საბოლოო</span>
+                                <strong>44 000 ₾</strong>
+                              </div>
+                              <div class="flex-col">
+                                <span class="title">საწყისი</span>
+                                <strong>31 დეკ, 2019</strong>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="bg-light pad-xy-2">
+                            <h3><span>2</span> Omega Capital</h3>
+                            <div class="flex space-between">
+                              <div class="flex-col">
+                                <span class="title">საწყისი</span>
+                                <strong>35 000 ₾</strong>
+                              </div>
+                              <div class="flex-col">
+                                <span class="title">საბოლოო</span>
+                                <strong>44 000 ₾</strong>
+                              </div>
+                              <div class="flex-col">
+                                <span class="title">საწყისი</span>
+                                <strong>31 დეკ, 2019</strong>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="bg-light pad-xy-2">
+                            <h3><span>3</span> Netguru Comercial</h3>
+                            <div class="flex space-between">
+                              <div class="flex-col">
+                                <span class="title">საწყისი</span>
+                                <strong>35 000 ₾</strong>
+                              </div>
+                              <div class="flex-col">
+                                <span class="title">საბოლოო</span>
+                                <strong>44 000 ₾</strong>
+                              </div>
+                              <div class="flex-col">
+                                <span class="title">საწყისი</span>
+                                <strong>31 დეკ, 2019</strong>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <!-- end Tender List Colorless -->
                   </div>
                 </div>
                 <div class="tab-content tab-specify">

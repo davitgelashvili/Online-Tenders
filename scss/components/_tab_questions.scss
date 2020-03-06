@@ -1,11 +1,17 @@
 /* Questions Tab */
 .questions-container {
-  border: 1px solid var(--color-main-2);
+  border: 1px solid $color-brand-2;
   border-radius: 8px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   overflow: hidden;
+
+  &--desktop {
+    @media only screen and (max-width: 768px) {
+      display: none;
+    }
+  }
 
   &:not(:last-child) {
     margin-bottom: 28px;
@@ -16,21 +22,73 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: var(--color-main-2);
+  background: $color-brand-2;
 }
 h3.questions-title {
   margin: 0;
-  color: var(--color-white-1);
+  color: $color-white;
   font-size: 16px;
   font-weight: 500;
 }
 form.questions-form {
-  height: 125px;
+  position: relative;
+  height: 150px;
   padding: 0 25px;
   background: #f7f7f7;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media only screen and (max-width: 768px) {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  &.chat-form {
+    height: 180px;
+
+    @media only screen and (max-width: 768px) {
+      flex-direction: column-reverse;
+      align-items: flex-start;
+      height: 130px;
+    }
+  }
+
+  .questions-btn {
+    margin-right: 44px;
+
+    @media only screen and (max-width: 768px) {
+      margin-right: 0;
+      margin-top: 15px;
+    }
+
+    button {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+
+      @media only screen and (max-width: 768px) {
+        flex-direction: row;
+        align-items: center;
+      }
+
+      span {
+        margin-top: 10px;
+        color: $color-text-third;
+        font-size: 12px;
+        font-weight: 500;
+        white-space: nowrap;
+
+        @media only screen and (max-width: 768px) {
+          margin-top: 0;
+          margin-left: 10px;
+        }
+      }
+    }
+  }
 }
 .questions-field {
   position: relative;
@@ -41,8 +99,12 @@ form.questions-form {
   padding: 20px 150px 20px 20px;
   width: 100%;
   height: 60px;
-  border: 1px solid #dadde2;
+  border: $border-1;
   border-radius: 8px;
+
+  @media only screen and (max-width: 768px) {
+    padding: 20px 74px 20px 20px;
+  }
 }
 .questions-field button {
   position: absolute;
@@ -52,12 +114,19 @@ form.questions-form {
   height: 48px;
   border: none;
   border-radius: 8px;
-  color: var(--color-white-1);
+  color: $color-white;
   font-family: inherit;
   font-size: 14px;
   font-weight: 500;
-  background: var(--color-main-2);
+  background: $color-brand-2;
   cursor: pointer;
+
+  @media only screen and (max-width: 768px) {
+    top: 12px;
+    width: 60px;
+    height: 36px;
+    font-size: 10px;
+  }
 }
 .questions-operator {
   display: flex;
@@ -76,13 +145,13 @@ form.questions-form {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--color-main-2);
+  color: $color-brand-2;
   font-size: 23px;
   font-weight: 900;
 }
 .timestamp {
   margin-top: 5px;
-  color: var(--color-dark);
+  color: $color-text-main;
   font-size: 10px;
   font-weight: 400;
   text-align: center;
@@ -94,9 +163,41 @@ form.questions-form {
   border-radius: 8px;
   border-top-left-radius: 0;
   border-bottom-right-radius: 24px;
+
+  p {
+    color: $color-text-third;
+    font-size: 13px;
+  }
 }
 .message-body p {
-  margin: 0;
+  margin: 10px 0;
+}
+
+.close-questions {
+  position: absolute;
+  bottom: 25px;
+  right: 25px;
+
+  @media only screen and (max-width: 768px) {
+    bottom: 20px;
+  }
+
+  button {
+    display: flex;
+    align-items: center;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+
+    img {
+      margin-right: 6px;
+    }
+
+    span {
+      color: $color-text-third;
+      font-size: 12px;
+    }
+  }
 }
 
 .questions {
@@ -106,6 +207,10 @@ form.questions-form {
     display: flex;
     flex-direction: column-reverse;
     overflow-y: scroll;
+
+    @media only screen and (max-width: 768px) {
+      padding: 30px 15px;
+    }
   }
 
   &__user {
@@ -134,7 +239,7 @@ form.questions-form {
 
     &__del {
       margin-top: 8px;
-      color: #f1616f;
+      color: $color-danger;
       font-size: 10px;
       font-weight: 400;
       border: none;
@@ -146,6 +251,45 @@ form.questions-form {
       border-top-left-radius: 8px;
       border-top-right-radius: 0;
       border-bottom-right-radius: 24px;
+
+      p {
+        color: $color-text-third;
+        font-size: 13px;
+      }
+    }
+  }
+}
+
+.close-chat-wrap {
+  h3 {
+    max-width: 288px;
+    color: $color-text-third;
+    font-size: 23px;
+    font-weight: 800;
+    text-align: center;
+  }
+
+  div {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  button {
+    flex: 0 0 134px;
+    height: 44px;
+    color: $color-white;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+
+    &.close {
+      background: $color-danger;
+    }
+    &.cancel {
+      background: #9da9b4;
     }
   }
 }

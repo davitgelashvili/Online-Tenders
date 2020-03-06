@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="ka">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>TENDERS.GE</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+      integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__content">
+          <div class="header__left">
+            <div class="site-logo">
+              <a href="/">
+                <img src="img/logo.png" alt="TENDERS.GE" />
+              </a>
+              <h1 class="sr-only">tenders.ge</h1>
+            </div>
+            <!-- end .site-logo -->
+            <nav class="main_nav">
+              <h2 class="sr-only">ნავიგაცია</h2>
+              <ul>
+                <li><a href="">შესყიდვის პროცესი</a></li>
+                <li><a href="">გამოწერა</a></li>
+                <li><a href="">კონტაქტი</a></li>
+                <li><a href="">კითხვები</a></li>
+                <li><a href="" class="accented">დეშბორდი</a></li>
+              </ul>
+            </nav>
+          </div>
+          <!-- end .header__left -->
+          <div class="header__right">
+            <div class="header__favorites">
+              <a href="#">
+                <i class="far fa-star"></i>
+              </a>
+            </div>
+            <!-- User -->
+            <div class="header__user">
+              <figure class="header__user__avatar">
+                <img
+                  src="https://static.thenounproject.com/png/363640-200.png"
+                  alt="User Avatar"
+                />
+              </figure>
+              <p>ანგარიში</p>
+              <span><i class="fas fa-angle-down"></i></span>
+            </div>
+            <!-- end .header__user -->
+            <a href="#" class="header__announce">გამოცხადება</a>
+            <!-- Language -->
+            <ul class="header__lang">
+              <li>
+                <a href="#"><img src="img/eng.png"/></a>
+              </li>
+            </ul>
+            <!-- Mobile Navigation -->
+            <div class="mobile-nav">
+              <button class="mobile-nav__icon">
+                <i class="fas fa-bars"></i>
+              </button>
+              <div class="mobile-nav__bg"></div>
+              <nav>
+                <ul>
+                  <button class="mobile-nav__close">
+                    <i class="fas fa-times"></i>
+                  </button>
+                  <li><a href="">შესყიდვის პროცესი</a></li>
+                  <li><a href="">გამოწერა</a></li>
+                  <li><a href="">კონტაქტი</a></li>
+                  <li><a href="">კითხვები</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <!-- end .header__right -->
+        </div>
+        <!-- end .header__content -->
+      </div>
+      <!-- end .container -->
+    </header>
+
+    <div class="container">
+      <div class="content">
+        <!-- Tender List Colored -->
+        <div class="tender-list tender-list--colored tender-list--mobile">
+          <header class="tender-list__header tender-list__header--colored">
+            <h2>აუქციონის შედეგი</h2>
+          </header>
+          <div class="tender-list__body">
+            <ul>
+              <li class="bg-light pad-xy-2">
+                <h3><span>1</span> Wandio Development</h3>
+                <div class="flex space-between">
+                  <div class="flex-col">
+                    <span class="title">საწყისი</span>
+                    <strong>35 000 ₾</strong>
+                  </div>
+                  <div class="flex-col">
+                    <span class="title">საბოლოო</span>
+                    <strong>44 000 ₾</strong>
+                  </div>
+                  <div class="flex-col">
+                    <span class="title">საწყისი</span>
+                    <strong>31 დეკ, 2019</strong>
+                  </div>
+                </div>
+                <!-- დოკუმენტის გადმოწერის ღილაკი -->
+                <div class="doc-download flex justify-center">
+                  <button class="flex align-center">
+                    <img src="img/docs.svg" alt="docs" />
+                    <span>დოკუმენტის გადმოწერა</span>
+                  </button>
+                </div>
+                <!-- დოკუმენტის გადმოწერის ღილაკი -->
+              </li>
+              <li class="bg-light pad-xy-2">
+                <h3><span>2</span> Omega Capital</h3>
+                <div class="flex space-between">
+                  <div class="flex-col">
+                    <span class="title">საწყისი</span>
+                    <strong>35 000 ₾</strong>
+                  </div>
+                  <div class="flex-col">
+                    <span class="title">საბოლოო</span>
+                    <strong>44 000 ₾</strong>
+                  </div>
+                  <div class="flex-col">
+                    <span class="title">საწყისი</span>
+                    <strong>31 დეკ, 2019</strong>
+                  </div>
+                </div>
+              </li>
+              <li class="bg-light pad-xy-2">
+                <h3><span>3</span> Netguru Comercial</h3>
+                <div class="flex space-between">
+                  <div class="flex-col">
+                    <span class="title">საწყისი</span>
+                    <strong>35 000 ₾</strong>
+                  </div>
+                  <div class="flex-col">
+                    <span class="title">საბოლოო</span>
+                    <strong>44 000 ₾</strong>
+                  </div>
+                  <div class="flex-col">
+                    <span class="title">საწყისი</span>
+                    <strong>31 დეკ, 2019</strong>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- end Tender List Colored -->
+
+        <!-- Tender List Colored -->
+        <div class="tender-list tender-list--colored tender-list--mobile">
+          <header class="tender-list__header tender-list__header--colored">
+            <h2>აუქციონის შედეგი</h2>
+          </header>
+          <div class="tender-list__body">
+            <ul>
+              <li class="bg-light pad-xy-2 trade-item border-none">
+                <h3>
+                  <span>1</span> Wandio Development
+                  <span class="trade__badge">bidder</span>
+                </h3>
+                <div class="flex space-between">
+                  <div class="flex-col">
+                    <span class="title">საწყისი</span>
+                    <strong>-</strong>
+                  </div>
+                  <div class="flex-col">
+                    <span class="title">საბოლოო</span>
+                    <strong>-</strong>
+                  </div>
+                  <div class="flex-col">
+                    <span class="title">საწყისი</span>
+                    <strong>-</strong>
+                  </div>
+                </div>
+              </li>
+
+              <!-- Trade Offer Block -->
+              <div class="trade-offer">
+                <h3>შეიყვანეთ თქვენი ფასი</h3>
+
+                <div>
+                  <form action="#">
+                    <div class="trade-offer__wrap flex">
+                      <div class="trade-offer__input">
+                        <input type="text" placeholder="თანხა" />
+                        <span class="currency">‎₾</span>
+                      </div>
+                      <button type="submit">დამახსოვრება</button>
+                    </div>
+                  </form>
+
+                  <div class="trade-offer__suggestions">
+                    <div>+500 ‎₾</div>
+                    <div>+1000 ‎₾</div>
+                    <div>+1500 ‎₾</div>
+                  </div>
+
+                  <div class="trade-offer__note flex-col">
+                    <div class="flex">
+                      <span>*</span>
+                      <span>თქვენს მიერ შეყვანილი თანხა უნდა იყოს 4 500₾</span>
+                    </div>
+                    <div class="danger flex">
+                      <span>*</span>
+                      <span
+                        >გთხოვთ სისტემაში მიუთითოთ თქვენს მიერ შემოთავაზებული
+                        თანხა. წინააღმდეგ შემთვევაში თქვენი შეთავაზება არ
+                        გამოუჩნდება შემსყიდველს.</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end Trade Offer Block -->
+
+              <li class="bg-light pad-xy-2 trade-item border-none">
+                <h3><span>2</span> Omega Capital</h3>
+                <div class="flex space-between">
+                  <div class="flex-col">
+                    <span class="title">საწყისი</span>
+                    <strong>-</strong>
+                  </div>
+                  <div class="flex-col">
+                    <span class="title">საბოლოო</span>
+                    <strong>-</strong>
+                  </div>
+                  <div class="flex-col">
+                    <span class="title">საწყისი</span>
+                    <strong>-</strong>
+                  </div>
+                </div>
+              </li>
+
+              <!-- Trade Offer Block -->
+              <div class="trade-offer">
+                <h3>შეიყვანეთ თქვენი ფასი</h3>
+
+                <div>
+                  <form action="#">
+                    <div class="trade-offer__wrap flex">
+                      <div class="trade-offer__input">
+                        <input type="text" placeholder="თანხა" />
+                        <span class="currency">‎₾</span>
+                      </div>
+                      <button type="submit">დამახსოვრება</button>
+                    </div>
+                  </form>
+
+                  <div class="trade-offer__suggestions">
+                    <div>+500 ‎₾</div>
+                    <div>+1000 ‎₾</div>
+                    <div>+1500 ‎₾</div>
+                  </div>
+
+                  <div class="trade-offer__note flex-col">
+                    <div class="flex">
+                      <span>* </span>
+                      <span>თქვენს მიერ შეყვანილი თანხა უნდა იყოს 4 500₾</span>
+                    </div>
+                    <div class="danger flex">
+                      <span>* </span>
+                      <span
+                        >გთხოვთ სისტემაში მიუთითოთ თქვენს მიერ შემოთავაზებული
+                        თანხა. წინააღმდეგ შემთვევაში თქვენი შეთავაზება არ
+                        გამოუჩნდება შემსყიდველს.</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end Trade Offer Block -->
+
+              <li class="bg-light pad-xy-2 trade-item border-none">
+                <h3><span>3</span> Netguru Comercial</h3>
+                <div class="flex space-between">
+                  <div class="flex-col">
+                    <span class="title">საწყისი</span>
+                    <strong>35 000 ₾</strong>
+                  </div>
+                  <div class="flex-col">
+                    <span class="title">საბოლოო</span>
+                    <strong>44 000 ₾</strong>
+                  </div>
+                  <div class="flex-col">
+                    <span class="title">საწყისი</span>
+                    <strong>31 დეკ, 2019</strong>
+                  </div>
+                </div>
+              </li>
+
+              <!-- Trade Offer Block -->
+              <div class="trade-offer">
+                <h3>შეიყვანეთ თქვენი ფასი</h3>
+
+                <div>
+                  <form action="#">
+                    <div class="trade-offer__wrap flex">
+                      <div class="trade-offer__input">
+                        <input type="text" placeholder="თანხა" />
+                        <span class="currency">‎₾</span>
+                      </div>
+                      <button type="submit">დამახსოვრება</button>
+                    </div>
+                  </form>
+
+                  <div class="trade-offer__suggestions">
+                    <div>+500 ‎₾</div>
+                    <div>+1000 ‎₾</div>
+                    <div>+1500 ‎₾</div>
+                  </div>
+
+                  <div class="trade-offer__note flex-col">
+                    <div class="flex">
+                      <span>*</span>
+                      <span>თქვენს მიერ შეყვანილი თანხა უნდა იყოს 4 500₾</span>
+                    </div>
+                    <div class="danger flex">
+                      <span>*</span>
+                      <span
+                        >გთხოვთ სისტემაში მიუთითოთ თქვენს მიერ შემოთავაზებული
+                        თანხა. წინააღმდეგ შემთვევაში თქვენი შეთავაზება არ
+                        გამოუჩნდება შემსყიდველს.</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end Trade Offer Block -->
+            </ul>
+          </div>
+        </div>
+        <!-- end Tender List Colored -->
+
+        <!-- Tender List Colorless -->
+        <div class="tender-list tender-list--mobile">
+          <header class="tender-list__header">
+            <h2>მიმდინარე შეთავაზებები</h2>
+          </header>
+          <div class="tender-list__body">
+            <ul>
+              <li class="bg-light pad-xy-2">
+                <h3><span>1</span> Wandio Development</h3>
+                <div class="flex space-between">
+                  <div class="flex-col">
+                    <span class="title">საწყისი</span>
+                    <strong>35 000 ₾</strong>
+                  </div>
+                  <div class="flex-col">
+                    <span class="title">საბოლოო</span>
+                    <strong>44 000 ₾</strong>
+                  </div>
+                  <div class="flex-col">
+                    <span class="title">საწყისი</span>
+                    <strong>31 დეკ, 2019</strong>
+                  </div>
+                </div>
+              </li>
+              <li class="bg-light pad-xy-2">
+                <h3><span>2</span> Omega Capital</h3>
+                <div class="flex space-between">
+                  <div class="flex-col">
+                    <span class="title">საწყისი</span>
+                    <strong>35 000 ₾</strong>
+                  </div>
+                  <div class="flex-col">
+                    <span class="title">საბოლოო</span>
+                    <strong>44 000 ₾</strong>
+                  </div>
+                  <div class="flex-col">
+                    <span class="title">საწყისი</span>
+                    <strong>31 დეკ, 2019</strong>
+                  </div>
+                </div>
+              </li>
+              <li class="bg-light pad-xy-2">
+                <h3><span>3</span> Netguru Comercial</h3>
+                <div class="flex space-between">
+                  <div class="flex-col">
+                    <span class="title">საწყისი</span>
+                    <strong>35 000 ₾</strong>
+                  </div>
+                  <div class="flex-col">
+                    <span class="title">საბოლოო</span>
+                    <strong>44 000 ₾</strong>
+                  </div>
+                  <div class="flex-col">
+                    <span class="title">საწყისი</span>
+                    <strong>31 დეკ, 2019</strong>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- end Tender List Colorless -->
+
+        <!-- Tender Documentation List Colored -->
+        <div class="tender-list tender-list--colored tender-list--mobile">
+          <header class="tender-list__header tender-list__header--colored">
+            <h2>სატენდერო დოკუმენტაცია</h2>
+          </header>
+          <div class="tender-list__body pad-xy-2">
+            <ul>
+              <li class="doc-item">
+                <h3 class="flex align-center">
+                  <img
+                    src="img/pdf.svg"
+                    alt="ტენდერის შედგენის ოქმი"
+                    class="doc-icon"
+                  />
+                  <span>ტენდერის შედგენის ოქმი</span>
+                </h3>
+                <div class="flex space-between">
+                  <div>
+                    <span class="doc-type">PDF</span>
+                    <span class="doc-size">45 mb</span>
+                  </div>
+
+                  <div class="flex">
+                    <button class="documents__listing__item__ctas__download">
+                      <i class="fas fa-cloud-download-alt"></i>
+                      <span>გადმოწერა</span>
+                    </button>
+                    <button class="documents__listing__item__ctas__delete">
+                      <i class="fas fa-times-circle"></i>
+                    </button>
+                  </div>
+                </div>
+              </li>
+              <li class="doc-item">
+                <h3 class="flex align-center">
+                  <img
+                    src="img/pdf.svg"
+                    alt="ტენდერის შედგენის ოქმი"
+                    class="doc-icon"
+                  />
+                  <span>ტენდერის შედგენის ოქმი</span>
+                </h3>
+                <div class="flex space-between">
+                  <div>
+                    <span class="doc-type">PDF</span>
+                    <span class="doc-size">45 mb</span>
+                  </div>
+
+                  <div class="flex">
+                    <button class="documents__listing__item__ctas__download">
+                      <i class="fas fa-cloud-download-alt"></i>
+                      <span>გადმოწერა</span>
+                    </button>
+                    <button class="documents__listing__item__ctas__delete">
+                      <i class="fas fa-times-circle"></i>
+                    </button>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+            <!-- ატვირთვის ღილაკი -->
+            <div class="tender-list__cta flex justify-center">
+              <button class="documents__footer__uploadfile">
+                <img src="img/download3.svg" alt="" />
+                <span>ატვირთეთ ფაილი</span>
+              </button>
+            </div>
+            <!-- ატვირთვის ღილაკი -->
+          </div>
+        </div>
+        <!-- end Tender Documentation List Colored -->
+
+        <!-- Tender Documentation List -->
+        <div class="tender-list tender-list--mobile">
+          <header class="tender-list__header">
+            <h2>სატენდერო დოკუმენტაცია</h2>
+          </header>
+          <div class="tender-list__body pad-xy-2">
+            <ul>
+              <li class="doc-item">
+                <h3 class="flex align-center">
+                  <img
+                    src="img/pdf.svg"
+                    alt="ტენდერის შედგენის ოქმი"
+                    class="doc-icon"
+                  />
+                  <span>ტენდერის შედგენის ოქმი</span>
+                </h3>
+                <div class="flex space-between">
+                  <div>
+                    <span class="doc-type">PDF</span>
+                    <span class="doc-size">45 mb</span>
+                  </div>
+
+                  <div class="flex">
+                    <button class="documents__listing__item__ctas__download">
+                      <i class="fas fa-cloud-download-alt"></i>
+                      <span>გადმოწერა</span>
+                    </button>
+                    <button class="documents__listing__item__ctas__delete">
+                      <i class="fas fa-times-circle"></i>
+                    </button>
+                  </div>
+                </div>
+              </li>
+              <li class="doc-item">
+                <h3 class="flex align-center">
+                  <img
+                    src="img/pdf.svg"
+                    alt="ტენდერის შედგენის ოქმი"
+                    class="doc-icon"
+                  />
+                  <span>ტენდერის შედგენის ოქმი</span>
+                </h3>
+                <div class="flex space-between">
+                  <div>
+                    <span class="doc-type">PDF</span>
+                    <span class="doc-size">45 mb</span>
+                  </div>
+
+                  <div class="flex">
+                    <button class="documents__listing__item__ctas__download">
+                      <i class="fas fa-cloud-download-alt"></i>
+                      <span>გადმოწერა</span>
+                    </button>
+                    <button class="documents__listing__item__ctas__delete">
+                      <i class="fas fa-times-circle"></i>
+                    </button>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- end Tender Documentation List -->
+
+        <!-- Tender Documentation List BorderLess -->
+        <div class="tender-list tender-list--borderless tender-list--mobile">
+          <div class="tender-list__body pad-xy-2">
+            <ul>
+              <li class="doc-item">
+                <h3 class="flex align-center">
+                  <img
+                    src="img/pdf.svg"
+                    alt="ტენდერის შედგენის ოქმი"
+                    class="doc-icon"
+                  />
+                  <span>ტენდერის შედგენის ოქმი</span>
+                </h3>
+                <div class="flex space-between">
+                  <div>
+                    <span class="doc-type">PDF</span>
+                    <span class="doc-size">45 mb</span>
+                  </div>
+
+                  <div class="flex">
+                    <button class="documents__listing__item__ctas__download">
+                      <i class="fas fa-cloud-download-alt"></i>
+                      <span>გადმოწერა</span>
+                    </button>
+                    <button class="documents__listing__item__ctas__delete">
+                      <i class="fas fa-times-circle"></i>
+                    </button>
+                  </div>
+                </div>
+              </li>
+              <li class="doc-item">
+                <h3 class="flex align-center">
+                  <img
+                    src="img/pdf.svg"
+                    alt="ტენდერის შედგენის ოქმი"
+                    class="doc-icon"
+                  />
+                  <span>ტენდერის შედგენის ოქმი</span>
+                </h3>
+                <div class="flex space-between">
+                  <div>
+                    <span class="doc-type">PDF</span>
+                    <span class="doc-size">45 mb</span>
+                  </div>
+
+                  <div class="flex">
+                    <button class="documents__listing__item__ctas__download">
+                      <i class="fas fa-cloud-download-alt"></i>
+                      <span>გადმოწერა</span>
+                    </button>
+                    <button class="documents__listing__item__ctas__delete">
+                      <i class="fas fa-times-circle"></i>
+                    </button>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+            <!-- ატვირთვის ღილაკი -->
+            <div class="tender-list__cta flex justify-center">
+              <button class="documents__footer__uploadfile">
+                <img src="img/download3.svg" alt="" />
+                <span>ატვირთეთ ფაილი</span>
+              </button>
+            </div>
+            <!-- ატვირთვის ღილაკი -->
+          </div>
+        </div>
+        <!-- end Tender Documentation List BorderLess -->
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

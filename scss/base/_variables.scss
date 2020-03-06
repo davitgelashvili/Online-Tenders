@@ -1,14 +1,23 @@
-/* Variables */
-:root {
-  --color-main-1: #0fb7ff;
-  --color-main-2: #32b4d7;
-  --color-red: #e52942;
-  --color-dark: #141b3d;
-  --color-gray-1: #acacaf;
-  --color-gray-2: #9da9b4;
-  --color-gray-3: #5d6367;
-  --color-gray-4: #dadde2;
-  --color-gray-5: #cad0d8;
-  --color-white-1: #ffffff;
-  --color-white-2: #f6f7f9;
-}
+// Colors
+$color-black: #000;
+$color-white: #fff;
+$color-gray: #acacaf;
+$color-red: #e52942;
+
+$color-brand-1: #0fb7ff;
+$color-brand-2: #32b4d7;
+
+$color-border: #dadde2;
+$color-text-main: #141b3d;
+$color-text-sec: #5d6367;
+$color-text-third: #2d3e4d;
+$color-bg-main: #f6f7f9;
+
+$color-danger: #f1616f;
+$color-success: #03af5c;
+
+// Fonts
+$font-main: "FiraGO", sans-serif;
+
+// Border
+$border-1: 1px solid $color-border;

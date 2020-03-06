@@ -1,6 +1,6 @@
 .tender-details-section-title {
   margin-bottom: 18px;
-  color: var(--color-dark);
+  color: $color-text-main;
   font-size: 11px;
   font-weight: 500;
   letter-spacing: 0;
@@ -9,7 +9,7 @@
 .tender-details-tab-header {
   width: 100%;
   display: flex;
-  border-bottom: 1px solid var(--color-gray-4);
+  border-bottom: $border-1;
 }
 .tender-details-tab-header-item {
   padding: 12px 22px;
@@ -21,21 +21,48 @@
   font-size: 12px;
 
   &.active {
-    background: var(--color-white-1);
-    border: 1px solid var(--color-red);
-    border-bottom: 1px solid transparent;
+    position: relative;
+    margin-bottom: -1px;
+    background: $color-white;
+    border: 1px solid $color-red;
+    border-bottom: 2px solid $color-white;
     border-radius: 6px 6px 0px 0px;
-    &:before {
+
+    &::before,
+    &::after {
+      z-index: 100;
+    }
+
+    &::before {
       content: "";
       position: absolute;
+      left: -21px;
       bottom: -2px;
-      left: 0;
-      width: 100%;
+      width: 20px;
       height: 1px;
-      background: var(--color-white-1);
+      background: linear-gradient(to right, #dadde2, $color-red);
+
+      @media only screen and (max-width: 845px) {
+        bottom: -1px;
+      }
     }
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: -21px;
+      bottom: -2px;
+      width: 20px;
+      height: 1px;
+      background: linear-gradient(to left, #dadde2, $color-red);
+
+      @media only screen and (max-width: 845px) {
+        bottom: -1px;
+      }
+    }
+
     a {
-      color: var(--color-red);
+      color: $color-red;
       font-size: 12px;
       font-weight: 500;
     }
@@ -44,12 +71,12 @@
   &.disabled {
     pointer-events: none;
     a {
-      color: var(--color-gray-2);
+      color: $color-gray;
     }
   }
 
   a {
-    color: var(--color-main-1);
+    color: $color-brand-1;
   }
 }
 
@@ -60,11 +87,11 @@
   margin: 30px 0 20px 0;
   font-size: 13px;
   font-weight: 500;
-  color: var(--color-dark);
+  color: $color-text-main;
 }
 .tender-details-tab-body p {
   margin-bottom: 15px;
-  color: var(--color-dark);
+  color: $color-text-main;
   font-size: 13px;
   font-weight: 400;
   line-height: 1.5;
@@ -74,4 +101,19 @@
 }
 .tab-content.tab-active {
   display: block;
+}
+
+.tender-details-section-list {
+  li {
+    color: $color-text-third;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 1.5;
+
+    &:not(:last-child) {
+      margin-bottom: 16px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid #f5f6f8;
+    }
+  }
 }

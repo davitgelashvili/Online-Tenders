@@ -9,19 +9,19 @@
   }
 }
 .logo h1 {
-  font-family: "FiraGO", sans-serif;
+  font-family: $font-main;
   font-size: 23px;
   letter-spacing: 1.76px;
-  color: #141b3d;
+  color: $color-text-main;
 }
 
 .logo p {
   width: 27px;
   height: 14px;
-  background: var(--color-main-1);
+  background: $color-brand-1;
   border-radius: 7px;
-  color: var(--color-white-1);
-  font-family: "FiraGO", sans-serif;
+  color: $color-white;
+  font-family: $font-main;
   display: flex;
   align-items: center;
   justify-content: center;

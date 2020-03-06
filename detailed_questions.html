@@ -322,6 +322,12 @@
                       </div>
                     </div>
                     <form action="#" class="questions-form">
+                      <div class="questions-btn">
+                        <button class="uploadfile-btn">
+                          <img src="img/clip.svg" alt="" />
+                          <span>ატვირთეთ ფაილი</span>
+                        </button>
+                      </div>
                       <div class="questions-field">
                         <textarea
                           name="message"
@@ -449,6 +455,38 @@
                 </li>
               </ul>
             </section>
+          </div>
+        </div>
+
+        <div class="modal">
+          <div class="modal__content">
+            <button class="modal__close"><i class="fas fa-times"></i></button>
+
+            <form action="#" class="modal__file-upload">
+              <div class="file-upload-input">
+                <p>ფაილი</p>
+                <div class="file-upload-wrap">
+                  <input type="file" name="" id="file" class="inputfile" />
+                  <label for="file">
+                    <div>
+                      <img src="img/upload.svg" alt="" />
+                      <span>აირჩიეთ ფაილი</span>
+                    </div>
+                  </label>
+                </div>
+              </div>
+
+              <label for="filenames">
+                <p>ფაილის დასახელება</p>
+                <textarea
+                  name="filenames"
+                  id="filenames"
+                  placeholder="ეს არის ტენდერების სია"
+                ></textarea>
+              </label>
+
+              <button>დამახსოვრება</button>
+            </form>
           </div>
         </div>
       </div>

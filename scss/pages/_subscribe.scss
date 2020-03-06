@@ -7,14 +7,13 @@
     &__left {
       h2 {
         margin-bottom: 13px;
-        color: #141b3d;
+        color: $color-text-main;
         font-size: 23px;
         font-weight: 700;
       }
       p {
-        color: #9da9b4;
+        color: $color-gray;
         font-size: 13px;
-        font-weight: 400;
       }
     }
     &__right {
@@ -24,15 +23,19 @@
         background: transparent;
         border: none;
         cursor: pointer;
+
+        @media only screen and (max-width: 768px) {
+          display: none;
+        }
+
         i {
           margin-right: 8px;
-          color: #eb6b7c;
+          color: $color-danger;
         }
         span {
-          color: #141b3d;
-          font-family: "FiraGO", sans-serif;
+          color: $color-text-main;
           font-size: 12px;
-          font-weight: 400;
+          white-space: nowrap;
         }
       }
     }
@@ -41,7 +44,7 @@
   &__wrap {
     h4 {
       margin-bottom: 10px;
-      color: #141b3d;
+      color: $color-text-main;
       font-size: 12px;
       font-weight: 500;
     }
@@ -54,9 +57,13 @@
 
     &__search {
       padding: 20px 0 16px 25px;
-      background: #f6f7f9;
+      background: $color-bg-main;
       border-top-left-radius: 8px;
       border-top-right-radius: 8px;
+
+      @media only screen and (max-width: 768px) {
+        padding: 20px 25px 16px 25px;
+      }
 
       form {
         div {
@@ -66,20 +73,21 @@
 
         label {
           margin-right: 28px;
-          color: #141b3d;
+          color: $color-text-main;
           font-size: 12px;
-          font-weight: 400;
         }
 
         input {
           padding: 0 10px;
           height: 37px;
-          color: #141b3d;
-          font-family: inherit;
+          color: $color-text-main;
           font-size: 14px;
-          font-weight: 400;
-          border: 1px solid #dadde2;
+          border: $border-1;
           border-radius: 8px;
+
+          @media only screen and (max-width: 768px) {
+            width: 115px;
+          }
         }
       }
     }
@@ -89,16 +97,17 @@
     position: relative;
     &__item {
       padding: 14px 26px;
-      background: #fff;
+      background: $color-white;
+
       &:nth-child(even) {
-        background: #f9f9f9;
+        background: $color-bg-main;
       }
       &:last-of-type {
         border-bottom-left-radius: 8px;
         border-bottom-right-radius: 8px;
 
         label {
-          color: #0fb7ff;
+          color: $color-brand-1;
         }
       }
 
@@ -108,28 +117,28 @@
         &:checked ~ label::before {
           content: "\f14a";
           font-weight: 900;
-          color: #03af5c;
+          color: $color-brand-2;
         }
       }
 
       label {
         position: relative;
         padding-left: 30px;
-        color: #141b3d;
+        color: $color-text-main;
         font-size: 13px;
-        font-weight: 400;
 
         &::before {
           content: "\f0c8";
-          color: #d9d9d9;
-          font-family: "Font Awesome 5 Free";
-          font-weight: 500;
           position: absolute;
           top: 0;
           left: 0;
           width: 20px;
           height: 20px;
+          color: #d9d9d9;
+          font-family: "Font Awesome 5 Free";
           font-size: 16px;
+          font-weight: 500;
+          line-height: 1;
         }
       }
     }
@@ -142,11 +151,10 @@
     bottom: -80px;
     left: 50%;
     transform: translateX(-50%);
-    color: #fff;
-    font-family: "FiraGO", sans-serif;
+    color: $color-white;
     font-size: 13px;
     font-weight: 900;
-    background: #32b4d7;
+    background: $color-brand-2;
     border: none;
     border-radius: 6px;
     cursor: pointer;
@@ -157,7 +165,7 @@
   margin-bottom: 50px;
   h4 {
     margin-bottom: 10px;
-    color: #141b3d;
+    color: $color-text-main;
     font-size: 12px;
     font-weight: 500;
   }
@@ -165,7 +173,7 @@
   &__wrap {
     height: 140px;
     overflow-y: auto;
-    border: 1px solid #dadde2;
+    border: $border-1;
     border-radius: 8px;
     padding: 0 28px;
 
@@ -185,7 +193,7 @@
 
     li {
       padding: 10px 0;
-      color: #141b3d;
+      color: $color-text-main;
       font-size: 12px;
       font-weight: 400;
     }
@@ -195,7 +203,7 @@
     padding: 26px 28px;
     display: flex;
     align-items: center;
-    border: 1px solid #dadde2;
+    border: $border-1;
     border-radius: 8px;
     span {
       margin-right: 13px;
@@ -205,9 +213,8 @@
     }
 
     p {
-      color: #2d3e4d;
+      color: $color-text-third;
       font-size: 14px;
-      font-weight: 400;
     }
   }
 }

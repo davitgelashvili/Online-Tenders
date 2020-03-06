@@ -6,15 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>TENDERS.GE</title>
     <link
-      href="https://free.bboxtype.com/embedfonts/?family=FiraGO:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,900,900i"
-      rel="stylesheet"
-    />
-    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
     />
-    <link rel="stylesheet" href="css/owl.theme.default.css" />
-    <link rel="stylesheet" href="css/owl.carousel.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -252,7 +246,7 @@
                   <h3>შეთავაზება</h3>
                 </div>
                 <div class="tab-content tab-offer tab-active">
-                  <div class="questions-container">
+                  <div class="questions-container questions-container--desktop">
                     <header class="questions-header">
                       <h3 class="questions-title">სატენდერო დოკუმენტაცია</h3>
                     </header>
@@ -291,41 +285,138 @@
                       <!-- .end documents__listing -->
                     </div>
                     <div class="documents__footer">
-                      <button class="documents__footer__uploadfile">
+                      <button
+                        class="documents__footer__uploadfile uploadfile-btn"
+                      >
                         <img src="img/download3.svg" alt="" />
                         <span>ატვირთეთ ფაილი</span>
                       </button>
                     </div>
                   </div>
 
+                  <!-- Tender Documentation List Colored -->
+                  <div
+                    class="tender-list tender-list--colored tender-list--mobile"
+                  >
+                    <header
+                      class="tender-list__header tender-list__header--colored"
+                    >
+                      <h2>სატენდერო დოკუმენტაცია</h2>
+                    </header>
+                    <div class="tender-list__body pad-xy-2">
+                      <ul>
+                        <li class="doc-item">
+                          <h3 class="flex align-center">
+                            <img
+                              src="img/pdf.svg"
+                              alt="ტენდერის შედგენის ოქმი"
+                              class="doc-icon"
+                            />
+                            <span>ტენდერის შედგენის ოქმი</span>
+                          </h3>
+                          <div class="flex space-between">
+                            <div>
+                              <span class="doc-type">PDF</span>
+                              <span class="doc-size">45 mb</span>
+                            </div>
+
+                            <div class="flex">
+                              <button
+                                class="documents__listing__item__ctas__download"
+                              >
+                                <i class="fas fa-cloud-download-alt"></i>
+                                <span>გადმოწერა</span>
+                              </button>
+                              <button
+                                class="documents__listing__item__ctas__delete"
+                              >
+                                <i class="fas fa-times-circle"></i>
+                              </button>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="doc-item">
+                          <h3 class="flex align-center">
+                            <img
+                              src="img/pdf.svg"
+                              alt="ტენდერის შედგენის ოქმი"
+                              class="doc-icon"
+                            />
+                            <span>ტენდერის შედგენის ოქმი</span>
+                          </h3>
+                          <div class="flex space-between">
+                            <div>
+                              <span class="doc-type">PDF</span>
+                              <span class="doc-size">45 mb</span>
+                            </div>
+
+                            <div class="flex">
+                              <button
+                                class="documents__listing__item__ctas__download"
+                              >
+                                <i class="fas fa-cloud-download-alt"></i>
+                                <span>გადმოწერა</span>
+                              </button>
+                              <button
+                                class="documents__listing__item__ctas__delete"
+                              >
+                                <i class="fas fa-times-circle"></i>
+                              </button>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+
+                      <!-- ატვირთვის ღილაკი -->
+                      <div class="tender-list__cta flex justify-center">
+                        <button class="documents__footer__uploadfile">
+                          <img src="img/download3.svg" alt="" />
+                          <span>ატვირთეთ ფაილი</span>
+                        </button>
+                      </div>
+                      <!-- ატვირთვის ღილაკი -->
+                    </div>
+                  </div>
+                  <!-- end Tender Documentation List Colored -->
+
                   <div class="questions-container">
                     <header class="questions-header">
                       <h3 class="questions-title">საწყისი ფასი</h3>
                     </header>
-                    <div class="offered-amount">
-                      <form action="#" class="offered-amount__form">
-                        <div class="offered-amount__form__field">
-                          <div>
-                            <input type="text" placeholder="თანხა" />
-                            <span class="currency">‎₾</span>
+                    <!-- Trade Offer Block -->
+                    <div class="trade-offer" style="max-height: 400px;">
+                      <h3>შეიყვანეთ თქვენი ფასი</h3>
+
+                      <div>
+                        <form action="#">
+                          <div class="trade-offer__wrap flex">
+                            <div class="trade-offer__input">
+                              <input type="text" placeholder="თანხა" />
+                              <span class="currency">‎₾</span>
+                            </div>
+                            <button type="submit">დამახსოვრება</button>
                           </div>
-                          <button type="submit">დამახსოვრება</button>
+                        </form>
+
+                        <div class="trade-offer__suggestions">
+                          <div>+500 ‎₾</div>
+                          <div>+1000 ‎₾</div>
+                          <div>+1500 ‎₾</div>
                         </div>
-                      </form>
-                      <div class="offered-amount__suggestions">
-                        <div>+500 ‎₾</div>
-                        <div>+1000 ‎₾</div>
-                        <div>+1500 ‎₾</div>
-                      </div>
-                      <div class="offered-amount__note">
-                        <span>*</span>
-                        <span
-                          >გთხოვთ სისტემაში მიუთითოთ თქვენს მიერ შემოთავაზებული
-                          თანხა. წინააღმდეგ შემთვევაში თქვენი შეთავაზება არ
-                          გამოუჩნდება შემსყიდველს.</span
-                        >
+
+                        <div class="trade-offer__note flex-col">
+                          <div class="danger flex">
+                            <span>*</span>
+                            <span
+                              >გთხოვთ სისტემაში მიუთითოთ თქვენს მიერ
+                              შემოთავაზებული თანხა. წინააღმდეგ შემთვევაში თქვენი
+                              შეთავაზება არ გამოუჩნდება შემსყიდველს.</span
+                            >
+                          </div>
+                        </div>
                       </div>
                     </div>
+                    <!-- end Trade Offer Block -->
                   </div>
                 </div>
                 <div class="tab-content tab-result">
@@ -446,9 +537,40 @@
         </div>
       </div>
     </div>
+
+    <div class="modal">
+      <div class="modal__content">
+        <button class="modal__close"><i class="fas fa-times"></i></button>
+
+        <form action="#" class="modal__file-upload">
+          <div class="file-upload-input">
+            <p>ფაილი</p>
+            <div class="file-upload-wrap">
+              <input type="file" name="" id="file" class="inputfile" />
+              <label for="file">
+                <div>
+                  <img src="img/upload.svg" alt="" />
+                  <span>აირჩიეთ ფაილი</span>
+                </div>
+              </label>
+            </div>
+          </div>
+
+          <label for="filenames">
+            <p>ფაილის დასახელება</p>
+            <textarea
+              name="filenames"
+              id="filenames"
+              placeholder="ეს არის ტენდერების სია"
+            ></textarea>
+          </label>
+
+          <button>დამახსოვრება</button>
+        </form>
+      </div>
+    </div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="js/owl.carousel.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

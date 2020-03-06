@@ -18,7 +18,7 @@
     width: 90px;
     height: 90px;
     border-radius: 100%;
-    border: 1px solid var(--color-gray-1);
+    border: 1px solid $color-gray;
     padding: 6px;
 
     @media (max-width: 991px) {
@@ -37,14 +37,14 @@
     align-items: center;
 
     h1 {
-      color: var(--color-dark);
+      color: $color-text-main;
       font-size: 23px;
       font-weight: 700;
     }
   }
   &__title {
     margin-top: 15px;
-    color: var(--color-dark);
+    color: $color-text-main;
     font-size: 13px;
     font-weight: 500;
 
@@ -55,7 +55,7 @@
 
   &__tenders-count {
     margin-top: 11px;
-    color: var(--color-gray-2);
+    color: $color-gray;
     font-size: 11px;
     font-weight: 400;
     text-align: center;
@@ -89,7 +89,7 @@
         position: relative;
         display: flex;
         align-items: center;
-        color: var(--color-dark);
+        color: $color-text-main;
         font-size: 11px;
         font-weight: 400;
 
@@ -101,7 +101,7 @@
         }
 
         &.active {
-          color: #2d3e4d;
+          color: $color-text-third;
           font-weight: 500;
         }
       }
@@ -124,8 +124,8 @@
   padding: 5px;
   border: none;
   border-radius: 30px;
-  background: var(--color-white-1);
-  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.09);
+  background: $color-white;
+  box-shadow: 0 3px 12px rgba($color-black, 0.09);
   cursor: pointer;
 }
 .user-avatar-upload img {
@@ -133,7 +133,7 @@
 }
 
 .user-edit {
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.16);
+  box-shadow: 0 4px 10px rgba($color-black, 0.16);
   min-height: 500px;
 
   @media only screen and (max-width: 991px) {
@@ -142,7 +142,7 @@
 
   &__title {
     margin-bottom: 34px;
-    color: var(--color-dark);
+    color: $color-text-main;
     font-size: 23px;
     font-weight: 700;
 
@@ -167,39 +167,39 @@
     padding: 16px 25px;
     max-width: 453px;
     width: 100%;
-    color: var(--color-dark);
+    color: $color-text-main;
     font-family: inherit;
     font-size: 13px;
     font-weight: 400;
 
     &::placeholder {
-      font-family: "FiraGO", sans-serif;
+      font-family: $font-main;
     }
   }
 
   select {
     background: #f4f4f4;
-    border: 1px solid #dadde2;
+    border: $border-1;
     border-radius: 8px;
   }
 
   p {
     margin-bottom: 12px;
-    color: var(--color-dark);
+    color: $color-text-main;
     font-size: 12px;
     font-weight: 500;
   }
 
   button {
     padding: 16px 40px;
-    color: var(--color-white-1);
-    font-family: "FiraGO", sans-serif;
+    color: $color-white;
+    font-family: $font-main;
     font-size: 12px;
     font-weight: 900;
     letter-spacing: 0.3px;
     border: none;
     border-radius: 6px;
-    background: var(--color-main-2);
+    background: $color-brand-2;
     cursor: pointer;
   }
 }

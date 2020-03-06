@@ -1,5 +1,5 @@
 .not-found {
-  background: #fff;
+  background: $color-white;
 
   .header {
     box-shadow: none;
@@ -11,11 +11,19 @@
     }
   }
 
+  &__wrap {
+    & > img {
+      margin: 0 auto;
+      max-height: 60vh;
+      object-fit: cover;
+    }
+  }
+
   &__texts {
     margin-top: 50px;
     h2 {
       margin-bottom: 12px;
-      color: #f1616f;
+      color: $color-danger;
       font-size: 24px;
       font-weight: 600;
       text-align: center;
@@ -24,13 +32,13 @@
     p {
       margin: 0 auto;
       max-width: 328px;
-      color: #2d3e4d;
+      color: $color-text-third;
       font-size: 16px;
       font-weight: 400;
       text-align: center;
 
       a {
-        color: #32b4d7;
+        color: $color-brand-2;
         text-decoration: underline;
       }
     }

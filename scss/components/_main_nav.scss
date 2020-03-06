@@ -22,13 +22,13 @@
   a {
     &:link,
     &:visited {
-      color: var(--color-dark);
-      font-family: "FiraGO", sans-serif;
+      color: $color-text-main;
+      font-family: $font-main;
       font-size: 12px;
       font-weight: 400;
 
-      &.accented {
-        color: var(--color-main-1);
+      &.active {
+        color: $color-brand-1;
         font-weight: 500;
       }
     }

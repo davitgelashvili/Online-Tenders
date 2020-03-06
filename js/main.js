@@ -36,8 +36,16 @@ $(window).on("load", function() {
   });
 
   // Modal
+  // მოდალის დახურვა
   $(".modal__close").click(function() {
-    $(".modal")[0].classList.remove("active");
+    $(".modal").removeClass("active");
+  });
+
+  // მოდალის დახურვა გარეთ დაკლიკებისას
+  $(".modal").click(function(e) {
+    if (e.target.classList.contains("modal")) {
+      $(".modal").removeClass("active");
+    }
   });
 
   $(".add-user-btn").click(function() {
@@ -85,5 +93,73 @@ $(window).on("load", function() {
     if ($(this).val().length === 0) {
       $(".search-out")[0].classList.remove("open");
     }
+  });
+
+  $(".trade-item").each(function() {
+    $(this).click(function() {
+      $(this).toggleClass("active");
+
+      let panel = this.nextElementSibling;
+
+      // ისრის მიმართულება კლიკზე
+      if (
+        $(this)
+          .children("div")
+          .children(".fas").length > 0
+      ) {
+        if (
+          $(this)
+            .children("div")
+            .children(".fas")
+            .hasClass("fa-chevron-right")
+        ) {
+          $(this)
+            .children("div")
+            .children(".fas")
+            .removeClass("fa-chevron-right");
+          $(this)
+            .children("div")
+            .children(".fas")
+            .addClass("fa-chevron-down");
+        } else {
+          $(this)
+            .children("div")
+            .children(".fas")
+            .addClass("fa-chevron-right");
+          $(this)
+            .children("div")
+            .children(".fas")
+            .removeClass("fa-chevron-down");
+        }
+      }
+
+      if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+      }
+    });
+  });
+
+  // ფაილის ატვირთვის მოდალის გამოჩენა
+  $(".uploadfile-btn").each(function() {
+    $(this).click(function(e) {
+      e.preventDefault();
+
+      $(".modal").addClass("active");
+    });
+  });
+
+  const closeChatBtns = Array.from($(".close-chat-btn"));
+  closeChatBtns.forEach(btn => {
+    btn.addEventListener("click", e => {
+      e.preventDefault();
+      $(".close-chat-modal")[0].classList.add("active");
+    });
+  });
+
+  $("button.cancel").click(function(e) {
+    e.preventDefault();
+    $(".close-chat-modal").removeClass("active");
   });
 });

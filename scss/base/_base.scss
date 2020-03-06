@@ -6,7 +6,8 @@
 }
 
 body {
-  font-family: "FiraGO", sans-serif;
+  font-family: $font-main;
+  line-height: 1.5;
 }
 
 ul {
@@ -17,12 +18,21 @@ a {
   text-decoration: none;
 }
 
-input,
-button {
-  outline: none;
-}
-
 img {
   max-width: 100%;
   display: block;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select,
+textarea,
+button {
+  font-family: $font-main;
+  outline: none;
+
+  &::placeholder {
+    font-family: inherit;
+  }
 }
