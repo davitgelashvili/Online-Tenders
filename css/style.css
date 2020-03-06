@@ -7536,94 +7536,20 @@ form.questions-form .questions-btn button span {
   cursor: pointer;
 }
 
-.users {
-  width: 100%;
-  overflow-y: hidden;
-  overflow-x: auto;
-}
-.users table {
-  width: 100%;
-  border-collapse: collapse;
-  border-radius: 8px;
-}
-.users table thead {
-  background: #edeef0;
-}
-.users table thead tr th {
-  padding: 20px;
-  color: #55646f;
-  font-size: 12px;
-  font-weight: 500;
-  white-space: nowrap;
-}
-.users table thead tr th:first-child {
-  border-top-left-radius: 8px;
-  overflow: hidden;
-}
-.users table thead tr th:nth-child(7) {
-  border-top-right-radius: 8px;
-  overflow: hidden;
-}
-.users table thead tr th:nth-child(2) {
-  text-align: left;
-}
-.users table tbody tr {
-  background: rgba(242, 242, 242, 0.4);
-}
-.users table tbody tr:not(:last-child) {
-  border-bottom: 1px solid #edeef0;
-}
-.users table tbody tr:hover td:last-child i {
-  opacity: 1;
-}
-.users table tbody tr td {
-  text-align: center;
-  padding: 16px;
-  color: #2d3e4d;
-  font-size: 12px;
-  font-weight: 400;
-  white-space: nowrap;
-}
-.users table tbody tr td:first-child {
-  border-bottom-left-radius: 8px;
-  overflow: hidden;
-}
-.users table tbody tr td:nth-child(2) {
-  text-align: left;
-}
-.users table tbody tr td:nth-child(6) {
-  padding: 16px 0;
-}
-.users table tbody tr td:nth-child(7) {
-  padding: 16px 20px 16px 10px;
-  border-bottom-right-radius: 8px;
-}
-.users table tbody tr td:last-child {
-  position: relative;
-}
-.users table tbody tr td button {
-  border: none;
-  background: transparent;
-  cursor: pointer;
-}
-.users table tbody tr td:last-child i {
-  color: #acacaf;
-  font-size: 20px;
-  opacity: 0;
-  transition: opacity 0.2s linear;
-}
-@media only screen and (max-width: 768px) {
-  .users table tbody tr td:last-child i {
-    visibility: initial;
-    opacity: 1;
-    pointer-events: all;
-  }
-}
-.users .status--active {
-  padding: 6px 10px;
-  color: #fff;
-  background: #08b557;
+.status {
+  width: 68px !important;
+  min-width: 68px !important;
+  font-size: 11px;
   border-radius: 4px;
+}
+.status--active {
+  color: #fff !important;
+  background: #08b557;
+}
+@media only screen and (max-width: 1330px) {
+  .status {
+    padding: 4px 6px;
+  }
 }
 
 .edit.active i {
@@ -7632,10 +7558,10 @@ form.questions-form .questions-btn button span {
 
 .edit-menu {
   position: absolute;
-  right: 2px;
-  bottom: -58px;
+  right: -20px;
+  top: 24px;
   width: 130px;
-  padding: 20px 24px 14px 14px;
+  padding: 20px 14px;
   background: #fff;
   border-radius: 4px;
   box-shadow: 0 3px 16px rgba(0, 0, 0, 0.16);
@@ -7644,6 +7570,14 @@ form.questions-form .questions-btn button span {
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.2s linear;
+}
+.edit-menu--mobile {
+  right: -20px;
+  top: 24px;
+}
+.edit-menu--desktop {
+  right: -10px;
+  top: 45px;
 }
 .edit-menu.active {
   visibility: initial;
@@ -7736,6 +7670,115 @@ form.questions-form .questions-btn button span {
   border: none;
   border-radius: 8px;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  .users-desktop {
+    display: none;
+  }
+}
+.users-desktop__item {
+  position: relative;
+  padding: 20px 25px;
+  display: grid;
+  grid-template-columns: 20px 3fr 3fr 3fr 3fr 68px 20px;
+  column-gap: 15px;
+  align-items: center;
+  background: rgba(242, 242, 242, 0.4);
+}
+.users-desktop__item:first-child {
+  background: #edeef0;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.users-desktop__item:last-child {
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.users-desktop__item:not(:last-child) {
+  border-bottom: 1px solid #dadde2;
+}
+.users-desktop__item:not(:first-child):hover i {
+  opacity: 1;
+}
+.users-desktop__item div {
+  color: #2d3e4d;
+  font-size: 12px;
+  white-space: nowrap;
+}
+.users-desktop__item button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+.users-desktop__item button i {
+  color: #acacaf;
+  font-size: 20px;
+  opacity: 0;
+  transition: opacity 0.2s linear;
+}
+@media only screen and (max-width: 768px) {
+  .users-desktop__item button i {
+    visibility: initial;
+    opacity: 1;
+    pointer-events: all;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .users-mobile {
+    display: none;
+  }
+}
+.users-mobile__item {
+  margin-bottom: 18px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #dadde2;
+}
+.users-mobile h1 {
+  margin-bottom: 18px;
+  color: #141b3d;
+  font-size: 16px;
+  font-weight: 900;
+}
+.users-mobile__top {
+  position: relative;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.users-mobile__top .name {
+  margin-right: 10px;
+  color: #2d3e4d;
+  font-size: 14px;
+  line-height: 2;
+}
+.users-mobile__top .status {
+  margin-right: auto;
+}
+.users-mobile__top button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+.users-mobile__top button i {
+  color: #acacaf;
+  font-size: 20px;
+}
+.users-mobile__middle {
+  display: flex;
+}
+.users-mobile__middle .position,
+.users-mobile__middle .department {
+  color: rgba(45, 62, 77, 0.5);
+  font-size: 10px;
+}
+.users-mobile__middle .position {
+  margin-right: 20px;
+}
+.users-mobile__bottom a {
+  color: rgba(45, 62, 77, 0.5);
+  font-size: 10px;
 }
 
 .register {
