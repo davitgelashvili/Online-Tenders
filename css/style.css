@@ -5428,6 +5428,11 @@ form.questions-form.chat-form {
   border: 1px solid #dadde2;
   border-radius: 8px;
 }
+@media only screen and (max-width: 768px) {
+  .questions-field textarea {
+    padding: 20px 74px 20px 20px;
+  }
+}
 
 .questions-field button {
   position: absolute;
@@ -5499,7 +5504,7 @@ form.questions-form.chat-form {
 }
 
 .message-body p {
-  margin: 0;
+  margin: 10px 0;
 }
 
 .questions-btn {
@@ -6516,6 +6521,9 @@ form.questions-form.chat-form {
 }
 .tender-list--colored {
   border-color: #32b4d7;
+}
+.tender-list--borderless {
+  border: none;
 }
 .tender-list__header {
   height: 48px;

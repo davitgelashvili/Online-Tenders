@@ -17,6 +17,10 @@
     border-color: $color-brand-2;
   }
 
+  &--borderless {
+    border: none;
+  }
+
   &__header {
     height: 48px;
     display: flex;

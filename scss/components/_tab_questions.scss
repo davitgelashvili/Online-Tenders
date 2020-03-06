@@ -59,6 +59,10 @@ form.questions-form {
   height: 60px;
   border: $border-1;
   border-radius: 8px;
+
+  @media only screen and (max-width: 768px) {
+    padding: 20px 74px 20px 20px;
+  }
 }
 .questions-field button {
   position: absolute;
@@ -124,7 +128,7 @@ form.questions-form {
   }
 }
 .message-body p {
-  margin: 0;
+  margin: 10px 0;
 }
 
 .questions-btn {
