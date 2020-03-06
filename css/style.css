@@ -5433,7 +5433,7 @@ h3.questions-title {
 
 form.questions-form {
   position: relative;
-  height: 125px;
+  height: 150px;
   padding: 0 25px;
   background: #f7f7f7;
   display: flex;
@@ -5443,11 +5443,54 @@ form.questions-form {
 @media only screen and (max-width: 768px) {
   form.questions-form {
     flex-direction: column-reverse;
-    align-items: flex-start;
+    align-items: center;
   }
 }
 form.questions-form.chat-form {
   height: 180px;
+}
+@media only screen and (max-width: 768px) {
+  form.questions-form.chat-form {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    height: 130px;
+  }
+}
+form.questions-form .questions-btn {
+  margin-right: 44px;
+}
+@media only screen and (max-width: 768px) {
+  form.questions-form .questions-btn {
+    margin-right: 0;
+    margin-top: 15px;
+  }
+}
+form.questions-form .questions-btn button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+@media only screen and (max-width: 768px) {
+  form.questions-form .questions-btn button {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+form.questions-form .questions-btn button span {
+  margin-top: 10px;
+  color: #2d3e4d;
+  font-size: 12px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+@media only screen and (max-width: 768px) {
+  form.questions-form .questions-btn button span {
+    margin-top: 0;
+    margin-left: 10px;
+  }
 }
 
 .questions-field {
@@ -5542,28 +5585,6 @@ form.questions-form.chat-form {
   margin: 10px 0;
 }
 
-.questions-btn {
-  margin-right: 44px;
-}
-@media only screen and (max-width: 768px) {
-  .questions-btn {
-    margin-right: 0;
-    margin-top: 15px;
-  }
-}
-.questions-btn button {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background: transparent;
-  border: none;
-  cursor: pointer;
-}
-.questions-btn button span {
-  margin-top: 10px;
-  white-space: nowrap;
-}
-
 .close-questions {
   position: absolute;
   bottom: 25px;
@@ -5571,7 +5592,7 @@ form.questions-form.chat-form {
 }
 @media only screen and (max-width: 768px) {
   .close-questions {
-    bottom: 30px;
+    bottom: 20px;
   }
 }
 .close-questions button {

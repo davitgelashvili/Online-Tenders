@@ -36,8 +36,9 @@ $(window).on("load", function() {
   });
 
   // Modal
+  // მოდალის დახურვა
   $(".modal__close").click(function() {
-    $(".modal")[0].classList.remove("active");
+    $(".modal").removeClass("active");
   });
 
   $(".add-user-btn").click(function() {
@@ -133,6 +134,15 @@ $(window).on("load", function() {
     });
   });
 
+  // ფაილის ატვირთვის მოდალის გამოჩენა
+  $(".uploadfile-btn").each(function() {
+    $(this).click(function(e) {
+      e.preventDefault();
+
+      $(".modal").addClass("active");
+    });
+  });
+
   const closeChatBtns = Array.from($(".close-chat-btn"));
   closeChatBtns.forEach(btn => {
     btn.addEventListener("click", e => {
@@ -143,6 +153,6 @@ $(window).on("load", function() {
 
   $("button.cancel").click(function(e) {
     e.preventDefault();
-    $(".close-chat-modal")[0].classList.remove("active");
+    $(".close-chat-modal").removeClass("active");
   });
 });
