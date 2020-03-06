@@ -5769,6 +5769,11 @@ form.questions-form.chat-form {
   justify-content: space-between;
   overflow: hidden;
 }
+@media only screen and (max-width: 768px) {
+  .trade__container {
+    display: none;
+  }
+}
 .trade__container__header {
   height: 53px;
   display: flex;
