@@ -21,19 +21,46 @@
   font-size: 12px;
 
   &.active {
+    position: relative;
+    margin-bottom: -1px;
     background: $color-white;
     border: 1px solid $color-red;
-    border-bottom: 1px solid transparent;
+    border-bottom: 2px solid $color-white;
     border-radius: 6px 6px 0px 0px;
-    &:before {
+
+    &::before,
+    &::after {
+      z-index: 100;
+    }
+
+    &::before {
       content: "";
       position: absolute;
+      left: -21px;
       bottom: -2px;
-      left: 0;
-      width: 100%;
+      width: 20px;
       height: 1px;
-      background: $color-white;
+      background: linear-gradient(to right, #dadde2, $color-red);
+
+      @media only screen and (max-width: 845px) {
+        bottom: -1px;
+      }
     }
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: -21px;
+      bottom: -2px;
+      width: 20px;
+      height: 1px;
+      background: linear-gradient(to left, #dadde2, $color-red);
+
+      @media only screen and (max-width: 845px) {
+        bottom: -1px;
+      }
+    }
+
     a {
       color: $color-red;
       font-size: 12px;
