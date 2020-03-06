@@ -18,8 +18,20 @@
   justify-content: space-between;
 }
 
+.flex-start {
+  justify-content: flex-start;
+
+  & > * {
+    flex: 0 0 50%;
+  }
+}
+
 .align-center {
   align-items: center;
+}
+
+.align-start {
+  align-items: flex-start;
 }
 
 .justify-center {
