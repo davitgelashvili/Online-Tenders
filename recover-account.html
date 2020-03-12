@@ -6,17 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>TENDERS.GE</title>
     <link
-      href="https://free.bboxtype.com/embedfonts/?family=FiraGO:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,900,900i"
-      rel="stylesheet"
-    />
-    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
       integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="css/owl.theme.default.css" />
-    <link rel="stylesheet" href="css/owl.carousel.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -147,11 +141,17 @@
             <div class="sign-in__field">
               <label for="email" class="sign-in__email">ელ. ფოსტა</label>
               <input type="email" name="email" id="email" />
+
+              <!--
+                  სავერიფიკაციო სპანი
+                  .verified - მწვანე
+                  .error - წითელი
+              -->
               <span class="verify verified"></span>
             </div>
           </div>
 
-          <div class="modal__ctas">
+          <div class="modal__ctas sign-in__btn">
             <button type="submit">აღდგენა</button>
             <p>
               გაქვთ ანგარიში?
@@ -163,8 +163,6 @@
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="js/owl.carousel.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
