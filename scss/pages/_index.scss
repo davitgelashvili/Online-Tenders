@@ -312,6 +312,19 @@
   border-radius: 8px;
   margin-right: 8px;
 
+  &--banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f6f7f9;
+
+    span {
+      color: $color-text-main;
+      font-size: 12px;
+      font-weight: 500;
+    }
+  }
+
   &:last-child {
     margin-right: 0;
   }
@@ -334,14 +347,13 @@
   margin-bottom: 5px;
 }
 .sponsor-item-count-tender {
-  font-weight: 400;
-  letter-spacing: 0;
-  color: $color-gray;
-  font-size: 10px;
+  color: $color-text-main;
+  font-size: 13px;
+  font-weight: 500;
 }
 .sponsor-item-img {
   max-width: 127px;
-  height: 89px;
+  height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -356,7 +368,7 @@
 .sponsor-add-new {
   margin-bottom: 10px;
   max-width: 127px;
-  height: 89px;
+  height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
