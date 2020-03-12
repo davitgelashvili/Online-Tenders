@@ -9333,13 +9333,13 @@ body {
 }
 
 .page-navigation {
-  display: block;
+  display: flex;
+  align-items: center;
 }
 
 .page-navigation li {
   display: inline-block;
   width: 33px;
-  height: 33px;
   overflow: hidden;
 }
 
@@ -9347,10 +9347,13 @@ body {
 .page-navigation li:last-child {
   border: 2px solid rgba(172, 172, 175, 0.2);
   border-radius: 10px;
+  width: auto;
+  height: auto;
 }
 
 .page-navigation li:first-child a,
 .page-navigation li:last-child a {
+  padding: 0 12px;
   font-size: 12px;
 }
 
