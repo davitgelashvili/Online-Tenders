@@ -1,6 +1,7 @@
 .badge {
-  position: absolute;
+  position: relative;
   top: -4px;
+  display: inline;
 
   &:hover {
     .badge__tooltip {
@@ -16,7 +17,7 @@
 
   &__shown {
     padding: 2px 4px;
-    position: absolute;
+    display: inline !important;
     top: 3px;
     left: 0;
     opacity: 1;
