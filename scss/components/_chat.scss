@@ -185,6 +185,9 @@
       border-bottom-left-radius: 8px;
       resize: none;
       flex-grow: 1;
+      &::-webkit-scrollbar {
+        visibility: hidden;
+      }
     }
 
     button[type="submit"] {

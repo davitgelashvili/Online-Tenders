@@ -4773,6 +4773,7 @@ button::placeholder {
 .header__announce {
   margin: 0 32px;
   padding: 0 35px;
+  flex-shrink: 0;
   height: 48px;
   display: flex;
   align-items: center;
@@ -6117,8 +6118,8 @@ h3.questions-title {
   width: 576px;
   margin: 0 auto;
   margin-bottom: 48px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  justify-content: space-between;
   column-gap: 12px;
 }
 @media only screen and (max-width: 768px) {
@@ -6130,6 +6131,7 @@ h3.questions-title {
   }
 }
 .results__ctas button {
+  flex: 0 0 49%;
   padding: 16px 0;
   color: #fff;
   font-family: "FiraGO", sans-serif;
@@ -6244,6 +6246,40 @@ h3.questions-title {
 }
 .trade__current-offers table td button i {
   color: #fff;
+}
+
+.specify__grid {
+  display: flex;
+  justify-content: space-between;
+}
+.specify__grid > div:first-child {
+  flex: 0 0 20px;
+}
+.specify__grid > div:nth-child(2) {
+  flex-grow: 1;
+}
+.specify__grid > div:nth-child(3) {
+  flex: 0 0 200px;
+}
+.specify__grid > div:nth-child(4) {
+  flex: 0 0 92px;
+}
+.specify .sent,
+.specify .received {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 92px;
+  height: 26px;
+  color: #f0f0f0;
+  font-size: 12px;
+  border-radius: 8px;
+}
+.specify .sent {
+  background: #f1616f;
+}
+.specify .received {
+  background: #03af5c;
 }
 
 .note {
@@ -6574,7 +6610,7 @@ h3.questions-title {
   transition: all 0.2s ease-in;
 }
 .tender-list__headings {
-  padding: 18px 35px;
+  padding: 18px 25px;
 }
 .tender-list__headings div {
   color: #5d6367;
@@ -6582,7 +6618,7 @@ h3.questions-title {
   font-weight: 500;
 }
 .tender-list__items li {
-  padding: 18px 35px;
+  padding: 18px 25px;
   background: #f6f7f9;
 }
 .tender-list__items li div {
@@ -6616,6 +6652,7 @@ h3.questions-title {
 }
 .trade-offer__wrap button {
   padding: 16px 12px;
+  flex-shrink: 0;
   height: 48px;
   color: #fff;
   font-size: 10px;
@@ -6864,6 +6901,9 @@ h3.questions-title {
   border-bottom-left-radius: 8px;
   resize: none;
   flex-grow: 1;
+}
+.chat__field textarea::-webkit-scrollbar {
+  visibility: hidden;
 }
 .chat__field button[type=submit] {
   width: 148px;

@@ -165,6 +165,7 @@
   &__announce {
     margin: 0 32px;
     padding: 0 35px;
+    flex-shrink: 0;
     height: 48px;
     display: flex;
     align-items: center;

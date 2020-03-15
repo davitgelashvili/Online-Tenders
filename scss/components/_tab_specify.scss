@@ -1,0 +1,41 @@
+.specify {
+  &__grid {
+    display: flex;
+    justify-content: space-between;
+
+    & > div {
+      &:first-child {
+        flex: 0 0 20px;
+      }
+      &:nth-child(2) {
+        flex-grow: 1;
+      }
+
+      &:nth-child(3) {
+        flex: 0 0 200px;
+      }
+      &:nth-child(4) {
+        flex: 0 0 92px;
+      }
+    }
+  }
+  .sent,
+  .received {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 92px;
+    height: 26px;
+    color: #f0f0f0;
+    font-size: 12px;
+    border-radius: 8px;
+  }
+
+  .sent {
+    background: $color-danger;
+  }
+
+  .received {
+    background: $color-success;
+  }
+}

@@ -27,6 +27,7 @@
 
     button {
       padding: 16px 12px;
+      flex-shrink: 0;
       height: 48px;
       color: $color-white;
       font-size: 10px;
