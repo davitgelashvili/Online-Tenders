@@ -142,7 +142,7 @@
         <form action="#" class="sign-in">
           <h3 class="modal__title">ავტორიზაცია</h3>
 
-          <div class="sign-in__content">
+          <div class="sign-in__content auth-error">
             <div class="sign-in__field">
               <label for="email" class="sign-in__email">ელ. ფოსტა</label>
               <input type="email" name="email" id="email" />
@@ -159,15 +159,10 @@
               <label for="password" class="sign-in__password">პაროლი</label>
               <input type="password" name="password" id="password" />
               <a href="#" class="sign-in__recovery">აღდგენა</a>
-
-              <!--
-                  სავერიფიკაციო სპანი
-                  .verified - მწვანე
-                  .error - წითელი
-              -->
-              <span class="verify"></span>
             </div>
           </div>
+
+          <div class="auth-error__msg">ელ.ფოსტა ან პაროლი არასწორია</div>
 
           <div class="sign-in__save">
             <input type="checkbox" name="save" id="save" />

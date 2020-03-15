@@ -142,6 +142,11 @@
   background: $color-white !important;
   display: none;
 
+  td {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
   &.active {
     display: table-row;
   }
@@ -150,7 +155,7 @@
     li {
       display: flex;
       align-items: center;
-      padding: 15px 0;
+      padding: 15px;
 
       &:not(:last-child) {
         border-bottom: 1px solid #e4e4e4;
@@ -166,6 +171,11 @@
         border-radius: 100%;
         overflow: hidden;
         background: $color-bg-main;
+      }
+
+      span {
+        color: $color-text-main;
+        font-size: 12px;
       }
     }
   }

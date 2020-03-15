@@ -42,7 +42,7 @@
       height: 1px;
       background: linear-gradient(to right, #dadde2, $color-red);
 
-      @media only screen and (max-width: 845px) {
+      @media only screen and (max-width: 768px) {
         bottom: -1px;
       }
     }
@@ -56,7 +56,7 @@
       height: 1px;
       background: linear-gradient(to left, #dadde2, $color-red);
 
-      @media only screen and (max-width: 845px) {
+      @media only screen and (max-width: 768px) {
         bottom: -1px;
       }
     }

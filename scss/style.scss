@@ -562,7 +562,7 @@ body {
   background: rgba(157, 169, 180, 0.1);
   color: $color-gray;
   position: relative;
-  margin-right: 25px;
+  margin-right: 30px;
   font-weight: 500;
   font-size: 12px;
   display: flex;
@@ -687,6 +687,16 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  &--positioned {
+    margin-top: 0;
+    width: 100%;
+    position: absolute;
+
+    @media only screen and (max-width: 768px) {
+      bottom: -110px;
+    }
+  }
 }
 .add-tender-btn {
   padding: 16px 25px;
@@ -699,6 +709,11 @@ body {
   border-radius: 6px;
   background: $color-brand-2;
   cursor: pointer;
+  transition: all 0.2s linear;
+
+  &:hover {
+    background: darken($color-brand-2, 10%);
+  }
 }
 .add-tender-upload-content {
   display: flex;
@@ -713,9 +728,26 @@ body {
   }
 }
 .add-tender-upload {
+  width: 166px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: $color-brand-1;
+  border: none;
   border-radius: 52px;
   cursor: pointer;
+  transition: all 0.2s linear;
+
+  &:hover {
+    background: darken($color-brand-1, 10%);
+  }
+
+  span {
+    margin-left: 8px;
+    color: $color-white;
+    font-size: 12px;
+  }
 }
 .add-tender-upload div {
   display: flex;
@@ -813,6 +845,11 @@ body {
   border: none;
   border-radius: 6px;
   cursor: pointer;
+  transition: all 0.2s linear;
+
+  &:hover {
+    background: darken($color-gray, 10%);
+  }
 }
 .add-tender-category-title {
   margin-bottom: 10px;
@@ -843,6 +880,11 @@ body {
   background: $color-white;
   border: $border-1;
   border-radius: 52px;
+
+  span {
+    color: $color-text-main;
+    font-size: 12px;
+  }
 }
 .add-tender-uploaded-item-remove {
   display: none;
@@ -852,7 +894,7 @@ body {
   z-index: 1;
   width: 24px;
   height: 24px;
-  background: $color-red;
+  background: #e21b1b;
   border-radius: 50%;
   top: 14px;
   right: 20px;
@@ -863,12 +905,14 @@ body {
   display: flex;
 }
 .company-add-input {
+  margin: 12px 0 0 0;
   padding: 15px;
   width: 100%;
-  margin: 12px 0 25px 0;
 }
 .company-added-name {
   margin-bottom: 22px;
+  color: $color-text-main;
+  font-size: 12px;
 }
 .company-add-btn-out {
   display: flex;
@@ -899,15 +943,13 @@ body {
 .company-added-remove {
   width: 24px;
   height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: $color-red;
-  border-radius: 50%;
   border: none;
-  display: block;
+  border-radius: 50%;
   cursor: pointer;
-  font-weight: 100;
-  letter-spacing: 0.39px;
-  color: $color-white;
-  font-size: 13px;
 }
 
 .add-tender-header-item p {

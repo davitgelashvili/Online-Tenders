@@ -80,3 +80,10 @@
 .text-center {
   text-align: center;
 }
+
+// margin on smaller screen
+@media only screen and (max-width: 768px) {
+  .mt-md {
+    margin-top: 20px;
+  }
+}

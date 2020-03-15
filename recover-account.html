@@ -137,7 +137,7 @@
           <h3 class="modal__title">პაროლის აღდგენა</h3>
           <p class="modal__tagline">შეიყვანეთ ელ.ფოსტა</p>
 
-          <div class="sign-in__content">
+          <div class="sign-in__content auth-error">
             <div class="sign-in__field">
               <label for="email" class="sign-in__email">ელ. ფოსტა</label>
               <input type="email" name="email" id="email" />
@@ -150,6 +150,8 @@
               <span class="verify verified"></span>
             </div>
           </div>
+
+          <div class="auth-error__msg">ელ.ფოსტა ან პაროლი არასწორია</div>
 
           <div class="modal__ctas sign-in__btn">
             <button type="submit">აღდგენა</button>

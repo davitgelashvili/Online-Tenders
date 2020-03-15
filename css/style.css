@@ -4610,6 +4610,11 @@ button::placeholder {
   text-align: center;
 }
 
+@media only screen and (max-width: 768px) {
+  .mt-md {
+    margin-top: 20px;
+  }
+}
 .header {
   position: relative;
   background: #fff;
@@ -5394,7 +5399,7 @@ button::placeholder {
   height: 1px;
   background: linear-gradient(to right, #dadde2, #e52942);
 }
-@media only screen and (max-width: 845px) {
+@media only screen and (max-width: 768px) {
   .tender-details-tab-header-item.active::before {
     bottom: -1px;
   }
@@ -5408,7 +5413,7 @@ button::placeholder {
   height: 1px;
   background: linear-gradient(to left, #dadde2, #e52942);
 }
-@media only screen and (max-width: 845px) {
+@media only screen and (max-width: 768px) {
   .tender-details-tab-header-item.active::after {
     bottom: -1px;
   }
@@ -5502,7 +5507,7 @@ h3.questions-title {
 
 form.questions-form {
   position: relative;
-  height: 150px;
+  height: 125px;
   padding: 0 25px;
   background: #f7f7f7;
   display: flex;
@@ -5563,28 +5568,29 @@ form.questions-form .questions-btn button span {
 }
 
 .questions-field {
+  padding-right: 10px;
   position: relative;
   width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  border: 1px solid #dadde2;
+  border-radius: 8px;
 }
 
 .questions-field textarea {
   display: block;
-  padding: 20px 150px 20px 20px;
-  width: 100%;
-  height: 60px;
-  border: 1px solid #dadde2;
-  border-radius: 8px;
-}
-@media only screen and (max-width: 768px) {
-  .questions-field textarea {
-    padding: 20px 74px 20px 20px;
-  }
+  padding: 10px;
+  border: none;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  resize: none;
+  flex-grow: 1;
 }
 
 .questions-field button {
-  position: absolute;
-  top: 6px;
-  right: 10px;
   width: 148px;
   height: 48px;
   border: none;
@@ -5629,8 +5635,9 @@ form.questions-form .questions-btn button span {
   font-weight: 900;
 }
 
-.timestamp {
-  margin-top: 5px;
+.timestamp,
+.date {
+  margin-top: 4px;
   color: #141b3d;
   font-size: 10px;
   font-weight: 400;
@@ -5714,7 +5721,7 @@ form.questions-form .questions-btn button span {
   font-weight: 900;
 }
 .questions__user__del {
-  margin-top: 8px;
+  margin-top: 4px;
   color: #f1616f;
   font-size: 10px;
   font-weight: 400;
@@ -5726,10 +5733,41 @@ form.questions-form .questions-btn button span {
   border-top-left-radius: 8px;
   border-top-right-radius: 0;
   border-bottom-right-radius: 24px;
+  background: rgba(50, 180, 215, 0.1);
 }
 .questions__user .message-body p {
   color: #2d3e4d;
   font-size: 13px;
+}
+
+.sender {
+  margin-bottom: 8px;
+  color: #2d3e4d;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.reply {
+  width: 28px;
+  height: 28px;
+  margin-left: 8px;
+  align-self: center;
+  background: whitesmoke;
+  backdrop-filter: blur(4px);
+  border: none;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.reply-to {
+  color: rgba(45, 62, 77, 0.4);
+  font-size: 13px;
+}
+
+.answer {
+  margin-top: 20px;
+  padding-left: 14px;
+  border-left: 2px solid #c4e1ea;
 }
 
 .close-chat-wrap h3 {
@@ -6377,13 +6415,17 @@ form.questions-form .questions-btn button span {
   background: #fff !important;
   display: none;
 }
+.attachment td {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
 .attachment.active {
   display: table-row;
 }
 .attachment ul li {
   display: flex;
   align-items: center;
-  padding: 15px 0;
+  padding: 15px;
 }
 .attachment ul li:not(:last-child) {
   border-bottom: 1px solid #e4e4e4;
@@ -6398,6 +6440,10 @@ form.questions-form .questions-btn button span {
   border-radius: 100%;
   overflow: hidden;
   background: #f6f7f9;
+}
+.attachment ul li span {
+  color: #141b3d;
+  font-size: 12px;
 }
 
 .result__rounds .trade-history table {
@@ -8310,6 +8356,19 @@ form.questions-form .questions-btn button span {
 .subscribe__listing {
   position: relative;
 }
+.subscribe__listing form {
+  max-height: 416px;
+  overflow-y: auto;
+  border-bottom-left-radius: 8px;
+}
+.subscribe__listing form::-webkit-scrollbar {
+  width: 4px;
+}
+.subscribe__listing form::-webkit-scrollbar-thumb {
+  background: rgba(172, 172, 175, 0.4);
+  background-clip: padding-box;
+  border-radius: 8px;
+}
 .subscribe__listing__item {
   padding: 14px 26px;
   background: #fff;
@@ -8323,6 +8382,12 @@ form.questions-form .questions-btn button span {
 }
 .subscribe__listing__item:last-of-type label {
   color: #0fb7ff;
+}
+.subscribe__listing__item--fixed {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
 .subscribe__listing__item input {
   display: none;
@@ -8396,7 +8461,7 @@ form.questions-form .questions-btn button span {
   border-radius: 8px;
 }
 .subscribed-to__wrap li {
-  padding: 10px 0;
+  padding: 8px 0;
   color: #141b3d;
   font-size: 12px;
   font-weight: 400;
@@ -9762,7 +9827,7 @@ body {
   background: rgba(157, 169, 180, 0.1);
   color: #acacaf;
   position: relative;
-  margin-right: 25px;
+  margin-right: 30px;
   font-weight: 500;
   font-size: 12px;
   display: flex;
@@ -9907,6 +9972,16 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+.add-tender-ctas--positioned {
+  margin-top: 0;
+  width: 100%;
+  position: absolute;
+}
+@media only screen and (max-width: 768px) {
+  .add-tender-ctas--positioned {
+    bottom: -110px;
+  }
+}
 
 .add-tender-btn {
   padding: 16px 25px;
@@ -9919,6 +9994,10 @@ body {
   border-radius: 6px;
   background: #32b4d7;
   cursor: pointer;
+  transition: all 0.2s linear;
+}
+.add-tender-btn:hover {
+  background: #2394b3;
 }
 
 .add-tender-upload-content {
@@ -9936,9 +10015,24 @@ body {
 }
 
 .add-tender-upload {
+  width: 166px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: #0fb7ff;
+  border: none;
   border-radius: 52px;
   cursor: pointer;
+  transition: all 0.2s linear;
+}
+.add-tender-upload:hover {
+  background: #0099db;
+}
+.add-tender-upload span {
+  margin-left: 8px;
+  color: #fff;
+  font-size: 12px;
 }
 
 .add-tender-upload div {
@@ -10050,6 +10144,10 @@ body {
   border: none;
   border-radius: 6px;
   cursor: pointer;
+  transition: all 0.2s linear;
+}
+.tender-back-btn:hover {
+  background: #929296;
 }
 
 .add-tender-category-title {
@@ -10080,6 +10178,10 @@ body {
   border: 1px solid #dadde2;
   border-radius: 52px;
 }
+.add-tender-uploaded-item span {
+  color: #141b3d;
+  font-size: 12px;
+}
 
 .add-tender-uploaded-item-remove {
   display: none;
@@ -10089,7 +10191,7 @@ body {
   z-index: 1;
   width: 24px;
   height: 24px;
-  background: #e52942;
+  background: #e21b1b;
   border-radius: 50%;
   top: 14px;
   right: 20px;
@@ -10102,13 +10204,15 @@ body {
 }
 
 .company-add-input {
+  margin: 12px 0 0 0;
   padding: 15px;
   width: 100%;
-  margin: 12px 0 25px 0;
 }
 
 .company-added-name {
   margin-bottom: 22px;
+  color: #141b3d;
+  font-size: 12px;
 }
 
 .company-add-btn-out {
@@ -10143,15 +10247,13 @@ body {
 .company-added-remove {
   width: 24px;
   height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: #e52942;
-  border-radius: 50%;
   border: none;
-  display: block;
+  border-radius: 50%;
   cursor: pointer;
-  font-weight: 100;
-  letter-spacing: 0.39px;
-  color: #fff;
-  font-size: 13px;
 }
 
 .add-tender-header-item p {
