@@ -59,7 +59,7 @@
         &::before {
           content: "";
           position: absolute;
-          bottom: -9px;
+          bottom: -10px;
           left: 50%;
           transform: translateX(-50%);
           clip-path: polygon(100% 0, 0 0, 50% 100%);
