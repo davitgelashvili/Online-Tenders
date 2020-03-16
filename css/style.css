@@ -7158,7 +7158,7 @@ h3.questions-title {
 }
 .search-results ul {
   padding: 25px 15px;
-  max-height: 260px;
+  max-height: 340px;
   overflow-y: auto;
 }
 .search-results ul::-webkit-scrollbar {
