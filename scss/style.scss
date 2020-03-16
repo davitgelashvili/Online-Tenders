@@ -368,6 +368,7 @@ body {
   flex-wrap: wrap;
 }
 .tender-details-document {
+  position: relative;
   margin-right: 18px;
   margin-bottom: 15px;
   display: flex;
@@ -377,12 +378,44 @@ body {
   background: $color-white;
   cursor: pointer;
 
+  &:hover {
+    .full-title {
+      display: block;
+    }
+  }
+
   span {
     margin-left: 10px;
     margin-right: 38px;
     color: $color-text-main;
     font-size: 12px;
     font-weight: 400;
+  }
+
+  .full-title {
+    display: none;
+    position: absolute;
+    top: 95%;
+    left: 0;
+    padding: 10px 18px;
+    color: $color-white !important;
+    font-size: 12px;
+    font-weight: 400;
+    white-space: nowrap;
+    background: rgba(45, 62, 77, 0.8);
+    border-radius: 6px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -5px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 10px;
+      height: 5px;
+      background: rgba(45, 62, 77, 0.8);
+      clip-path: polygon(50% 0, 0 100%, 100% 100%);
+    }
   }
 }
 .tender-details-document-icon {
@@ -403,6 +436,7 @@ body {
   font-family: $font-main;
   font-size: 12px;
   font-weight: 500;
+  white-space: nowrap;
   border: none;
   background: transparent;
   cursor: pointer;
