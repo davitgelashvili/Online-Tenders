@@ -31,11 +31,15 @@
 }
 
 .align-start {
-  align-items: flex-start;
+  align-items: flex-start !important;
 }
 
 .justify-center {
   justify-content: center;
+}
+
+.justify-start {
+  justify-content: flex-start !important;
 }
 
 .flex-col {
@@ -79,4 +83,15 @@
 
 .text-center {
   text-align: center;
+}
+
+// margin on smaller screen
+@media only screen and (max-width: 768px) {
+  .mt-md {
+    margin-top: 20px;
+  }
+}
+
+.border-bottom-1 {
+  border-bottom: $border-1;
 }

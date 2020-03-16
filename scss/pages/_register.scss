@@ -142,7 +142,26 @@
     }
 
     select {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
       background: $color-bg-main;
+    }
+
+    .select {
+      position: relative;
+
+      &::after {
+        content: "\f078";
+        color: $color-gray;
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        font-size: 12px;
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
     }
 
     button {
@@ -159,5 +178,26 @@
       background: $color-brand-2;
       cursor: pointer;
     }
+  }
+}
+
+.reg-error {
+  input,
+  select {
+    border-color: $color-danger;
+    box-shadow: 0 3px 16px rgba($color-danger, 0.2);
+  }
+
+  & + &__msg {
+    display: block;
+  }
+
+  &__msg {
+    display: none;
+    margin: -6px 0 10px 0;
+    color: $color-danger;
+    font-size: 12px;
+    font-weight: 500;
+    text-align: right;
   }
 }

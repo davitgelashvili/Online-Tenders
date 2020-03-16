@@ -95,6 +95,23 @@
 
   &__listing {
     position: relative;
+
+    form {
+      max-height: 416px;
+      overflow-y: auto;
+      border-bottom-left-radius: 8px;
+
+      &::-webkit-scrollbar {
+        width: 4px;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background: rgba(172, 172, 175, 0.4);
+        background-clip: padding-box;
+        border-radius: 8px;
+      }
+    }
+
     &__item {
       padding: 14px 26px;
       background: $color-white;
@@ -102,6 +119,7 @@
       &:nth-child(even) {
         background: $color-bg-main;
       }
+
       &:last-of-type {
         border-bottom-left-radius: 8px;
         border-bottom-right-radius: 8px;
@@ -109,6 +127,13 @@
         label {
           color: $color-brand-1;
         }
+      }
+
+      &--fixed {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
       }
 
       input {
@@ -192,7 +217,7 @@
     }
 
     li {
-      padding: 10px 0;
+      padding: 8px 0;
       color: $color-text-main;
       font-size: 12px;
       font-weight: 400;

@@ -222,11 +222,11 @@
                     <header
                       class="tender-list__header tender-list__header--colored"
                     >
-                      <h2>I რაუნდი</h2>
+                      <h2>დაზუსტება</h2>
                     </header>
 
-                    <div class="tender-list__body">
-                      <div class="tender-list__headings grid-4">
+                    <div class="tender-list__body specify">
+                      <div class="tender-list__headings specify__grid">
                         <div></div>
                         <div>პრეტენდენტი</div>
                         <div class="text-center">საბოლოო შეთავაზება</div>
@@ -234,117 +234,365 @@
                       </div>
 
                       <ul class="tender-list__items">
-                        <li class="table-lg trade-item grid-4">
+                        <li
+                          class="table-lg trade-item specify__grid border-none"
+                        >
                           <div class="specify-closed">
                             <i class="fas fa-chevron-right"></i>
                           </div>
                           <div>Wandio Development</div>
                           <div class="text-center">24 000‎ ₾</div>
-                          <div class="text-center"><span>გაგზავნილი</span></div>
+                          <div class="text-center"><span class="sent">გაგზავნილი</span></div>
                         </li>
 
                         <!-- Specify Dialog -->
-                        <div class="tender-list__specify">
-                          <div class="questions__content">
-                            <div class="questions-operator">
-                              <div class="operator-info">
-                                <span class="operator">T</span>
-                                <span class="timestamp">13:40</span>
+                        <div class="tender-list__specify border-bottom-1">
+                          <!-- Chat Box -->
+                          <div class="chat">
+                            <div class="chat__msgs">
+                              <!-- Message -->
+                              <div class="msg msg--sent">
+                                <!-- Message Author & Message detailes -->
+                                <div class="msg__info msg__info--sent">
+                                  <div class="msg__author">A</div>
+                                  <time class="msg__date">
+                                    <span class="date">13 დეკ.</span>
+                                    <span class="time">13:40</span>
+                                  </time>
+                                  <button class="msg__del">წაშლა</button>
+                                </div>
+                                <!-- Message text -->
+                                <div class="msg__content msg__content--sent">
+                                  <div class="msg__text">
+                                    <div class="msg__text__author">
+                                      შ.პ.ს ელკო
+                                    </div>
+                                    <div class="msg__text__body">
+                                      <p>
+                                        გამარჯობა, გიგზავნით ჩარიცხვის ჩეკებს და
+                                        ასევე ინვოისის ნომერს რათა მოხდეს ბანკში
+                                        ადვილად გადამოწმება გამარჯობა, გიგზავნით
+                                        ჩარიცხვის ჩეკებს და ასევე ინვოისის
+                                        ნომერს რათა მოხდეს ბანკში ადვილად
+                                        გადამოწმება გამარჯობა, გიგზავნით
+                                        ჩარიცხვის ჩეკებს და ასევე ინვოისის
+                                        ნომერს რათა მოხდეს ბანკში ადვილად
+                                        გადამოწმება გამარჯობა, გიგზავნით
+                                        ჩარიცხვის ჩეკებს და ასევე ინვოისის
+                                        ნომერს რათა მოხდეს ბანკში ადვილად
+                                        გადამოწმება
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
                               </div>
-                              <div class="message-body">
-                                <p>
-                                  გამარჯობა ალექსანდრე, გთხოვთ დაგვიდასტუროთ
-                                  ჩარიცხვა
-                                </p>
+
+                              <!-- Message -->
+                              <div class="msg msg--sent">
+                                <!-- Message Author & Message detailes -->
+                                <div class="msg__info msg__info--sent">
+                                  <div class="msg__author">A</div>
+                                  <time class="msg__date">
+                                    <span class="date">13 დეკ.</span>
+                                    <span class="time">13:40</span>
+                                  </time>
+                                  <button class="msg__del">წაშლა</button>
+                                </div>
+                                <!-- Message text -->
+                                <div class="msg__content msg__content--sent">
+                                  <div class="msg__reply-to">
+                                    <p>
+                                      გამარჯობა ალექსანდრე, გთხოვთ დაგვიდასტუროთ
+                                      ჩარიცხვა
+                                    </p>
+                                  </div>
+                                  <div class="msg__text msg__text--reply">
+                                    <div class="msg__text__author">
+                                      შ.პ.ს ელკო
+                                    </div>
+                                    <div class="msg__text__body">
+                                      <p>
+                                        გამარჯობა, გიგზავნით ჩარიცხვის ჩეკებს და
+                                        ასევე ინვოისის ნომერს რათა მოხდეს ბანკში
+                                        ადვილად გადამოწმება გამარჯობა, გიგზავნით
+                                        ჩარიცხვის ჩეკებს და ასევე ინვოისის
+                                        ნომერს რათა მოხდეს ბანკში ადვილად
+                                        გადამოწმება გამარჯობა, გიგზავნით
+                                        ჩარიცხვის ჩეკებს და ასევე ინვოისის
+                                        ნომერს რათა მოხდეს ბანკში ადვილად
+                                        გადამოწმება გამარჯობა, გიგზავნით
+                                        ჩარიცხვის ჩეკებს და ასევე ინვოისის
+                                        ნომერს რათა მოხდეს ბანკში ადვილად
+                                        გადამოწმება
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
                               </div>
-                            </div>
-                            <div class="questions__user">
-                              <div class="questions__user__info">
-                                <span class="questions__user__name">A</span>
-                                <span class="timestamp">13:40</span>
-                                <button class="questions__user__del">
-                                  წაშლა
+
+                              <!-- Message -->
+                              <div class="msg msg--received">
+                                <!-- Message Author & Message detailes -->
+                                <div class="msg__info msg__info--received">
+                                  <div
+                                    class="msg__author msg__author--received"
+                                  >
+                                    A
+                                  </div>
+                                  <time class="msg__date">
+                                    <span class="date">13 დეკ.</span>
+                                    <span class="time">13:40</span>
+                                  </time>
+                                  <button class="msg__del">წაშლა</button>
+                                </div>
+                                <!-- Message text -->
+                                <div
+                                  class="msg__content msg__content--received"
+                                >
+                                  <div class="msg__text">
+                                    <div class="msg__text__author">
+                                      შ.პ.ს ელკო
+                                    </div>
+                                    <div class="msg__text__body">
+                                      <p>
+                                        გამარჯობა, გიგზავნით ჩარიცხვის ჩეკებს და
+                                        ასევე ინვოისის ნომერს რათა მოხდეს ბანკში
+                                        ადვილად გადამოწმება გამარჯობა, გიგზავნით
+                                        ჩარიცხვის ჩეკებს და ასევე ინვოისის
+                                        ნომერს რათა მოხდეს ბანკში ადვილად
+                                        გადამოწმება გამარჯობა, გიგზავნით
+                                        ჩარიცხვის ჩეკებს და ასევე ინვოისის
+                                        ნომერს რათა მოხდეს ბანკში ადვილად
+                                        გადამოწმება გამარჯობა, გიგზავნით
+                                        ჩარიცხვის ჩეკებს და ასევე ინვოისის
+                                        ნომერს რათა მოხდეს ბანკში ადვილად
+                                        გადამოწმება
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <button class="reply">
+                                  <img src="img/reply.svg" alt="reply" />
                                 </button>
                               </div>
-                              <div class="message-body">
-                                <p>
-                                  გამარჯობა, გიგზავნით ჩარიცხვის ჩეკებს და ასევე
-                                  ინვოისის ნომერს რათა მოხდეს ბანკში ადვილად
-                                  გადამოწმება
-                                </p>
-                              </div>
-                            </div>
-                            <div class="questions-operator">
-                              <div class="operator-info">
-                                <span class="operator">T</span>
-                                <span class="timestamp">13:40</span>
-                              </div>
-                              <div class="message-body">
-                                <p>
-                                  ძალიან კარგია, მადლობა !
-                                </p>
-                              </div>
+
+                              <!-- ეს არ წაშალოთ -->
+                              <div class="mb-4"></div>
                             </div>
 
-                            <div class="questions__user">
-                              <div class="questions__user__info">
-                                <span class="questions__user__name">A</span>
-                                <span class="timestamp">13:40</span>
-                                <button class="questions__user__del">
-                                  წაშლა
+                            <div class="chat__input-box">
+                              <form action="#">
+                                <!-- File Upload button -->
+                                <button
+                                  class="uploadfile-btn chat__upload-file"
+                                >
+                                  <img src="img/clip.svg" alt="" />
+                                  <span>ატვირთეთ ფაილი</span>
                                 </button>
-                              </div>
-                              <div class="message-body">
-                                <p>
-                                  გამარჯობა, გიგზავნით ჩარიცხვის ჩეკებს და ასევე
-                                  ინვოისის ნომერს რათა მოხდეს ბანკში ადვილად
-                                  გადამოწმება
-                                </p>
-                              </div>
-                            </div>
 
-                            <div class="questions__user">
-                              <div class="questions__user__info">
-                                <span class="questions__user__name">A</span>
-                                <span class="timestamp">13:40</span>
-                                <button class="questions__user__del">
-                                  წაშლა
+                                <!-- Write Message textarea -->
+                                <div class="chat__field">
+                                  <textarea
+                                    name="message"
+                                    placeholder="შეიყვანეთ შეტყობინება"
+                                  ></textarea>
+                                  <button type="submit">გაგზავნა</button>
+                                </div>
+                              </form>
+                              <div class="close-questions">
+                                <button class="close-chat-btn">
+                                  <img src="img/close-modal.svg" alt="" />
+                                  <span>ჩატის დახურვა</span>
                                 </button>
-                              </div>
-                              <div class="message-body">
-                                <p>
-                                  გამარჯობა, გიგზავნით ჩარიცხვის ჩეკებს და ასევე
-                                  ინვოისის ნომერს რათა მოხდეს ბანკში ადვილად
-                                  გადამოწმება
-                                </p>
                               </div>
                             </div>
                           </div>
-                          <form action="#" class="questions-form chat-form">
-                            <div class="questions-btn">
-                              <button class="uploadfile-btn">
-                                <img src="img/clip.svg" alt="" />
-                                <span>ატვირთეთ ფაილი</span>
-                              </button>
-                            </div>
-                            <div class="questions-field">
-                              <textarea
-                                name="message"
-                                placeholder="შეიყვანეთ შეტყობინება"
-                              ></textarea>
-                              <button type="submit">გაგზავნა</button>
-                            </div>
-                            <div class="close-questions">
-                              <button class="close-chat-btn">
-                                <img src="img/close-modal.svg" alt="" />
-                                <span>ჩატის დახურვა</span>
-                              </button>
-                            </div>
-                          </form>
+                          <!-- End Chat Box -->
                         </div>
                         <!-- end Specify Dialog -->
 
-                        <li class="table-lg trade-item grid-4">
+                        <li
+                          class="table-lg trade-item specify__grid border-none"
+                        >
+                          <div class="specify-closed">
+                            <i class="fas fa-chevron-right"></i>
+                          </div>
+                          <div>Wandio Development</div>
+                          <div class="text-center">-</div>
+                          <div class="text-center"><span class="received">მიღებული</span></div>
+                        </li>
+
+                        <!-- Specify Dialog -->
+                        <div class="tender-list__specify border-bottom-1">
+                          <!-- Chat Box -->
+                          <div class="chat">
+                            <div class="chat__msgs">
+                              <!-- Message -->
+                              <div class="msg msg--sent">
+                                <!-- Message Author & Message detailes -->
+                                <div class="msg__info msg__info--sent">
+                                  <div class="msg__author">A</div>
+                                  <time class="msg__date">
+                                    <span class="date">13 დეკ.</span>
+                                    <span class="time">13:40</span>
+                                  </time>
+                                  <button class="msg__del">წაშლა</button>
+                                </div>
+                                <!-- Message text -->
+                                <div class="msg__content msg__content--sent">
+                                  <div class="msg__text">
+                                    <div class="msg__text__author">
+                                      შ.პ.ს ელკო
+                                    </div>
+                                    <div class="msg__text__body">
+                                      <p>
+                                        გამარჯობა, გიგზავნით ჩარიცხვის ჩეკებს და
+                                        ასევე ინვოისის ნომერს რათა მოხდეს ბანკში
+                                        ადვილად გადამოწმება გამარჯობა, გიგზავნით
+                                        ჩარიცხვის ჩეკებს და ასევე ინვოისის
+                                        ნომერს რათა მოხდეს ბანკში ადვილად
+                                        გადამოწმება გამარჯობა, გიგზავნით
+                                        ჩარიცხვის ჩეკებს და ასევე ინვოისის
+                                        ნომერს რათა მოხდეს ბანკში ადვილად
+                                        გადამოწმება გამარჯობა, გიგზავნით
+                                        ჩარიცხვის ჩეკებს და ასევე ინვოისის
+                                        ნომერს რათა მოხდეს ბანკში ადვილად
+                                        გადამოწმება
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <!-- Message -->
+                              <div class="msg msg--sent">
+                                <!-- Message Author & Message detailes -->
+                                <div class="msg__info msg__info--sent">
+                                  <div class="msg__author">A</div>
+                                  <time class="msg__date">
+                                    <span class="date">13 დეკ.</span>
+                                    <span class="time">13:40</span>
+                                  </time>
+                                  <button class="msg__del">წაშლა</button>
+                                </div>
+                                <!-- Message text -->
+                                <div class="msg__content msg__content--sent">
+                                  <div class="msg__reply-to">
+                                    <p>
+                                      გამარჯობა ალექსანდრე, გთხოვთ დაგვიდასტუროთ
+                                      ჩარიცხვა
+                                    </p>
+                                  </div>
+                                  <div class="msg__text msg__text--reply">
+                                    <div class="msg__text__author">
+                                      შ.პ.ს ელკო
+                                    </div>
+                                    <div class="msg__text__body">
+                                      <p>
+                                        გამარჯობა, გიგზავნით ჩარიცხვის ჩეკებს და
+                                        ასევე ინვოისის ნომერს რათა მოხდეს ბანკში
+                                        ადვილად გადამოწმება გამარჯობა, გიგზავნით
+                                        ჩარიცხვის ჩეკებს და ასევე ინვოისის
+                                        ნომერს რათა მოხდეს ბანკში ადვილად
+                                        გადამოწმება გამარჯობა, გიგზავნით
+                                        ჩარიცხვის ჩეკებს და ასევე ინვოისის
+                                        ნომერს რათა მოხდეს ბანკში ადვილად
+                                        გადამოწმება გამარჯობა, გიგზავნით
+                                        ჩარიცხვის ჩეკებს და ასევე ინვოისის
+                                        ნომერს რათა მოხდეს ბანკში ადვილად
+                                        გადამოწმება
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <!-- Message -->
+                              <div class="msg msg--received">
+                                <!-- Message Author & Message detailes -->
+                                <div class="msg__info msg__info--received">
+                                  <div
+                                    class="msg__author msg__author--received"
+                                  >
+                                    A
+                                  </div>
+                                  <time class="msg__date">
+                                    <span class="date">13 დეკ.</span>
+                                    <span class="time">13:40</span>
+                                  </time>
+                                  <button class="msg__del">წაშლა</button>
+                                </div>
+                                <!-- Message text -->
+                                <div
+                                  class="msg__content msg__content--received"
+                                >
+                                  <div class="msg__text">
+                                    <div class="msg__text__author">
+                                      შ.პ.ს ელკო
+                                    </div>
+                                    <div class="msg__text__body">
+                                      <p>
+                                        გამარჯობა, გიგზავნით ჩარიცხვის ჩეკებს და
+                                        ასევე ინვოისის ნომერს რათა მოხდეს ბანკში
+                                        ადვილად გადამოწმება გამარჯობა, გიგზავნით
+                                        ჩარიცხვის ჩეკებს და ასევე ინვოისის
+                                        ნომერს რათა მოხდეს ბანკში ადვილად
+                                        გადამოწმება გამარჯობა, გიგზავნით
+                                        ჩარიცხვის ჩეკებს და ასევე ინვოისის
+                                        ნომერს რათა მოხდეს ბანკში ადვილად
+                                        გადამოწმება გამარჯობა, გიგზავნით
+                                        ჩარიცხვის ჩეკებს და ასევე ინვოისის
+                                        ნომერს რათა მოხდეს ბანკში ადვილად
+                                        გადამოწმება
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <button class="reply">
+                                  <img src="img/reply.svg" alt="reply" />
+                                </button>
+                              </div>
+
+                              <!-- ეს არ წაშალოთ -->
+                              <div class="mb-4"></div>
+                            </div>
+
+                            <div class="chat__input-box">
+                              <form action="#">
+                                <!-- File Upload button -->
+                                <button
+                                  class="uploadfile-btn chat__upload-file"
+                                >
+                                  <img src="img/clip.svg" alt="" />
+                                  <span>ატვირთეთ ფაილი</span>
+                                </button>
+
+                                <!-- Write Message textarea -->
+                                <div class="chat__field">
+                                  <textarea
+                                    name="message"
+                                    placeholder="შეიყვანეთ შეტყობინება"
+                                  ></textarea>
+                                  <button type="submit">გაგზავნა</button>
+                                </div>
+                              </form>
+                              <div class="close-questions">
+                                <button class="close-chat-btn">
+                                  <img src="img/close-modal.svg" alt="" />
+                                  <span>ჩატის დახურვა</span>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- End Chat Box -->
+                        </div>
+                        <!-- end Specify Dialog -->
+
+                        <li
+                          class="table-lg trade-item specify__grid border-none"
+                        >
                           <div class="specify-closed">
                             <i class="fas fa-chevron-right"></i>
                           </div>
@@ -355,212 +603,169 @@
 
                         <!-- Specify Dialog -->
                         <div class="tender-list__specify">
-                          <div class="questions__content">
-                            <div class="questions-operator">
-                              <div class="operator-info">
-                                <span class="operator">T</span>
-                                <span class="timestamp">13:40</span>
+                          <!-- Chat Box -->
+                          <div class="chat">
+                            <div class="chat__msgs">
+                              <!-- Message -->
+                              <div class="msg msg--sent">
+                                <!-- Message Author & Message detailes -->
+                                <div class="msg__info msg__info--sent">
+                                  <div class="msg__author">A</div>
+                                  <time class="msg__date">
+                                    <span class="date">13 დეკ.</span>
+                                    <span class="time">13:40</span>
+                                  </time>
+                                  <button class="msg__del">წაშლა</button>
+                                </div>
+                                <!-- Message text -->
+                                <div class="msg__content msg__content--sent">
+                                  <div class="msg__text">
+                                    <div class="msg__text__author">
+                                      შ.პ.ს ელკო
+                                    </div>
+                                    <div class="msg__text__body">
+                                      <p>
+                                        გამარჯობა, გიგზავნით ჩარიცხვის ჩეკებს და
+                                        ასევე ინვოისის ნომერს რათა მოხდეს ბანკში
+                                        ადვილად გადამოწმება გამარჯობა, გიგზავნით
+                                        ჩარიცხვის ჩეკებს და ასევე ინვოისის
+                                        ნომერს რათა მოხდეს ბანკში ადვილად
+                                        გადამოწმება გამარჯობა, გიგზავნით
+                                        ჩარიცხვის ჩეკებს და ასევე ინვოისის
+                                        ნომერს რათა მოხდეს ბანკში ადვილად
+                                        გადამოწმება გამარჯობა, გიგზავნით
+                                        ჩარიცხვის ჩეკებს და ასევე ინვოისის
+                                        ნომერს რათა მოხდეს ბანკში ადვილად
+                                        გადამოწმება
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
                               </div>
-                              <div class="message-body">
-                                <p>
-                                  გამარჯობა ალექსანდრე, გთხოვთ დაგვიდასტუროთ
-                                  ჩარიცხვა
-                                </p>
+
+                              <!-- Message -->
+                              <div class="msg msg--sent">
+                                <!-- Message Author & Message detailes -->
+                                <div class="msg__info msg__info--sent">
+                                  <div class="msg__author">A</div>
+                                  <time class="msg__date">
+                                    <span class="date">13 დეკ.</span>
+                                    <span class="time">13:40</span>
+                                  </time>
+                                  <button class="msg__del">წაშლა</button>
+                                </div>
+                                <!-- Message text -->
+                                <div class="msg__content msg__content--sent">
+                                  <div class="msg__reply-to">
+                                    <p>
+                                      გამარჯობა ალექსანდრე, გთხოვთ დაგვიდასტუროთ
+                                      ჩარიცხვა
+                                    </p>
+                                  </div>
+                                  <div class="msg__text msg__text--reply">
+                                    <div class="msg__text__author">
+                                      შ.პ.ს ელკო
+                                    </div>
+                                    <div class="msg__text__body">
+                                      <p>
+                                        გამარჯობა, გიგზავნით ჩარიცხვის ჩეკებს და
+                                        ასევე ინვოისის ნომერს რათა მოხდეს ბანკში
+                                        ადვილად გადამოწმება გამარჯობა, გიგზავნით
+                                        ჩარიცხვის ჩეკებს და ასევე ინვოისის
+                                        ნომერს რათა მოხდეს ბანკში ადვილად
+                                        გადამოწმება გამარჯობა, გიგზავნით
+                                        ჩარიცხვის ჩეკებს და ასევე ინვოისის
+                                        ნომერს რათა მოხდეს ბანკში ადვილად
+                                        გადამოწმება გამარჯობა, გიგზავნით
+                                        ჩარიცხვის ჩეკებს და ასევე ინვოისის
+                                        ნომერს რათა მოხდეს ბანკში ადვილად
+                                        გადამოწმება
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
                               </div>
-                            </div>
-                            <div class="questions__user">
-                              <div class="questions__user__info">
-                                <span class="questions__user__name">A</span>
-                                <span class="timestamp">13:40</span>
-                                <button class="questions__user__del">
-                                  წაშლა
+
+                              <!-- Message -->
+                              <div class="msg msg--received">
+                                <!-- Message Author & Message detailes -->
+                                <div class="msg__info msg__info--received">
+                                  <div
+                                    class="msg__author msg__author--received"
+                                  >
+                                    A
+                                  </div>
+                                  <time class="msg__date">
+                                    <span class="date">13 დეკ.</span>
+                                    <span class="time">13:40</span>
+                                  </time>
+                                  <button class="msg__del">წაშლა</button>
+                                </div>
+                                <!-- Message text -->
+                                <div
+                                  class="msg__content msg__content--received"
+                                >
+                                  <div class="msg__text">
+                                    <div class="msg__text__author">
+                                      შ.პ.ს ელკო
+                                    </div>
+                                    <div class="msg__text__body">
+                                      <p>
+                                        გამარჯობა, გიგზავნით ჩარიცხვის ჩეკებს და
+                                        ასევე ინვოისის ნომერს რათა მოხდეს ბანკში
+                                        ადვილად გადამოწმება გამარჯობა, გიგზავნით
+                                        ჩარიცხვის ჩეკებს და ასევე ინვოისის
+                                        ნომერს რათა მოხდეს ბანკში ადვილად
+                                        გადამოწმება გამარჯობა, გიგზავნით
+                                        ჩარიცხვის ჩეკებს და ასევე ინვოისის
+                                        ნომერს რათა მოხდეს ბანკში ადვილად
+                                        გადამოწმება გამარჯობა, გიგზავნით
+                                        ჩარიცხვის ჩეკებს და ასევე ინვოისის
+                                        ნომერს რათა მოხდეს ბანკში ადვილად
+                                        გადამოწმება
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <button class="reply">
+                                  <img src="img/reply.svg" alt="reply" />
                                 </button>
                               </div>
-                              <div class="message-body">
-                                <p>
-                                  გამარჯობა, გიგზავნით ჩარიცხვის ჩეკებს და ასევე
-                                  ინვოისის ნომერს რათა მოხდეს ბანკში ადვილად
-                                  გადამოწმება
-                                </p>
-                              </div>
-                            </div>
-                            <div class="questions-operator">
-                              <div class="operator-info">
-                                <span class="operator">T</span>
-                                <span class="timestamp">13:40</span>
-                              </div>
-                              <div class="message-body">
-                                <p>
-                                  ძალიან კარგია, მადლობა !
-                                </p>
-                              </div>
+
+                              <!-- ეს არ წაშალოთ -->
+                              <div class="mb-4"></div>
                             </div>
 
-                            <div class="questions__user">
-                              <div class="questions__user__info">
-                                <span class="questions__user__name">A</span>
-                                <span class="timestamp">13:40</span>
-                                <button class="questions__user__del">
-                                  წაშლა
+                            <div class="chat__input-box">
+                              <form action="#">
+                                <!-- File Upload button -->
+                                <button
+                                  class="uploadfile-btn chat__upload-file"
+                                >
+                                  <img src="img/clip.svg" alt="" />
+                                  <span>ატვირთეთ ფაილი</span>
                                 </button>
-                              </div>
-                              <div class="message-body">
-                                <p>
-                                  გამარჯობა, გიგზავნით ჩარიცხვის ჩეკებს და ასევე
-                                  ინვოისის ნომერს რათა მოხდეს ბანკში ადვილად
-                                  გადამოწმება
-                                </p>
-                              </div>
-                            </div>
 
-                            <div class="questions__user">
-                              <div class="questions__user__info">
-                                <span class="questions__user__name">A</span>
-                                <span class="timestamp">13:40</span>
-                                <button class="questions__user__del">
-                                  წაშლა
+                                <!-- Write Message textarea -->
+                                <div class="chat__field">
+                                  <textarea
+                                    name="message"
+                                    placeholder="შეიყვანეთ შეტყობინება"
+                                  ></textarea>
+                                  <button type="submit">გაგზავნა</button>
+                                </div>
+                              </form>
+
+                              <div class="close-questions">
+                                <button class="close-chat-btn">
+                                  <img src="img/close-modal.svg" alt="" />
+                                  <span>ჩატის დახურვა</span>
                                 </button>
-                              </div>
-                              <div class="message-body">
-                                <p>
-                                  გამარჯობა, გიგზავნით ჩარიცხვის ჩეკებს და ასევე
-                                  ინვოისის ნომერს რათა მოხდეს ბანკში ადვილად
-                                  გადამოწმება
-                                </p>
                               </div>
                             </div>
                           </div>
-                          <form action="#" class="questions-form chat-form">
-                            <div class="questions-btn">
-                              <button class="uploadfile-btn">
-                                <img src="img/clip.svg" alt="" />
-                                <span>ატვირთეთ ფაილი</span>
-                              </button>
-                            </div>
-                            <div class="questions-field">
-                              <textarea
-                                name="message"
-                                placeholder="შეიყვანეთ შეტყობინება"
-                              ></textarea>
-                              <button type="submit">გაგზავნა</button>
-                            </div>
-                            <div class="close-questions">
-                              <button class="close-chat-btn">
-                                <img src="img/close-modal.svg" alt="" />
-                                <span>ჩატის დახურვა</span>
-                              </button>
-                            </div>
-                          </form>
-                        </div>
-                        <!-- end Specify Dialog -->
-
-                        <li class="table-lg trade-item grid-4">
-                          <div class="specify-closed">
-                            <i class="fas fa-chevron-right"></i>
-                          </div>
-                          <div>Wandio Development</div>
-                          <div class="text-center">-</div>
-                          <div class="text-center">-</div>
-                        </li>
-
-                        <!-- Specify Dialog -->
-                        <div class="tender-list__specify">
-                          <div class="questions__content">
-                            <div class="questions-operator">
-                              <div class="operator-info">
-                                <span class="operator">T</span>
-                                <span class="timestamp">13:40</span>
-                              </div>
-                              <div class="message-body">
-                                <p>
-                                  გამარჯობა ალექსანდრე, გთხოვთ დაგვიდასტუროთ
-                                  ჩარიცხვა
-                                </p>
-                              </div>
-                            </div>
-                            <div class="questions__user">
-                              <div class="questions__user__info">
-                                <span class="questions__user__name">A</span>
-                                <span class="timestamp">13:40</span>
-                                <button class="questions__user__del">
-                                  წაშლა
-                                </button>
-                              </div>
-                              <div class="message-body">
-                                <p>
-                                  გამარჯობა, გიგზავნით ჩარიცხვის ჩეკებს და ასევე
-                                  ინვოისის ნომერს რათა მოხდეს ბანკში ადვილად
-                                  გადამოწმება
-                                </p>
-                              </div>
-                            </div>
-                            <div class="questions-operator">
-                              <div class="operator-info">
-                                <span class="operator">T</span>
-                                <span class="timestamp">13:40</span>
-                              </div>
-                              <div class="message-body">
-                                <p>
-                                  ძალიან კარგია, მადლობა !
-                                </p>
-                              </div>
-                            </div>
-
-                            <div class="questions__user">
-                              <div class="questions__user__info">
-                                <span class="questions__user__name">A</span>
-                                <span class="timestamp">13:40</span>
-                                <button class="questions__user__del">
-                                  წაშლა
-                                </button>
-                              </div>
-                              <div class="message-body">
-                                <p>
-                                  გამარჯობა, გიგზავნით ჩარიცხვის ჩეკებს და ასევე
-                                  ინვოისის ნომერს რათა მოხდეს ბანკში ადვილად
-                                  გადამოწმება
-                                </p>
-                              </div>
-                            </div>
-
-                            <div class="questions__user">
-                              <div class="questions__user__info">
-                                <span class="questions__user__name">A</span>
-                                <span class="timestamp">13:40</span>
-                                <button class="questions__user__del">
-                                  წაშლა
-                                </button>
-                              </div>
-                              <div class="message-body">
-                                <p>
-                                  გამარჯობა, გიგზავნით ჩარიცხვის ჩეკებს და ასევე
-                                  ინვოისის ნომერს რათა მოხდეს ბანკში ადვილად
-                                  გადამოწმება
-                                </p>
-                              </div>
-                            </div>
-                          </div>
-                          <form action="#" class="questions-form chat-form">
-                            <div class="questions-btn">
-                              <button class="uploadfile-btn">
-                                <img src="img/clip.svg" alt="" />
-                                <span>ატვირთეთ ფაილი</span>
-                              </button>
-                            </div>
-                            <div class="questions-field">
-                              <textarea
-                                name="message"
-                                placeholder="შეიყვანეთ შეტყობინება"
-                              ></textarea>
-                              <button type="submit">გაგზავნა</button>
-                            </div>
-                            <div class="close-questions">
-                              <button class="close-chat-btn">
-                                <img src="img/close-modal.svg" alt="" />
-                                <span>ჩატის დახურვა</span>
-                              </button>
-                            </div>
-                          </form>
+                          <!-- End Chat Box -->
                         </div>
                         <!-- end Specify Dialog -->
                       </ul>
@@ -605,102 +810,169 @@
                         <div
                           class="tender-list__specify tender-list__specify--mobile"
                         >
-                          <div class="questions__content">
-                            <div class="questions-operator">
-                              <div class="operator-info">
-                                <span class="operator">T</span>
-                                <span class="timestamp">13:40</span>
+                          <!-- Chat Box -->
+                          <div class="chat">
+                            <div class="chat__msgs">
+                              <!-- Message -->
+                              <div class="msg msg--sent">
+                                <!-- Message Author & Message detailes -->
+                                <div class="msg__info msg__info--sent">
+                                  <div class="msg__author">A</div>
+                                  <time class="msg__date">
+                                    <span class="date">13 დეკ.</span>
+                                    <span class="time">13:40</span>
+                                  </time>
+                                  <button class="msg__del">წაშლა</button>
+                                </div>
+                                <!-- Message text -->
+                                <div class="msg__content msg__content--sent">
+                                  <div class="msg__text">
+                                    <div class="msg__text__author">
+                                      შ.პ.ს ელკო
+                                    </div>
+                                    <div class="msg__text__body">
+                                      <p>
+                                        გამარჯობა, გიგზავნით ჩარიცხვის ჩეკებს და
+                                        ასევე ინვოისის ნომერს რათა მოხდეს ბანკში
+                                        ადვილად გადამოწმება გამარჯობა, გიგზავნით
+                                        ჩარიცხვის ჩეკებს და ასევე ინვოისის
+                                        ნომერს რათა მოხდეს ბანკში ადვილად
+                                        გადამოწმება გამარჯობა, გიგზავნით
+                                        ჩარიცხვის ჩეკებს და ასევე ინვოისის
+                                        ნომერს რათა მოხდეს ბანკში ადვილად
+                                        გადამოწმება გამარჯობა, გიგზავნით
+                                        ჩარიცხვის ჩეკებს და ასევე ინვოისის
+                                        ნომერს რათა მოხდეს ბანკში ადვილად
+                                        გადამოწმება
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
                               </div>
-                              <div class="message-body">
-                                <p>
-                                  გამარჯობა ალექსანდრე, გთხოვთ დაგვიდასტუროთ
-                                  ჩარიცხვა
-                                </p>
+
+                              <!-- Message -->
+                              <div class="msg msg--sent">
+                                <!-- Message Author & Message detailes -->
+                                <div class="msg__info msg__info--sent">
+                                  <div class="msg__author">A</div>
+                                  <time class="msg__date">
+                                    <span class="date">13 დეკ.</span>
+                                    <span class="time">13:40</span>
+                                  </time>
+                                  <button class="msg__del">წაშლა</button>
+                                </div>
+                                <!-- Message text -->
+                                <div class="msg__content msg__content--sent">
+                                  <div class="msg__reply-to">
+                                    <p>
+                                      გამარჯობა ალექსანდრე, გთხოვთ დაგვიდასტუროთ
+                                      ჩარიცხვა
+                                    </p>
+                                  </div>
+                                  <div class="msg__text msg__text--reply">
+                                    <div class="msg__text__author">
+                                      შ.პ.ს ელკო
+                                    </div>
+                                    <div class="msg__text__body">
+                                      <p>
+                                        გამარჯობა, გიგზავნით ჩარიცხვის ჩეკებს და
+                                        ასევე ინვოისის ნომერს რათა მოხდეს ბანკში
+                                        ადვილად გადამოწმება გამარჯობა, გიგზავნით
+                                        ჩარიცხვის ჩეკებს და ასევე ინვოისის
+                                        ნომერს რათა მოხდეს ბანკში ადვილად
+                                        გადამოწმება გამარჯობა, გიგზავნით
+                                        ჩარიცხვის ჩეკებს და ასევე ინვოისის
+                                        ნომერს რათა მოხდეს ბანკში ადვილად
+                                        გადამოწმება გამარჯობა, გიგზავნით
+                                        ჩარიცხვის ჩეკებს და ასევე ინვოისის
+                                        ნომერს რათა მოხდეს ბანკში ადვილად
+                                        გადამოწმება
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
                               </div>
-                            </div>
-                            <div class="questions__user">
-                              <div class="questions__user__info">
-                                <span class="questions__user__name">A</span>
-                                <span class="timestamp">13:40</span>
-                                <button class="questions__user__del">
-                                  წაშლა
+
+                              <!-- Message -->
+                              <div class="msg msg--received">
+                                <!-- Message Author & Message detailes -->
+                                <div class="msg__info msg__info--received">
+                                  <div
+                                    class="msg__author msg__author--received"
+                                  >
+                                    A
+                                  </div>
+                                  <time class="msg__date">
+                                    <span class="date">13 დეკ.</span>
+                                    <span class="time">13:40</span>
+                                  </time>
+                                  <button class="msg__del">წაშლა</button>
+                                </div>
+                                <!-- Message text -->
+                                <div
+                                  class="msg__content msg__content--received"
+                                >
+                                  <div class="msg__text">
+                                    <div class="msg__text__author">
+                                      შ.პ.ს ელკო
+                                    </div>
+                                    <div class="msg__text__body">
+                                      <p>
+                                        გამარჯობა, გიგზავნით ჩარიცხვის ჩეკებს და
+                                        ასევე ინვოისის ნომერს რათა მოხდეს ბანკში
+                                        ადვილად გადამოწმება გამარჯობა, გიგზავნით
+                                        ჩარიცხვის ჩეკებს და ასევე ინვოისის
+                                        ნომერს რათა მოხდეს ბანკში ადვილად
+                                        გადამოწმება გამარჯობა, გიგზავნით
+                                        ჩარიცხვის ჩეკებს და ასევე ინვოისის
+                                        ნომერს რათა მოხდეს ბანკში ადვილად
+                                        გადამოწმება გამარჯობა, გიგზავნით
+                                        ჩარიცხვის ჩეკებს და ასევე ინვოისის
+                                        ნომერს რათა მოხდეს ბანკში ადვილად
+                                        გადამოწმება
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <button class="reply">
+                                  <img src="img/reply.svg" alt="reply" />
                                 </button>
                               </div>
-                              <div class="message-body">
-                                <p>
-                                  გამარჯობა, გიგზავნით ჩარიცხვის ჩეკებს და ასევე
-                                  ინვოისის ნომერს რათა მოხდეს ბანკში ადვილად
-                                  გადამოწმება
-                                </p>
-                              </div>
-                            </div>
-                            <div class="questions-operator">
-                              <div class="operator-info">
-                                <span class="operator">T</span>
-                                <span class="timestamp">13:40</span>
-                              </div>
-                              <div class="message-body">
-                                <p>
-                                  ძალიან კარგია, მადლობა !
-                                </p>
-                              </div>
+
+                              <!-- ეს არ წაშალოთ -->
+                              <div class="mb-4"></div>
                             </div>
 
-                            <div class="questions__user">
-                              <div class="questions__user__info">
-                                <span class="questions__user__name">A</span>
-                                <span class="timestamp">13:40</span>
-                                <button class="questions__user__del">
-                                  წაშლა
+                            <div class="chat__input-box">
+                              <form action="#">
+                                <!-- File Upload button -->
+                                <button
+                                  class="uploadfile-btn chat__upload-file"
+                                >
+                                  <img src="img/clip.svg" alt="" />
+                                  <span>ატვირთეთ ფაილი</span>
                                 </button>
-                              </div>
-                              <div class="message-body">
-                                <p>
-                                  გამარჯობა, გიგზავნით ჩარიცხვის ჩეკებს და ასევე
-                                  ინვოისის ნომერს რათა მოხდეს ბანკში ადვილად
-                                  გადამოწმება
-                                </p>
-                              </div>
-                            </div>
 
-                            <div class="questions__user">
-                              <div class="questions__user__info">
-                                <span class="questions__user__name">A</span>
-                                <span class="timestamp">13:40</span>
-                                <button class="questions__user__del">
-                                  წაშლა
+                                <!-- Write Message textarea -->
+                                <div class="chat__field">
+                                  <textarea
+                                    name="message"
+                                    placeholder="შეიყვანეთ შეტყობინება"
+                                  ></textarea>
+                                  <button type="submit">გაგზავნა</button>
+                                </div>
+                              </form>
+
+                              <div class="close-questions">
+                                <button class="close-chat-btn">
+                                  <img src="img/close-modal.svg" alt="" />
+                                  <span>ჩატის დახურვა</span>
                                 </button>
-                              </div>
-                              <div class="message-body">
-                                <p>
-                                  გამარჯობა, გიგზავნით ჩარიცხვის ჩეკებს და ასევე
-                                  ინვოისის ნომერს რათა მოხდეს ბანკში ადვილად
-                                  გადამოწმება
-                                </p>
                               </div>
                             </div>
                           </div>
-                          <form action="#" class="questions-form chat-form">
-                            <div class="questions-btn">
-                              <button class="uploadfile-btn">
-                                <img src="img/clip.svg" alt="" />
-                                <span>ატვირთეთ ფაილი</span>
-                              </button>
-                            </div>
-                            <div class="questions-field">
-                              <textarea
-                                name="message"
-                                placeholder="შეიყვანეთ შეტყობინება"
-                              ></textarea>
-                              <button type="submit">გაგზავნა</button>
-                            </div>
-                            <div class="close-questions">
-                              <button class="close-chat-btn">
-                                <img src="img/close-modal.svg" alt="" />
-                                <span>ჩატის დახურვა</span>
-                              </button>
-                            </div>
-                          </form>
+                          <!-- End Chat Box -->
                         </div>
                         <!-- end Specify Dialog -->
 
@@ -729,102 +1001,169 @@
                         <div
                           class="tender-list__specify tender-list__specify--mobile"
                         >
-                          <div class="questions__content">
-                            <div class="questions-operator">
-                              <div class="operator-info">
-                                <span class="operator">T</span>
-                                <span class="timestamp">13:40</span>
+                          <!-- Chat Box -->
+                          <div class="chat">
+                            <div class="chat__msgs">
+                              <!-- Message -->
+                              <div class="msg msg--sent">
+                                <!-- Message Author & Message detailes -->
+                                <div class="msg__info msg__info--sent">
+                                  <div class="msg__author">A</div>
+                                  <time class="msg__date">
+                                    <span class="date">13 დეკ.</span>
+                                    <span class="time">13:40</span>
+                                  </time>
+                                  <button class="msg__del">წაშლა</button>
+                                </div>
+                                <!-- Message text -->
+                                <div class="msg__content msg__content--sent">
+                                  <div class="msg__text">
+                                    <div class="msg__text__author">
+                                      შ.პ.ს ელკო
+                                    </div>
+                                    <div class="msg__text__body">
+                                      <p>
+                                        გამარჯობა, გიგზავნით ჩარიცხვის ჩეკებს და
+                                        ასევე ინვოისის ნომერს რათა მოხდეს ბანკში
+                                        ადვილად გადამოწმება გამარჯობა, გიგზავნით
+                                        ჩარიცხვის ჩეკებს და ასევე ინვოისის
+                                        ნომერს რათა მოხდეს ბანკში ადვილად
+                                        გადამოწმება გამარჯობა, გიგზავნით
+                                        ჩარიცხვის ჩეკებს და ასევე ინვოისის
+                                        ნომერს რათა მოხდეს ბანკში ადვილად
+                                        გადამოწმება გამარჯობა, გიგზავნით
+                                        ჩარიცხვის ჩეკებს და ასევე ინვოისის
+                                        ნომერს რათა მოხდეს ბანკში ადვილად
+                                        გადამოწმება
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
                               </div>
-                              <div class="message-body">
-                                <p>
-                                  გამარჯობა ალექსანდრე, გთხოვთ დაგვიდასტუროთ
-                                  ჩარიცხვა
-                                </p>
+
+                              <!-- Message -->
+                              <div class="msg msg--sent">
+                                <!-- Message Author & Message detailes -->
+                                <div class="msg__info msg__info--sent">
+                                  <div class="msg__author">A</div>
+                                  <time class="msg__date">
+                                    <span class="date">13 დეკ.</span>
+                                    <span class="time">13:40</span>
+                                  </time>
+                                  <button class="msg__del">წაშლა</button>
+                                </div>
+                                <!-- Message text -->
+                                <div class="msg__content msg__content--sent">
+                                  <div class="msg__reply-to">
+                                    <p>
+                                      გამარჯობა ალექსანდრე, გთხოვთ დაგვიდასტუროთ
+                                      ჩარიცხვა
+                                    </p>
+                                  </div>
+                                  <div class="msg__text msg__text--reply">
+                                    <div class="msg__text__author">
+                                      შ.პ.ს ელკო
+                                    </div>
+                                    <div class="msg__text__body">
+                                      <p>
+                                        გამარჯობა, გიგზავნით ჩარიცხვის ჩეკებს და
+                                        ასევე ინვოისის ნომერს რათა მოხდეს ბანკში
+                                        ადვილად გადამოწმება გამარჯობა, გიგზავნით
+                                        ჩარიცხვის ჩეკებს და ასევე ინვოისის
+                                        ნომერს რათა მოხდეს ბანკში ადვილად
+                                        გადამოწმება გამარჯობა, გიგზავნით
+                                        ჩარიცხვის ჩეკებს და ასევე ინვოისის
+                                        ნომერს რათა მოხდეს ბანკში ადვილად
+                                        გადამოწმება გამარჯობა, გიგზავნით
+                                        ჩარიცხვის ჩეკებს და ასევე ინვოისის
+                                        ნომერს რათა მოხდეს ბანკში ადვილად
+                                        გადამოწმება
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
                               </div>
-                            </div>
-                            <div class="questions__user">
-                              <div class="questions__user__info">
-                                <span class="questions__user__name">A</span>
-                                <span class="timestamp">13:40</span>
-                                <button class="questions__user__del">
-                                  წაშლა
+
+                              <!-- Message -->
+                              <div class="msg msg--received">
+                                <!-- Message Author & Message detailes -->
+                                <div class="msg__info msg__info--received">
+                                  <div
+                                    class="msg__author msg__author--received"
+                                  >
+                                    A
+                                  </div>
+                                  <time class="msg__date">
+                                    <span class="date">13 დეკ.</span>
+                                    <span class="time">13:40</span>
+                                  </time>
+                                  <button class="msg__del">წაშლა</button>
+                                </div>
+                                <!-- Message text -->
+                                <div
+                                  class="msg__content msg__content--received"
+                                >
+                                  <div class="msg__text">
+                                    <div class="msg__text__author">
+                                      შ.პ.ს ელკო
+                                    </div>
+                                    <div class="msg__text__body">
+                                      <p>
+                                        გამარჯობა, გიგზავნით ჩარიცხვის ჩეკებს და
+                                        ასევე ინვოისის ნომერს რათა მოხდეს ბანკში
+                                        ადვილად გადამოწმება გამარჯობა, გიგზავნით
+                                        ჩარიცხვის ჩეკებს და ასევე ინვოისის
+                                        ნომერს რათა მოხდეს ბანკში ადვილად
+                                        გადამოწმება გამარჯობა, გიგზავნით
+                                        ჩარიცხვის ჩეკებს და ასევე ინვოისის
+                                        ნომერს რათა მოხდეს ბანკში ადვილად
+                                        გადამოწმება გამარჯობა, გიგზავნით
+                                        ჩარიცხვის ჩეკებს და ასევე ინვოისის
+                                        ნომერს რათა მოხდეს ბანკში ადვილად
+                                        გადამოწმება
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <button class="reply">
+                                  <img src="img/reply.svg" alt="reply" />
                                 </button>
                               </div>
-                              <div class="message-body">
-                                <p>
-                                  გამარჯობა, გიგზავნით ჩარიცხვის ჩეკებს და ასევე
-                                  ინვოისის ნომერს რათა მოხდეს ბანკში ადვილად
-                                  გადამოწმება
-                                </p>
-                              </div>
-                            </div>
-                            <div class="questions-operator">
-                              <div class="operator-info">
-                                <span class="operator">T</span>
-                                <span class="timestamp">13:40</span>
-                              </div>
-                              <div class="message-body">
-                                <p>
-                                  ძალიან კარგია, მადლობა !
-                                </p>
-                              </div>
+
+                              <!-- ეს არ წაშალოთ -->
+                              <div class="mb-4"></div>
                             </div>
 
-                            <div class="questions__user">
-                              <div class="questions__user__info">
-                                <span class="questions__user__name">A</span>
-                                <span class="timestamp">13:40</span>
-                                <button class="questions__user__del">
-                                  წაშლა
+                            <div class="chat__input-box">
+                              <form action="#">
+                                <!-- File Upload button -->
+                                <button
+                                  class="uploadfile-btn chat__upload-file"
+                                >
+                                  <img src="img/clip.svg" alt="" />
+                                  <span>ატვირთეთ ფაილი</span>
                                 </button>
-                              </div>
-                              <div class="message-body">
-                                <p>
-                                  გამარჯობა, გიგზავნით ჩარიცხვის ჩეკებს და ასევე
-                                  ინვოისის ნომერს რათა მოხდეს ბანკში ადვილად
-                                  გადამოწმება
-                                </p>
-                              </div>
-                            </div>
 
-                            <div class="questions__user">
-                              <div class="questions__user__info">
-                                <span class="questions__user__name">A</span>
-                                <span class="timestamp">13:40</span>
-                                <button class="questions__user__del">
-                                  წაშლა
+                                <!-- Write Message textarea -->
+                                <div class="chat__field">
+                                  <textarea
+                                    name="message"
+                                    placeholder="შეიყვანეთ შეტყობინება"
+                                  ></textarea>
+                                  <button type="submit">გაგზავნა</button>
+                                </div>
+                              </form>
+
+                              <div class="close-questions">
+                                <button class="close-chat-btn">
+                                  <img src="img/close-modal.svg" alt="" />
+                                  <span>ჩატის დახურვა</span>
                                 </button>
-                              </div>
-                              <div class="message-body">
-                                <p>
-                                  გამარჯობა, გიგზავნით ჩარიცხვის ჩეკებს და ასევე
-                                  ინვოისის ნომერს რათა მოხდეს ბანკში ადვილად
-                                  გადამოწმება
-                                </p>
                               </div>
                             </div>
                           </div>
-                          <form action="#" class="questions-form chat-form">
-                            <div class="questions-btn">
-                              <button class="uploadfile-btn">
-                                <img src="img/clip.svg" alt="" />
-                                <span>ატვირთეთ ფაილი</span>
-                              </button>
-                            </div>
-                            <div class="questions-field">
-                              <textarea
-                                name="message"
-                                placeholder="შეიყვანეთ შეტყობინება"
-                              ></textarea>
-                              <button type="submit">გაგზავნა</button>
-                            </div>
-                            <div class="close-questions">
-                              <button class="close-chat-btn">
-                                <img src="img/close-modal.svg" alt="" />
-                                <span>ჩატის დახურვა</span>
-                              </button>
-                            </div>
-                          </form>
+                          <!-- End Chat Box -->
                         </div>
                         <!-- end Specify Dialog -->
 
@@ -853,102 +1192,169 @@
                         <div
                           class="tender-list__specify tender-list__specify--mobile"
                         >
-                          <div class="questions__content">
-                            <div class="questions-operator">
-                              <div class="operator-info">
-                                <span class="operator">T</span>
-                                <span class="timestamp">13:40</span>
+                          <!-- Chat Box -->
+                          <div class="chat">
+                            <div class="chat__msgs">
+                              <!-- Message -->
+                              <div class="msg msg--sent">
+                                <!-- Message Author & Message detailes -->
+                                <div class="msg__info msg__info--sent">
+                                  <div class="msg__author">A</div>
+                                  <time class="msg__date">
+                                    <span class="date">13 დეკ.</span>
+                                    <span class="time">13:40</span>
+                                  </time>
+                                  <button class="msg__del">წაშლა</button>
+                                </div>
+                                <!-- Message text -->
+                                <div class="msg__content msg__content--sent">
+                                  <div class="msg__text">
+                                    <div class="msg__text__author">
+                                      შ.პ.ს ელკო
+                                    </div>
+                                    <div class="msg__text__body">
+                                      <p>
+                                        გამარჯობა, გიგზავნით ჩარიცხვის ჩეკებს და
+                                        ასევე ინვოისის ნომერს რათა მოხდეს ბანკში
+                                        ადვილად გადამოწმება გამარჯობა, გიგზავნით
+                                        ჩარიცხვის ჩეკებს და ასევე ინვოისის
+                                        ნომერს რათა მოხდეს ბანკში ადვილად
+                                        გადამოწმება გამარჯობა, გიგზავნით
+                                        ჩარიცხვის ჩეკებს და ასევე ინვოისის
+                                        ნომერს რათა მოხდეს ბანკში ადვილად
+                                        გადამოწმება გამარჯობა, გიგზავნით
+                                        ჩარიცხვის ჩეკებს და ასევე ინვოისის
+                                        ნომერს რათა მოხდეს ბანკში ადვილად
+                                        გადამოწმება
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
                               </div>
-                              <div class="message-body">
-                                <p>
-                                  გამარჯობა ალექსანდრე, გთხოვთ დაგვიდასტუროთ
-                                  ჩარიცხვა
-                                </p>
+
+                              <!-- Message -->
+                              <div class="msg msg--sent">
+                                <!-- Message Author & Message detailes -->
+                                <div class="msg__info msg__info--sent">
+                                  <div class="msg__author">A</div>
+                                  <time class="msg__date">
+                                    <span class="date">13 დეკ.</span>
+                                    <span class="time">13:40</span>
+                                  </time>
+                                  <button class="msg__del">წაშლა</button>
+                                </div>
+                                <!-- Message text -->
+                                <div class="msg__content msg__content--sent">
+                                  <div class="msg__reply-to">
+                                    <p>
+                                      გამარჯობა ალექსანდრე, გთხოვთ დაგვიდასტუროთ
+                                      ჩარიცხვა
+                                    </p>
+                                  </div>
+                                  <div class="msg__text msg__text--reply">
+                                    <div class="msg__text__author">
+                                      შ.პ.ს ელკო
+                                    </div>
+                                    <div class="msg__text__body">
+                                      <p>
+                                        გამარჯობა, გიგზავნით ჩარიცხვის ჩეკებს და
+                                        ასევე ინვოისის ნომერს რათა მოხდეს ბანკში
+                                        ადვილად გადამოწმება გამარჯობა, გიგზავნით
+                                        ჩარიცხვის ჩეკებს და ასევე ინვოისის
+                                        ნომერს რათა მოხდეს ბანკში ადვილად
+                                        გადამოწმება გამარჯობა, გიგზავნით
+                                        ჩარიცხვის ჩეკებს და ასევე ინვოისის
+                                        ნომერს რათა მოხდეს ბანკში ადვილად
+                                        გადამოწმება გამარჯობა, გიგზავნით
+                                        ჩარიცხვის ჩეკებს და ასევე ინვოისის
+                                        ნომერს რათა მოხდეს ბანკში ადვილად
+                                        გადამოწმება
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
                               </div>
-                            </div>
-                            <div class="questions__user">
-                              <div class="questions__user__info">
-                                <span class="questions__user__name">A</span>
-                                <span class="timestamp">13:40</span>
-                                <button class="questions__user__del">
-                                  წაშლა
+
+                              <!-- Message -->
+                              <div class="msg msg--received">
+                                <!-- Message Author & Message detailes -->
+                                <div class="msg__info msg__info--received">
+                                  <div
+                                    class="msg__author msg__author--received"
+                                  >
+                                    A
+                                  </div>
+                                  <time class="msg__date">
+                                    <span class="date">13 დეკ.</span>
+                                    <span class="time">13:40</span>
+                                  </time>
+                                  <button class="msg__del">წაშლა</button>
+                                </div>
+                                <!-- Message text -->
+                                <div
+                                  class="msg__content msg__content--received"
+                                >
+                                  <div class="msg__text">
+                                    <div class="msg__text__author">
+                                      შ.პ.ს ელკო
+                                    </div>
+                                    <div class="msg__text__body">
+                                      <p>
+                                        გამარჯობა, გიგზავნით ჩარიცხვის ჩეკებს და
+                                        ასევე ინვოისის ნომერს რათა მოხდეს ბანკში
+                                        ადვილად გადამოწმება გამარჯობა, გიგზავნით
+                                        ჩარიცხვის ჩეკებს და ასევე ინვოისის
+                                        ნომერს რათა მოხდეს ბანკში ადვილად
+                                        გადამოწმება გამარჯობა, გიგზავნით
+                                        ჩარიცხვის ჩეკებს და ასევე ინვოისის
+                                        ნომერს რათა მოხდეს ბანკში ადვილად
+                                        გადამოწმება გამარჯობა, გიგზავნით
+                                        ჩარიცხვის ჩეკებს და ასევე ინვოისის
+                                        ნომერს რათა მოხდეს ბანკში ადვილად
+                                        გადამოწმება
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <button class="reply">
+                                  <img src="img/reply.svg" alt="reply" />
                                 </button>
                               </div>
-                              <div class="message-body">
-                                <p>
-                                  გამარჯობა, გიგზავნით ჩარიცხვის ჩეკებს და ასევე
-                                  ინვოისის ნომერს რათა მოხდეს ბანკში ადვილად
-                                  გადამოწმება
-                                </p>
-                              </div>
-                            </div>
-                            <div class="questions-operator">
-                              <div class="operator-info">
-                                <span class="operator">T</span>
-                                <span class="timestamp">13:40</span>
-                              </div>
-                              <div class="message-body">
-                                <p>
-                                  ძალიან კარგია, მადლობა !
-                                </p>
-                              </div>
+
+                              <!-- ეს არ წაშალოთ -->
+                              <div class="mb-4"></div>
                             </div>
 
-                            <div class="questions__user">
-                              <div class="questions__user__info">
-                                <span class="questions__user__name">A</span>
-                                <span class="timestamp">13:40</span>
-                                <button class="questions__user__del">
-                                  წაშლა
+                            <div class="chat__input-box">
+                              <form action="#">
+                                <!-- File Upload button -->
+                                <button
+                                  class="uploadfile-btn chat__upload-file"
+                                >
+                                  <img src="img/clip.svg" alt="" />
+                                  <span>ატვირთეთ ფაილი</span>
                                 </button>
-                              </div>
-                              <div class="message-body">
-                                <p>
-                                  გამარჯობა, გიგზავნით ჩარიცხვის ჩეკებს და ასევე
-                                  ინვოისის ნომერს რათა მოხდეს ბანკში ადვილად
-                                  გადამოწმება
-                                </p>
-                              </div>
-                            </div>
 
-                            <div class="questions__user">
-                              <div class="questions__user__info">
-                                <span class="questions__user__name">A</span>
-                                <span class="timestamp">13:40</span>
-                                <button class="questions__user__del">
-                                  წაშლა
+                                <!-- Write Message textarea -->
+                                <div class="chat__field">
+                                  <textarea
+                                    name="message"
+                                    placeholder="შეიყვანეთ შეტყობინება"
+                                  ></textarea>
+                                  <button type="submit">გაგზავნა</button>
+                                </div>
+                              </form>
+
+                              <div class="close-questions">
+                                <button class="close-chat-btn">
+                                  <img src="img/close-modal.svg" alt="" />
+                                  <span>ჩატის დახურვა</span>
                                 </button>
-                              </div>
-                              <div class="message-body">
-                                <p>
-                                  გამარჯობა, გიგზავნით ჩარიცხვის ჩეკებს და ასევე
-                                  ინვოისის ნომერს რათა მოხდეს ბანკში ადვილად
-                                  გადამოწმება
-                                </p>
                               </div>
                             </div>
                           </div>
-                          <form action="#" class="questions-form chat-form">
-                            <div class="questions-btn">
-                              <button class="uploadfile-btn">
-                                <img src="img/clip.svg" alt="" />
-                                <span>ატვირთეთ ფაილი</span>
-                              </button>
-                            </div>
-                            <div class="questions-field">
-                              <textarea
-                                name="message"
-                                placeholder="შეიყვანეთ შეტყობინება"
-                              ></textarea>
-                              <button type="submit">გაგზავნა</button>
-                            </div>
-                            <div class="close-questions">
-                              <button class="close-chat-btn">
-                                <img src="img/close-modal.svg" alt="" />
-                                <span>ჩატის დახურვა</span>
-                              </button>
-                            </div>
-                          </form>
+                          <!-- End Chat Box -->
                         </div>
                         <!-- end Specify Dialog -->
                       </ul>

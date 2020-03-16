@@ -10,8 +10,6 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
     />
-    <link rel="stylesheet" href="css/owl.theme.default.css" />
-    <link rel="stylesheet" href="css/owl.carousel.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -159,21 +157,26 @@
               <li class="hide-on-md">
                 <a href="#">
                   <img src="img/company.svg" alt="" />კომპანიის ინფორმაცია
+                  <i class="fas fa-chevron-right"></i>
                 </a>
               </li>
               <li class="hide-on-md">
                 <a href="#">
                   <img src="img/users.svg" alt="" />მომხმარებლები
+                  <i class="fas fa-chevron-right"></i>
                 </a>
               </li>
               <li>
-                <a href="#" class="active"
-                  ><img src="img/avatar.svg"/>პირადი ინფორმაცია
-                  <i class="fas fa-chevron-right"></i
-                ></a>
+                <a href="#" class="active">
+                  <img src="img/avatar.svg" />პირადი ინფორმაცია
+                  <i class="fas fa-chevron-right"></i>
+                </a>
               </li>
               <li class="hide-on-md">
-                <a href="#"><img src="img/padlock.svg" />პაროლის შეცვლა</a>
+                <a href="#">
+                  <img src="img/padlock.svg" />პაროლის შეცვლა
+                  <i class="fas fa-chevron-right"></i>
+                </a>
               </li>
             </ul>
           </div>
@@ -183,14 +186,20 @@
           <div class="content user-edit">
             <h1 class="user-edit__title">პერსონალური ინფორმაცია</h1>
             <form class="user-edit__form">
-              <label class="person-info-input">
+              <label class="person-info-input reg-error">
                 <p>სახელი</p>
                 <input type="text" placeholder="სახელი" class="input-text" />
               </label>
+              <!-- Error message -->
+              <div class="reg-error__msg">ელ.ფოსტა ან პაროლი არასწორია</div>
+
               <label class="person-info-input">
                 <p>გვარი</p>
                 <input type="text" placeholder="გვარი" class="input-text" />
               </label>
+              <!-- Error message -->
+              <div class="reg-error__msg">ელ.ფოსტა ან პაროლი არასწორია</div>
+
               <label class="person-info-input">
                 <p>თანამდებობა</p>
                 <input
@@ -199,14 +208,23 @@
                   class="input-text"
                 />
               </label>
+              <!-- Error message -->
+              <div class="reg-error__msg">ელ.ფოსტა ან პაროლი არასწორია</div>
+
               <label class="person-info-input">
                 <p>ტელეფონი</p>
                 <input type="tel" placeholder="ტელეფონი" class="input-text" />
               </label>
+              <!-- Error message -->
+              <div class="reg-error__msg">ელ.ფოსტა ან პაროლი არასწორია</div>
+
               <label class="person-info-input">
                 <p>ელ.ფოსტა</p>
                 <input type="mail" placeholder="ელ.ფოსტა" class="input-text" />
               </label>
+              <!-- Error message -->
+              <div class="reg-error__msg">ელ.ფოსტა ან პაროლი არასწორია</div>
+
               <button class="add-tender-btn" type="submit">
                 შენახვა
               </button>
@@ -216,8 +234,6 @@
       </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="js/owl.carousel.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

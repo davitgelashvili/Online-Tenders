@@ -12,8 +12,6 @@
       integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="css/owl.theme.default.css" />
-    <link rel="stylesheet" href="css/owl.carousel.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -144,37 +142,49 @@
           <h2>დეშბორდი</h2>
         </header>
 
-        <div class="dashboard__stats">
-          <div class="dashboard__stats__item">
-            <div>521</div>
-            <p>ყველა ტენდერი</p>
+        <div class="dashboard__stats row">
+          <div class="col-6 col-md-3">
+            <div class="dashboard__stats__item dashboard__stats__item--1">
+              <div>521</div>
+              <p>ყველა ტენდერი</p>
+            </div>
           </div>
-          <div class="dashboard__stats__item">
-            <div>521</div>
-            <p>მიმდინარე ტენდერები</p>
+          <div class="col-6 col-md-3">
+            <div class="dashboard__stats__item dashboard__stats__item--2">
+              <div>521</div>
+              <p>მიმდინარე ტენდერები</p>
+            </div>
           </div>
-          <div class="dashboard__stats__item">
-            <div>521</div>
-            <p>განცხადება, ელ. ტენდერი</p>
+          <div class="col-6 col-md-3">
+            <div class="dashboard__stats__item dashboard__stats__item--3">
+              <div>521</div>
+              <p>განცხადება, ელ. ტენდერი</p>
+            </div>
           </div>
-          <div class="dashboard__stats__item">
-            <div>521</div>
-            <p>მონაწილეობები</p>
+          <div class="col-6 col-md-3">
+            <div class="dashboard__stats__item dashboard__stats__item--4">
+              <div>521</div>
+              <p>მონაწილეობები</p>
+            </div>
           </div>
         </div>
 
         <div class="dashboard__form">
-          <div class="dashboard__form__heading">
+          <div class="dashboard__form__heading d-flex justify-content-between">
             <ul>
               <li>მონაწილეობები</li>
               <li class="disabled">პრეკვალიფიკაცია <span>1</span></li>
             </ul>
+            <button class="export">
+              <img src="img/export.svg" alt="Export" />
+              <span>ექსპორტი</span>
+            </button>
           </div>
 
           <div class="dashboard__form__content">
             <form action="#">
-              <div class="dashboard__form__wrapper">
-                <div class="dashboard__form__group">
+              <div class="row">
+                <div class="col-12 col-md-6 col-lg-4 margin-md">
                   <div class="dashboard__form__field">
                     <label for="company1">კომპანია</label>
                     <input type="text" name="company1" id="company1" />
@@ -184,8 +194,8 @@
                     <input type="text" name="status1" id="status1" />
                   </div>
                 </div>
-                <!-- end .dashboard__form__group -->
-                <div class="dashboard__form__group">
+                <!-- end .col -->
+                <div class="col-12 col-md-6 col-lg-4 margin-sm">
                   <div class="dashboard__form__field">
                     <label for="company2">კომპანია</label>
                     <input type="text" name="company2" id="company2" />
@@ -195,8 +205,8 @@
                     <input type="text" name="status2" id="status2" />
                   </div>
                 </div>
-                <!-- end .dashboard__form__group -->
-                <div class="dashboard__form__group">
+                <!-- end .col -->
+                <div class="col-12 col-md-6 col-lg-4">
                   <div class="dashboard__form__field">
                     <label for="company3">კომპანია</label>
                     <input type="text" name="company3" id="company3" />
@@ -206,13 +216,18 @@
                     <input type="text" name="status3" id="status3" />
                   </div>
                 </div>
-                <!-- end .dashboard__form__group -->
+                <!-- end .col -->
               </div>
-              <div class="dashboard__form__cta">
-                <button type="submit">
-                  <img src="img/magnifier.svg" alt="" />
-                  <span>ძიება</span>
-                </button>
+              <div class="row justify-content-end">
+                <div class="dashboard__form__cta">
+                  <button type="reset">
+                    დარესეტება
+                  </button>
+                  <button type="submit">
+                    <img src="img/magnifying-glass.svg" alt="ძიება" />
+                    <span>ძიება</span>
+                  </button>
+                </div>
               </div>
             </form>
           </div>
@@ -236,11 +251,11 @@
               <tr>
                 <td>
                   <div class="dashboard__listing__title">
-                    <div class="badge">
-                      <span class="badge__shown">E</span>
-                      <div class="badge__tooltip">ელ. ტენდერი</div>
-                    </div>
                     <h3>
+                      <div class="badge">
+                        <span class="badge__shown">E</span>
+                        <div class="badge__tooltip">ელ. ტენდერი</div>
+                      </div>
                       T5963 - ფასთა გამოკითხვა ფოლადის ბურთულების შესყიდვაზე
                     </h3>
                   </div>
@@ -261,7 +276,7 @@
                 <td>3</td>
                 <td><div class="status status--complete">დასრულებული</div></td>
                 <td>
-                  <button class="chat chat--blue">
+                  <button class="chat-btn chat-btn--blue">
                     <i class="fas fa-comment"></i>
                   </button>
                 </td>
@@ -270,11 +285,11 @@
               <tr>
                 <td>
                   <div class="dashboard__listing__title">
-                    <div class="badge">
-                      <span class="badge__shown">E</span>
-                      <div class="badge__tooltip">ელ. ტენდერი</div>
-                    </div>
                     <h3>
+                      <div class="badge">
+                        <span class="badge__shown">E</span>
+                        <div class="badge__tooltip">ელ. ტენდერი</div>
+                      </div>
                       T5963 - ფასთა გამოკითხვა ფოლადის ბურთულების შესყიდვაზე
                     </h3>
                   </div>
@@ -299,7 +314,7 @@
                   </div>
                 </td>
                 <td>
-                  <button class="chat chat--blue">
+                  <button class="chat-btn chat-btn--blue">
                     <i class="fas fa-comment"></i>
                   </button>
                 </td>
@@ -308,11 +323,11 @@
               <tr>
                 <td>
                   <div class="dashboard__listing__title">
-                    <div class="badge">
-                      <span class="badge__shown">E</span>
-                      <div class="badge__tooltip">ელ. ტენდერი</div>
-                    </div>
                     <h3>
+                      <div class="badge">
+                        <span class="badge__shown">E</span>
+                        <div class="badge__tooltip">ელ. ტენდერი</div>
+                      </div>
                       T5963 - ფასთა გამოკითხვა ფოლადის ბურთულების შესყიდვაზე
                     </h3>
                   </div>
@@ -333,7 +348,7 @@
                 <td>3</td>
                 <td><div class="status status--selecting">შერჩევა</div></td>
                 <td>
-                  <button class="chat chat--blue">
+                  <button class="chat-btn chat-btn--blue">
                     <i class="fas fa-comment"></i>
                   </button>
                 </td>
@@ -342,11 +357,11 @@
               <tr>
                 <td>
                   <div class="dashboard__listing__title">
-                    <div class="badge">
-                      <span class="badge__shown">E</span>
-                      <div class="badge__tooltip">ელ. ტენდერი</div>
-                    </div>
                     <h3>
+                      <div class="badge">
+                        <span class="badge__shown">E</span>
+                        <div class="badge__tooltip">ელ. ტენდერი</div>
+                      </div>
                       T5963 - ფასთა გამოკითხვა ფოლადის ბურთულების შესყიდვაზე
                     </h3>
                   </div>
@@ -371,7 +386,7 @@
                   </div>
                 </td>
                 <td>
-                  <button class="chat chat--red">
+                  <button class="chat-btn chat-btn--red">
                     <i class="fas fa-comment"></i>
                   </button>
                 </td>
@@ -380,11 +395,11 @@
               <tr>
                 <td>
                   <div class="dashboard__listing__title">
-                    <div class="badge">
-                      <span class="badge__shown">E</span>
-                      <div class="badge__tooltip">ელ. ტენდერი</div>
-                    </div>
                     <h3>
+                      <div class="badge">
+                        <span class="badge__shown">E</span>
+                        <div class="badge__tooltip">ელ. ტენდერი</div>
+                      </div>
                       T5963 - ფასთა გამოკითხვა ფოლადის ბურთულების შესყიდვაზე
                     </h3>
                   </div>
@@ -407,7 +422,7 @@
                   <div class="status status--negative">უარყოფითი შედეგი</div>
                 </td>
                 <td>
-                  <button class="chat chat--red">
+                  <button class="chat-btn chat-btn--red">
                     <i class="fas fa-comment"></i>
                   </button>
                 </td>
@@ -419,8 +434,6 @@
       </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="js/owl.carousel.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

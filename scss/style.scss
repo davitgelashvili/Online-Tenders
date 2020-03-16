@@ -221,21 +221,24 @@ body {
   margin-bottom: 38px;
 }
 .page-navigation {
-  display: block;
+  display: flex;
+  align-items: center;
 }
 .page-navigation li {
   display: inline-block;
   width: 33px;
-  height: 33px;
   overflow: hidden;
 }
 .page-navigation li:first-child,
 .page-navigation li:last-child {
   border: 2px solid rgba(172, 172, 175, 0.2);
   border-radius: 10px;
+  width: auto;
+  height: auto;
 }
 .page-navigation li:first-child a,
 .page-navigation li:last-child a {
+  padding: 0 12px;
   font-size: 12px;
 }
 .page-navigation li a {
@@ -362,9 +365,12 @@ body {
   width: 100%;
   margin-top: 22px;
   display: flex;
+  flex-wrap: wrap;
 }
 .tender-details-document {
+  position: relative;
   margin-right: 18px;
+  margin-bottom: 15px;
   display: flex;
   align-items: center;
   border: $border-1;
@@ -372,12 +378,44 @@ body {
   background: $color-white;
   cursor: pointer;
 
+  &:hover {
+    .full-title {
+      display: block;
+    }
+  }
+
   span {
     margin-left: 10px;
     margin-right: 38px;
     color: $color-text-main;
     font-size: 12px;
     font-weight: 400;
+  }
+
+  .full-title {
+    display: none;
+    position: absolute;
+    top: 95%;
+    left: 0;
+    padding: 10px 18px;
+    color: $color-white !important;
+    font-size: 12px;
+    font-weight: 400;
+    white-space: nowrap;
+    background: rgba(45, 62, 77, 0.8);
+    border-radius: 6px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -5px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 10px;
+      height: 5px;
+      background: rgba(45, 62, 77, 0.8);
+      clip-path: polygon(50% 0, 0 100%, 100% 100%);
+    }
   }
 }
 .tender-details-document-icon {
@@ -398,6 +436,7 @@ body {
   font-family: $font-main;
   font-size: 12px;
   font-weight: 500;
+  white-space: nowrap;
   border: none;
   background: transparent;
   cursor: pointer;
@@ -559,7 +598,7 @@ body {
   background: rgba(157, 169, 180, 0.1);
   color: $color-gray;
   position: relative;
-  margin-right: 25px;
+  margin-right: 30px;
   font-weight: 500;
   font-size: 12px;
   display: flex;
@@ -684,6 +723,16 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  &--positioned {
+    margin-top: 0;
+    width: 100%;
+    position: absolute;
+
+    @media only screen and (max-width: 768px) {
+      bottom: -110px;
+    }
+  }
 }
 .add-tender-btn {
   padding: 16px 25px;
@@ -696,6 +745,11 @@ body {
   border-radius: 6px;
   background: $color-brand-2;
   cursor: pointer;
+  transition: all 0.2s linear;
+
+  &:hover {
+    background: darken($color-brand-2, 10%);
+  }
 }
 .add-tender-upload-content {
   display: flex;
@@ -710,9 +764,26 @@ body {
   }
 }
 .add-tender-upload {
+  width: 166px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: $color-brand-1;
+  border: none;
   border-radius: 52px;
   cursor: pointer;
+  transition: all 0.2s linear;
+
+  &:hover {
+    background: darken($color-brand-1, 10%);
+  }
+
+  span {
+    margin-left: 8px;
+    color: $color-white;
+    font-size: 12px;
+  }
 }
 .add-tender-upload div {
   display: flex;
@@ -733,21 +804,38 @@ body {
   height: 0px;
 }
 .add-tender-uploaded {
-  border-radius: 52px;
-  border-bottom: $border-1;
-  border-left: $border-1;
-  border-top: 1px solid $color-brand-1;
-  border-right: 1px solid $color-brand-1;
   background: $color-white;
   display: flex;
   align-items: center;
   padding-right: 37px;
   margin-right: 21px;
 
+  border: $border-1;
+
+  background-repeat: no-repeat;
+  background-image: linear-gradient(
+      to right,
+      $color-success 100%,
+      $color-success 100%
+    ),
+    linear-gradient(to bottom, $color-success 100%, $color-success 100%),
+    linear-gradient(to right, $color-success 100%, $color-success 100%),
+    linear-gradient(to bottom, $color-success 100%, $color-success 100%);
+  border-radius: 52px;
+  background-size: 100% 3px, 3px 100%, 100% 3px, 3px 100%;
+  background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+  animation: bg 1.25s cubic-bezier(0.19, 1, 0.22, 1) 1;
+  animation-play-state: paused;
+
+  &:hover {
+    animation-play-state: running;
+  }
+
   @media only screen and (max-width: 576px) {
     margin-bottom: 15px;
   }
 }
+
 .add-tender-uploaded span {
   font-weight: 400;
   letter-spacing: 0;
@@ -810,6 +898,11 @@ body {
   border: none;
   border-radius: 6px;
   cursor: pointer;
+  transition: all 0.2s linear;
+
+  &:hover {
+    background: darken($color-gray, 10%);
+  }
 }
 .add-tender-category-title {
   margin-bottom: 10px;
@@ -832,7 +925,7 @@ body {
   }
 }
 .add-tender-uploaded-item {
-  margin-right: 21px;
+  margin-right: 20px;
   padding-right: 30px;
   position: relative;
   display: flex;
@@ -840,6 +933,11 @@ body {
   background: $color-white;
   border: $border-1;
   border-radius: 52px;
+
+  span {
+    color: $color-text-main;
+    font-size: 12px;
+  }
 }
 .add-tender-uploaded-item-remove {
   display: none;
@@ -849,7 +947,7 @@ body {
   z-index: 1;
   width: 24px;
   height: 24px;
-  background: $color-red;
+  background: #e21b1b;
   border-radius: 50%;
   top: 14px;
   right: 20px;
@@ -860,12 +958,14 @@ body {
   display: flex;
 }
 .company-add-input {
+  margin: 12px 0 0 0;
   padding: 15px;
   width: 100%;
-  margin: 12px 0 25px 0;
 }
 .company-added-name {
   margin-bottom: 22px;
+  color: $color-text-main;
+  font-size: 12px;
 }
 .company-add-btn-out {
   display: flex;
@@ -896,15 +996,13 @@ body {
 .company-added-remove {
   width: 24px;
   height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: $color-red;
-  border-radius: 50%;
   border: none;
-  display: block;
+  border-radius: 50%;
   cursor: pointer;
-  font-weight: 100;
-  letter-spacing: 0.39px;
-  color: $color-white;
-  font-size: 13px;
 }
 
 .add-tender-header-item p {
