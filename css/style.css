@@ -7623,6 +7623,9 @@ h3.questions-title {
   color: #2d3e4d;
   font-weight: 500;
 }
+.user__menu li a.active i {
+  display: block;
+}
 .user__menu img {
   width: 20px;
   margin-right: 12px;
@@ -7656,6 +7659,10 @@ h3.questions-title {
     min-height: auto;
   }
 }
+.user-edit form {
+  width: 100%;
+  max-width: 453px;
+}
 .user-edit__title {
   margin-bottom: 34px;
   color: #141b3d;
@@ -7670,6 +7677,7 @@ h3.questions-title {
 }
 .user-edit label {
   width: 100%;
+  max-width: 453px;
   display: block;
   margin-bottom: 24px;
 }
@@ -7681,7 +7689,6 @@ h3.questions-title {
 .user-edit input,
 .user-edit select {
   padding: 16px 25px;
-  max-width: 453px;
   width: 100%;
   color: #141b3d;
   font-family: inherit;
@@ -7693,9 +7700,26 @@ h3.questions-title {
   font-family: "FiraGO", sans-serif;
 }
 .user-edit select {
-  background: #f4f4f4;
   border: 1px solid #dadde2;
   border-radius: 8px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: #f6f7f9;
+}
+.user-edit .select {
+  position: relative;
+}
+.user-edit .select::after {
+  content: "";
+  color: #acacaf;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 12px;
+  position: absolute;
+  right: 20px;
+  top: 70%;
+  transform: translateY(-50%);
 }
 .user-edit p {
   margin-bottom: 12px;
@@ -8126,7 +8150,24 @@ h3.questions-title {
   border-radius: 8px;
 }
 .register .form select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   background: #f6f7f9;
+}
+.register .form .select {
+  position: relative;
+}
+.register .form .select::after {
+  content: "";
+  color: #acacaf;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 12px;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 .register .form button {
   margin-left: auto;

@@ -103,6 +103,10 @@
         &.active {
           color: $color-text-third;
           font-weight: 500;
+
+          i {
+            display: block;
+          }
         }
       }
     }
@@ -140,6 +144,11 @@
     min-height: auto;
   }
 
+  form {
+    width: 100%;
+    max-width: 453px;
+  }
+
   &__title {
     margin-bottom: 34px;
     color: $color-text-main;
@@ -154,6 +163,7 @@
 
   label {
     width: 100%;
+    max-width: 453px;
     display: block;
     margin-bottom: 24px;
 
@@ -165,7 +175,6 @@
   input,
   select {
     padding: 16px 25px;
-    max-width: 453px;
     width: 100%;
     color: $color-text-main;
     font-family: inherit;
@@ -178,9 +187,28 @@
   }
 
   select {
-    background: #f4f4f4;
     border: $border-1;
     border-radius: 8px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: $color-bg-main;
+  }
+
+  .select {
+    position: relative;
+
+    &::after {
+      content: "\f078";
+      color: $color-gray;
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      font-size: 12px;
+      position: absolute;
+      right: 20px;
+      top: 70%;
+      transform: translateY(-50%);
+    }
   }
 
   p {

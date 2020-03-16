@@ -168,15 +168,20 @@
               <li class="hide-on-md">
                 <a href="#">
                   <img src="img/users.svg" alt="" />მომხმარებლები
+                  <i class="fas fa-chevron-right"></i>
                 </a>
               </li>
               <li>
                 <a href="#" class="hide-on-md"
                   ><img src="img/avatar.svg" />პირადი ინფორმაცია
+                  <i class="fas fa-chevron-right"></i>
                 </a>
               </li>
               <li class="hide-on-md">
-                <a href="#"><img src="img/padlock.svg" />პაროლის შეცვლა</a>
+                <a href="#">
+                  <img src="img/padlock.svg" />პაროლის შეცვლა
+                  <i class="fas fa-chevron-right"></i>
+                </a>
               </li>
             </ul>
           </div>
@@ -186,11 +191,14 @@
           <div class="content user-edit">
             <h1 class="user-edit__title">კომპანიის ინფორმაცია</h1>
             <form class="user-edit__form">
-              <label class="person-info-input">
+              <label class="person-info-input reg-error">
                 <p>კომპანიის დასახელება</p>
                 <input type="text" class="input-text" />
               </label>
-              <label for="">
+              <!-- Error message -->
+              <div class="reg-error__msg">ელ.ფოსტა ან პაროლი არასწორია</div>
+
+              <label for="" class="select">
                 <p>სამართლებლივი ფორმა</p>
                 <select name="" id="">
                   <option value="">შ.პ.ს</option>
@@ -198,15 +206,24 @@
                   <option value="">შ.პ.ს</option>
                 </select>
               </label>
+              <!-- Error message -->
+              <div class="reg-error__msg">ელ.ფოსტა ან პაროლი არასწორია</div>
+
               <label class="person-info-input">
                 <p>საიდენტიფიკაციო კოდი</p>
                 <input type="text" class="input-text" />
               </label>
+              <!-- Error message -->
+              <div class="reg-error__msg">ელ.ფოსტა ან პაროლი არასწორია</div>
+
               <label class="person-info-input">
                 <p>მისამართი</p>
                 <input type="text" class="input-text" />
               </label>
-              <label for="">
+              <!-- Error message -->
+              <div class="reg-error__msg">ელ.ფოსტა ან პაროლი არასწორია</div>
+
+              <label for="" class="select reg-error">
                 <p>ქალაქი</p>
                 <select name="" id="">
                   <option value="">თბილისი</option>
@@ -214,18 +231,30 @@
                   <option value="">თბილისი</option>
                 </select>
               </label>
+              <!-- Error message -->
+              <div class="reg-error__msg">ელ.ფოსტა ან პაროლი არასწორია</div>
+
               <label class="person-info-input">
                 <p>ქვეყანა</p>
                 <input type="text" class="input-text" />
               </label>
+              <!-- Error message -->
+              <div class="reg-error__msg">ელ.ფოსტა ან პაროლი არასწორია</div>
+
               <label class="person-info-input">
                 <p>ტელეფონი</p>
                 <input type="tel" class="input-text" />
               </label>
+              <!-- Error message -->
+              <div class="reg-error__msg">ელ.ფოსტა ან პაროლი არასწორია</div>
+
               <label class="person-info-input">
                 <p>საიტი</p>
                 <input type="text" class="input-text" />
               </label>
+              <!-- Error message -->
+              <div class="reg-error__msg">ელ.ფოსტა ან პაროლი არასწორია</div>
+
               <button class="add-tender-btn" type="submit">
                 შენახვა
               </button>

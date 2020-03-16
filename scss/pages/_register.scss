@@ -142,7 +142,26 @@
     }
 
     select {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
       background: $color-bg-main;
+    }
+
+    .select {
+      position: relative;
+
+      &::after {
+        content: "\f078";
+        color: $color-gray;
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        font-size: 12px;
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
     }
 
     button {
