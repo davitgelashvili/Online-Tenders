@@ -7040,13 +7040,13 @@ h3.questions-title {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
   padding: 0 43px;
-  color: #acacaf;
+  color: #5d6367;
   font-family: "FiraGO", sans-serif;
   font-size: 11px;
   font-weight: 400;
 }
 .search input::placeholder {
-  font-family: "FiraGO", sans-serif;
+  color: #acacaf;
   font-size: 11px;
   font-weight: 400;
 }
@@ -7153,13 +7153,24 @@ h3.questions-title {
 }
 .search-results ul {
   padding: 25px 15px;
+  max-height: 260px;
+  overflow-y: auto;
 }
-.search-results ul li {
-  display: flex;
-  justify-content: space-between;
+.search-results ul::-webkit-scrollbar {
+  width: 4px;
+}
+.search-results ul::-webkit-scrollbar-track {
+  background: #f6f7f9;
+}
+.search-results ul::-webkit-scrollbar-thumb {
+  background: #5d6367;
 }
 .search-results ul li:not(:last-child) {
   margin-bottom: 24px;
+}
+.search-results ul li a {
+  display: flex;
+  justify-content: space-between;
 }
 .search-results ul li p {
   max-width: 546px;
@@ -7178,7 +7189,7 @@ h3.questions-title {
     max-width: 70%;
   }
 }
-.search-results ul li a {
+.search-results ul li span {
   color: #5d6367;
   font-size: 12px;
   font-weight: 400;
