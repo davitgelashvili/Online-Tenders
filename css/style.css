@@ -6536,6 +6536,11 @@ h3.questions-title {
   color: #2d3e4d;
   background: #edeef0;
 }
+@media only screen and (min-width: 768px) {
+  .tender-list__header {
+    padding: 0 25px;
+  }
+}
 .tender-list__header--colored {
   color: #fff;
   background: #32b4d7;
@@ -8905,7 +8910,7 @@ h3.questions-title {
 }
 .dashboard__listing__title h3 {
   position: relative;
-  font-weight: 500;
+  font-weight: 400;
 }
 .dashboard__listing__title ~ span {
   color: #acacaf;

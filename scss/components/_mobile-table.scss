@@ -29,6 +29,10 @@
     color: $color-text-third;
     background: #edeef0;
 
+    @media only screen and (min-width: 768px) {
+      padding: 0 25px;
+    }
+
     &--colored {
       color: $color-white;
       background: $color-brand-2;
