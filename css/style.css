@@ -9681,10 +9681,12 @@ body {
   width: 100%;
   margin-top: 22px;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .tender-details-document {
   margin-right: 18px;
+  margin-bottom: 15px;
   display: flex;
   align-items: center;
   border: 1px solid #dadde2;
