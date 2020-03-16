@@ -146,10 +146,16 @@
               </span>
             </h4>
 
-            <div class="form__field">
+            <!-- ერორის გამოსაჩენად შესაბამის form__field-ს მიანიჭეთ კლასი .reg-error -->
+            <!-- და მის შემდეგ მდებარე .reg-error__msg-ში შეცვალეთ ტექსტი შესაბამისი ერორით -->
+
+            <div class="form__field reg-error">
               <label for="name">კომპანიის დასახელება *</label>
               <input type="text" />
             </div>
+            <!-- Error message -->
+            <div class="reg-error__msg">ელ.ფოსტა ან პაროლი არასწორია</div>
+
             <div class="form__field">
               <label for="name">სამართლებრივი ფორმა *</label>
               <select name="" id="">
@@ -158,18 +164,30 @@
                 <option value="">შეზღუდული პასუხისმგებლობის საზოგადოება</option>
               </select>
             </div>
+            <!-- Error message -->
+            <div class="reg-error__msg">ელ.ფოსტა ან პაროლი არასწორია</div>
+
             <div class="form__field">
               <label for="name">საიდენტიფიკაციო კოდი</label>
               <input type="text" />
             </div>
+            <!-- Error message -->
+            <div class="reg-error__msg">ელ.ფოსტა ან პაროლი არასწორია</div>
+
             <div class="form__field">
               <label for="name">მისამართი *</label>
               <input type="text" />
             </div>
+            <!-- Error message -->
+            <div class="reg-error__msg">ელ.ფოსტა ან პაროლი არასწორია</div>
+
             <div class="form__field">
               <label for="name">ქალაქი *</label>
               <input type="text" />
             </div>
+            <!-- Error message -->
+            <div class="reg-error__msg">ელ.ფოსტა ან პაროლი არასწორია</div>
+
             <div class="form__field">
               <label for="country">ქვეყანა *</label>
               <select name="country" id="country">
@@ -178,14 +196,22 @@
                 <option value="">აირჩიეთ ქვეყანა</option>
               </select>
             </div>
+            <!-- Error message -->
+            <div class="reg-error__msg">ელ.ფოსტა ან პაროლი არასწორია</div>
+
             <div class="form__field">
               <label for="name">ტელეფონი *</label>
               <input type="text" />
             </div>
+            <!-- Error message -->
+            <div class="reg-error__msg">ელ.ფოსტა ან პაროლი არასწორია</div>
+
             <div class="form__field">
               <label for="name">საიტი</label>
               <input type="text" />
             </div>
+            <!-- Error message -->
+            <div class="reg-error__msg">ელ.ფოსტა ან პაროლი არასწორია</div>
           </section>
 
           <section class="form__section">
@@ -199,30 +225,50 @@
               <label for="name">სახელი *</label>
               <input type="text" />
             </div>
+            <!-- Error message -->
+            <div class="reg-error__msg">ელ.ფოსტა ან პაროლი არასწორია</div>
+
             <div class="form__field">
               <label for="name">გვარი *</label>
               <input type="text" />
             </div>
+            <!-- Error message -->
+            <div class="reg-error__msg">ელ.ფოსტა ან პაროლი არასწორია</div>
+
             <div class="form__field">
               <label for="name">თანამდებობა *</label>
               <input type="text" />
             </div>
+            <!-- Error message -->
+            <div class="reg-error__msg">ელ.ფოსტა ან პაროლი არასწორია</div>
+
             <div class="form__field">
               <label for="name">ტელეფონი *</label>
               <input type="text" />
             </div>
+            <!-- Error message -->
+            <div class="reg-error__msg">ელ.ფოსტა ან პაროლი არასწორია</div>
+
             <div class="form__field">
               <label for="name">ელ.ფოსტა*</label>
               <input type="email" />
             </div>
+            <!-- Error message -->
+            <div class="reg-error__msg">ელ.ფოსტა ან პაროლი არასწორია</div>
+
             <div class="form__field">
               <label for="name">პაროლი*</label>
               <input type="password" />
             </div>
+            <!-- Error message -->
+            <div class="reg-error__msg">ელ.ფოსტა ან პაროლი არასწორია</div>
+
             <div class="form__field">
               <label for="name">გაიმეორეთ პაროლი*</label>
               <input type="password" />
             </div>
+            <!-- Error message -->
+            <div class="reg-error__msg">ელ.ფოსტა ან პაროლი არასწორია</div>
           </section>
 
           <button type="submit">რეგისტრაცია</button>

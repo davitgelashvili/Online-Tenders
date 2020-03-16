@@ -4560,11 +4560,15 @@ button::placeholder {
 }
 
 .align-start {
-  align-items: flex-start;
+  align-items: flex-start !important;
 }
 
 .justify-center {
   justify-content: center;
+}
+
+.justify-start {
+  justify-content: flex-start !important;
 }
 
 .flex-col {
@@ -4619,6 +4623,23 @@ button::placeholder {
   border-bottom: 1px solid #dadde2;
 }
 
+@keyframes bg {
+  0% {
+    background-size: 0 3px, 3px 0, 0 3px, 3px 0;
+  }
+  25% {
+    background-size: 100% 3px, 3px 0, 0 3px, 3px 0;
+  }
+  50% {
+    background-size: 100% 3px, 3px 100%, 0 3px, 3px 0;
+  }
+  75% {
+    background-size: 100% 3px, 3px 100%, 100% 3px, 3px 0;
+  }
+  100% {
+    background-size: 100% 3px, 3px 100%, 100% 3px, 3px 100%;
+  }
+}
 .header {
   position: relative;
   background: #fff;
@@ -5662,6 +5683,18 @@ h3.questions-title {
 .trade__round div {
   font-size: 24px;
   font-weight: 400;
+}
+.trade__grid {
+  display: flex;
+}
+.trade__grid > div:first-child {
+  flex: 0 0 20px;
+}
+.trade__grid > div:nth-child(2) {
+  flex-grow: 1;
+}
+.trade__grid > div:nth-child(3), .trade__grid > div:nth-child(4), .trade__grid > div:nth-child(5) {
+  flex: 0 0 20%;
 }
 .trade__container {
   margin-bottom: 28px;
@@ -8099,6 +8132,23 @@ h3.questions-title {
   cursor: pointer;
 }
 
+.reg-error input,
+.reg-error select {
+  border-color: #f1616f;
+  box-shadow: 0 3px 16px rgba(241, 97, 111, 0.2);
+}
+.reg-error + .reg-error__msg {
+  display: block;
+}
+.reg-error__msg {
+  display: none;
+  margin: -6px 0 10px 0;
+  color: #f1616f;
+  font-size: 12px;
+  font-weight: 500;
+  text-align: right;
+}
+
 .change-password {
   margin-bottom: 40px;
   width: 100%;
@@ -10059,16 +10109,22 @@ body {
 }
 
 .add-tender-uploaded {
-  border-radius: 52px;
-  border-bottom: 1px solid #dadde2;
-  border-left: 1px solid #dadde2;
-  border-top: 1px solid #0fb7ff;
-  border-right: 1px solid #0fb7ff;
   background: #fff;
   display: flex;
   align-items: center;
   padding-right: 37px;
   margin-right: 21px;
+  border: 1px solid #dadde2;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(to right, #03af5c 100%, #03af5c 100%), linear-gradient(to bottom, #03af5c 100%, #03af5c 100%), linear-gradient(to right, #03af5c 100%, #03af5c 100%), linear-gradient(to bottom, #03af5c 100%, #03af5c 100%);
+  border-radius: 52px;
+  background-size: 100% 3px, 3px 100%, 100% 3px, 3px 100%;
+  background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+  animation: bg 1.25s cubic-bezier(0.19, 1, 0.22, 1) 1;
+  animation-play-state: paused;
+}
+.add-tender-uploaded:hover {
+  animation-play-state: running;
 }
 @media only screen and (max-width: 576px) {
   .add-tender-uploaded {
@@ -10171,7 +10227,7 @@ body {
 }
 
 .add-tender-uploaded-item {
-  margin-right: 21px;
+  margin-right: 20px;
   padding-right: 30px;
   position: relative;
   display: flex;
