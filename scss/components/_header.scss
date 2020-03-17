@@ -161,6 +161,37 @@
     }
   }
 
+  &__placeholder {
+    display: flex;
+    align-items: center;
+    &__img {
+      margin-right: 10px;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: $color-bg-main;
+      border-radius: 100%;
+
+      svg {
+        width: 14px;
+        height: 16px;
+        fill: $color-text-main;
+        stroke: $color-text-main;
+      }
+    }
+
+    a {
+      letter-spacing: 0.36px;
+      color: $color-text-main;
+      font-size: 12px;
+      margin-left: 6px;
+      margin-right: 18px;
+      font-weight: 500;
+    }
+  }
+
   &__favorites {
     position: relative;
     margin-right: 30px;
@@ -187,7 +218,8 @@
     }
   }
 
-  &__announce {
+  &__announce,
+  &__register {
     margin: 0 32px;
     padding: 0 35px;
     flex-shrink: 0;
