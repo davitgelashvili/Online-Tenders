@@ -4709,13 +4709,32 @@ button::placeholder {
   display: flex;
   align-items: center;
   color: #2d3e4d;
+  transition: all 0.2s ease-in;
+}
+.header__user__dropdown a:hover {
+  color: #0fb7ff;
+}
+.header__user__dropdown a:hover svg {
+  fill: #0fb7ff;
+}
+.header__user__dropdown a:hover svg.avatar, .header__user__dropdown a:hover svg.padlock {
+  stroke: #0fb7ff;
 }
 .header__user__dropdown a.danger {
   color: #f1616f;
 }
-.header__user__dropdown a img {
-  margin-right: 8px;
+.header__user__dropdown a svg {
   width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  fill: #2d3e4d;
+  transition: all 0.2s ease-in;
+}
+.header__user__dropdown a svg.avatar, .header__user__dropdown a svg.padlock {
+  stroke: #2d3e4d;
+}
+.header__user__dropdown a svg.sign-out {
+  fill: #f1616f;
 }
 .header__user__dropdown a span {
   color: inherit;
@@ -7628,12 +7647,24 @@ h3.questions-title {
   color: #2d3e4d;
   font-weight: 500;
 }
+.user__menu li a.active svg {
+  fill: #0fb7ff;
+}
+.user__menu li a.active svg.avatar, .user__menu li a.active svg.padlock {
+  stroke: #0fb7ff;
+}
 .user__menu li a.active i {
   display: block;
 }
-.user__menu img {
+.user__menu svg {
   width: 20px;
+  height: 20px;
   margin-right: 12px;
+  fill: #9da9b4;
+  transition: all 0.2s ease-in;
+}
+.user__menu svg.avatar, .user__menu svg.padlock {
+  stroke: #9da9b4;
 }
 
 .user-avatar-upload {

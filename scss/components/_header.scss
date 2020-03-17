@@ -70,14 +70,39 @@
         display: flex;
         align-items: center;
         color: $color-text-third;
+        transition: all 0.2s ease-in;
+
+        &:hover {
+          color: $color-brand-1;
+          svg {
+            fill: $color-brand-1;
+
+            &.avatar,
+            &.padlock {
+              stroke: $color-brand-1;
+            }
+          }
+        }
 
         &.danger {
           color: $color-danger;
         }
 
-        img {
-          margin-right: 8px;
+        svg {
           width: 20px;
+          height: 20px;
+          margin-right: 8px;
+          fill: $color-text-third;
+          transition: all 0.2s ease-in;
+
+          &.avatar,
+          &.padlock {
+            stroke: $color-text-third;
+          }
+
+          &.sign-out {
+            fill: $color-danger;
+          }
         }
 
         span {
