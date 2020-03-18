@@ -164,6 +164,15 @@ $(window).on("load", function() {
     e.preventDefault();
     $(".close-chat-modal").removeClass("active");
   });
+
+  // ფაილის ატვირთვის ინდიკატორი
+  for (var i = 0; i <= 100; i++) {
+    $(".uploading").css("width", i + "%");
+  }
+  // ფაილის წარმატებით ატვირთვის შემთხვევაში შეიძლება uploading დივის წაშლა და
+  // .add-tender-uploaded-ისთვის კლასი .success-ის მინიჭება,
+  // რაც მისი border-ის ფერს შეცვლის მწვანედ;
+  // წინააღმდეგ შემთხვევაში კლასი .error, რაც border-ის ფერს შეცვლის წითლად.
 });
 
 /**
