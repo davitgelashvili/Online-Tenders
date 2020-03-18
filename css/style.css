@@ -6488,7 +6488,7 @@ h3.questions-title {
 
 .badge {
   position: relative;
-  top: -4px;
+  top: -2px;
   display: inline;
 }
 .badge:hover .badge__tooltip {
@@ -6506,7 +6506,7 @@ h3.questions-title {
   left: 0;
   opacity: 1;
   color: #fff !important;
-  font-size: 11px;
+  font-size: 11px !important;
   font-weight: 500;
   background: #e52942;
   border-radius: 4px;
