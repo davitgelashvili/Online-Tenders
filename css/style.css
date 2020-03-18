@@ -6968,11 +6968,11 @@ h3.questions-title {
 }
 .chat__field textarea {
   display: block;
-  padding: 10px;
+  padding: 0 10px;
   border: none;
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
-  resize: none;
+  height: 50px;
   flex-grow: 1;
 }
 .chat__field textarea::-webkit-scrollbar {
