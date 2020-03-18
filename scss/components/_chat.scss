@@ -121,6 +121,12 @@
           color: $color-text-third;
           font-size: 13px;
         }
+
+        .add-tender-uploaded-item {
+          border: none;
+          max-width: 200px;
+          margin-bottom: 15px;
+        }
       }
     }
 
@@ -135,7 +141,6 @@
   // Write Message styles
   &__input-box {
     position: relative;
-    // height: 125px;
     padding: 33px 25px;
     background: $color-bg-main;
 
@@ -179,11 +184,11 @@
 
     textarea {
       display: block;
-      padding: 10px;
+      padding: 0 10px;
       border: none;
       border-top-left-radius: 8px;
       border-bottom-left-radius: 8px;
-      resize: none;
+      height: 50px;
       flex-grow: 1;
       &::-webkit-scrollbar {
         visibility: hidden;
