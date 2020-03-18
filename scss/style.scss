@@ -844,6 +844,7 @@ body {
   font-size: 12px;
 }
 .add-tender-uploaded-icon {
+  flex-shrink: 0;
   width: 45px;
   height: 45px;
   background: $color-bg-main;

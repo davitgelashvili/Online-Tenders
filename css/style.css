@@ -6918,6 +6918,11 @@ h3.questions-title {
   color: #2d3e4d;
   font-size: 13px;
 }
+.chat .msg__text__body .add-tender-uploaded-item {
+  border: none;
+  max-width: 200px;
+  margin-bottom: 15px;
+}
 .chat .msg__reply-to p {
   color: rgba(45, 62, 77, 0.4);
   font-size: 13px;
@@ -10278,6 +10283,7 @@ body {
 }
 
 .add-tender-uploaded-icon {
+  flex-shrink: 0;
   width: 45px;
   height: 45px;
   background: #f6f7f9;
