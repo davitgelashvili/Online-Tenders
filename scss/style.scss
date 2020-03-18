@@ -804,35 +804,36 @@ body {
   height: 0px;
 }
 .add-tender-uploaded {
+  position: relative;
   background: $color-white;
   display: flex;
   align-items: center;
   padding-right: 37px;
   margin-right: 21px;
-
   border: $border-1;
-
-  background-repeat: no-repeat;
-  background-image: linear-gradient(
-      to right,
-      $color-success 100%,
-      $color-success 100%
-    ),
-    linear-gradient(to bottom, $color-success 100%, $color-success 100%),
-    linear-gradient(to right, $color-success 100%, $color-success 100%),
-    linear-gradient(to bottom, $color-success 100%, $color-success 100%);
   border-radius: 52px;
-  background-size: 100% 3px, 3px 100%, 100% 3px, 3px 100%;
-  background-position: 0 0, 100% 0, 100% 100%, 0 100%;
-  animation: bg 1.25s cubic-bezier(0.19, 1, 0.22, 1) 1;
-  animation-play-state: paused;
-
-  &:hover {
-    animation-play-state: running;
-  }
 
   @media only screen and (max-width: 576px) {
     margin-bottom: 15px;
+  }
+
+  .uploading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: rgba($color-success, 0.4);
+    border-radius: 52px;
+    transition: width 0.2s linear;
+  }
+
+  &.success {
+    border-color: $color-success;
+  }
+
+  &.error {
+    border-color: $color-danger;
   }
 }
 

@@ -4623,23 +4623,6 @@ button::placeholder {
   border-bottom: 1px solid #dadde2;
 }
 
-@keyframes bg {
-  0% {
-    background-size: 0 3px, 3px 0, 0 3px, 3px 0;
-  }
-  25% {
-    background-size: 100% 3px, 3px 0, 0 3px, 3px 0;
-  }
-  50% {
-    background-size: 100% 3px, 3px 100%, 0 3px, 3px 0;
-  }
-  75% {
-    background-size: 100% 3px, 3px 100%, 100% 3px, 3px 0;
-  }
-  100% {
-    background-size: 100% 3px, 3px 100%, 100% 3px, 3px 100%;
-  }
-}
 .header {
   position: relative;
   background: #fff;
@@ -4709,13 +4692,32 @@ button::placeholder {
   display: flex;
   align-items: center;
   color: #2d3e4d;
+  transition: all 0.2s ease-in;
+}
+.header__user__dropdown a:hover {
+  color: #0fb7ff;
+}
+.header__user__dropdown a:hover svg {
+  fill: #0fb7ff;
+}
+.header__user__dropdown a:hover svg.avatar, .header__user__dropdown a:hover svg.padlock {
+  stroke: #0fb7ff;
 }
 .header__user__dropdown a.danger {
   color: #f1616f;
 }
-.header__user__dropdown a img {
-  margin-right: 8px;
+.header__user__dropdown a svg {
   width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  fill: #2d3e4d;
+  transition: all 0.2s ease-in;
+}
+.header__user__dropdown a svg.avatar, .header__user__dropdown a svg.padlock {
+  stroke: #2d3e4d;
+}
+.header__user__dropdown a svg.sign-out {
+  fill: #f1616f;
 }
 .header__user__dropdown a span {
   color: inherit;
@@ -4768,6 +4770,34 @@ button::placeholder {
     display: none;
   }
 }
+.header__placeholder {
+  display: flex;
+  align-items: center;
+}
+.header__placeholder__img {
+  margin-right: 10px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f6f7f9;
+  border-radius: 100%;
+}
+.header__placeholder__img svg {
+  width: 14px;
+  height: 16px;
+  fill: #141b3d;
+  stroke: #141b3d;
+}
+.header__placeholder a {
+  letter-spacing: 0.36px;
+  color: #141b3d;
+  font-size: 12px;
+  margin-left: 6px;
+  margin-right: 18px;
+  font-weight: 500;
+}
 .header__favorites {
   position: relative;
   margin-right: 30px;
@@ -4791,7 +4821,7 @@ button::placeholder {
   background: #f1616f;
   border-radius: 100%;
 }
-.header__announce {
+.header__announce, .header__register {
   margin: 0 32px;
   padding: 0 35px;
   flex-shrink: 0;
@@ -4807,14 +4837,14 @@ button::placeholder {
   border-radius: 6px;
 }
 @media (max-width: 1250px) {
-  .header__announce {
+  .header__announce, .header__register {
     margin: 0 20px;
     padding: 0 10px;
     height: 36px;
   }
 }
 @media (max-width: 991px) {
-  .header__announce {
+  .header__announce, .header__register {
     display: none;
   }
 }
@@ -7628,12 +7658,24 @@ h3.questions-title {
   color: #2d3e4d;
   font-weight: 500;
 }
+.user__menu li a.active svg {
+  fill: #0fb7ff;
+}
+.user__menu li a.active svg.avatar, .user__menu li a.active svg.padlock {
+  stroke: #0fb7ff;
+}
 .user__menu li a.active i {
   display: block;
 }
-.user__menu img {
+.user__menu svg {
   width: 20px;
+  height: 20px;
   margin-right: 12px;
+  fill: #9da9b4;
+  transition: all 0.2s ease-in;
+}
+.user__menu svg.avatar, .user__menu svg.padlock {
+  stroke: #9da9b4;
 }
 
 .user-avatar-upload {
@@ -10197,27 +10239,35 @@ body {
 }
 
 .add-tender-uploaded {
+  position: relative;
   background: #fff;
   display: flex;
   align-items: center;
   padding-right: 37px;
   margin-right: 21px;
   border: 1px solid #dadde2;
-  background-repeat: no-repeat;
-  background-image: linear-gradient(to right, #03af5c 100%, #03af5c 100%), linear-gradient(to bottom, #03af5c 100%, #03af5c 100%), linear-gradient(to right, #03af5c 100%, #03af5c 100%), linear-gradient(to bottom, #03af5c 100%, #03af5c 100%);
   border-radius: 52px;
-  background-size: 100% 3px, 3px 100%, 100% 3px, 3px 100%;
-  background-position: 0 0, 100% 0, 100% 100%, 0 100%;
-  animation: bg 1.25s cubic-bezier(0.19, 1, 0.22, 1) 1;
-  animation-play-state: paused;
-}
-.add-tender-uploaded:hover {
-  animation-play-state: running;
 }
 @media only screen and (max-width: 576px) {
   .add-tender-uploaded {
     margin-bottom: 15px;
   }
+}
+.add-tender-uploaded .uploading {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background: rgba(3, 175, 92, 0.4);
+  border-radius: 52px;
+  transition: width 0.2s linear;
+}
+.add-tender-uploaded.success {
+  border-color: #03af5c;
+}
+.add-tender-uploaded.error {
+  border-color: #f1616f;
 }
 
 .add-tender-uploaded span {

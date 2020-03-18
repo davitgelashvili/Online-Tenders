@@ -166,12 +166,15 @@
               </span>
               <form class="add-tender-form">
                 <div class="add-tender-upload-content">
+                  <!-- ფაილის ატვირთვის ინდიკატორთან დაკავშირებით კომენტარი ნახეთ main.js ფაილში -->
                   <div class="add-tender-uploaded">
                     <div class="add-tender-uploaded-icon">
                       <img src="img/pdf.svg" />
                     </div>
                     <span>Documentation.pdf</span>
+                    <div class="uploading"></div>
                   </div>
+
                   <button class="add-tender-upload uploadfile-btn">
                     <img src="img/download1.svg" alt="" />
                     <span>ატვირთეთ ფაილი</span>
@@ -278,16 +281,5 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/main.js"></script>
-    <script>
-      const fileInput = document.querySelector(
-        ".add-tender-upload input[type=file]"
-      );
-      fileInput.onchange = () => {
-        if (fileInput.files.length > 0) {
-          const fileName = document.querySelector(".add-tender-uploaded span");
-          fileName.textContent = fileInput.files[0].name;
-        }
-      };
-    </script>
   </body>
 </html>

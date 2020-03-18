@@ -70,14 +70,39 @@
         display: flex;
         align-items: center;
         color: $color-text-third;
+        transition: all 0.2s ease-in;
+
+        &:hover {
+          color: $color-brand-1;
+          svg {
+            fill: $color-brand-1;
+
+            &.avatar,
+            &.padlock {
+              stroke: $color-brand-1;
+            }
+          }
+        }
 
         &.danger {
           color: $color-danger;
         }
 
-        img {
-          margin-right: 8px;
+        svg {
           width: 20px;
+          height: 20px;
+          margin-right: 8px;
+          fill: $color-text-third;
+          transition: all 0.2s ease-in;
+
+          &.avatar,
+          &.padlock {
+            stroke: $color-text-third;
+          }
+
+          &.sign-out {
+            fill: $color-danger;
+          }
         }
 
         span {
@@ -136,6 +161,37 @@
     }
   }
 
+  &__placeholder {
+    display: flex;
+    align-items: center;
+    &__img {
+      margin-right: 10px;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: $color-bg-main;
+      border-radius: 100%;
+
+      svg {
+        width: 14px;
+        height: 16px;
+        fill: $color-text-main;
+        stroke: $color-text-main;
+      }
+    }
+
+    a {
+      letter-spacing: 0.36px;
+      color: $color-text-main;
+      font-size: 12px;
+      margin-left: 6px;
+      margin-right: 18px;
+      font-weight: 500;
+    }
+  }
+
   &__favorites {
     position: relative;
     margin-right: 30px;
@@ -162,7 +218,8 @@
     }
   }
 
-  &__announce {
+  &__announce,
+  &__register {
     margin: 0 32px;
     padding: 0 35px;
     flex-shrink: 0;

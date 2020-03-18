@@ -1,4 +1,1 @@
-<svg id="Group_749" data-name="Group 749" xmlns="http://www.w3.org/2000/svg" width="19.513" height="19.513" viewBox="0 0 19.513 19.513">
-  <path id="Path_379" data-name="Path 379" d="M0,0H19.513V19.513H0Z" fill="none"/>
-  <path id="Path_380" data-name="Path 380" d="M2,16.635H18.261v1.626H2Zm1.626-6.5H5.252v5.691H3.626Zm4.065,0H9.317v5.691H7.691Zm3.252,0H12.57v5.691H10.944Zm4.065,0h1.626v5.691H15.009ZM2,6.065,10.131,2l8.131,4.065V9.317H2Zm1.626,1v.621H16.635V7.07l-6.5-3.252Zm6.5-.192a.813.813,0,1,1,.813-.813A.813.813,0,0,1,10.131,6.878Z" transform="translate(-0.374 -0.374)" fill="#9da9b4"/>
-</svg>
+<svg id="company" data-name="Group 749" xmlns="http://www.w3.org/2000/svg" width="19.513" height="19.513"><path data-name="Path 379" d="M0 0h19.513v19.513H0z" fill="none"/><path data-name="Path 380" d="M1.626 16.261h16.261v1.626H1.626zm1.626-6.5h1.626v5.691H3.252zm4.065 0h1.626v5.691H7.317zm3.252 0h1.627v5.691H10.57zm4.065 0h1.626v5.691h-1.625zM1.626 5.691l8.131-4.065 8.131 4.065v3.252H1.626zm1.626 1v.621h13.009v-.616l-6.5-3.252zm6.5-.192a.813.813 0 11.813-.813.813.813 0 01-.808.818z"/></svg>

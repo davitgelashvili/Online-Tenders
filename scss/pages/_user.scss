@@ -104,6 +104,15 @@
           color: $color-text-third;
           font-weight: 500;
 
+          svg {
+            fill: $color-brand-1;
+
+            &.avatar,
+            &.padlock {
+              stroke: $color-brand-1;
+            }
+          }
+
           i {
             display: block;
           }
@@ -111,9 +120,17 @@
       }
     }
 
-    img {
+    svg {
       width: 20px;
+      height: 20px;
       margin-right: 12px;
+      fill: #9da9b4;
+      transition: all 0.2s ease-in;
+
+      &.avatar,
+      &.padlock {
+        stroke: #9da9b4;
+      }
     }
   }
 }
