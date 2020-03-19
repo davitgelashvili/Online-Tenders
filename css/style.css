@@ -6839,6 +6839,11 @@ h3.questions-title {
   display: flex;
   margin-bottom: 30px;
 }
+@media only screen and (max-width: 768px) {
+  .chat .msg {
+    margin-bottom: 15px;
+  }
+}
 .chat .msg--sent {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
@@ -7074,6 +7079,7 @@ h3.questions-title {
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
+  resize: none;
 }
 .chat__field textarea::-webkit-scrollbar {
   visibility: hidden;
