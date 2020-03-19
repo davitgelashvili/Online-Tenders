@@ -6816,6 +6816,7 @@ h3.questions-title {
 
 .chat {
   background: #fff;
+  overflow: auto;
 }
 .chat__msgs {
   padding: 0 30px;
@@ -6958,6 +6959,11 @@ h3.questions-title {
 .chat .msg__text__body p {
   color: #2d3e4d;
   font-size: 13px;
+}
+@media only screen and (max-width: 768px) {
+  .chat .msg__text__body p {
+    font-size: 12px;
+  }
 }
 .chat .msg__text__body .add-tender-uploaded-item {
   border: none;

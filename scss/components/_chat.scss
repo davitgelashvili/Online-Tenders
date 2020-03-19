@@ -1,5 +1,6 @@
 .chat {
   background: $color-white;
+  overflow: auto;
 
   //  Messages
   &__msgs {
@@ -161,6 +162,10 @@
         p {
           color: $color-text-third;
           font-size: 13px;
+
+          @media only screen and (max-width: 768px) {
+            font-size: 12px;
+          }
         }
 
         .add-tender-uploaded-item {
