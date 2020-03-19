@@ -255,7 +255,7 @@
                     </header>
                     <!-- Chat Box -->
                     <div class="chat">
-                      <div class="chat__msgs">
+                      <div class="chat__msgs d-flex flex-column-reverse">
                         <!-- Message -->
                         <div class="msg msg--sent">
                           <!-- Message Author & Message detailes -->
@@ -374,7 +374,9 @@
                       <div class="chat__input-box">
                         <form action="#">
                           <!-- File Upload button -->
-                          <button class="uploadfile-btn chat__upload-file">
+                          <button
+                            class="uploadfile-btn chat__upload-file align-self-center"
+                          >
                             <img src="img/clip.svg" alt="" />
                             <span>ატვირთეთ ფაილი</span>
                           </button>
@@ -385,7 +387,12 @@
                               name="message"
                               placeholder="შეიყვანეთ შეტყობინება"
                             ></textarea>
-                            <button type="submit">გაგზავნა</button>
+                            <button type="submit">
+                              <span class="chat__textBtn">გაგზავნა</span>
+                              <span class="chat__iconBtn">
+                                <img src="img/send.svg" alt="send message" />
+                              </span>
+                            </button>
                           </div>
                         </form>
                       </div>
