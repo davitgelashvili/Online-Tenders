@@ -139,6 +139,9 @@
           <!-- Chat Box -->
           <div class="chat">
             <div class="chat__msgs">
+              <!-- ეს არ წაშალოთ -->
+              <div class="mb-4"></div>
+
               <!-- Message -->
               <div class="msg msg--sent">
                 <!-- Message Author & Message detailes -->
@@ -257,7 +260,12 @@
                     name="message"
                     placeholder="შეიყვანეთ შეტყობინება"
                   ></textarea>
-                  <button type="submit">გაგზავნა</button>
+                  <button type="submit">
+                    <span class="chat__textBtn">გაგზავნა</span>
+                    <span class="chat__iconBtn">
+                      <img src="img/send.svg" alt="send message" />
+                    </span>
+                  </button>
                 </div>
               </form>
             </div>

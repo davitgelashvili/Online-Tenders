@@ -1,5 +1,6 @@
 .chat {
   background: $color-white;
+  overflow: auto;
 
   //  Messages
   &__msgs {
@@ -8,29 +9,53 @@
     min-height: 480px;
     overflow-y: auto;
 
-    display: flex;
-    flex-direction: column-reverse;
-
     &::-webkit-scrollbar {
-      visibility: hidden;
+      width: 4px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: $color-bg-main;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: $color-text-sec;
     }
   }
 
   .msg {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-bottom: 30px;
 
+    @media only screen and (max-width: 768px) {
+      margin-bottom: 15px;
+    }
+
     &--sent {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
       flex-direction: row-reverse;
     }
 
     &--received {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
       flex-direction: row;
     }
 
     &__info {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
       flex-direction: column;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
       align-items: center;
 
       &--sent {
@@ -47,12 +72,23 @@
       height: 52px;
       border-radius: 100%;
       background: rgba(125, 110, 178, 0.1);
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
       justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
       align-items: center;
       color: #7d6eb2;
       font-size: 23px;
       font-weight: 900;
+
+      @media only screen and (max-width: 768px) {
+        width: 31px;
+        height: 31px;
+      }
 
       &--received {
         color: $color-brand-2;
@@ -61,8 +97,14 @@
     }
 
     &__date {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
       flex-direction: column;
+
       .date,
       .time {
         margin-top: 4px;
@@ -86,6 +128,10 @@
     &__content {
       max-width: 350px;
       padding: 20px 25px;
+
+      @media only screen and (max-width: 768px) {
+        padding: 10px 15px;
+      }
 
       &--sent {
         border-top-left-radius: 8px;
@@ -120,6 +166,10 @@
         p {
           color: $color-text-third;
           font-size: 13px;
+
+          @media only screen and (max-width: 768px) {
+            font-size: 12px;
+          }
         }
 
         .add-tender-uploaded-item {
@@ -145,20 +195,56 @@
     background: $color-bg-main;
 
     form {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
       justify-content: space-between;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
       align-items: center;
+
+      @media only screen and (max-width: 768px) {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+      }
     }
   }
 
   &__upload-file {
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
     margin-right: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     background: transparent;
     border: none;
     cursor: pointer;
+
+    @media only screen and (max-width: 768px) {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      margin-top: 12px;
+    }
 
     span {
       margin-top: 10px;
@@ -166,6 +252,11 @@
       font-size: 12px;
       font-weight: 500;
       white-space: nowrap;
+
+      @media only screen and (max-width: 768px) {
+        margin-top: 0;
+        margin-left: 10px;
+      }
     }
   }
 
@@ -174,12 +265,19 @@
     position: relative;
     width: 100%;
     height: 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     background: $color-white;
     border: $border-1;
     border-radius: 8px;
+    -webkit-box-shadow: 0 2px 3px rgba($color-black, 0.08);
     box-shadow: 0 2px 3px rgba($color-black, 0.08);
 
     textarea {
@@ -189,23 +287,34 @@
       border-top-left-radius: 8px;
       border-bottom-left-radius: 8px;
       height: 50px;
+      -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
       flex-grow: 1;
+      resize: none;
+
       &::-webkit-scrollbar {
         visibility: hidden;
       }
     }
 
-    button[type="submit"] {
+    button[type='submit'] {
       width: 148px;
       height: 48px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
       border: none;
       border-radius: 8px;
-      color: $color-white;
-      font-family: inherit;
-      font-size: 14px;
-      font-weight: 500;
       background: $color-brand-2;
       cursor: pointer;
+      -webkit-transition: all 0.2s linear;
+      -o-transition: all 0.2s linear;
       transition: all 0.2s linear;
 
       &:hover {
@@ -220,14 +329,33 @@
       }
     }
   }
+
+  &__textBtn {
+    color: $color-white;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 500;
+
+    @media only screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+  &__iconBtn {
+    @media only screen and (min-width: 768px) {
+      display: none;
+    }
+  }
 }
 
 .reply {
   width: 28px;
   height: 28px;
   margin-left: 8px;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
   align-self: center;
   background: darken($color-white, 4%);
+  -webkit-backdrop-filter: blur(4px);
   backdrop-filter: blur(4px);
   border: none;
   border-radius: 100%;
@@ -236,20 +364,31 @@
 
 .close-questions {
   margin-top: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
   justify-content: flex-end;
 
   @media only screen and (max-width: 768px) {
     bottom: 20px;
+    margin-top: -16px;
   }
 
   button {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     background: transparent;
     opacity: 0.5;
     border: none;
     cursor: pointer;
+    -webkit-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
     transition: all 0.2s linear;
 
     &:hover {
