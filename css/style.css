@@ -4495,7 +4495,7 @@ html {
 }
 
 body {
-  font-family: "FiraGO", sans-serif;
+  font-family: "FiraGO", sans-serif !important;
   line-height: 1.5;
 }
 
@@ -4726,6 +4726,7 @@ button::placeholder {
   white-space: nowrap;
 }
 .header__user__avatar {
+  margin-bottom: 0;
   position: relative;
   width: 48px;
   height: 48px;
@@ -6383,6 +6384,20 @@ h3.questions-title {
   border-color: #daedd8;
 }
 
+.alert {
+  font-size: 13px;
+  font-weight: 400;
+}
+.alert h2 {
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 700;
+}
+.alert p {
+  font-size: 13px;
+  font-weight: 400;
+}
+
 .review:not(:last-child) {
   margin-bottom: 30px;
 }
@@ -6576,7 +6591,8 @@ h3.questions-title {
   background: #32b4d7;
 }
 .tender-list__header h2 {
-  font-size: 14px;
+  margin-bottom: 0 !important;
+  font-size: 14px !important;
   font-weight: 500;
   text-align: center;
 }
@@ -7186,6 +7202,75 @@ h3.questions-title {
 .close-questions button span {
   color: #2d3e4d;
   font-size: 12px;
+}
+
+.tender-content {
+  margin-bottom: 40px;
+}
+.tender-content ul {
+  margin-bottom: 30px;
+  padding: 0 0 0 20px;
+  list-style-type: disc !important;
+}
+.tender-content ul li {
+  color: #141b3d;
+  font-size: 13px;
+}
+.tender-content ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.list {
+  margin-bottom: 30px;
+  padding: 0 0 0 20px;
+  list-style-type: disc !important;
+}
+.list li {
+  color: #141b3d;
+  font-size: 13px;
+}
+.list li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.panel {
+  border: 1px solid #dadde2;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.panel-primary {
+  border-color: #32b4d7;
+}
+.panel-primary .panel-heading {
+  background: #32b4d7;
+  color: #fff;
+  font-size: 18px;
+}
+.panel-heading {
+  padding: 10px 20px;
+}
+.panel-body {
+  padding: 10px 20px;
+}
+.panel-body ul {
+  margin-bottom: 15px;
+}
+.panel-body ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+.panel-body ul li a {
+  display: flex;
+}
+.panel-body ul li a span {
+  font-size: 14px;
+}
+.panel-body ul li a span.pull-right {
+  margin-left: auto;
+}
+
+h2 {
+  margin-bottom: 20px !important;
+  font-size: 24px !important;
 }
 
 .search-out {
@@ -9601,6 +9686,7 @@ h3.questions-title {
 .back-link {
   display: flex;
   align-items: center;
+  margin-bottom: 0 !important;
 }
 
 .back-link li a {
@@ -9811,6 +9897,7 @@ body {
 .tender-share {
   display: flex;
   align-items: center;
+  margin-bottom: 0 !important;
 }
 
 .tender-share li a {
@@ -9859,6 +9946,9 @@ body {
   display: flex;
   align-items: center;
 }
+.tender-details-right-time p {
+  margin-bottom: 0;
+}
 
 .tender-details-right-time span {
   font-weight: 400;
@@ -9874,6 +9964,9 @@ body {
   border-left: 2px solid #acacaf;
   display: flex;
   align-items: center;
+}
+.tender-details-right-status p {
+  margin-bottom: 0;
 }
 
 .tender-details-right-status span {
@@ -9952,6 +10045,13 @@ body {
   font-size: 12px;
   font-weight: 400;
 }
+.tender-details-document .truncated-title {
+  white-space: nowrap;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  max-width: 22ch;
+}
 .tender-details-document .full-title {
   display: none;
   position: absolute;
@@ -9964,6 +10064,7 @@ body {
   white-space: nowrap;
   background: rgba(45, 62, 77, 0.8);
   border-radius: 6px;
+  z-index: 100;
 }
 .tender-details-document .full-title::before {
   content: "";
@@ -10088,6 +10189,7 @@ body {
 }
 
 .sunny-tenders-list-img {
+  margin-bottom: 0 !important;
   flex: 0 0 44px;
   height: 44px;
   border: 1px solid #e7eaef;

@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: $font-main;
+  font-family: $font-main !important;
   line-height: 1.5;
 }
 
@@ -23,9 +23,9 @@ img {
   display: block;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="password"],
+input[type='text'],
+input[type='email'],
+input[type='password'],
 select,
 textarea,
 button {
