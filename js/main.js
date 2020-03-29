@@ -165,6 +165,11 @@ $(window).on('load', function() {
     $('.close-chat-modal').removeClass('active');
   });
 
+  // Terms & Services Modal
+  $('.terms-services label').click(function() {
+    $('.modal').addClass('active');
+  });
+
   // ფაილის ატვირთვის ინდიკატორი
   for (var i = 0; i <= 100; i++) {
     $('.uploading').css('width', i + '%');
