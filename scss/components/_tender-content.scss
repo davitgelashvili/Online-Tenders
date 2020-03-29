@@ -1,0 +1,78 @@
+.tender-content {
+  margin-bottom: 40px;
+  ul {
+    margin-bottom: 30px;
+    padding: 0 0 0 20px;
+    list-style-type: disc !important;
+
+    li {
+      color: $color-text-main;
+      font-size: 13px;
+
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+.list {
+  margin-bottom: 30px;
+  padding: 0 0 0 20px;
+  list-style-type: disc !important;
+
+  li {
+    color: $color-text-main;
+    font-size: 13px;
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.panel {
+  border: $border-1;
+  border-radius: 8px;
+  overflow: hidden;
+
+  &-primary {
+    border-color: $color-brand-2;
+
+    .panel-heading {
+      background: $color-brand-2;
+      color: $color-white;
+      font-size: 18px;
+    }
+  }
+  &-heading {
+    padding: 10px 20px;
+  }
+  &-body {
+    padding: 10px 20px;
+
+    ul {
+      margin-bottom: 15px;
+      li {
+        &:not(:last-child) {
+          margin-bottom: 10px;
+        }
+        a {
+          display: flex;
+
+          span {
+            font-size: 14px;
+            &.pull-right {
+              margin-left: auto;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+h2 {
+  margin-bottom: 20px !important;
+  font-size: 24px !important;
+}
