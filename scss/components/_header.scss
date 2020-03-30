@@ -95,8 +95,13 @@
           fill: $color-text-third;
           transition: all 0.2s ease-in;
 
+          &.subscribe-icon {
+            width: 16px;
+          }
+
           &.avatar,
-          &.padlock {
+          &.padlock,
+          &.subscribe-icon {
             stroke: $color-text-third;
           }
 
@@ -253,7 +258,7 @@
     align-items: center;
 
     @media (max-width: 991px) {
-      display: none;
+      margin-left: 22px;
     }
 
     img {

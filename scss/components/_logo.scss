@@ -1,11 +1,8 @@
 .site-logo {
   img {
-    width: 200px;
+    width: 180px;
+    height: 40px;
     object-fit: cover;
-
-    @media (max-width: 1250px) {
-      width: 80px;
-    }
   }
 }
 .logo h1 {

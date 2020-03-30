@@ -34,7 +34,7 @@
     }
 
     &::before {
-      content: "";
+      content: '';
       position: absolute;
       left: -21px;
       bottom: -2px;
@@ -48,7 +48,7 @@
     }
 
     &::after {
-      content: "";
+      content: '';
       position: absolute;
       right: -21px;
       bottom: -2px;
@@ -114,6 +114,67 @@
       margin-bottom: 16px;
       padding-bottom: 16px;
       border-bottom: 1px solid #f5f6f8;
+    }
+  }
+}
+
+.tab-offer {
+  .offer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h3 {
+      margin-bottom: 22px;
+      color: $color-text-sec;
+      font-size: 15px;
+      font-weight: 600;
+      text-align: center;
+    }
+
+    &__price {
+      margin-bottom: 22px;
+      color: $color-danger;
+      font-size: 50px;
+      font-weight: 500;
+      line-height: 0.8;
+      text-align: center;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+    }
+
+    &__cta {
+      margin-bottom: 26px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 250px;
+      height: 48px;
+      background: $color-brand-2;
+      border-radius: 6px;
+      flex-shrink: 0;
+
+      span {
+        margin-left: 12px;
+        color: $color-white;
+        font-size: 13px;
+        font-weight: 500;
+      }
+    }
+
+    &__note {
+      padding: 15px 40px;
+      background: #e9f7fa;
+      border: 1px solid #d3e8ed;
+      border-radius: 8px;
+      width: 100%;
+
+      p {
+        margin-bottom: 0;
+        color: $color-brand-2;
+        font-size: 13px;
+        text-align: center;
+      }
     }
   }
 }
