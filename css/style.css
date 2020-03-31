@@ -8992,6 +8992,29 @@ h2 {
   font-size: 14px;
 }
 
+.cancel-sub {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+@media only screen and (min-width: 768px) {
+  .cancel-sub {
+    display: none;
+  }
+}
+.cancel-sub i {
+  margin-right: 8px;
+  color: #f1616f;
+}
+.cancel-sub span {
+  color: #141b3d;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
 .contact {
   display: flex;
   justify-content: space-between;

@@ -533,7 +533,7 @@
                     <header
                       class="tender-list__header tender-list__header--colored"
                     >
-                      <h2>აუქციონის შედეგი</h2>
+                      <h2>შედეგი</h2>
                     </header>
                     <div class="tender-list__body">
                       <ul>
@@ -772,14 +772,14 @@
     </div>
 
     <script>
-      const trigger = document.getElementsByClassName("tr-trigger");
+      const trigger = document.getElementsByClassName('tr-trigger');
 
       for (let i = 0; i < trigger.length; i++) {
-        trigger[i].addEventListener("click", function() {
-          this.classList.toggle("active");
+        trigger[i].addEventListener('click', function() {
+          this.classList.toggle('active');
           let panel = this.nextElementSibling;
 
-          panel.classList.toggle("active");
+          panel.classList.toggle('active');
         });
       }
     </script>
