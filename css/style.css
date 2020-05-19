@@ -8509,6 +8509,8 @@ h2 {
   right: 20px;
   top: 50%;
   transform: translateY(-50%);
+  pointer-events: none;
+  cursor: pointer;
 }
 .register .form button {
   margin-left: auto;
@@ -9199,6 +9201,11 @@ h2 {
 }
 .dashboard__form__heading ul {
   display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+.dashboard__form__heading ul::-webkit-scrollbar {
+  display: none;
 }
 .dashboard__form__heading li {
   position: relative;
@@ -9214,6 +9221,8 @@ h2 {
   border-bottom-right-radius: 0;
   background: #fff;
   z-index: 10;
+  display: flex;
+  flex-shrink: 0;
 }
 .dashboard__form__heading li.disabled {
   color: #acacaf;
@@ -9227,6 +9236,7 @@ h2 {
 }
 .dashboard__form__heading .export {
   display: flex;
+  flex-shrink: 0;
   align-items: center;
   color: #32b4d7;
   font-size: 14px;
@@ -11088,7 +11098,7 @@ body {
   }
 
   .tender-details-tab-header {
-    overflow-x: hidden;
+    overflow-x: scroll;
     border: none;
   }
 
