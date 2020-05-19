@@ -1145,7 +1145,7 @@ body {
     margin-top: 26px;
   }
   .tender-details-tab-header {
-    overflow-x: hidden;
+    overflow-x: scroll;
     border: none;
   }
   .tender-details-tab-header::-webkit-scrollbar {
